@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="checkout-page">
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Happy Smuggler</title>
+	<meta name="keywords" content="Happy Smuggler">
+	<meta name="description" content="Happy Smuggler">
+	<meta name="robots" content="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<meta content="telephone=no" name="format-detection">
+</head>
+
+<body>	
+	<div class="header-scroll">
+		<a class="logo" href="#"></a>
+		<div class="cart activ">
+			<div class="overlay"></div>
+			<div class="button" href="#">
+				<span class="icon icon-cart"></span>
+				<span class="cart-amount">4</span>
+				<div class="foldout">
+					<div class="product">
+						<div class="type">
+							<div class="title">Festival boxer<div class="total">&euro; 19,00</div></div>
+							<p class="subtitle">Single pack</p>
+							<input type="number" value="1">
+						</div>
+					</div>
+					<div class="product">
+						<div class="type">
+							<div class="title">Festival boxer<div class="total">&euro; 35,00</div></div>
+							<p class="subtitle">Weekender double pack</p>
+							<input type="number" value="2">
+						</div>
+					</div>
+					<div class="product">
+						<div class="type">
+							<div class="title">Festival tanktop<div class="total">&euro; 17,50</div></div>
+							<p class="subtitle">Single pack</p>
+							<input type="number" value="1">
+						</div>
+					</div>
+					<div class="totals">Total<span>&euro; 106.50</span></div>
+					<a class="checkout" href="checkout.html">To checkout</a>
+				</div>
+			</div>
+		</div>
+		<ul class="nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html">Shop</a></li>
+			<li><a href="index.html">The movement</a></li>
+			<li><a href="index.html">Contact</a></li>
+		</ul>
+		<button type="button" role="button" aria-label="Toggle Navigation" class="mobile-nav-btn">
+			<span class="lines"></span>
+		</button>
+	</div>
+	<div class="content">
+		<div class="checkout">
+			<div class="wrapper">
+				<h1>Cart</h1>
+				<div class="data">
+					<h2>Billing</h2>
+					<form>
+						<div class="field doublefield">
+							<input class="success" type="text" placeholder="First name:">
+							<input class="success" type="text" placeholder="Last name:">
+						</div>
+						<div class="field">
+							<input type="text" placeholder="Company: (optional)">
+						</div>
+						<div class="field doublefield">
+							<input class="error" type="text" placeholder="Email address incorrect">
+							<input type="text" placeholder="Phone:">
+						</div>
+					</form>
+					<h2>Shipping</h2>
+					<form>
+						<div class="field">
+							<select>
+								<option>Select country:</option>
+								<option>Netherlands</option>
+								<option>Zimbabwe</option>
+							</select>
+						</div>
+						<div class="field address">
+							<input type="text" placeholder="Street address:">
+							<input type="text" placeholder="Apartment, suite, unit etc. (optional)">
+						</div>
+						<div class="field doublefield">
+							<input type="text" placeholder="Zip / postcode:">
+							<input type="text" placeholder="Town / city:">
+						</div>
+						<div class="field">
+							<textarea placeholder="Notes about your order, e.g. special notes for delivery:"></textarea>
+						</div>
+					</form>
+					<h2>Payment</h2>
+					<form>
+						<div class="field radiocheck">
+							<label><input type="radio">SOFORT Banking<span class="image"><img src="img/sofort.png"></span></label>
+							<label>
+								<input type="radio">iDeal<span class="image"><img src="img/ideal.png"></span>
+								<select>
+									<option>Select your bank:</option>
+									<option>ING</option>
+									<option>ABN etc.</option>
+								</select>
+							</label>
+							<label><input type="radio">Bancontact / Mister Cash<span class="image"><img src="img/mistercash.png"></span></label>
+							<label><input type="radio">Belfius Direct Net<span class="image"><img src="img/belfius.png"></span></label>
+						</div>
+					</form>
+				</div>
+				<div class="summary">
+					<div class="item">
+						<div class="type">
+							<div class="title">Festival boxer<div class="total">&euro; 19,00</div></div>
+							<p class="subtitle">1x Single pack</p>
+							<span class="sizes">L</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="type">
+							<div class="title">Festival boxer<div class="total">&euro; 35,00</div></div>
+							<p class="subtitle">2x Weekender double pack</p>
+							<span class="sizes">L, XL</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="type">
+							<div class="title">Festival tanktop<div class="total">&euro; 17,50</div></div>
+							<p class="subtitle">1x Single pack</p>
+							<span class="sizes">M</span>
+						</div>
+					</div>
+					<div class="totals">Total<span>&euro; 106.50</span></div>
+					<span class="vat">includes &euro;3,30 VAT</span>
+					<a class="checkout" href="thanks.html">Place order</a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="bottom-bg">
+			<div class="divider top"><img src="img/bg-white-left-bottom.svg"></div>
+		</div>
+	</div>
+</body>
+</html>
