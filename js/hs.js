@@ -43,4 +43,15 @@ $(function () {
     event.preventDefault();
     $cart.removeClass('active');
   });
+
+  /*
+  * Product Details
+  */
+
+  var $products = $('.product');
+
+  $products.on('click', '.image a, .more-info', function (event) {
+    event.preventDefault();
+    $(this).closest('.product').toggleClass('active');
+  });
 });
