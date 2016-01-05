@@ -17,4 +17,14 @@ $(function () {
     }
     prevScrollTop = scrollTop;
   });
+
+  /*
+  * Scroll to Target
+  */
+
+  $('[data-scrollto]').on('click', function (event) {
+    event.preventDefault();
+    var scrollTo = $(this).data('scrollto') || 0;
+    $window.scrollTo(scrollTo, 500);
+  });
 });
