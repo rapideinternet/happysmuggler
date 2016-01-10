@@ -1,5 +1,6 @@
 $(function () {
   var $window = $(window);
+  var $cart = $('.cart');
 
   /*
   * Header scroll
@@ -9,6 +10,11 @@ $(function () {
   var prevScrollTop = 0;
 
   $window.on('scroll', function (event) {
+    // Prevent header from hiding when cart is active
+    if ($cart.hasClass('active')) {
+      return false;
+    }
+
     var scrollTop = $window.scrollTop();
     if (scrollTop > prevScrollTop) {
       $headerScroll.removeClass('active'); // Down
@@ -31,8 +37,6 @@ $(function () {
   /*
   * Cart Toggle
   */
-
-  var $cart = $('.cart');
 
   $cart.find('> .button').on('click', function (event) {
     event.preventDefault();

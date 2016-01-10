@@ -14,7 +14,7 @@ $yellow: rgba(220,232,107,1); /* dce86b */
 
 
 
-/*/  BASE  /////////////////////////////////////////////////////////////////*/ 
+/*/  BASE  /////////////////////////////////////////////////////////////////*/
 
 * { @include box-sizing(border-box); outline:0;}
 
@@ -35,6 +35,7 @@ body {
     position: relative;
     margin:0;
     padding:0;
+    width: 100%;
 }
 
 h1 {
@@ -127,7 +128,7 @@ strong {font-weight:600;}
     display: inline-block;
     height:60px;
     line-height: 60px;
-    text-decoration:none; 
+    text-decoration:none;
     font-family: 'Montserrat', $font-fallback;
     font-weight: 400;
     font-size: 1.1em;
@@ -161,7 +162,7 @@ p, h1, h2, h3, a, li, input, textarea, label, strong, span, .row {
 input[type="text"], input[type="file"], input[type="number"], input[type="password"], textarea {-webkit-appearance: none;}
 
 
-/*/  HEADER  /////////////////////////////////////////////////////////////////*/ 
+/*/  HEADER  /////////////////////////////////////////////////////////////////*/
 
 .header {
     height: 90%;
@@ -263,7 +264,6 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
         margin-left:15px;
 
         &.active {
-
             .overlay {
                 opacity: 1;
                 width: 100%;
@@ -272,35 +272,43 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
 
             .button {
                 background:$yellow;
+            }
 
-                .foldout {
+            .foldout {
+                font-size:.9em;
+                max-width: 370px;
+                width:100%;
+
+                position: fixed;
+                overflow: auto;
+                bottom: 30px;
+
+                .foldout-inner {
                     padding:40px;
-                    font-size:.9em;
-                    width:370%;
+                }
 
-                    .product {
-                        margin-bottom:40px;
+                .product {
+                    margin-bottom:40px;
 
-                        .type {
-                            .title {margin-bottom:10px;line-height: 1.5em;}
+                    .type {
+                        .title {margin-bottom:10px;line-height: 1.5em;}
 
-                            p.subtitle {font-size: .75em;display: block;float: left;}
+                        p.subtitle {font-size: .75em;display: block;float: left;}
 
-                            input {display: inline-block;border:1px solid rgba(0,0,0,.2);padding:5px;}
-                            input:focus {border:1px solid $yellow;background:$yellow;}
-                         }
-                    }
+                        input {display: inline-block;border:1px solid rgba(0,0,0,.2);padding:5px;}
+                        input:focus {border:1px solid $yellow;background:$yellow;}
+                     }
+                }
 
-                    .totals {
-                        font-size:1.15em;
-                        margin-bottom:40px;
-                    }
+                .totals {
+                    font-size:1.15em;
+                    margin-bottom:40px;
+                }
 
-                    a.checkout {
-                        padding:20px;
-                        font-size:1em;
-                        line-height:1.8em;
-                    }
+                a.checkout {
+                    padding:20px;
+                    font-size:1em;
+                    line-height:1.8em;
                 }
             }
         }
@@ -356,135 +364,139 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
                 font-size:.5em;
             }
 
-            .foldout {
-                cursor: default;
-                position: absolute;
-                right:0;
-                top:100px;
-                background:#fff;
+            &:hover {
+                background:$yellow;
+            }
+        }
+
+        .foldout {
+            cursor: default;
+            position: absolute;
+            right:0;
+            top:100px;
+            text-align: left;
+            line-height: initial;
+            padding:0;
+            font-size:0;
+            width:0;
+            @include transition(all .3s ease);
+            z-index:6;
+
+            .foldout-inner {
                 @include box-shadow(0 0 10px 0 rgba(0,0,0,.2));
-                text-align: left;
-                line-height: initial;
-                padding:0;
-                font-size:0;
-                width:0;
+                background:#fff;
+            }
+
+            .product {
+                position: relative;
+                margin-bottom:0;
                 @include transition(all .3s ease);
-                
-                .product {
-                    position: relative;
-                    margin-bottom:0;
-                    @include transition(all .3s ease);
 
-                    &:hover {
-                        a.delete-item {opacity:1;}
-                    }
-
-                    a.delete-item {
-                        opacity: 0;
-                        position: absolute;
-                        right:-28px;
-                        top:2px;
-                        text-decoration: none;
-                        color:$base;
-                        width:20px;
-                        height:20px;
-                        font-size:.5em;
-                        text-align: center;
-                        border:1px solid $base;
-                        @include border-radius(50%);
-
-                        span.icon {line-height: 18px;height: 20px;display: block;}
-
-                        &:hover {
-                            color:#fff;
-                            border-color:#e31239;
-                            background:#e31239;
-                        }
-                    }
-
-                    .type {
-                        overflow: hidden;
-
-                        .title {
-                            line-height: 0em;
-                            text-transform: uppercase;
-                            letter-spacing: 0.2em;
-                            margin-bottom:0;
-                            @include transition(all .3s ease);
-
-                            .total {
-                                float: right;
-                                font-weight: 700;
-                            }
-                        }
-                        p.subtitle {
-                            text-transform: uppercase;
-                            font-weight: 300;
-                            letter-spacing: 0.2em;
-                            display: inline;
-                            font-size: 0;
-                            float: none;
-                            @include transition(all .3s ease);
-                        }
-                        input {
-                            display: none;
-                            float: right;
-                            width: 70px;
-                            font-size:.75em;
-                            font-weight: 300;
-                            @include transition(all .3s ease);
-
-                            &:focus {
-                                border-color:1px solid $yellow;
-                            }
-                        }
-                    }
+                &:hover {
+                    a.delete-item {opacity:1;}
                 }
 
-                .totals {
-                    text-align: left;
-                    font-size:0;
-                    line-height: 1.45em;
-                    font-weight: 700;
-                    letter-spacing: .2em;
-                    margin-bottom:0;
-                    text-transform: uppercase;
-                    @include transition(all .3s ease);
-
-                    span {
-                        float: right;
-                        font-size:1.35em;
-                    }
-                }
-
-                a.checkout {
-                    line-height:0em;
-                    padding:0;
-                    font-size:0;
-                    text-align: center;
-                    text-transform: uppercase;
-                    display: block;
+                a.delete-item {
+                    opacity: 0;
+                    position: absolute;
+                    right:-28px;
+                    top:2px;
                     text-decoration: none;
-                    background:$yellow;
                     color:$base;
-                    letter-spacing: .2em;
+                    width:20px;
+                    height:20px;
+                    font-size:.5em;
+                    text-align: center;
+                    border:1px solid $base;
+                    @include border-radius(50%);
+
+                    span.icon {line-height: 18px;height: 20px;display: block;}
 
                     &:hover {
-                        background:$base;
                         color:#fff;
+                        border-color:#e31239;
+                        background:#e31239;
+                    }
+                }
+
+                .type {
+                    overflow: hidden;
+
+                    .title {
+                        line-height: 0em;
+                        text-transform: uppercase;
+                        letter-spacing: 0.2em;
+                        margin-bottom:0;
+                        @include transition(all .3s ease);
+
+                        .total {
+                            float: right;
+                            font-weight: 700;
+                        }
+                    }
+                    p.subtitle {
+                        text-transform: uppercase;
+                        font-weight: 300;
+                        letter-spacing: 0.2em;
+                        display: inline;
+                        font-size: 0;
+                        float: none;
+                        @include transition(all .3s ease);
+                    }
+                    input {
+                        display: none;
+                        float: right;
+                        width: 70px;
+                        font-size:.75em;
+                        font-weight: 300;
+                        @include transition(all .3s ease);
+
+                        &:focus {
+                            border-color:1px solid $yellow;
+                        }
                     }
                 }
             }
 
-            &:hover {
+            .totals {
+                text-align: left;
+                font-size:0;
+                line-height: 1.45em;
+                font-weight: 700;
+                letter-spacing: .2em;
+                margin-bottom:0;
+                text-transform: uppercase;
+                @include transition(all .3s ease);
+
+                span {
+                    float: right;
+                    font-size:1.35em;
+                }
+            }
+
+            a.checkout {
+                line-height:0em;
+                padding:0;
+                font-size:0;
+                text-align: center;
+                text-transform: uppercase;
+                display: block;
+                text-decoration: none;
                 background:$yellow;
+                color:$base;
+                letter-spacing: .2em;
+
+                &:hover {
+                    background:$base;
+                    color:#fff;
+                }
             }
         }
     }
 }
 
 
-/*/  MOBILE NAV BUTTON  /////////////////////////////////////////////////////////////////*/ 
+/*/  MOBILE NAV BUTTON  /////////////////////////////////////////////////////////////////*/
 
 .mobile-nav-btn {
     cursor: pointer;
@@ -559,7 +571,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
 
 
 
-/*/  CONTENT  /////////////////////////////////////////////////////////////////*/ 
+/*/  CONTENT  /////////////////////////////////////////////////////////////////*/
 
 
 .wrapper {
@@ -694,7 +706,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
                     font-size:3em;
                     cursor: pointer;
 
-                    
+
                 }
             }
         }
@@ -721,7 +733,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
             .image {
                 a {
                     width: 80%;
-                }   
+                }
             }
 
             .info {
@@ -948,7 +960,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
 
             .photos {
                 left:0;
-                
+
             }
 
             .image {
@@ -1221,7 +1233,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
 
                 .field {
                     margin-bottom:20px;
-                    
+
                     input[type="text"], input[type="file"], input[type="number"], select {
                         background: #fff none repeat scroll 0 0;
                         border:1px solid rgba(0, 0, 0, 0.2);
@@ -1349,7 +1361,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
 }
 
 
-/*/  FOOTER  /////////////////////////////////////////////////////////////////*/ 
+/*/  FOOTER  /////////////////////////////////////////////////////////////////*/
 
 .footer {
     position: relative;
@@ -1368,7 +1380,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
         margin:0 auto 50px;
         background:#fff;
         display: inline-block;
-        
+
         @include transform(translateX(-50%) skewY(0deg));
         left:50%;
         @include transition(all .3s ease);
@@ -1414,7 +1426,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
 }
 
 
-/*/  BOTTOM BG  /////////////////////////////////////////////////////////////////*/ 
+/*/  BOTTOM BG  /////////////////////////////////////////////////////////////////*/
 
 .bottom-bg {
     height: 600px;
@@ -1428,7 +1440,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
 .content .bottom-bg .divider.top {bottom:auto;}
 .content .bottom-bg .divider.top img {margin-top:-2px;}
 
-/*/  FORM STYLING  /////////////////////////////////////////////////////////////////*/ 
+/*/  FORM STYLING  /////////////////////////////////////////////////////////////////*/
 
 form {
     padding:0;
@@ -1466,7 +1478,7 @@ form {
             display: inline-block;
             height:110px;
             line-height: 110px;
-            text-decoration:none; 
+            text-decoration:none;
             font-family: 'Oswald', sans-serif;
             font-weight: 400;
             font-size: 2em;
@@ -1557,7 +1569,7 @@ form {
 }
 
 
-/*/  MEDIA SCREENS  /////////////////////////////////////////////////////////////////*/ 
+/*/  MEDIA SCREENS  /////////////////////////////////////////////////////////////////*/
 
 @media screen and (max-width:1400px) {
     body {font-size:17px;}
@@ -1590,14 +1602,14 @@ form {
     .header-scroll .cart .button span.icon-cart {font-size:2.3em;}
     .header-scroll .cart .button span.cart-amount {font-size:.7em;}
 
-    .header-scroll .cart.active .button .foldout .product {font-size:1.3em;}
+    .header-scroll .cart.active .foldout .product {font-size:1.3em;}
     .checkout-page .content .checkout .summary {font-size:1.2em;}
     .checkout-page .content .checkout form .field {font-size:1.4em;}
 
     .content .product.active .image {margin-top:100px;}
     .content .product a.nav {top:calc(50% + 50px);}
 
-    .header-scroll .cart .button .foldout .product a.delete-item {opacity: 1;}
+    .header-scroll .cart .foldout .product a.delete-item {opacity: 1;}
 
 
     .checkout-page .content .checkout form .field.radiocheck label input[type="radio"] {top:-1px;}
@@ -1609,7 +1621,7 @@ form {
     .content .product .image {width: 60%;}
     .content .product .info {width: 40%}
     .content .product.yellow .info {padding-left:50px;}
-    
+
     .checkout-page .content .checkout .data {width: 60%}
     .checkout-page .content .checkout .summary {margin-left:3%;width: 37%;padding:15px;}
     .content .product a.nav {width:75px;height:75px;line-height:75px;}
@@ -1651,12 +1663,12 @@ form {
     .header-scroll .cart .button span.icon-cart {width: 70px;height: 70px;line-height: 73px; font-size: 2.8em;padding-right:5px;}
     .header-scroll .cart .button span.cart-amount {right:10px;top:10px;}
     .mobile-nav-open .header-scroll .cart {opacity: 0;}
-    .header-scroll .cart .button .foldout {top:70px;right:-100%;}
-    .header-scroll .cart.active .button .foldout {padding:20px 40px 20px 20px;width:420%;}
-    .header-scroll .cart.active .button .foldout .product {margin-bottom:20px;}
-    .header-scroll .cart.active .button .foldout .totals {margin-bottom:25px;}
-
-
+    // .header-scroll .cart .foldout {top:70px;right:-100%;}
+    // .header-scroll .cart.active .foldout {width:420%;}
+    .header-scroll .cart .foldout {top:70px;}
+    .header-scroll .cart.active .foldout-inner {padding:20px 40px 20px 20px;}
+    .header-scroll .cart.active .foldout .product {margin-bottom:20px;}
+    .header-scroll .cart.active .foldout .totals {margin-bottom:25px;}
 
     .header .mobile-nav-btn, .header-scroll .mobile-nav-btn {display:inline-block;z-index:13;}
     .mobile-nav-open .header, .mobile-nav-open .header-scroll {
@@ -1730,16 +1742,16 @@ form {
 
 
 @media screen and (max-width:767px) and (orientation:landscape) {
-    .header-scroll .cart.active .button .foldout {width:710%;}
-    .header-scroll .cart.active .button .foldout .product .type .title {margin-bottom:3px;}
-    .header-scroll .cart .button .foldout .product .type p.subtitle {margin-bottom:0;}
-    .header-scroll .cart.active .button .foldout .product {margin-bottom:15px;}
-    .header-scroll .cart.active .button .foldout .totals {margin-bottom:15px;margin-top:20px;}
+    .header-scroll .cart.active .foldout {width:710%;}
+    .header-scroll .cart.active .foldout .product .type .title {margin-bottom:3px;}
+    .header-scroll .cart .foldout .product .type p.subtitle {margin-bottom:0;}
+    .header-scroll .cart.active .foldout .product {margin-bottom:15px;}
+    .header-scroll .cart.active .foldout .totals {margin-bottom:15px;margin-top:20px;}
 
-    .header-scroll .cart .button .foldout .product .type {position: relative;}
-    .header-scroll .cart .button .foldout .product .type .title {line-height: 29px;}
-    .header-scroll .cart .button .foldout .product .type p.subtitle {position: absolute;top:5px;right:150px;}
-    .header-scroll .cart .button .foldout .product .type input {position: absolute;top:0;right:70px;}
+    .header-scroll .cart .foldout .product .type {position: relative;}
+    .header-scroll .cart .foldout .product .type .title {line-height: 29px;}
+    .header-scroll .cart .foldout .product .type p.subtitle {position: absolute;top:5px;right:150px;}
+    .header-scroll .cart .foldout .product .type input {position: absolute;top:0;right:70px;}
 
     .content .product .image {width:50%;margin:80px 0;}
     .content .product .info {margin:0;padding: 0 20px 20px 0;text-align: left;width: 50%;}
