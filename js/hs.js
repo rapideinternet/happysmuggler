@@ -4,10 +4,15 @@ $(function () {
   var $cart = $('.cart');
   var prevScrollTop = 0;
 
+  // Placeholder
+  $('input, textarea').placeholder();
+
+  // Disable page scrolling
   function disableScrolling () {
     $body.css('overflow', 'hidden');
   }
 
+  // Enable page scrolling
   function enableScrolling () {
     $body.css('overflow', 'visible');
     $window.scrollTop(prevScrollTop);
