@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Happy Smuggler</title>
 	<meta name="keywords" content="Happy Smuggler">
 	<meta name="description" content="Happy Smuggler">
@@ -14,15 +14,18 @@
 	<meta content="telephone=no" name="format-detection">
 </head>
 
-<body>	
+<body>
 	<div class="header-scroll">
 		<a class="logo" href="#"></a>
-		<div class="cart activ">
+		<div class="cart">
 			<div class="overlay"></div>
 			<div class="button" href="#">
 				<span class="icon icon-cart"></span>
 				<span class="cart-amount">4</span>
-				<div class="foldout">
+			</div>
+			<div class="foldout">
+				<div class="foldout-inner">
+
 					<div class="product">
 						<div class="type">
 							<div class="title">Festival boxer<div class="total">&euro; 19,00</div></div>
@@ -46,14 +49,15 @@
 					</div>
 					<div class="totals">Total<span>&euro; 106.50</span></div>
 					<a class="checkout" href="checkout.html">To checkout</a>
+
 				</div>
 			</div>
 		</div>
 		<ul class="nav">
 			<li><a href="index.html">Home</a></li>
-			<li><a href="index.html">Shop</a></li>
-			<li><a href="index.html">The movement</a></li>
-			<li><a href="index.html">Contact</a></li>
+			<li><a href="index.html#shop">Shop</a></li>
+			<li><a href="index.html#movement">The Movement</a></li>
+			<li><a href="index.html#contact">Contact</a></li>
 		</ul>
 		<button type="button" role="button" aria-label="Toggle Navigation" class="mobile-nav-btn">
 			<span class="lines"></span>
@@ -143,11 +147,16 @@
 					<a class="checkout" href="thanks.html">Place order</a>
 				</div>
 			</div>
-			
+
 		</div>
 		<div class="bottom-bg">
 			<div class="divider top"><img src="img/bg-white-left-bottom.svg"></div>
 		</div>
 	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/jquery.scrollTo.min.js"></script>
+	<script src="js/jquery.placeholder.min.js"></script>
+	<script src="js/hs.js"></script>
 </body>
 </html>

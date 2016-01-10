@@ -14,7 +14,7 @@
 	<meta content="telephone=no" name="format-detection">
 </head>
 
-<body>
+<body id="top">
 	<div class="header">
 		<div class="overlay">
 			<a class="logo" href="#" data-scrollto="0"><h1>Happy Smuggler</h1></a>
@@ -110,16 +110,16 @@
 			</div>
 		</div>
 		<ul class="nav">
-			<li><a href="#" data-scrollto="0">Home</a></li>
-			<li><a href="#" data-scrollto=".content" class="active">Shop</a></li>
-			<li><a href="#" data-scrollto=".instagram">The Movement</a></li>
-			<li><a href="#" data-scrollto=".footer">Contact</a></li>
+			<li><a href="#" data-scrollto="0" class="active">Home</a></li>
+			<li><a href="#" data-scrollto="#shop">Shop</a></li>
+			<li><a href="#" data-scrollto="#movement">The Movement</a></li>
+			<li><a href="#" data-scrollto="#contact">Contact</a></li>
 		</ul>
 		<button type="button" role="button" aria-label="Toggle Navigation" class="mobile-nav-btn">
 			<span class="lines"></span>
 		</button>
 	</div>
-	<div class="content">
+	<div id="shop" class="content">
 		<div class="product">
 			<div class="divider top"><img src="img/bg-white-left-top.svg"></div>
 			<a class="nav prev" href="#"><span class="icon icon-arrow-long-left"></span></a>
@@ -201,7 +201,7 @@
 			</div>
 			<div class="divider bottom"><img src="img/bg-white-left-bottom.svg"></div>
 		</div>
-		<div class="instagram">
+		<div id="movement" class="instagram">
 			<div class="divider top"><img src="img/bg-white-left-bottom.svg"></div>
 			<a class="title" href="https://www.instagram.com/happy_smugglers/"><span>Keep</span>Smugglin'</a>
 			<div class="image" style="background-image:url(img/instagram-01.jpg);"></div>
@@ -214,7 +214,7 @@
 			<div class="image" style="background-image:url(img/instagram-03.jpg);"></div>
 			<div class="divider bottom"><img src="img/bg-white-left-top.svg"></div>
 		</div>
-		<div class="footer">
+		<div id="contact" class="footer">
 			<div class="title"><span>Keep</span> in touch</div>
 			<div class="contactform">
 				<div class="wrapper">

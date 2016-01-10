@@ -46,6 +46,18 @@ $(function () {
     $window.scrollTo(scrollTo, 500);
   });
 
+  $('.home .header-scroll a').on('click', function (event) {
+    event.preventDefault();
+    var $this = $(this);
+    $this.closest('.nav').find('a').removeClass('active');
+    $this.addClass('active');
+
+    if ($body.hasClass('mobile-nav-open')) {
+      enableScrolling();
+      $body.removeClass('mobile-nav-open');
+    }
+  });
+
   /*
   * Mobile nav
   */
@@ -58,14 +70,6 @@ $(function () {
     } else {
       disableScrolling();
       $body.addClass('mobile-nav-open');
-    }
-  });
-
-  $('.header-scroll a').on('click', function (event) {
-    event.preventDefault();
-    if ($body.hasClass('mobile-nav-open')) {
-      enableScrolling();
-      $body.removeClass('mobile-nav-open');
     }
   });
 
