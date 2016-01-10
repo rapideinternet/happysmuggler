@@ -1,18 +1,15 @@
 $(function () {
   var $window = $(window);
+  var $body = $('body');
   var $cart = $('.cart');
   var prevScrollTop = 0;
 
   function disableScrolling () {
-    $('body').css({
-      overflow: 'hidden'
-    });
+    $body.css('overflow', 'hidden');
   }
 
   function enableScrolling () {
-    $('body').css({
-      overflow: 'visible'
-    });
+    $body.css('overflow', 'visible');
     $window.scrollTop(prevScrollTop);
   }
 
@@ -23,9 +20,8 @@ $(function () {
   var $headerScroll = $('.header-scroll');
 
   $window.on('scroll', function (event) {
-    // Prevent header from hiding when cart is active
+    var scrollTop = $window.scrollTop();
     if (!$cart.hasClass('active')) {
-      var scrollTop = $window.scrollTop();
       if (scrollTop > prevScrollTop) {
         $headerScroll.removeClass('active'); // Down
       } else {
@@ -43,6 +39,29 @@ $(function () {
     event.preventDefault();
     var scrollTo = $(this).data('scrollto') || 0;
     $window.scrollTo(scrollTo, 500);
+  });
+
+  /*
+  * Mobile nav
+  */
+
+  $('.mobile-nav-btn').on('click', function (event) {
+    event.preventDefault();
+    if ($body.hasClass('mobile-nav-open')) {
+      enableScrolling();
+      $body.removeClass('mobile-nav-open');
+    } else {
+      disableScrolling();
+      $body.addClass('mobile-nav-open');
+    }
+  });
+
+  $('.header-scroll a').on('click', function (event) {
+    event.preventDefault();
+    if ($body.hasClass('mobile-nav-open')) {
+      enableScrolling();
+      $body.removeClass('mobile-nav-open');
+    }
   });
 
   /*
