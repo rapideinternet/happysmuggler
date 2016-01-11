@@ -12,11 +12,11 @@
 
 @font-face {
     font-family: 'icomoon';
-    src:    url('../fonts/icomoon.eot?wer68l');
-    src:    url('../fonts/icomoon.eot?wer68l#iefix') format('embedded-opentype'),
-            url('../fonts/icomoon.ttf?wer68l') format('truetype'),
-            url('../fonts/icomoon.woff?wer68l') format('woff'),
-            url('../fonts/icomoon.svg?wer68l#icomoon') format('svg');
+    src:    url('../fonts/icomoon.eot?1eiuuo');
+    src:    url('../fonts/icomoon.eot?1eiuuo#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?1eiuuo') format('truetype'),
+        url('../fonts/icomoon.woff?1eiuuo') format('woff'),
+        url('../fonts/icomoon.svg?1eiuuo#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -36,6 +36,15 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-instagram:before {
+    content: "\e91d";
+}
+.icon-vimeo:before {
+    content: "\e91e";
+}
+.icon-youtube:before {
+    content: "\e91f";
+}
 .icon-cart:before {
     content: "\e91c";
 }
@@ -123,6 +132,8 @@
 .icon-video:before {
     content: "\e91b";
 }
+
+
 
 
 

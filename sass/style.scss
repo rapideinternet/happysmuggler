@@ -164,6 +164,10 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
 
 /*/  HEADER  /////////////////////////////////////////////////////////////////*/
 
+video {display: block;}
+
+.video-js {background-size: cover !important;position: fixed !important;}
+
 .header {
     height: 90%;
     position: relative;
@@ -183,13 +187,14 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
         .logo {
             text-indent: -9999px;
             width: 206px;
-            height: 265px;
+            height: 267px;
             position: absolute;
-            top:-3px;
+            top:0;
             left:50%;
             @include transform(translateX(-50%));
-            background:url(../img/logo-happy-smuggler.png) no-repeat;
+            background:url(../img/logo-happysmugglers.svg) no-repeat;
             background-size:100%;
+            z-index: 2;
         }
     }
 }
@@ -215,13 +220,14 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
     a.logo {
         text-indent: -9999px;
         width: 308px;
-        height: 75px;
+        height: 43px;
         position: absolute;
         top:50%;
-        left:0;
+        left:20px;
         @include transform(translateY(-50%));
-        background:url(../img/logo-happy-smuggler-lang.png) no-repeat;
+        background:url(../img/logo-happy-smugglers-lang.svg) no-repeat;
         background-size:100%;
+        outline:none;
     }
 
     ul.nav {
@@ -233,6 +239,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
             float: left;
 
             a {
+                outline:none;
                 color:$base;
                 display: block;
                 line-height: 100px;
@@ -268,6 +275,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
                 opacity: 1;
                 width: 100%;
                 height: 100%;
+                @include transition(opacity .3s ease, height 0s ease 0s, width 0s ease 0s);
             }
 
             .button {
@@ -277,7 +285,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
             .foldout {
                 font-size:.9em;
                 max-width: 370px;
-                width:100%;
+                width:370px;
 
                 position: fixed;
                 overflow: auto;
@@ -298,6 +306,13 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
                         input {display: inline-block;border:1px solid rgba(0,0,0,.2);padding:5px;}
                         input:focus {border:1px solid $yellow;background:$yellow;}
                      }
+
+                     a.delete-item {
+                        height: 20px;
+                        border:1px solid $base;
+
+                        span.icon {height: 20px;line-height: 18px;}
+                    }
                 }
 
                 .totals {
@@ -320,10 +335,10 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
             top:0;
             width: 0;
             height: 0;
-            background:rgba(0,0,0,.3);
+            background:rgba(0,0,0,.5);
             opacity: 0;
             z-index:3;
-            @include transition(opacity .3s ease);
+            @include transition(opacity .3s ease, height .3s ease .3s, width .3s ease .3s);
         }
 
         .button {
@@ -404,13 +419,13 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
                     text-decoration: none;
                     color:$base;
                     width:20px;
-                    height:20px;
+                    height:0;
                     font-size:.5em;
                     text-align: center;
-                    border:1px solid $base;
+                    border:none;
                     @include border-radius(50%);
 
-                    span.icon {line-height: 18px;height: 20px;display: block;}
+                    span.icon {line-height: 0;height: 0;display: block;}
 
                     &:hover {
                         color:#fff;
@@ -545,10 +560,10 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
         @include opacity(1);
 
         .lines {
-            background:$yellow;
+            background:$base;
 
-            &:before {top: .5rem;background:$yellow;}
-            &:after {top: -.5rem;background:$yellow;}
+            &:before {top: .5rem;background:$base;}
+            &:after {top: -.5rem;background:$base;}
         }
     }
 
@@ -667,6 +682,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
             border-bottom:1px solid rgba(0,0,0,.2);
 
             a.photo {
+                outline:none;
                 border-bottom:1px solid rgba(0,0,0,.2);
                 height: 100%;
                 width: 200px;
@@ -685,6 +701,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
             }
 
             .more-info {
+                outline:none;
                 position: absolute;
                 right:0;
                 top:0;
@@ -788,6 +805,29 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
 
             .details {
                 margin-bottom:40px;
+                overflow: hidden;
+
+                span.types {
+                    cursor: pointer;
+                    display: block;
+                    float: left;
+                    border:1px solid rgba(0,0,0,.1);
+                    @include border-radius(.5em);
+                    padding:15px;
+                    margin-right:10px;
+                    color:rgba(0,0,0,.2);
+                    @include transition(all .3s ease);
+
+                    &:hover {
+                        border:1px solid rgba(0,0,0,.2);
+                        color:rgba(0,0,0,.4);
+                    }
+
+                    &.active {
+                        border:1px solid $yellow;
+                        color:$base;
+                    }
+                }
 
                 span.type {
                     font-weight: 700;
@@ -997,6 +1037,74 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
         }
     }
 
+    .media {
+        background: #fff;
+        padding:100px 0 0 0;
+        position: relative;
+        z-index:3;
+
+        .cols {
+            overflow: hidden;
+        }
+
+        a.col {
+            outline:none;
+            padding:100px 40px;
+            display: block;
+            float: left;
+            text-decoration: none;
+            color:lighten($base, 65%);
+            text-transform: uppercase;
+            text-align: center;
+            @include transition(all 2s ease);
+
+            &.size1of3 {width:33.33%;}
+
+            .logo {
+                background-repeat:no-repeat;
+                background-size:100%;
+                width:60%;
+                margin:0 auto;
+                height: 120px;
+
+                .hover {
+                    background-repeat:no-repeat;
+                    background-size:100%;
+                    width: 100%;
+                    height: 150px;
+                    opacity: 0;
+                    @include transition(all 2s ease);
+                }
+
+                &.vice {
+                    background-image:url(../img/vice.svg);
+                    .hover {background-image:url(../img/vice-hover.svg);}
+                }
+
+                &.metro {
+                    background-image:url(../img/metro.jpg);
+                    .hover {background-image:url(../img/metro-hover.jpg);}
+                }
+
+                &.fhm {
+                    background-image:url(../img/fhm.svg);
+                    .hover {background-image:url(../img/fhm-hover.svg);}
+                }
+            }
+
+            p {
+                font-weight: 300;
+                letter-spacing: .05em;
+            }
+
+            &:hover {
+                color:$base;
+
+                .logo .hover {opacity: 1;}
+            }
+        }
+    }
+
     .instagram {
         position: relative;
         overflow: hidden;
@@ -1026,6 +1134,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
         }
 
         a.title {
+            outline:none;
             display: inline-block;
             background:rgba(0,0,0,.2);
             position: absolute;
@@ -1365,6 +1474,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
 
 .footer {
     position: relative;
+    background:#fff;
     padding-top:80px;
 
     .title {
@@ -1429,12 +1539,81 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
 /*/  BOTTOM BG  /////////////////////////////////////////////////////////////////*/
 
 .bottom-bg {
-    height: 600px;
+    height: 700px;
     position: relative;
     width: 100%;
     background: url(../img/happy-smugglers-bg.jpg) no-repeat;
     background-size:cover;
     background-position: center center;
+
+    .overlay {
+        background:rgba(0,0,0,.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+        text-align: center;
+
+        .logo-happysmugglers-light {
+            background:url(../img/logo-happy-smugglers-lang-light.svg) no-repeat;
+            background-size:100%;
+            width:290px;
+            margin:170px auto 0;
+            height: 50px;
+        }
+
+        p {
+            font-weight: 400;
+            color:#fff;
+            margin:0 auto 40px;
+            text-align: center;
+            letter-spacing: .1em;
+            font-size: 1.2em;
+        }
+
+        ul {
+            margin-bottom:30px;
+
+            li {
+                line-height: 2.25em;
+                text-align: center;
+                font-weight: 300;
+                color:#fff;
+                font-size:.9em;
+                letter-spacing: .075em;
+            }
+        }
+
+        .socials {
+            text-align: center;
+
+            a.social {
+                display: inline-block;
+                width:40px;
+                height: 40px;
+                text-decoration: none;
+                color:#fff;
+                text-align: center;
+                @include border-radius(50%);
+                margin-left:10px;
+
+                &:first-child {margin-left:0;}
+
+                span.icon {
+                    line-height: 40px;
+                    text-align: center;
+                }
+
+                &.facebook {background:#4970b2;&:hover {background:darken(#4970b2, 15%);}}
+                &.twitter {background:#6dceef;&:hover {background:darken(#6dceef, 15%);}}
+                &.insta {background:#a77b5e;&:hover {background:darken(#a77b5e, 15%);}}
+                &.youtube {background:#e64a41;&:hover {background:darken(#e64a41, 15%);}}
+                &.vimeo {background:#17aee1;&:hover {background:darken(#17aee1, 15%);}}
+                &.googleplus {background:#eb5e53;&:hover {background:darken(#eb5e53, 15%);}}
+            }
+        }
+    }
 }
 
 .content .bottom-bg .divider.top {bottom:auto;}
@@ -1634,6 +1813,7 @@ form {
 
 
 @media screen and (max-width:767px) {
+    .content .product .info .details span.types {float: right;margin-left:10px;margin-right:0;}
     .header .overlay .logo {width:100px;height:130px;}
     .content .product .image {width: 100%;margin:20px 0;}
     .content .product .info {width: 100%;padding:0 20px;margin-bottom:80px;text-align: right;}
@@ -1647,7 +1827,14 @@ form {
     .content .instagram a.title, .footer .title {font-size: 2.3em;padding:15px 30px;border-width: 2px;}
     .footer .contactform {padding:0 0 50px;}
 
-    .bottom-bg {height: 300px;}
+    .bottom-bg {height: 500px;}
+
+    .content .media a.col {padding:50px 40px;}
+    .content .media a.col.size1of3 {width: 100%;float: none;}
+    .content .media a.col .logo {height: 90px;}
+    .content .media a.col .logo .hover {height: 90px;}
+    .content .media a.col p {font-size:1.3em;}
+    .bottom-bg .overlay .logo-happysmugglers-light {margin-top:100px;}
 
     .content .divider.top {bottom:99.5%;}
     .content .divider.bottom {top:99.5%;}
@@ -1655,7 +1842,7 @@ form {
     .content .instagram {padding-top:0;}
     form .field button {height: 80px;line-height: 80px;}
 
-    .header-scroll a.logo {width:180px;height: 42px;}
+    .header-scroll a.logo {width:180px;height: 25px;}
     .header-scroll {height: 70px;}
 
     .header-scroll .cart {width: 70px;height: 70px;right:70px;border-left:none;border-right:1px solid #e8e8e8;position: absolute;margin:0;top:0;}
@@ -1666,7 +1853,15 @@ form {
     // .header-scroll .cart .foldout {top:70px;right:-100%;}
     // .header-scroll .cart.active .foldout {width:420%;}
     .header-scroll .cart .foldout {top:70px;}
-    .header-scroll .cart.active .foldout-inner {padding:20px 40px 20px 20px;}
+    .header-scroll .cart.active .foldout {
+        width:100%;
+        max-width: initial;
+        height:-moz-calc(100% - 70px);
+        height:-webkit-calc(100% - 70px);
+        height:-o-calc(100% - 70px);
+        height:calc(100% - 70px);
+    }
+    .header-scroll .cart.active .foldout .foldout-inner {padding:20px 40px 20px 20px;}
     .header-scroll .cart.active .foldout .product {margin-bottom:20px;}
     .header-scroll .cart.active .foldout .totals {margin-bottom:25px;}
 
@@ -1738,11 +1933,14 @@ form {
     .content .product .photos .more-info {height: 70px;width: 80px;}
     .content .product .photos .more-info span.icon {line-height: 70px;font-size:1.8em;}
 
+
+
 }
 
 
 @media screen and (max-width:767px) and (orientation:landscape) {
-    .header-scroll .cart.active .foldout {width:710%;}
+    .content .product .info .details span.types {float: left;margin-left:0;margin-right:10px;}
+    
     .header-scroll .cart.active .foldout .product .type .title {margin-bottom:3px;}
     .header-scroll .cart .foldout .product .type p.subtitle {margin-bottom:0;}
     .header-scroll .cart.active .foldout .product {margin-bottom:15px;}
@@ -1763,6 +1961,12 @@ form {
     .content .instagram a.title, .footer .title {font-size:3.6em;}
     .footer .contactform {padding:0 50px 50px;}
 
+    .content .media a.col .logo {height: 130px;width:40%;}
+    .content .media a.col .logo .hover {height: 130px;width: 40%;}
+
+    .header-scroll ul.nav {padding-top:20px;}
+    .header-scroll ul.nav li a.active {@include transform(skewY(-2deg));}
+    .header-scroll ul.nav li a:hover {@include transform(skewY(-2deg));}
 
 
 }

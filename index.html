@@ -4,20 +4,39 @@
 <head>
 	<meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Happy Smuggler</title>
-	<meta name="keywords" content="Happy Smuggler">
-	<meta name="description" content="Happy Smuggler">
+	<title>Happy Smugglers</title>
+	<meta name="keywords" content="Happy Smugglers">
+	<meta name="description" content="Happy Smugglers">
 	<meta name="robots" content="all">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 	<link href="css/style.css" type="text/css" rel="stylesheet">
 	<meta content="telephone=no" name="format-detection">
+
+	<link href="http://vjs.zencdn.net/5.4.6/video-js.css" rel="stylesheet">
+
+  	<!-- If you'd like to support IE8 -->
+  	<script src="http://vjs.zencdn.net/ie8/1.1.1/videojs-ie8.min.js"></script>
+
+  	<!--[if lt IE 9]>
+	<script>
+	document.createElement('video');
+	</script>
+	<![endif]-->
 </head>
 
 <body id="top">
 	<div class="header">
 		<div class="overlay">
 			<a class="logo" href="#" data-scrollto="0"><h1>Happy Smuggler</h1></a>
+			<video id="my-video" class="video-js" controls preload="auto" width="100%" height="100%" poster="img/happy-smugglers-bg.jpg" data-setup="{}">
+			    <source src="https://10-lvl3-pdl.vimeocdn.com/01/1447/5/132238033/389454660.mp4?expires=1452519374&token=05d27677d98fff6e53f02" type='video/mp4'>
+			    <source src="MY_VIDEO.webm" type='video/webm'>
+			    <p class="vjs-no-js">
+			      To view this video please enable JavaScript, and consider upgrading to a web browser that
+			      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+			    </p>
+			</video>
 		</div>
 	</div>
 	<div class="header-scroll">
@@ -125,22 +144,29 @@
 			<a class="nav prev" href="#"><span class="icon icon-arrow-long-left"></span></a>
 			<a class="nav next" href="#"><span class="icon icon-arrow-long-right"></span></a>
 			<div class="photos">
-				<a class="photo" href="#" style="background-image:url(img/instagram-01.jpg);"></a>
-				<a class="photo active" href="#" style="background-image:url(img/instagram-01.jpg);"></a>
-				<a class="photo" href="#" style="background-image:url(img/instagram-01.jpg);"></a>
-				<a class="photo" href="#" style="background-image:url(img/instagram-01.jpg);"></a>
-				<a class="photo" href="#" style="background-image:url(img/instagram-01.jpg);"></a>
-				<a class="photo" href="#" style="background-image:url(img/instagram-01.jpg);"></a>
+				<a class="photo active" href="#" style="background-image:url(img/festival-boxer/happysmugglers-vakje.png);"></a>
+				<a class="photo" href="#" style="background-image:url(img/festival-boxer/happy-smugglers-boxer-black-2.jpg);"></a>
+				<a class="photo" href="#" style="background-image:url(img/festival-boxer/happy-smugglers-boxer-black-3.jpg);"></a>
+				<a class="photo" href="#" style="background-image:url(img/festival-boxer/happy-smugglers-boxer-black-1.jpg);"></a>
+				<a class="photo" href="#" style="background-image:url(img/festival-boxer/happy-smugglers-boxer-black-4.jpg);"></a>
+				<a class="photo" href="#" style="background-image:url(img/festival-boxer/happy-smugglers-boxer-black-5.jpg);"></a>
+				<a class="photo" href="#" style="background-image:url(img/festival-boxer/happy-smugglers-boxer-black-6.jpg);"></a>
 				<div class="more-info"><span class="icon icon-delete"></span></div>
 			</div>
 			<div class="image">
-				<a href="#"><img src="img/happysmuggler-vakje.png"></a>
+				<a href="#"><img src="img/festival-boxer/happysmugglers-vakje.png"></a>
 			</div><div class="info">
-				<h2><span>Happy</span>Smuggler</h2>
+				<h2><span>Happy</span>Smugglers</h2>
 				<p class="subtitle">Festival boxer</p>
 				<div class="details">
-					<span class="type">Single pack</span>
-					<span class="price">&euro; 19,00</span>
+					<span class="types active">
+						<span class="type">Single boxer</span>
+						<span class="price">&euro; 19,00</span>
+					</span>
+					<span class="types">
+						<span class="type">Double boxer</span>
+						<span class="price">&euro; 35,00</span>
+					</span>
 				</div>
 				<div class="field amount"><label>Amount:</label><input type="number" value="1"></div>
 				<a class="order" href="#">Order now<span class="icon icon-cart"></span></a>
@@ -159,18 +185,17 @@
 				<a class="photo" href="#" style="background-image:url(img/instagram-01.jpg);"></a>
 				<a class="photo" href="#" style="background-image:url(img/instagram-01.jpg);"></a>
 				<div class="more-info"><span class="icon icon-delete"></span></div>
-			</div>
-			<div class="info">
-				<h2><span>Happy</span>Smuggler</h2>
-				<p class="subtitle">Festival boxer</p>
+			</div><div class="info">
+				<h2><span>Happy</span>Smugglers</h2>
+				<p class="subtitle">Festival tanktop</p>
 				<div class="details">
-					<span class="type">Weekender double pack</span>
-					<span class="price">&euro; 35,00</span>
+					<span class="type">Single girl</span>
+					<span class="price">&euro; 17,50</span>
 				</div>
 				<div class="field amount"><label>Amount:</label><input type="number" value="1"></div>
 				<a class="order" href="#">Order now<span class="icon icon-cart"></span></a>
 			</div><div class="image">
-				<a href="#"><img src="img/happysmuggler.png"></a>
+				<a href="#"><img src="img/happysmugglers.png"></a>
 			</div>
 			<div class="divider bottom"><img src="img/bg-yellow-left-top.svg"></div>
 		</div>
@@ -188,22 +213,39 @@
 				<div class="more-info"><span class="icon icon-delete"></span></div>
 			</div>
 			<div class="image">
-				<a href="#"><img src="img/happysmuggler.png"></a>
+				<a href="#"><img src="img/happysmugglers.png"></a>
 			</div><div class="info">
-				<h2><span>Happy</span>Smuggler</h2>
-				<p class="subtitle">Festival tanktop</p>
+				<h2><span>Happy</span>Smugglers</h2>
+				<p class="subtitle">Festival couple</p>
 				<div class="details">
-					<span class="type">Single pack</span>
-					<span class="price">&euro; 17,50</span>
+					<span class="type">Single couple</span>
+					<span class="price">&euro; 32,50</span>
 				</div>
 				<div class="field amount"><label>Amount:</label><input type="number" value="1"></div>
 				<a class="order" href="#">Order now<span class="icon icon-cart"></span></a>
 			</div>
 			<div class="divider bottom"><img src="img/bg-white-left-bottom.svg"></div>
 		</div>
+		<div id="media" class="media">
+			<div class="cols">
+				<a href="https://thump.vice.com/en_us/article/happy-smugglers-underwear-is-not-meant-for-hiding-drugs" target="_blank" class="col size1of3">
+					<div class="logo vice"><div class="hover"></div></div>
+					<p>"Happy Smugglers Underwear is Definitely Not Meant for Hiding Drugs"</p>
+				</a>
+				<a href="http://www.metronieuws.nl/koffiepauze/2015/02/de-festivalaccessoire-van-dit-jaar-een-smokkelboxer" target="_blank" class="col size1of3">
+					<div class="logo metro"><div class="hover"></div></div>
+					<p>"The ultimate festival accessory of the year: The Smuggleboxer"</p>
+				</a>
+				<a href="http://www.fhm.nl/redactie/6132/de-happy-smuggler-is-alles-wat-je-nodig-hebt-voor-aanstaand-festivalseizoen.aspx" target="_blank" class="col size1of3">
+					<div class="logo fhm"><div class="hover"></div></div>
+					<p>"The Happy Smuggler is everything you need for upcoming festival season"</p>
+				</a>
+			</div>
+			<div class="divider bottom"><img src="img/bg-white-left-bottom.svg"></div>
+		</div>
 		<div id="movement" class="instagram">
 			<div class="divider top"><img src="img/bg-white-left-bottom.svg"></div>
-			<a class="title" href="https://www.instagram.com/happy_smugglers/"><span>Keep</span>Smugglin'</a>
+			<a class="title" target="_blank" href="https://www.instagram.com/explore/tags/keepsmugglin/">#<span>Keep</span>Smugglin'</a>
 			<div class="image" style="background-image:url(img/instagram-01.jpg);"></div>
 			<div class="image" style="background-image:url(img/instagram-02.jpg);"></div>
 			<div class="image" style="background-image:url(img/instagram-03.jpg);"></div>
@@ -237,7 +279,27 @@
 			<div class="divider bottom"><img src="img/bg-white-left-bottom.svg"></div>
 		</div>
 		<div class="bottom-bg">
-
+			<div class="overlay">
+				<div class="logo-happysmugglers-light"></div>
+				<p>&copy; Amsterdam Since 2015</p>
+				<ul>
+					<li>Herengracht 440</li>
+					<li>1017BZ Amsterdam</li>
+					<li>+31 (0) 20 76 700 35</li>
+					<li>&nbsp;</li>
+					<li>KVK: 63676834</li>
+					<li>IBAN: NL17INGB0006925417</li>
+					<li>BTW: NL855348732B01</li>
+				</ul>
+				<div class="socials">
+					<a href="https://www.facebook.com/happysmugglers" class="social facebook" target="_blank"><span class="icon icon-facebook"></span></a>
+					<a href="https://twitter.com/happysmuggler" class="social twitter" target="_blank"><span class="icon icon-twitter"></span></a>
+					<a href="https://www.instagram.com/happy_smugglers/" class="social insta" target="_blank"><span class="icon icon-instagram"></span></a>
+					<a href="https://www.youtube.com/channel/UCh2q09ojqLppowMcku98f7g" class="social youtube" target="_blank"><span class="icon icon-youtube"></span></a>
+					<a href="https://vimeo.com/blackbirdsamsterdam" class="social vimeo" target="_blank"><span class="icon icon-vimeo"></span></a>
+					<a href="https://plus.google.com/101731974155106989366/posts" class="social googleplus" target="_blank"><span class="icon icon-googleplus"></span></a>
+				</div>
+			</div>
 		</div>
 	</div>
 
