@@ -14,7 +14,7 @@ $yellow: rgba(220,232,107,1); /* dce86b */
 
 
 
-/*/  BASE  /////////////////////////////////////////////////////////////////*/ 
+/*/  BASE  /////////////////////////////////////////////////////////////////*/
 
 * { @include box-sizing(border-box); outline:0;}
 
@@ -35,6 +35,7 @@ body {
     position: relative;
     margin:0;
     padding:0;
+    width: 100%;
 }
 
 h1 {
@@ -127,7 +128,7 @@ strong {font-weight:600;}
     display: inline-block;
     height:60px;
     line-height: 60px;
-    text-decoration:none; 
+    text-decoration:none;
     font-family: 'Montserrat', $font-fallback;
     font-weight: 400;
     font-size: 1.1em;
@@ -161,7 +162,11 @@ p, h1, h2, h3, a, li, input, textarea, label, strong, span, .row {
 input[type="text"], input[type="file"], input[type="number"], input[type="password"], textarea {-webkit-appearance: none;}
 
 
-/*/  HEADER  /////////////////////////////////////////////////////////////////*/ 
+/*/  HEADER  /////////////////////////////////////////////////////////////////*/
+
+video {display: block;}
+
+.video-js {background-size: cover !important;position: fixed !important;}
 
 .header {
     height: 90%;
@@ -182,13 +187,14 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
         .logo {
             text-indent: -9999px;
             width: 206px;
-            height: 265px;
+            height: 267px;
             position: absolute;
-            top:-3px;
+            top:0;
             left:50%;
             @include transform(translateX(-50%));
-            background:url(../img/logo-happy-smuggler.png) no-repeat;
+            background:url(../img/logo-happysmugglers.svg) no-repeat;
             background-size:100%;
+            z-index: 2;
         }
     }
 }
@@ -214,13 +220,14 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
     a.logo {
         text-indent: -9999px;
         width: 308px;
-        height: 75px;
+        height: 43px;
         position: absolute;
         top:50%;
-        left:0;
+        left:20px;
         @include transform(translateY(-50%));
-        background:url(../img/logo-happy-smuggler-lang.png) no-repeat;
+        background:url(../img/logo-happy-smugglers-lang.svg) no-repeat;
         background-size:100%;
+        outline:none;
     }
 
     ul.nav {
@@ -232,6 +239,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
             float: left;
 
             a {
+                outline:none;
                 color:$base;
                 display: block;
                 line-height: 100px;
@@ -263,44 +271,59 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
         margin-left:15px;
 
         &.active {
-
             .overlay {
                 opacity: 1;
                 width: 100%;
                 height: 100%;
+                @include transition(opacity .3s ease, height 0s ease 0s, width 0s ease 0s);
             }
 
             .button {
                 background:$yellow;
+            }
 
-                .foldout {
+            .foldout {
+                font-size:.9em;
+                max-width: 370px;
+                width:370px;
+
+                position: fixed;
+                overflow: auto;
+                bottom: 30px;
+
+                .foldout-inner {
                     padding:40px;
-                    font-size:.9em;
-                    width:370%;
+                }
 
-                    .product {
-                        margin-bottom:40px;
+                .product {
+                    margin-bottom:40px;
 
-                        .type {
-                            .title {margin-bottom:10px;line-height: 1.5em;}
+                    .type {
+                        .title {margin-bottom:10px;line-height: 1.5em;}
 
-                            p.subtitle {font-size: .75em;display: block;float: left;}
+                        p.subtitle {font-size: .75em;display: block;float: left;}
 
-                            input {display: inline-block;border:1px solid rgba(0,0,0,.2);padding:5px;}
-                            input:focus {border:1px solid $yellow;background:$yellow;}
-                         }
+                        input {display: inline-block;border:1px solid rgba(0,0,0,.2);padding:5px;}
+                        input:focus {border:1px solid $yellow;background:$yellow;}
+                     }
+
+                     a.delete-item {
+                        height: 20px;
+                        border:1px solid $base;
+
+                        span.icon {height: 20px;line-height: 18px;}
                     }
+                }
 
-                    .totals {
-                        font-size:1.15em;
-                        margin-bottom:40px;
-                    }
+                .totals {
+                    font-size:1.15em;
+                    margin-bottom:40px;
+                }
 
-                    a.checkout {
-                        padding:20px;
-                        font-size:1em;
-                        line-height:1.8em;
-                    }
+                a.checkout {
+                    padding:20px;
+                    font-size:1em;
+                    line-height:1.8em;
                 }
             }
         }
@@ -312,10 +335,10 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
             top:0;
             width: 0;
             height: 0;
-            background:rgba(0,0,0,.3);
+            background:rgba(0,0,0,.5);
             opacity: 0;
             z-index:3;
-            @include transition(opacity .3s ease);
+            @include transition(opacity .3s ease, height .3s ease .3s, width .3s ease .3s);
         }
 
         .button {
@@ -356,135 +379,139 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
                 font-size:.5em;
             }
 
-            .foldout {
-                cursor: default;
-                position: absolute;
-                right:0;
-                top:100px;
-                background:#fff;
+            &:hover {
+                background:$yellow;
+            }
+        }
+
+        .foldout {
+            cursor: default;
+            position: absolute;
+            right:0;
+            top:100px;
+            text-align: left;
+            line-height: initial;
+            padding:0;
+            font-size:0;
+            width:0;
+            @include transition(all .3s ease);
+            z-index:6;
+
+            .foldout-inner {
                 @include box-shadow(0 0 10px 0 rgba(0,0,0,.2));
-                text-align: left;
-                line-height: initial;
-                padding:0;
-                font-size:0;
-                width:0;
+                background:#fff;
+            }
+
+            .product {
+                position: relative;
+                margin-bottom:0;
                 @include transition(all .3s ease);
-                
-                .product {
-                    position: relative;
-                    margin-bottom:0;
-                    @include transition(all .3s ease);
 
-                    &:hover {
-                        a.delete-item {opacity:1;}
-                    }
-
-                    a.delete-item {
-                        opacity: 0;
-                        position: absolute;
-                        right:-28px;
-                        top:2px;
-                        text-decoration: none;
-                        color:$base;
-                        width:20px;
-                        height:20px;
-                        font-size:.5em;
-                        text-align: center;
-                        border:1px solid $base;
-                        @include border-radius(50%);
-
-                        span.icon {line-height: 18px;height: 20px;display: block;}
-
-                        &:hover {
-                            color:#fff;
-                            border-color:#e31239;
-                            background:#e31239;
-                        }
-                    }
-
-                    .type {
-                        overflow: hidden;
-
-                        .title {
-                            line-height: 0em;
-                            text-transform: uppercase;
-                            letter-spacing: 0.2em;
-                            margin-bottom:0;
-                            @include transition(all .3s ease);
-
-                            .total {
-                                float: right;
-                                font-weight: 700;
-                            }
-                        }
-                        p.subtitle {
-                            text-transform: uppercase;
-                            font-weight: 300;
-                            letter-spacing: 0.2em;
-                            display: inline;
-                            font-size: 0;
-                            float: none;
-                            @include transition(all .3s ease);
-                        }
-                        input {
-                            display: none;
-                            float: right;
-                            width: 70px;
-                            font-size:.75em;
-                            font-weight: 300;
-                            @include transition(all .3s ease);
-
-                            &:focus {
-                                border-color:1px solid $yellow;
-                            }
-                        }
-                    }
+                &:hover {
+                    a.delete-item {opacity:1;}
                 }
 
-                .totals {
-                    text-align: left;
-                    font-size:0;
-                    line-height: 1.45em;
-                    font-weight: 700;
-                    letter-spacing: .2em;
-                    margin-bottom:0;
-                    text-transform: uppercase;
-                    @include transition(all .3s ease);
-
-                    span {
-                        float: right;
-                        font-size:1.35em;
-                    }
-                }
-
-                a.checkout {
-                    line-height:0em;
-                    padding:0;
-                    font-size:0;
-                    text-align: center;
-                    text-transform: uppercase;
-                    display: block;
+                a.delete-item {
+                    opacity: 0;
+                    position: absolute;
+                    right:-28px;
+                    top:2px;
                     text-decoration: none;
-                    background:$yellow;
                     color:$base;
-                    letter-spacing: .2em;
+                    width:20px;
+                    height:0;
+                    font-size:.5em;
+                    text-align: center;
+                    border:none;
+                    @include border-radius(50%);
+
+                    span.icon {line-height: 0;height: 0;display: block;}
 
                     &:hover {
-                        background:$base;
                         color:#fff;
+                        border-color:#e31239;
+                        background:#e31239;
+                    }
+                }
+
+                .type {
+                    overflow: hidden;
+
+                    .title {
+                        line-height: 0em;
+                        text-transform: uppercase;
+                        letter-spacing: 0.2em;
+                        margin-bottom:0;
+                        @include transition(all .3s ease);
+
+                        .total {
+                            float: right;
+                            font-weight: 700;
+                        }
+                    }
+                    p.subtitle {
+                        text-transform: uppercase;
+                        font-weight: 300;
+                        letter-spacing: 0.2em;
+                        display: inline;
+                        font-size: 0;
+                        float: none;
+                        @include transition(all .3s ease);
+                    }
+                    input {
+                        display: none;
+                        float: right;
+                        width: 70px;
+                        font-size:.75em;
+                        font-weight: 300;
+                        @include transition(all .3s ease);
+
+                        &:focus {
+                            border-color:1px solid $yellow;
+                        }
                     }
                 }
             }
 
-            &:hover {
+            .totals {
+                text-align: left;
+                font-size:0;
+                line-height: 1.45em;
+                font-weight: 700;
+                letter-spacing: .2em;
+                margin-bottom:0;
+                text-transform: uppercase;
+                @include transition(all .3s ease);
+
+                span {
+                    float: right;
+                    font-size:1.35em;
+                }
+            }
+
+            a.checkout {
+                line-height:0em;
+                padding:0;
+                font-size:0;
+                text-align: center;
+                text-transform: uppercase;
+                display: block;
+                text-decoration: none;
                 background:$yellow;
+                color:$base;
+                letter-spacing: .2em;
+
+                &:hover {
+                    background:$base;
+                    color:#fff;
+                }
             }
         }
     }
 }
 
 
-/*/  MOBILE NAV BUTTON  /////////////////////////////////////////////////////////////////*/ 
+/*/  MOBILE NAV BUTTON  /////////////////////////////////////////////////////////////////*/
 
 .mobile-nav-btn {
     cursor: pointer;
@@ -533,10 +560,10 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
         @include opacity(1);
 
         .lines {
-            background:$yellow;
+            background:$base;
 
-            &:before {top: .5rem;background:$yellow;}
-            &:after {top: -.5rem;background:$yellow;}
+            &:before {top: .5rem;background:$base;}
+            &:after {top: -.5rem;background:$base;}
         }
     }
 
@@ -559,7 +586,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
 
 
 
-/*/  CONTENT  /////////////////////////////////////////////////////////////////*/ 
+/*/  CONTENT  /////////////////////////////////////////////////////////////////*/
 
 
 .wrapper {
@@ -655,6 +682,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
             border-bottom:1px solid rgba(0,0,0,.2);
 
             a.photo {
+                outline:none;
                 border-bottom:1px solid rgba(0,0,0,.2);
                 height: 100%;
                 width: 200px;
@@ -673,6 +701,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
             }
 
             .more-info {
+                outline:none;
                 position: absolute;
                 right:0;
                 top:0;
@@ -694,7 +723,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
                     font-size:3em;
                     cursor: pointer;
 
-                    
+
                 }
             }
         }
@@ -721,7 +750,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
             .image {
                 a {
                     width: 80%;
-                }   
+                }
             }
 
             .info {
@@ -776,6 +805,29 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
 
             .details {
                 margin-bottom:40px;
+                overflow: hidden;
+
+                span.types {
+                    cursor: pointer;
+                    display: block;
+                    float: left;
+                    border:1px solid rgba(0,0,0,.1);
+                    @include border-radius(.5em);
+                    padding:15px;
+                    margin-right:10px;
+                    color:rgba(0,0,0,.2);
+                    @include transition(all .3s ease);
+
+                    &:hover {
+                        border:1px solid rgba(0,0,0,.2);
+                        color:rgba(0,0,0,.4);
+                    }
+
+                    &.active {
+                        border:1px solid $yellow;
+                        color:$base;
+                    }
+                }
 
                 span.type {
                     font-weight: 700;
@@ -948,7 +1000,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
 
             .photos {
                 left:0;
-                
+
             }
 
             .image {
@@ -985,6 +1037,74 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
         }
     }
 
+    .media {
+        background: #fff;
+        padding:100px 0 0 0;
+        position: relative;
+        z-index:3;
+
+        .cols {
+            overflow: hidden;
+        }
+
+        a.col {
+            outline:none;
+            padding:100px 40px;
+            display: block;
+            float: left;
+            text-decoration: none;
+            color:lighten($base, 65%);
+            text-transform: uppercase;
+            text-align: center;
+            @include transition(all 2s ease);
+
+            &.size1of3 {width:33.33%;}
+
+            .logo {
+                background-repeat:no-repeat;
+                background-size:100%;
+                width:60%;
+                margin:0 auto;
+                height: 120px;
+
+                .hover {
+                    background-repeat:no-repeat;
+                    background-size:100%;
+                    width: 100%;
+                    height: 150px;
+                    opacity: 0;
+                    @include transition(all 2s ease);
+                }
+
+                &.vice {
+                    background-image:url(../img/vice.svg);
+                    .hover {background-image:url(../img/vice-hover.svg);}
+                }
+
+                &.metro {
+                    background-image:url(../img/metro.jpg);
+                    .hover {background-image:url(../img/metro-hover.jpg);}
+                }
+
+                &.fhm {
+                    background-image:url(../img/fhm.svg);
+                    .hover {background-image:url(../img/fhm-hover.svg);}
+                }
+            }
+
+            p {
+                font-weight: 300;
+                letter-spacing: .05em;
+            }
+
+            &:hover {
+                color:$base;
+
+                .logo .hover {opacity: 1;}
+            }
+        }
+    }
+
     .instagram {
         position: relative;
         overflow: hidden;
@@ -1014,6 +1134,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
         }
 
         a.title {
+            outline:none;
             display: inline-block;
             background:rgba(0,0,0,.2);
             position: absolute;
@@ -1221,7 +1342,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
 
                 .field {
                     margin-bottom:20px;
-                    
+
                     input[type="text"], input[type="file"], input[type="number"], select {
                         background: #fff none repeat scroll 0 0;
                         border:1px solid rgba(0, 0, 0, 0.2);
@@ -1349,10 +1470,11 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
 }
 
 
-/*/  FOOTER  /////////////////////////////////////////////////////////////////*/ 
+/*/  FOOTER  /////////////////////////////////////////////////////////////////*/
 
 .footer {
     position: relative;
+    background:#fff;
     padding-top:80px;
 
     .title {
@@ -1368,7 +1490,7 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
         margin:0 auto 50px;
         background:#fff;
         display: inline-block;
-        
+
         @include transform(translateX(-50%) skewY(0deg));
         left:50%;
         @include transition(all .3s ease);
@@ -1414,21 +1536,90 @@ input[type="text"], input[type="file"], input[type="number"], input[type="passwo
 }
 
 
-/*/  BOTTOM BG  /////////////////////////////////////////////////////////////////*/ 
+/*/  BOTTOM BG  /////////////////////////////////////////////////////////////////*/
 
 .bottom-bg {
-    height: 600px;
+    height: 700px;
     position: relative;
     width: 100%;
     background: url(../img/happy-smugglers-bg.jpg) no-repeat;
     background-size:cover;
     background-position: center center;
+
+    .overlay {
+        background:rgba(0,0,0,.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+        text-align: center;
+
+        .logo-happysmugglers-light {
+            background:url(../img/logo-happy-smugglers-lang-light.svg) no-repeat;
+            background-size:100%;
+            width:290px;
+            margin:170px auto 0;
+            height: 50px;
+        }
+
+        p {
+            font-weight: 400;
+            color:#fff;
+            margin:0 auto 40px;
+            text-align: center;
+            letter-spacing: .1em;
+            font-size: 1.2em;
+        }
+
+        ul {
+            margin-bottom:30px;
+
+            li {
+                line-height: 2.25em;
+                text-align: center;
+                font-weight: 300;
+                color:#fff;
+                font-size:.9em;
+                letter-spacing: .075em;
+            }
+        }
+
+        .socials {
+            text-align: center;
+
+            a.social {
+                display: inline-block;
+                width:40px;
+                height: 40px;
+                text-decoration: none;
+                color:#fff;
+                text-align: center;
+                @include border-radius(50%);
+                margin-left:10px;
+
+                &:first-child {margin-left:0;}
+
+                span.icon {
+                    line-height: 40px;
+                    text-align: center;
+                }
+
+                &.facebook {background:#4970b2;&:hover {background:darken(#4970b2, 15%);}}
+                &.twitter {background:#6dceef;&:hover {background:darken(#6dceef, 15%);}}
+                &.insta {background:#a77b5e;&:hover {background:darken(#a77b5e, 15%);}}
+                &.youtube {background:#e64a41;&:hover {background:darken(#e64a41, 15%);}}
+                &.vimeo {background:#17aee1;&:hover {background:darken(#17aee1, 15%);}}
+                &.googleplus {background:#eb5e53;&:hover {background:darken(#eb5e53, 15%);}}
+            }
+        }
+    }
 }
 
 .content .bottom-bg .divider.top {bottom:auto;}
 .content .bottom-bg .divider.top img {margin-top:-2px;}
 
-/*/  FORM STYLING  /////////////////////////////////////////////////////////////////*/ 
+/*/  FORM STYLING  /////////////////////////////////////////////////////////////////*/
 
 form {
     padding:0;
@@ -1466,7 +1657,7 @@ form {
             display: inline-block;
             height:110px;
             line-height: 110px;
-            text-decoration:none; 
+            text-decoration:none;
             font-family: 'Oswald', sans-serif;
             font-weight: 400;
             font-size: 2em;
@@ -1557,7 +1748,7 @@ form {
 }
 
 
-/*/  MEDIA SCREENS  /////////////////////////////////////////////////////////////////*/ 
+/*/  MEDIA SCREENS  /////////////////////////////////////////////////////////////////*/
 
 @media screen and (max-width:1400px) {
     body {font-size:17px;}
@@ -1590,14 +1781,14 @@ form {
     .header-scroll .cart .button span.icon-cart {font-size:2.3em;}
     .header-scroll .cart .button span.cart-amount {font-size:.7em;}
 
-    .header-scroll .cart.active .button .foldout .product {font-size:1.3em;}
+    .header-scroll .cart.active .foldout .product {font-size:1.3em;}
     .checkout-page .content .checkout .summary {font-size:1.2em;}
     .checkout-page .content .checkout form .field {font-size:1.4em;}
 
     .content .product.active .image {margin-top:100px;}
     .content .product a.nav {top:calc(50% + 50px);}
 
-    .header-scroll .cart .button .foldout .product a.delete-item {opacity: 1;}
+    .header-scroll .cart .foldout .product a.delete-item {opacity: 1;}
 
 
     .checkout-page .content .checkout form .field.radiocheck label input[type="radio"] {top:-1px;}
@@ -1609,7 +1800,7 @@ form {
     .content .product .image {width: 60%;}
     .content .product .info {width: 40%}
     .content .product.yellow .info {padding-left:50px;}
-    
+
     .checkout-page .content .checkout .data {width: 60%}
     .checkout-page .content .checkout .summary {margin-left:3%;width: 37%;padding:15px;}
     .content .product a.nav {width:75px;height:75px;line-height:75px;}
@@ -1622,6 +1813,7 @@ form {
 
 
 @media screen and (max-width:767px) {
+    .content .product .info .details span.types {float: right;margin-left:10px;margin-right:0;}
     .header .overlay .logo {width:100px;height:130px;}
     .content .product .image {width: 100%;margin:20px 0;}
     .content .product .info {width: 100%;padding:0 20px;margin-bottom:80px;text-align: right;}
@@ -1635,7 +1827,14 @@ form {
     .content .instagram a.title, .footer .title {font-size: 2.3em;padding:15px 30px;border-width: 2px;}
     .footer .contactform {padding:0 0 50px;}
 
-    .bottom-bg {height: 300px;}
+    .bottom-bg {height: 500px;}
+
+    .content .media a.col {padding:50px 40px;}
+    .content .media a.col.size1of3 {width: 100%;float: none;}
+    .content .media a.col .logo {height: 90px;}
+    .content .media a.col .logo .hover {height: 90px;}
+    .content .media a.col p {font-size:1.3em;}
+    .bottom-bg .overlay .logo-happysmugglers-light {margin-top:100px;}
 
     .content .divider.top {bottom:99.5%;}
     .content .divider.bottom {top:99.5%;}
@@ -1643,7 +1842,7 @@ form {
     .content .instagram {padding-top:0;}
     form .field button {height: 80px;line-height: 80px;}
 
-    .header-scroll a.logo {width:180px;height: 42px;}
+    .header-scroll a.logo {width:180px;height: 25px;}
     .header-scroll {height: 70px;}
 
     .header-scroll .cart {width: 70px;height: 70px;right:70px;border-left:none;border-right:1px solid #e8e8e8;position: absolute;margin:0;top:0;}
@@ -1651,12 +1850,20 @@ form {
     .header-scroll .cart .button span.icon-cart {width: 70px;height: 70px;line-height: 73px; font-size: 2.8em;padding-right:5px;}
     .header-scroll .cart .button span.cart-amount {right:10px;top:10px;}
     .mobile-nav-open .header-scroll .cart {opacity: 0;}
-    .header-scroll .cart .button .foldout {top:70px;right:-100%;}
-    .header-scroll .cart.active .button .foldout {padding:20px 40px 20px 20px;width:420%;}
-    .header-scroll .cart.active .button .foldout .product {margin-bottom:20px;}
-    .header-scroll .cart.active .button .foldout .totals {margin-bottom:25px;}
-
-
+    // .header-scroll .cart .foldout {top:70px;right:-100%;}
+    // .header-scroll .cart.active .foldout {width:420%;}
+    .header-scroll .cart .foldout {top:70px;}
+    .header-scroll .cart.active .foldout {
+        width:100%;
+        max-width: initial;
+        height:-moz-calc(100% - 70px);
+        height:-webkit-calc(100% - 70px);
+        height:-o-calc(100% - 70px);
+        height:calc(100% - 70px);
+    }
+    .header-scroll .cart.active .foldout .foldout-inner {padding:20px 40px 20px 20px;}
+    .header-scroll .cart.active .foldout .product {margin-bottom:20px;}
+    .header-scroll .cart.active .foldout .totals {margin-bottom:25px;}
 
     .header .mobile-nav-btn, .header-scroll .mobile-nav-btn {display:inline-block;z-index:13;}
     .mobile-nav-open .header, .mobile-nav-open .header-scroll {
@@ -1726,20 +1933,23 @@ form {
     .content .product .photos .more-info {height: 70px;width: 80px;}
     .content .product .photos .more-info span.icon {line-height: 70px;font-size:1.8em;}
 
+
+
 }
 
 
 @media screen and (max-width:767px) and (orientation:landscape) {
-    .header-scroll .cart.active .button .foldout {width:710%;}
-    .header-scroll .cart.active .button .foldout .product .type .title {margin-bottom:3px;}
-    .header-scroll .cart .button .foldout .product .type p.subtitle {margin-bottom:0;}
-    .header-scroll .cart.active .button .foldout .product {margin-bottom:15px;}
-    .header-scroll .cart.active .button .foldout .totals {margin-bottom:15px;margin-top:20px;}
+    .content .product .info .details span.types {float: left;margin-left:0;margin-right:10px;}
+    
+    .header-scroll .cart.active .foldout .product .type .title {margin-bottom:3px;}
+    .header-scroll .cart .foldout .product .type p.subtitle {margin-bottom:0;}
+    .header-scroll .cart.active .foldout .product {margin-bottom:15px;}
+    .header-scroll .cart.active .foldout .totals {margin-bottom:15px;margin-top:20px;}
 
-    .header-scroll .cart .button .foldout .product .type {position: relative;}
-    .header-scroll .cart .button .foldout .product .type .title {line-height: 29px;}
-    .header-scroll .cart .button .foldout .product .type p.subtitle {position: absolute;top:5px;right:150px;}
-    .header-scroll .cart .button .foldout .product .type input {position: absolute;top:0;right:70px;}
+    .header-scroll .cart .foldout .product .type {position: relative;}
+    .header-scroll .cart .foldout .product .type .title {line-height: 29px;}
+    .header-scroll .cart .foldout .product .type p.subtitle {position: absolute;top:5px;right:150px;}
+    .header-scroll .cart .foldout .product .type input {position: absolute;top:0;right:70px;}
 
     .content .product .image {width:50%;margin:80px 0;}
     .content .product .info {margin:0;padding: 0 20px 20px 0;text-align: left;width: 50%;}
@@ -1751,6 +1961,12 @@ form {
     .content .instagram a.title, .footer .title {font-size:3.6em;}
     .footer .contactform {padding:0 50px 50px;}
 
+    .content .media a.col .logo {height: 130px;width:40%;}
+    .content .media a.col .logo .hover {height: 130px;width: 40%;}
+
+    .header-scroll ul.nav {padding-top:20px;}
+    .header-scroll ul.nav li a.active {@include transform(skewY(-2deg));}
+    .header-scroll ul.nav li a:hover {@include transform(skewY(-2deg));}
 
 
 }
