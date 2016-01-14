@@ -173,7 +173,7 @@ video {display: block;}
     position: relative;
     width: 100%;
     background: url(../img/happy-smugglers-bg.jpg) no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center center;
 
     .overlay {
@@ -195,6 +195,28 @@ video {display: block;}
             background:url(../img/logo-happysmugglers.svg) no-repeat;
             background-size:100%;
             z-index: 2;
+        }
+
+        .video-js {
+            position: relative !important;
+            width: 100% !important;
+            height: 100% !important;
+
+            .vjs-poster {
+                background-size: cover;
+                display: block;
+            }
+
+            .vjs-big-play-button {
+                display: block;
+            }
+
+            &.vjs-has-started {
+                .vjs-poster,
+                .vjs-big-play-button {
+                    display: none;
+                }
+            }
         }
     }
 }

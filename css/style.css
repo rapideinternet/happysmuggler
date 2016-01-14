@@ -449,14 +449,34 @@ video {
   background-size: 100%;
   z-index: 2;
 }
+/* line 200, ../sass/style.scss */
+.header .overlay .video-js {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+/* line 205, ../sass/style.scss */
+.header .overlay .video-js .vjs-poster {
+  background-size: cover;
+  display: block;
+}
+/* line 210, ../sass/style.scss */
+.header .overlay .video-js .vjs-big-play-button {
+  display: block;
+}
+/* line 215, ../sass/style.scss */
+.header .overlay .video-js.vjs-has-started .vjs-poster,
+.header .overlay .video-js.vjs-has-started .vjs-big-play-button {
+  display: none;
+}
 
-/* line 202, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .header-scroll.active {
   opacity: 1;
   top: 0;
 }
 
-/* line 207, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 .header-scroll {
   display: block;
   z-index: 100;
@@ -475,7 +495,7 @@ video {
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
-/* line 220, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 .header-scroll a.logo {
   text-indent: -9999px;
   width: 308px;
@@ -491,17 +511,17 @@ video {
   background-size: 100%;
   outline: none;
 }
-/* line 233, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 .header-scroll ul.nav {
   margin: 0;
   padding: 0;
   float: right;
 }
-/* line 238, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
 .header-scroll ul.nav li {
   float: left;
 }
-/* line 241, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 .header-scroll ul.nav li a {
   outline: none;
   color: #36373b;
@@ -517,7 +537,7 @@ video {
   -webkit-transform: skewY(0deg);
   transform: skewY(0deg);
 }
-/* line 253, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 .header-scroll ul.nav li a:hover {
   color: #dce86b;
   -moz-transform: skewY(-5deg);
@@ -525,7 +545,7 @@ video {
   -webkit-transform: skewY(-5deg);
   transform: skewY(-5deg);
 }
-/* line 258, ../sass/style.scss */
+/* line 280, ../sass/style.scss */
 .header-scroll ul.nav li a.active {
   color: #dce86b;
   -moz-transform: skewY(-5deg);
@@ -533,7 +553,7 @@ video {
   -webkit-transform: skewY(-5deg);
   transform: skewY(-5deg);
 }
-/* line 266, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 .header-scroll .cart {
   float: right;
   width: 100px;
@@ -541,7 +561,7 @@ video {
   border-left: 1px solid #e8e8e8;
   margin-left: 15px;
 }
-/* line 274, ../sass/style.scss */
+/* line 296, ../sass/style.scss */
 .header-scroll .cart.active .overlay {
   opacity: 1;
   width: 100%;
@@ -552,11 +572,11 @@ video {
   -webkit-transition-delay: 0s, 0s, 0s;
   transition: opacity 0.3s ease, height 0s ease 0s, width 0s ease 0s;
 }
-/* line 281, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 .header-scroll .cart.active .button {
   background: #dce86b;
 }
-/* line 285, ../sass/style.scss */
+/* line 307, ../sass/style.scss */
 .header-scroll .cart.active .foldout {
   font-size: .9em;
   max-width: 370px;
@@ -565,58 +585,58 @@ video {
   overflow: auto;
   bottom: 30px;
 }
-/* line 294, ../sass/style.scss */
+/* line 316, ../sass/style.scss */
 .header-scroll .cart.active .foldout .foldout-inner {
   padding: 40px;
 }
-/* line 298, ../sass/style.scss */
+/* line 320, ../sass/style.scss */
 .header-scroll .cart.active .foldout .product {
   margin-bottom: 40px;
 }
-/* line 302, ../sass/style.scss */
+/* line 324, ../sass/style.scss */
 .header-scroll .cart.active .foldout .product .type .title {
   margin-bottom: 10px;
   line-height: 1.5em;
 }
-/* line 304, ../sass/style.scss */
+/* line 326, ../sass/style.scss */
 .header-scroll .cart.active .foldout .product .type p.subtitle {
   font-size: .75em;
   display: block;
   float: left;
 }
-/* line 306, ../sass/style.scss */
+/* line 328, ../sass/style.scss */
 .header-scroll .cart.active .foldout .product .type input {
   display: inline-block;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 5px;
 }
-/* line 307, ../sass/style.scss */
+/* line 329, ../sass/style.scss */
 .header-scroll .cart.active .foldout .product .type input:focus {
   border: 1px solid #dce86b;
   background: #dce86b;
 }
-/* line 310, ../sass/style.scss */
+/* line 332, ../sass/style.scss */
 .header-scroll .cart.active .foldout .product a.delete-item {
   height: 20px;
   border: 1px solid #36373b;
 }
-/* line 314, ../sass/style.scss */
+/* line 336, ../sass/style.scss */
 .header-scroll .cart.active .foldout .product a.delete-item span.icon {
   height: 20px;
   line-height: 18px;
 }
-/* line 318, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 .header-scroll .cart.active .foldout .totals {
   font-size: 1.15em;
   margin-bottom: 40px;
 }
-/* line 323, ../sass/style.scss */
+/* line 345, ../sass/style.scss */
 .header-scroll .cart.active .foldout a.checkout {
   padding: 20px;
   font-size: 1em;
   line-height: 1.8em;
 }
-/* line 331, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 .header-scroll .cart .overlay {
   cursor: url("../img/cursor-close.svg") 19 19, auto;
   position: fixed;
@@ -633,7 +653,7 @@ video {
   -webkit-transition-delay: 0s, 0.3s, 0.3s;
   transition: opacity 0.3s ease, height 0.3s ease 0.3s, width 0.3s ease 0.3s;
 }
-/* line 344, ../sass/style.scss */
+/* line 366, ../sass/style.scss */
 .header-scroll .cart .button {
   background: #fff;
   position: relative;
@@ -651,7 +671,7 @@ video {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 358, ../sass/style.scss */
+/* line 380, ../sass/style.scss */
 .header-scroll .cart .button span.icon-cart {
   display: block;
   width: 100px;
@@ -660,7 +680,7 @@ video {
   text-align: center;
   font-size: 1.8em;
 }
-/* line 367, ../sass/style.scss */
+/* line 389, ../sass/style.scss */
 .header-scroll .cart .button span.cart-amount {
   -moz-border-radius: 555px;
   -webkit-border-radius: 555px;
@@ -677,11 +697,11 @@ video {
   color: #fff;
   font-size: .5em;
 }
-/* line 382, ../sass/style.scss */
+/* line 404, ../sass/style.scss */
 .header-scroll .cart .button:hover {
   background: #dce86b;
 }
-/* line 387, ../sass/style.scss */
+/* line 409, ../sass/style.scss */
 .header-scroll .cart .foldout {
   cursor: default;
   position: absolute;
@@ -698,14 +718,14 @@ video {
   transition: all 0.3s ease;
   z-index: 6;
 }
-/* line 400, ../sass/style.scss */
+/* line 422, ../sass/style.scss */
 .header-scroll .cart .foldout .foldout-inner {
   -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   background: #fff;
 }
-/* line 405, ../sass/style.scss */
+/* line 427, ../sass/style.scss */
 .header-scroll .cart .foldout .product {
   position: relative;
   margin-bottom: 0;
@@ -714,11 +734,11 @@ video {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 411, ../sass/style.scss */
+/* line 433, ../sass/style.scss */
 .header-scroll .cart .foldout .product:hover a.delete-item {
   opacity: 1;
 }
-/* line 414, ../sass/style.scss */
+/* line 436, ../sass/style.scss */
 .header-scroll .cart .foldout .product a.delete-item {
   opacity: 0;
   position: absolute;
@@ -735,23 +755,23 @@ video {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 428, ../sass/style.scss */
+/* line 450, ../sass/style.scss */
 .header-scroll .cart .foldout .product a.delete-item span.icon {
   line-height: 0;
   height: 0;
   display: block;
 }
-/* line 430, ../sass/style.scss */
+/* line 452, ../sass/style.scss */
 .header-scroll .cart .foldout .product a.delete-item:hover {
   color: #fff;
   border-color: #e31239;
   background: #e31239;
 }
-/* line 437, ../sass/style.scss */
+/* line 459, ../sass/style.scss */
 .header-scroll .cart .foldout .product .type {
   overflow: hidden;
 }
-/* line 440, ../sass/style.scss */
+/* line 462, ../sass/style.scss */
 .header-scroll .cart .foldout .product .type .title {
   line-height: 0em;
   text-transform: uppercase;
@@ -762,12 +782,12 @@ video {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 447, ../sass/style.scss */
+/* line 469, ../sass/style.scss */
 .header-scroll .cart .foldout .product .type .title .total {
   float: right;
   font-weight: 700;
 }
-/* line 452, ../sass/style.scss */
+/* line 474, ../sass/style.scss */
 .header-scroll .cart .foldout .product .type p.subtitle {
   text-transform: uppercase;
   font-weight: 300;
@@ -780,7 +800,7 @@ video {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 461, ../sass/style.scss */
+/* line 483, ../sass/style.scss */
 .header-scroll .cart .foldout .product .type input {
   display: none;
   float: right;
@@ -792,11 +812,11 @@ video {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 469, ../sass/style.scss */
+/* line 491, ../sass/style.scss */
 .header-scroll .cart .foldout .product .type input:focus {
   border-color: 1px solid #dce86b;
 }
-/* line 476, ../sass/style.scss */
+/* line 498, ../sass/style.scss */
 .header-scroll .cart .foldout .totals {
   text-align: left;
   font-size: 0;
@@ -810,12 +830,12 @@ video {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 486, ../sass/style.scss */
+/* line 508, ../sass/style.scss */
 .header-scroll .cart .foldout .totals span {
   float: right;
   font-size: 1.35em;
 }
-/* line 492, ../sass/style.scss */
+/* line 514, ../sass/style.scss */
 .header-scroll .cart .foldout a.checkout {
   line-height: 0em;
   padding: 0;
@@ -828,14 +848,14 @@ video {
   color: #36373b;
   letter-spacing: .2em;
 }
-/* line 504, ../sass/style.scss */
+/* line 526, ../sass/style.scss */
 .header-scroll .cart .foldout a.checkout:hover {
   background: #36373b;
   color: #fff;
 }
 
 /*/  MOBILE NAV BUTTON  /////////////////////////////////////////////////////////////////*/
-/* line 516, ../sass/style.scss */
+/* line 538, ../sass/style.scss */
 .mobile-nav-btn {
   cursor: pointer;
   padding: 0 1rem 7px;
@@ -853,11 +873,11 @@ video {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 530, ../sass/style.scss */
+/* line 552, ../sass/style.scss */
 .mobile-nav-btn span {
   display: block;
 }
-/* line 532, ../sass/style.scss */
+/* line 554, ../sass/style.scss */
 .mobile-nav-btn .lines {
   background: none repeat scroll 0 0 #36373b;
   display: inline-block;
@@ -873,7 +893,7 @@ video {
   -webkit-transition-delay: 0s;
   transition: all 0.3s ease 0s;
 }
-/* line 541, ../sass/style.scss */
+/* line 563, ../sass/style.scss */
 .mobile-nav-btn .lines:before, .mobile-nav-btn .lines:after {
   background: none repeat scroll 0 0 #36373b;
   content: "";
@@ -895,39 +915,39 @@ video {
   -webkit-border-radius: 0.28571rem;
   border-radius: 0.28571rem;
 }
-/* line 554, ../sass/style.scss */
+/* line 576, ../sass/style.scss */
 .mobile-nav-btn .lines:before {
   top: .5rem;
 }
-/* line 555, ../sass/style.scss */
+/* line 577, ../sass/style.scss */
 .mobile-nav-btn .lines:after {
   top: -.5rem;
 }
-/* line 558, ../sass/style.scss */
+/* line 580, ../sass/style.scss */
 .mobile-nav-btn:hover {
   background: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 562, ../sass/style.scss */
+/* line 584, ../sass/style.scss */
 .mobile-nav-btn:hover .lines {
   background: #36373b;
 }
-/* line 565, ../sass/style.scss */
+/* line 587, ../sass/style.scss */
 .mobile-nav-btn:hover .lines:before {
   top: .5rem;
   background: #36373b;
 }
-/* line 566, ../sass/style.scss */
+/* line 588, ../sass/style.scss */
 .mobile-nav-btn:hover .lines:after {
   top: -.5rem;
   background: #36373b;
 }
-/* line 571, ../sass/style.scss */
+/* line 593, ../sass/style.scss */
 body.mobile-nav-open .mobile-nav-btn .lines {
   background: none repeat scroll 0 0 transparent;
 }
-/* line 574, ../sass/style.scss */
+/* line 596, ../sass/style.scss */
 body.mobile-nav-open .mobile-nav-btn .lines:before, body.mobile-nav-open .mobile-nav-btn .lines:after {
   top: 0;
   -moz-transform-origin: 50% 50% 0 50%;
@@ -936,14 +956,14 @@ body.mobile-nav-open .mobile-nav-btn .lines:before, body.mobile-nav-open .mobile
   transform-origin: 50% 50% 0 50%;
   width: 1.9rem;
 }
-/* line 580, ../sass/style.scss */
+/* line 602, ../sass/style.scss */
 body.mobile-nav-open .mobile-nav-btn .lines:before {
   -moz-transform: rotate3d(0, 0, 1, 45deg);
   -ms-transform: rotate3d(0, 0, 1, 45deg);
   -webkit-transform: rotate3d(0, 0, 1, 45deg);
   transform: rotate3d(0, 0, 1, 45deg);
 }
-/* line 581, ../sass/style.scss */
+/* line 603, ../sass/style.scss */
 body.mobile-nav-open .mobile-nav-btn .lines:after {
   -moz-transform: rotate3d(0, 0, 1, -45deg);
   -ms-transform: rotate3d(0, 0, 1, -45deg);
@@ -952,20 +972,20 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 
 /*/  CONTENT  /////////////////////////////////////////////////////////////////*/
-/* line 592, ../sass/style.scss */
+/* line 614, ../sass/style.scss */
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 100px;
 }
 
-/* line 598, ../sass/style.scss */
+/* line 620, ../sass/style.scss */
 .content {
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 603, ../sass/style.scss */
+/* line 625, ../sass/style.scss */
 .content .divider {
   position: absolute;
   width: 100%;
@@ -973,29 +993,29 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin: 0;
   overflow: hidden;
 }
-/* line 610, ../sass/style.scss */
+/* line 632, ../sass/style.scss */
 .content .divider.top {
   bottom: 100%;
 }
-/* line 613, ../sass/style.scss */
+/* line 635, ../sass/style.scss */
 .content .divider.top img {
   margin-bottom: -2px;
 }
-/* line 616, ../sass/style.scss */
+/* line 638, ../sass/style.scss */
 .content .divider.bottom {
   top: 100%;
 }
-/* line 619, ../sass/style.scss */
+/* line 641, ../sass/style.scss */
 .content .divider.bottom img {
   margin-top: -2px;
 }
-/* line 622, ../sass/style.scss */
+/* line 644, ../sass/style.scss */
 .content .divider img {
   width: 104%;
   margin-left: -2%;
   display: block;
 }
-/* line 629, ../sass/style.scss */
+/* line 651, ../sass/style.scss */
 .content .product {
   top: 0;
   left: 0;
@@ -1011,7 +1031,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   height: 100%;
   width: 100%;
 }
-/* line 640, ../sass/style.scss */
+/* line 662, ../sass/style.scss */
 .content .product a.nav {
   width: 150px;
   height: 150px;
@@ -1032,21 +1052,21 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   text-decoration: none;
   font-size: 2.5em;
 }
-/* line 657, ../sass/style.scss */
+/* line 679, ../sass/style.scss */
 .content .product a.nav.prev {
   left: -100%;
 }
-/* line 661, ../sass/style.scss */
+/* line 683, ../sass/style.scss */
 .content .product a.nav.next {
   right: 0;
   width: 0;
   overflow: hidden;
 }
-/* line 667, ../sass/style.scss */
+/* line 689, ../sass/style.scss */
 .content .product a.nav:hover {
   background: #dce86b;
 }
-/* line 672, ../sass/style.scss */
+/* line 694, ../sass/style.scss */
 .content .product .photos {
   top: 0;
   left: -100%;
@@ -1062,7 +1082,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   transition: all 0.3s ease;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-/* line 684, ../sass/style.scss */
+/* line 706, ../sass/style.scss */
 .content .product .photos a.photo {
   outline: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -1075,15 +1095,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   opacity: .5;
   float: left;
 }
-/* line 696, ../sass/style.scss */
+/* line 718, ../sass/style.scss */
 .content .product .photos a.photo:hover {
   opacity: 1;
 }
-/* line 698, ../sass/style.scss */
+/* line 720, ../sass/style.scss */
 .content .product .photos a.photo.active {
   opacity: 1;
 }
-/* line 703, ../sass/style.scss */
+/* line 725, ../sass/style.scss */
 .content .product .photos .more-info {
   outline: none;
   position: absolute;
@@ -1095,18 +1115,18 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   z-index: 556;
   background: #dce86b;
 }
-/* line 715, ../sass/style.scss */
+/* line 737, ../sass/style.scss */
 .content .product .photos .more-info:hover span.icon {
   color: #36373b;
 }
-/* line 720, ../sass/style.scss */
+/* line 742, ../sass/style.scss */
 .content .product .photos .more-info span.icon {
   line-height: 150px;
   color: #fff;
   font-size: 3em;
   cursor: pointer;
 }
-/* line 731, ../sass/style.scss */
+/* line 753, ../sass/style.scss */
 .content .product a.close {
   position: absolute;
   right: 0;
@@ -1120,19 +1140,19 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   text-align: center;
   font-size: 1.3em;
 }
-/* line 744, ../sass/style.scss */
+/* line 766, ../sass/style.scss */
 .content .product a.close:hover {
   background: #dce86b;
 }
-/* line 751, ../sass/style.scss */
+/* line 773, ../sass/style.scss */
 .content .product:hover .image a {
   width: 80%;
 }
-/* line 756, ../sass/style.scss */
+/* line 778, ../sass/style.scss */
 .content .product:hover .info {
   top: -50px;
 }
-/* line 761, ../sass/style.scss */
+/* line 783, ../sass/style.scss */
 .content .product .image {
   margin: 100px 0;
   display: inline-block;
@@ -1150,7 +1170,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 772, ../sass/style.scss */
+/* line 794, ../sass/style.scss */
 .content .product .image a {
   display: inline-block;
   outline: none;
@@ -1160,7 +1180,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 4s ease-out;
   transition: all 4s ease-out;
 }
-/* line 778, ../sass/style.scss */
+/* line 800, ../sass/style.scss */
 .content .product .image a img {
   width: 100%;
   display: block;
@@ -1170,7 +1190,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   transition: all 4s ease;
   cursor: url("../img/cursor-add.svg") 19 19, auto;
 }
-/* line 782, ../sass/style.scss */
+/* line 804, ../sass/style.scss */
 .content .product .info {
   overflow: hidden;
   display: inline-block;
@@ -1186,11 +1206,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   padding-right: 100px;
   padding-bottom: 20px;
 }
-/* line 794, ../sass/style.scss */
+/* line 816, ../sass/style.scss */
 .content .product .info h2 {
   margin: 0;
 }
-/* line 798, ../sass/style.scss */
+/* line 820, ../sass/style.scss */
 .content .product .info p.subtitle {
   font-size: 1.88em;
   font-weight: 300;
@@ -1198,12 +1218,12 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin-bottom: 40px;
   white-space: nowrap;
 }
-/* line 806, ../sass/style.scss */
+/* line 828, ../sass/style.scss */
 .content .product .info .details {
   margin-bottom: 40px;
   overflow: hidden;
 }
-/* line 810, ../sass/style.scss */
+/* line 832, ../sass/style.scss */
 .content .product .info .details span.types {
   cursor: pointer;
   display: block;
@@ -1220,17 +1240,17 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 821, ../sass/style.scss */
+/* line 843, ../sass/style.scss */
 .content .product .info .details span.types:hover {
   border: 1px solid rgba(0, 0, 0, 0.2);
   color: rgba(0, 0, 0, 0.4);
 }
-/* line 826, ../sass/style.scss */
+/* line 848, ../sass/style.scss */
 .content .product .info .details span.types.active {
   border: 1px solid #dce86b;
   color: #36373b;
 }
-/* line 832, ../sass/style.scss */
+/* line 854, ../sass/style.scss */
 .content .product .info .details span.type {
   font-weight: 700;
   letter-spacing: .2em;
@@ -1238,30 +1258,39 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   display: block;
   margin-bottom: 5px;
 }
-/* line 840, ../sass/style.scss */
+/* line 862, ../sass/style.scss */
 .content .product .info .details span.price {
   font-weight: 700;
   letter-spacing: .2em;
   font-size: 1.88em;
   display: block;
 }
-/* line 848, ../sass/style.scss */
+/* line 870, ../sass/style.scss */
 .content .product .info .amount {
   margin: 0 0 40px;
   overflow: hidden;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 852, ../sass/style.scss */
 .content .product .info .amount .float {
   float: left;
 }
 /* line 854, ../sass/style.scss */
+=======
+/* line 874, ../sass/style.scss */
+>>>>>>> Video in header
 .content .product .info .amount label {
   display: block;
   line-height: 50px;
   margin: 2px 20px 2px 0;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 860, ../sass/style.scss */
 .content .product .info .amount input, .content .product .info .amount select {
+=======
+/* line 881, ../sass/style.scss */
+.content .product .info .amount input {
+>>>>>>> Video in header
   background: transparent;
   height: 50px;
   line-height: 50px;
@@ -1272,12 +1301,21 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin: 2px 30px 2px 0;
   font-size: 1em;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 871, ../sass/style.scss */
 .content .product .info .amount input:focus, .content .product .info .amount select:focus {
   border: 1px solid #dce86b;
   background: #dce86b;
 }
 /* line 878, ../sass/style.scss */
+=======
+/* line 892, ../sass/style.scss */
+.content .product .info .amount input:focus {
+  border: 1px solid #dce86b;
+  background: #dce86b;
+}
+/* line 899, ../sass/style.scss */
+>>>>>>> Video in header
 .content .product .info a.order {
   white-space: nowrap;
   text-decoration: none;
@@ -1296,14 +1334,22 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: skewY(0deg);
   transform: skewY(0deg);
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 893, ../sass/style.scss */
+=======
+/* line 914, ../sass/style.scss */
+>>>>>>> Video in header
 .content .product .info a.order span.icon-cart {
   font-size: 1.4em;
   top: 4px;
   position: relative;
   margin-left: 20px;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 900, ../sass/style.scss */
+=======
+/* line 921, ../sass/style.scss */
+>>>>>>> Video in header
 .content .product .info a.order:hover {
   color: #fff;
   background: #36373b;
@@ -1313,21 +1359,37 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: skewY(-3deg);
   transform: skewY(-3deg);
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 909, ../sass/style.scss */
+=======
+/* line 930, ../sass/style.scss */
+>>>>>>> Video in header
 .content .product.yellow {
   background: #dce86b;
   z-index: 1;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 913, ../sass/style.scss */
 .content .product.yellow .image {
   margin: 150px 0;
 }
 /* line 915, ../sass/style.scss */
+=======
+/* line 934, ../sass/style.scss */
+.content .product.yellow .image {
+  margin: 150px 0;
+}
+/* line 936, ../sass/style.scss */
+>>>>>>> Video in header
 .content .product.yellow .info {
   padding-left: 100px;
   padding-right: 0;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 919, ../sass/style.scss */
+=======
+/* line 940, ../sass/style.scss */
+>>>>>>> Video in header
 .content .product.yellow .info a.order {
   background: #fff;
   border-color: #fff;
@@ -1337,12 +1399,17 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   display: inline-block;
   color: #36373b;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 928, ../sass/style.scss */
+=======
+/* line 949, ../sass/style.scss */
+>>>>>>> Video in header
 .content .product.yellow .info a.order:hover {
   background: #36373b;
   border-color: #36373b;
   color: #dce86b;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 935, ../sass/style.scss */
 .content .product.yellow .info .field input, .content .product.yellow .info .field select {
   border: 1px solid #36373b;
@@ -1353,12 +1420,25 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   background: #fff;
 }
 /* line 945, ../sass/style.scss */
+=======
+/* line 956, ../sass/style.scss */
+.content .product.yellow .info .field input {
+  border: 1px solid #36373b;
+}
+/* line 959, ../sass/style.scss */
+.content .product.yellow .info .field input:focus {
+  border: 1px solid #fff;
+  background: #fff;
+}
+/* line 966, ../sass/style.scss */
+>>>>>>> Video in header
 .content .product.yellow .divider {
   position: relative;
   width: 100%;
   left: 0;
   margin: 0;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 951, ../sass/style.scss */
 .content .product.yellow .divider.top {
   bottom: auto;
@@ -1368,15 +1448,34 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   top: auto;
 }
 /* line 959, ../sass/style.scss */
+=======
+/* line 972, ../sass/style.scss */
+.content .product.yellow .divider.top {
+  bottom: auto;
+}
+/* line 976, ../sass/style.scss */
+.content .product.yellow .divider.bottom {
+  top: auto;
+}
+/* line 980, ../sass/style.scss */
+>>>>>>> Video in header
 .content .product.yellow .divider img {
   width: 100%;
   display: block;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 969, ../sass/style.scss */
 .content .product.tanktop .info p.subtitle {
   letter-spacing: .3em;
 }
 /* line 975, ../sass/style.scss */
+=======
+/* line 990, ../sass/style.scss */
+.content .product.tanktop .info p.subtitle {
+  letter-spacing: .3em;
+}
+/* line 996, ../sass/style.scss */
+>>>>>>> Video in header
 .content .product.active {
   margin-top: 0;
   z-index: 100000;
@@ -1385,34 +1484,62 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   position: fixed;
   cursor: url("../img/cursor-close.svg") 19 19, auto;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 984, ../sass/style.scss */
 .content .product.active.yellow .nav {
   background: #dce86b;
 }
 /* line 987, ../sass/style.scss */
+=======
+/* line 1005, ../sass/style.scss */
+.content .product.active.yellow .nav {
+  background: #dce86b;
+}
+/* line 1008, ../sass/style.scss */
+>>>>>>> Video in header
 .content .product.active.yellow .nav:hover {
   background: #36373b;
   color: #fff;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 993, ../sass/style.scss */
+=======
+/* line 1014, ../sass/style.scss */
+>>>>>>> Video in header
 .content .product.active.yellow .image {
   left: 15%;
   margin-top: 0;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 999, ../sass/style.scss */
 .content .product.active .nav.prev {
   left: 0;
 }
 /* line 1000, ../sass/style.scss */
+=======
+/* line 1020, ../sass/style.scss */
+.content .product.active .nav.prev {
+  left: 0;
+}
+/* line 1021, ../sass/style.scss */
+>>>>>>> Video in header
 .content .product.active .nav.next {
   right: 0;
   width: 150px;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1002, ../sass/style.scss */
 .content .product.active .photos {
   left: 0;
 }
 /* line 1007, ../sass/style.scss */
+=======
+/* line 1023, ../sass/style.scss */
+.content .product.active .photos {
+  left: 0;
+}
+/* line 1028, ../sass/style.scss */
+>>>>>>> Video in header
 .content .product.active .image {
   height: -moz-calc(100% - 150px);
   height: -webkit-calc(100% - 150px);
@@ -1429,7 +1556,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   transform: translateX(-50%);
   cursor: url("../img/cursor-close.svg") 19 19, auto;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1020, ../sass/style.scss */
+=======
+/* line 1041, ../sass/style.scss */
+>>>>>>> Video in header
 .content .product.active .image a {
   top: 50%;
   position: relative;
@@ -1440,28 +1571,48 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   width: 100%;
   cursor: url("../img/cursor-close.svg") 19 19, auto;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1027, ../sass/style.scss */
+=======
+/* line 1048, ../sass/style.scss */
+>>>>>>> Video in header
 .content .product.active .image a img {
   width: 100%;
   display: block;
   cursor: url("../img/cursor-close.svg") 19 19, auto;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1035, ../sass/style.scss */
 .content .product.active .info {
   opacity: 0;
 }
 /* line 1041, ../sass/style.scss */
+=======
+/* line 1056, ../sass/style.scss */
+.content .product.active .info {
+  opacity: 0;
+}
+/* line 1062, ../sass/style.scss */
+>>>>>>> Video in header
 .content .media {
   background: #fff;
   padding: 100px 0 0 0;
   position: relative;
   z-index: 3;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1047, ../sass/style.scss */
 .content .media .cols {
   overflow: hidden;
 }
 /* line 1051, ../sass/style.scss */
+=======
+/* line 1068, ../sass/style.scss */
+.content .media .cols {
+  overflow: hidden;
+}
+/* line 1072, ../sass/style.scss */
+>>>>>>> Video in header
 .content .media a.col {
   outline: none;
   padding: 100px 40px;
@@ -1476,11 +1627,19 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1062, ../sass/style.scss */
 .content .media a.col.size1of3 {
   width: 33.33%;
 }
 /* line 1064, ../sass/style.scss */
+=======
+/* line 1083, ../sass/style.scss */
+.content .media a.col.size1of3 {
+  width: 33.33%;
+}
+/* line 1085, ../sass/style.scss */
+>>>>>>> Video in header
 .content .media a.col .logo {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -1488,7 +1647,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin: 0 auto;
   height: 120px;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1071, ../sass/style.scss */
+=======
+/* line 1092, ../sass/style.scss */
+>>>>>>> Video in header
 .content .media a.col .logo .hover {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -1500,6 +1663,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1080, ../sass/style.scss */
 .content .media a.col .logo.vice {
   background-image: url(../img/vice.svg);
@@ -1525,10 +1689,38 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   background-image: url(../img/fhm-hover.svg);
 }
 /* line 1096, ../sass/style.scss */
+=======
+/* line 1101, ../sass/style.scss */
+.content .media a.col .logo.vice {
+  background-image: url(../img/vice.svg);
+}
+/* line 1103, ../sass/style.scss */
+.content .media a.col .logo.vice .hover {
+  background-image: url(../img/vice-hover.svg);
+}
+/* line 1106, ../sass/style.scss */
+.content .media a.col .logo.metro {
+  background-image: url(../img/metro.jpg);
+}
+/* line 1108, ../sass/style.scss */
+.content .media a.col .logo.metro .hover {
+  background-image: url(../img/metro-hover.jpg);
+}
+/* line 1111, ../sass/style.scss */
+.content .media a.col .logo.fhm {
+  background-image: url(../img/fhm.svg);
+}
+/* line 1113, ../sass/style.scss */
+.content .media a.col .logo.fhm .hover {
+  background-image: url(../img/fhm-hover.svg);
+}
+/* line 1117, ../sass/style.scss */
+>>>>>>> Video in header
 .content .media a.col p {
   font-weight: 300;
   letter-spacing: .05em;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1101, ../sass/style.scss */
 .content .media a.col:hover {
   color: #36373b;
@@ -1538,35 +1730,66 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   opacity: 1;
 }
 /* line 1109, ../sass/style.scss */
+=======
+/* line 1122, ../sass/style.scss */
+.content .media a.col:hover {
+  color: #36373b;
+}
+/* line 1125, ../sass/style.scss */
+.content .media a.col:hover .logo .hover {
+  opacity: 1;
+}
+/* line 1130, ../sass/style.scss */
+>>>>>>> Video in header
 .content .instagram {
   position: relative;
   overflow: hidden;
   padding-top: 1%;
   padding-bottom: 1%;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1115, ../sass/style.scss */
+=======
+/* line 1136, ../sass/style.scss */
+>>>>>>> Video in header
 .content .instagram .divider {
   position: absolute;
   width: 100%;
   left: 0;
   margin: 0;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1121, ../sass/style.scss */
 .content .instagram .divider.top {
   top: 8%;
 }
 /* line 1125, ../sass/style.scss */
+=======
+/* line 1142, ../sass/style.scss */
+.content .instagram .divider.top {
+  top: 8%;
+}
+/* line 1146, ../sass/style.scss */
+>>>>>>> Video in header
 .content .instagram .divider.bottom {
   bottom: 0;
   top: auto;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1130, ../sass/style.scss */
+=======
+/* line 1151, ../sass/style.scss */
+>>>>>>> Video in header
 .content .instagram .divider img {
   width: 104%;
   margin-left: -2%;
   display: block;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1137, ../sass/style.scss */
+=======
+/* line 1158, ../sass/style.scss */
+>>>>>>> Video in header
 .content .instagram a.title {
   outline: none;
   display: inline-block;
@@ -1593,7 +1816,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: translateX(-50%) translateY(-50%) skewY(0deg);
   transform: translateX(-50%) translateY(-50%) skewY(0deg);
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1157, ../sass/style.scss */
+=======
+/* line 1178, ../sass/style.scss */
+>>>>>>> Video in header
 .content .instagram a.title:hover {
   background: #dce86b;
   color: #36373b;
@@ -1602,12 +1829,20 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: translateX(-50%) translateY(-50%) skewY(-4deg);
   transform: translateX(-50%) translateY(-50%) skewY(-4deg);
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1163, ../sass/style.scss */
+=======
+/* line 1184, ../sass/style.scss */
+>>>>>>> Video in header
 .content .instagram a.title span {
   font-weight: 400;
   font-size: .95em;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1169, ../sass/style.scss */
+=======
+/* line 1190, ../sass/style.scss */
+>>>>>>> Video in header
 .content .instagram .image {
   float: left;
   width: 50%;
@@ -1619,7 +1854,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 
 /* */
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1184, ../sass/style.scss */
+=======
+/* line 1205, ../sass/style.scss */
+>>>>>>> Video in header
 .thanks-page .header-scroll {
   position: relative;
   top: 0;
@@ -1629,25 +1868,41 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   box-shadow: none;
   border-bottom: 1px solid #e8e8e8;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1192, ../sass/style.scss */
+=======
+/* line 1213, ../sass/style.scss */
+>>>>>>> Video in header
 .thanks-page h1 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1198, ../sass/style.scss */
+=======
+/* line 1219, ../sass/style.scss */
+>>>>>>> Video in header
 .thanks-page p {
   font-weight: 300;
   letter-spacing: .03em;
   font-size: 1.2em;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1205, ../sass/style.scss */
+=======
+/* line 1226, ../sass/style.scss */
+>>>>>>> Video in header
 .thanks-page .content .thanks {
   margin-top: 30px;
   margin-bottom: 150px;
 }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1214, ../sass/style.scss */
+=======
+/* line 1235, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .header-scroll {
   position: relative;
   top: 0;
@@ -1657,32 +1912,56 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   box-shadow: none;
   border-bottom: 1px solid #e8e8e8;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1222, ../sass/style.scss */
+=======
+/* line 1243, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page h1 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1228, ../sass/style.scss */
 .checkout-page h2 {
   font-size: 1.833em;
 }
 /* line 1233, ../sass/style.scss */
+=======
+/* line 1249, ../sass/style.scss */
+.checkout-page h2 {
+  font-size: 1.833em;
+}
+/* line 1254, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout {
   margin-top: 30px;
   margin-bottom: 150px;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1237, ../sass/style.scss */
 .checkout-page .content .checkout .wrapper {
   overflow: hidden;
 }
 /* line 1241, ../sass/style.scss */
+=======
+/* line 1258, ../sass/style.scss */
+.checkout-page .content .checkout .wrapper {
+  overflow: hidden;
+}
+/* line 1262, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout .data {
   width: 65%;
   float: left;
   display: block;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1247, ../sass/style.scss */
+=======
+/* line 1268, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout .summary {
   padding: 20px;
   background: #dce86b;
@@ -1692,7 +1971,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   display: block;
   font-size: .9em;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1256, ../sass/style.scss */
+=======
+/* line 1277, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout .summary .item {
   background: none;
   margin-bottom: 40px;
@@ -1701,7 +1984,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1262, ../sass/style.scss */
+=======
+/* line 1283, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout .summary .item .type .title {
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -1711,12 +1998,20 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1268, ../sass/style.scss */
+=======
+/* line 1289, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout .summary .item .type .title .total {
   float: right;
   font-weight: 700;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1273, ../sass/style.scss */
+=======
+/* line 1294, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout .summary .item .type p.subtitle {
   text-transform: uppercase;
   font-weight: 300;
@@ -1728,7 +2023,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1281, ../sass/style.scss */
+=======
+/* line 1302, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout .summary .item .type .sizes {
   display: block;
   float: right;
@@ -1743,7 +2042,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1295, ../sass/style.scss */
+=======
+/* line 1316, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout .summary .totals {
   font-size: 1.15em;
   margin-bottom: 10px;
@@ -1757,12 +2060,20 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1305, ../sass/style.scss */
+=======
+/* line 1326, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout .summary .totals span {
   float: right;
   font-size: 1.35em;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1311, ../sass/style.scss */
+=======
+/* line 1332, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout .summary .vat {
   font-weight: 200;
   margin-bottom: 40px;
@@ -1772,7 +2083,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   letter-spacing: .2em;
   text-transform: uppercase;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1321, ../sass/style.scss */
+=======
+/* line 1342, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout .summary a.checkout {
   margin-bottom: 0;
   padding: 20px;
@@ -1785,7 +2100,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   color: #fff;
   letter-spacing: .2em;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1333, ../sass/style.scss */
+=======
+/* line 1354, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout .summary a.checkout:hover {
   color: #dce86b;
   background: #4e5056;
@@ -1793,6 +2112,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1341, ../sass/style.scss */
 .checkout-page .content .checkout form {
   margin-bottom: 50px;
@@ -1802,6 +2122,17 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin-bottom: 20px;
 }
 /* line 1347, ../sass/style.scss */
+=======
+/* line 1362, ../sass/style.scss */
+.checkout-page .content .checkout form {
+  margin-bottom: 50px;
+}
+/* line 1365, ../sass/style.scss */
+.checkout-page .content .checkout form .field {
+  margin-bottom: 20px;
+}
+/* line 1368, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout form .field input[type="text"], .checkout-page .content .checkout form .field input[type="file"], .checkout-page .content .checkout form .field input[type="number"], .checkout-page .content .checkout form .field select {
   background: #fff none repeat scroll 0 0;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -1822,11 +2153,16 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   transition: all 0.3s ease 0s;
   width: 100%;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1363, ../sass/style.scss */
+=======
+/* line 1384, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout form .field input[type="text"].error, .checkout-page .content .checkout form .field input[type="file"].error, .checkout-page .content .checkout form .field input[type="number"].error, .checkout-page .content .checkout form .field select.error {
   background: #ffebf0;
   border: 1px solid #ffbccc;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1367, ../sass/style.scss */
 .checkout-page .content .checkout form .field input[type="text"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field select.error::-webkit-input-placeholder {
   color: #e00b3d;
@@ -1844,10 +2180,30 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   color: #e00b3d;
 }
 /* line 1373, ../sass/style.scss */
+=======
+/* line 1388, ../sass/style.scss */
+.checkout-page .content .checkout form .field input[type="text"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field select.error::-webkit-input-placeholder {
+  color: #e00b3d;
+}
+/* line 1389, ../sass/style.scss */
+.checkout-page .content .checkout form .field input[type="text"].error:-moz-placeholder, .checkout-page .content .checkout form .field input[type="file"].error:-moz-placeholder, .checkout-page .content .checkout form .field input[type="number"].error:-moz-placeholder, .checkout-page .content .checkout form .field select.error:-moz-placeholder {
+  color: #e00b3d;
+}
+/* line 1390, ../sass/style.scss */
+.checkout-page .content .checkout form .field input[type="text"].error::-moz-placeholder, .checkout-page .content .checkout form .field input[type="file"].error::-moz-placeholder, .checkout-page .content .checkout form .field input[type="number"].error::-moz-placeholder, .checkout-page .content .checkout form .field select.error::-moz-placeholder {
+  color: #e00b3d;
+}
+/* line 1391, ../sass/style.scss */
+.checkout-page .content .checkout form .field input[type="text"].error:-ms-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].error:-ms-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].error:-ms-input-placeholder, .checkout-page .content .checkout form .field select.error:-ms-input-placeholder {
+  color: #e00b3d;
+}
+/* line 1394, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout form .field input[type="text"].success, .checkout-page .content .checkout form .field input[type="file"].success, .checkout-page .content .checkout form .field input[type="number"].success, .checkout-page .content .checkout form .field select.success {
   background: #f3ffef;
   border: 1px solid #acf098;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1377, ../sass/style.scss */
 .checkout-page .content .checkout form .field input[type="text"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field select.success::-webkit-input-placeholder {
   color: #2cbd00;
@@ -1865,6 +2221,25 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   color: #2cbd00;
 }
 /* line 1384, ../sass/style.scss */
+=======
+/* line 1398, ../sass/style.scss */
+.checkout-page .content .checkout form .field input[type="text"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field select.success::-webkit-input-placeholder {
+  color: #2cbd00;
+}
+/* line 1399, ../sass/style.scss */
+.checkout-page .content .checkout form .field input[type="text"].success:-moz-placeholder, .checkout-page .content .checkout form .field input[type="file"].success:-moz-placeholder, .checkout-page .content .checkout form .field input[type="number"].success:-moz-placeholder, .checkout-page .content .checkout form .field select.success:-moz-placeholder {
+  color: #2cbd00;
+}
+/* line 1400, ../sass/style.scss */
+.checkout-page .content .checkout form .field input[type="text"].success::-moz-placeholder, .checkout-page .content .checkout form .field input[type="file"].success::-moz-placeholder, .checkout-page .content .checkout form .field input[type="number"].success::-moz-placeholder, .checkout-page .content .checkout form .field select.success::-moz-placeholder {
+  color: #2cbd00;
+}
+/* line 1401, ../sass/style.scss */
+.checkout-page .content .checkout form .field input[type="text"].success:-ms-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].success:-ms-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].success:-ms-input-placeholder, .checkout-page .content .checkout form .field select.success:-ms-input-placeholder {
+  color: #2cbd00;
+}
+/* line 1405, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout form .field textarea {
   border: 1px solid rgba(0, 0, 0, 0.2);
   letter-spacing: 0.03em;
@@ -1879,6 +2254,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition-delay: 0s;
   transition: all 0.3s ease 0s;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1394, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea::-webkit-input-placeholder {
   line-height: 1.6em;
@@ -1896,10 +2272,30 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   line-height: 1.6em;
 }
 /* line 1399, ../sass/style.scss */
+=======
+/* line 1415, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea::-webkit-input-placeholder {
+  line-height: 1.6em;
+}
+/* line 1416, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea:-moz-placeholder {
+  line-height: 1.6em;
+}
+/* line 1417, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea::-moz-placeholder {
+  line-height: 1.6em;
+}
+/* line 1418, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea:-ms-input-placeholder {
+  line-height: 1.6em;
+}
+/* line 1420, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout form .field textarea.error {
   background: #ffebf0;
   border: 1px solid #ffbccc;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1403, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea.error::-webkit-input-placeholder {
   color: #e00b3d;
@@ -1917,10 +2313,30 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   color: #e00b3d;
 }
 /* line 1409, ../sass/style.scss */
+=======
+/* line 1424, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea.error::-webkit-input-placeholder {
+  color: #e00b3d;
+}
+/* line 1425, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea.error:-moz-placeholder {
+  color: #e00b3d;
+}
+/* line 1426, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea.error::-moz-placeholder {
+  color: #e00b3d;
+}
+/* line 1427, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea.error:-ms-input-placeholder {
+  color: #e00b3d;
+}
+/* line 1430, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout form .field textarea.success {
   background: #f3ffef;
   border: 1px solid #acf098;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1413, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea.success::-webkit-input-placeholder {
   color: #2cbd00;
@@ -1942,11 +2358,35 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   overflow: hidden;
 }
 /* line 1423, ../sass/style.scss */
+=======
+/* line 1434, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea.success::-webkit-input-placeholder {
+  color: #2cbd00;
+}
+/* line 1435, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea.success:-moz-placeholder {
+  color: #2cbd00;
+}
+/* line 1436, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea.success::-moz-placeholder {
+  color: #2cbd00;
+}
+/* line 1437, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea.success:-ms-input-placeholder {
+  color: #2cbd00;
+}
+/* line 1441, ../sass/style.scss */
+.checkout-page .content .checkout form .field.doublefield {
+  overflow: hidden;
+}
+/* line 1444, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout form .field.doublefield input[type="text"], .checkout-page .content .checkout form .field.doublefield input[type="file"], .checkout-page .content .checkout form .field.doublefield input[type="number"], .checkout-page .content .checkout form .field.doublefield select {
   width: calc(50% - 10px);
   float: left;
   margin-left: 20px;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1428, ../sass/style.scss */
 .checkout-page .content .checkout form .field.doublefield input[type="text"]:first-child, .checkout-page .content .checkout form .field.doublefield input[type="file"]:first-child, .checkout-page .content .checkout form .field.doublefield input[type="number"]:first-child, .checkout-page .content .checkout form .field.doublefield select:first-child {
   margin-left: 0;
@@ -1960,17 +2400,40 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin-bottom: 20px;
 }
 /* line 1439, ../sass/style.scss */
+=======
+/* line 1449, ../sass/style.scss */
+.checkout-page .content .checkout form .field.doublefield input[type="text"]:first-child, .checkout-page .content .checkout form .field.doublefield input[type="file"]:first-child, .checkout-page .content .checkout form .field.doublefield input[type="number"]:first-child, .checkout-page .content .checkout form .field.doublefield select:first-child {
+  margin-left: 0;
+}
+/* line 1453, ../sass/style.scss */
+.checkout-page .content .checkout form .field.address {
+  margin-bottom: 0;
+}
+/* line 1456, ../sass/style.scss */
+.checkout-page .content .checkout form .field.address input[type="text"], .checkout-page .content .checkout form .field.address input[type="file"], .checkout-page .content .checkout form .field.address input[type="number"], .checkout-page .content .checkout form .field.address select {
+  margin-bottom: 20px;
+}
+/* line 1460, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout form .field.radiocheck label {
   display: block;
   cursor: pointer;
   margin-right: 30px;
   margin-bottom: 5px;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1445, ../sass/style.scss */
 .checkout-page .content .checkout form .field.radiocheck label select {
   margin-top: 15px;
 }
 /* line 1447, ../sass/style.scss */
+=======
+/* line 1466, ../sass/style.scss */
+.checkout-page .content .checkout form .field.radiocheck label select {
+  margin-top: 15px;
+}
+/* line 1468, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout form .field.radiocheck label span.image {
   margin-left: 10px;
   width: 40px;
@@ -1978,12 +2441,20 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   position: relative;
   display: inline-block;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1454, ../sass/style.scss */
+=======
+/* line 1475, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout form .field.radiocheck label span.image img {
   width: 100%;
   display: block;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1460, ../sass/style.scss */
+=======
+/* line 1481, ../sass/style.scss */
+>>>>>>> Video in header
 .checkout-page .content .checkout form .field.radiocheck label input[type="radio"] {
   margin: 1px 5px 1px 1px;
   top: -3px;
@@ -1991,13 +2462,21 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 
 /*/  FOOTER  /////////////////////////////////////////////////////////////////*/
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1476, ../sass/style.scss */
+=======
+/* line 1497, ../sass/style.scss */
+>>>>>>> Video in header
 .footer {
   position: relative;
   background: #fff;
   padding-top: 80px;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1481, ../sass/style.scss */
+=======
+/* line 1502, ../sass/style.scss */
+>>>>>>> Video in header
 .footer .title {
   position: relative;
   z-index: 15;
@@ -2021,7 +2500,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1499, ../sass/style.scss */
+=======
+/* line 1520, ../sass/style.scss */
+>>>>>>> Video in header
 .footer .title:hover {
   background: #dce86b;
   color: #36373b;
@@ -2030,16 +2513,28 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: translateX(-50%) skewY(-4deg);
   transform: translateX(-50%) skewY(-4deg);
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1505, ../sass/style.scss */
+=======
+/* line 1526, ../sass/style.scss */
+>>>>>>> Video in header
 .footer .title span {
   font-weight: 400;
   font-size: .95em;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1511, ../sass/style.scss */
 .footer .contactform {
   padding: 0 100px 100px 100px;
 }
 /* line 1515, ../sass/style.scss */
+=======
+/* line 1532, ../sass/style.scss */
+.footer .contactform {
+  padding: 0 100px 100px 100px;
+}
+/* line 1536, ../sass/style.scss */
+>>>>>>> Video in header
 .footer .divider {
   position: absolute;
   width: 100%;
@@ -2047,16 +2542,28 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin: 0;
   z-index: 5;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1522, ../sass/style.scss */
 .footer .divider.top {
   top: 8%;
 }
 /* line 1526, ../sass/style.scss */
+=======
+/* line 1543, ../sass/style.scss */
+.footer .divider.top {
+  top: 8%;
+}
+/* line 1547, ../sass/style.scss */
+>>>>>>> Video in header
 .footer .divider.bottom {
   bottom: auto;
   top: 100%;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1531, ../sass/style.scss */
+=======
+/* line 1552, ../sass/style.scss */
+>>>>>>> Video in header
 .footer .divider img {
   width: 104%;
   margin-left: -2%;
@@ -2064,7 +2571,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 
 /*/  BOTTOM BG  /////////////////////////////////////////////////////////////////*/
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1542, ../sass/style.scss */
+=======
+/* line 1563, ../sass/style.scss */
+>>>>>>> Video in header
 .bottom-bg {
   height: 700px;
   position: relative;
@@ -2073,7 +2584,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   background-size: cover;
   background-position: center center;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1550, ../sass/style.scss */
+=======
+/* line 1571, ../sass/style.scss */
+>>>>>>> Video in header
 .bottom-bg .overlay {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -2083,7 +2598,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   left: 0;
   text-align: center;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1559, ../sass/style.scss */
+=======
+/* line 1580, ../sass/style.scss */
+>>>>>>> Video in header
 .bottom-bg .overlay .logo-happysmugglers-light {
   background: url(../img/logo-happy-smugglers-lang-light.svg) no-repeat;
   background-size: 100%;
@@ -2091,7 +2610,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin: 170px auto 0;
   height: 50px;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1567, ../sass/style.scss */
+=======
+/* line 1588, ../sass/style.scss */
+>>>>>>> Video in header
 .bottom-bg .overlay p {
   font-weight: 400;
   color: #fff;
@@ -2100,11 +2623,19 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   letter-spacing: .1em;
   font-size: 1.2em;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1576, ../sass/style.scss */
 .bottom-bg .overlay ul {
   margin-bottom: 30px;
 }
 /* line 1579, ../sass/style.scss */
+=======
+/* line 1597, ../sass/style.scss */
+.bottom-bg .overlay ul {
+  margin-bottom: 30px;
+}
+/* line 1600, ../sass/style.scss */
+>>>>>>> Video in header
 .bottom-bg .overlay ul li {
   line-height: 2.25em;
   text-align: center;
@@ -2113,11 +2644,19 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   font-size: .9em;
   letter-spacing: .075em;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1589, ../sass/style.scss */
 .bottom-bg .overlay .socials {
   text-align: center;
 }
 /* line 1592, ../sass/style.scss */
+=======
+/* line 1610, ../sass/style.scss */
+.bottom-bg .overlay .socials {
+  text-align: center;
+}
+/* line 1613, ../sass/style.scss */
+>>>>>>> Video in header
 .bottom-bg .overlay .socials a.social {
   display: inline-block;
   width: 40px;
@@ -2130,15 +2669,24 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   border-radius: 50%;
   margin-left: 10px;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1602, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social:first-child {
   margin-left: 0;
 }
 /* line 1604, ../sass/style.scss */
+=======
+/* line 1623, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social:first-child {
+  margin-left: 0;
+}
+/* line 1625, ../sass/style.scss */
+>>>>>>> Video in header
 .bottom-bg .overlay .socials a.social span.icon {
   line-height: 40px;
   text-align: center;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1609, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.facebook {
   background: #4970b2;
@@ -2184,32 +2732,96 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   background: #eb5e53;
 }
 /* line 1614, ../sass/style.scss */
+=======
+/* line 1630, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.facebook {
+  background: #4970b2;
+}
+/* line 1630, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.facebook:hover {
+  background: #334e7c;
+}
+/* line 1631, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.twitter {
+  background: #6dceef;
+}
+/* line 1631, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.twitter:hover {
+  background: #28b7e7;
+}
+/* line 1632, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.insta {
+  background: #a77b5e;
+}
+/* line 1632, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.insta:hover {
+  background: #775741;
+}
+/* line 1633, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.youtube {
+  background: #e64a41;
+}
+/* line 1633, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.youtube:hover {
+  background: #c12319;
+}
+/* line 1634, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.vimeo {
+  background: #17aee1;
+}
+/* line 1634, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.vimeo:hover {
+  background: #10789c;
+}
+/* line 1635, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.googleplus {
+  background: #eb5e53;
+}
+/* line 1635, ../sass/style.scss */
+>>>>>>> Video in header
 .bottom-bg .overlay .socials a.social.googleplus:hover {
   background: #d82719;
 }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1620, ../sass/style.scss */
+=======
+/* line 1641, ../sass/style.scss */
+>>>>>>> Video in header
 .content .bottom-bg .divider.top {
   bottom: auto;
 }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1621, ../sass/style.scss */
+=======
+/* line 1642, ../sass/style.scss */
+>>>>>>> Video in header
 .content .bottom-bg .divider.top img {
   margin-top: -2px;
 }
 
 /*/  FORM STYLING  /////////////////////////////////////////////////////////////////*/
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1625, ../sass/style.scss */
+=======
+/* line 1646, ../sass/style.scss */
+>>>>>>> Video in header
 form {
   padding: 0;
   margin: 0;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1629, ../sass/style.scss */
+=======
+/* line 1650, ../sass/style.scss */
+>>>>>>> Video in header
 form fieldset {
   border: none;
   padding: 0;
   margin: 0;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1636, ../sass/style.scss */
 form fieldset.radiocheck .field label {
   width: 100%;
@@ -2219,12 +2831,27 @@ form fieldset.radiocheck .field input[type="checkbox"], form fieldset.radiocheck
   margin-right: 5px;
 }
 /* line 1647, ../sass/style.scss */
+=======
+/* line 1657, ../sass/style.scss */
+form fieldset.radiocheck .field label {
+  width: 100%;
+}
+/* line 1661, ../sass/style.scss */
+form fieldset.radiocheck .field input[type="checkbox"], form fieldset.radiocheck .field input[type="radio"] {
+  margin-right: 5px;
+}
+/* line 1668, ../sass/style.scss */
+>>>>>>> Video in header
 form .field {
   width: 100%;
   margin-bottom: 10px;
   overflow: hidden;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1652, ../sass/style.scss */
+=======
+/* line 1673, ../sass/style.scss */
+>>>>>>> Video in header
 form .field button {
   position: relative;
   width: 100%;
@@ -2252,11 +2879,19 @@ form .field button {
   background: #dce86b;
   margin-top: 50px;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1674, ../sass/style.scss */
 form .field button:hover {
   background: #36373b;
 }
 /* line 1679, ../sass/style.scss */
+=======
+/* line 1695, ../sass/style.scss */
+form .field button:hover {
+  background: #36373b;
+}
+/* line 1700, ../sass/style.scss */
+>>>>>>> Video in header
 form .field label, form .field p.label {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -2265,7 +2900,11 @@ form .field label, form .field p.label {
   font-size: 1em;
   color: #36373b;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1688, ../sass/style.scss */
+=======
+/* line 1709, ../sass/style.scss */
+>>>>>>> Video in header
 form .field input[type="text"], form .field input[type="file"], form .field input[type="number"], form .field select {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -2290,28 +2929,45 @@ form .field input[type="text"], form .field input[type="file"], form .field inpu
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1707, ../sass/style.scss */
 form .field input[type="text"]:focus, form .field input[type="file"]:focus, form .field input[type="number"]:focus, form .field select:focus {
   border-bottom: 1px solid #dce86b;
 }
 /* line 1710, ../sass/style.scss */
+=======
+/* line 1728, ../sass/style.scss */
+form .field input[type="text"]:focus, form .field input[type="file"]:focus, form .field input[type="number"]:focus, form .field select:focus {
+  border-bottom: 1px solid #dce86b;
+}
+/* line 1731, ../sass/style.scss */
+>>>>>>> Video in header
 form .field input[type="text"]:focus::-webkit-input-placeholder, form .field input[type="file"]:focus::-webkit-input-placeholder, form .field input[type="number"]:focus::-webkit-input-placeholder, form .field select:focus::-webkit-input-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1711, ../sass/style.scss */
+=======
+/* line 1732, ../sass/style.scss */
+>>>>>>> Video in header
 form .field input[type="text"]:focus:-moz-placeholder, form .field input[type="file"]:focus:-moz-placeholder, form .field input[type="number"]:focus:-moz-placeholder, form .field select:focus:-moz-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1712, ../sass/style.scss */
+=======
+/* line 1733, ../sass/style.scss */
+>>>>>>> Video in header
 form .field input[type="text"]:focus::-moz-placeholder, form .field input[type="file"]:focus::-moz-placeholder, form .field input[type="number"]:focus::-moz-placeholder, form .field select:focus::-moz-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1713, ../sass/style.scss */
 form .field input[type="text"]:focus:-ms-input-placeholder, form .field input[type="file"]:focus:-ms-input-placeholder, form .field input[type="number"]:focus:-ms-input-placeholder, form .field select:focus:-ms-input-placeholder {
   color: #4e5056;
@@ -2321,6 +2977,17 @@ form .field input[type="file"] {
   padding: 0 5px;
 }
 /* line 1719, ../sass/style.scss */
+=======
+/* line 1734, ../sass/style.scss */
+form .field input[type="text"]:focus:-ms-input-placeholder, form .field input[type="file"]:focus:-ms-input-placeholder, form .field input[type="number"]:focus:-ms-input-placeholder, form .field select:focus:-ms-input-placeholder {
+  color: #4e5056;
+}
+/* line 1738, ../sass/style.scss */
+form .field input[type="file"] {
+  padding: 0 5px;
+}
+/* line 1740, ../sass/style.scss */
+>>>>>>> Video in header
 form .field textarea {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -2346,91 +3013,155 @@ form .field textarea {
   transition: all 0.3s ease;
   resize: none;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1739, ../sass/style.scss */
 form .field textarea:focus {
   border-bottom: 1px solid #dce86b;
 }
 /* line 1742, ../sass/style.scss */
+=======
+/* line 1760, ../sass/style.scss */
+form .field textarea:focus {
+  border-bottom: 1px solid #dce86b;
+}
+/* line 1763, ../sass/style.scss */
+>>>>>>> Video in header
 form .field textarea:focus::-webkit-input-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1743, ../sass/style.scss */
+=======
+/* line 1764, ../sass/style.scss */
+>>>>>>> Video in header
 form .field textarea:focus:-moz-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1744, ../sass/style.scss */
+=======
+/* line 1765, ../sass/style.scss */
+>>>>>>> Video in header
 form .field textarea:focus::-moz-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
 /* line 1745, ../sass/style.scss */
+=======
+/* line 1766, ../sass/style.scss */
+>>>>>>> Video in header
 form .field textarea:focus:-ms-input-placeholder {
   color: #4e5056;
 }
 
 /*/  MEDIA SCREENS  /////////////////////////////////////////////////////////////////*/
 @media screen and (max-width: 1400px) {
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1755, ../sass/style.scss */
+=======
+  /* line 1776, ../sass/style.scss */
+>>>>>>> Video in header
   body {
     font-size: 17px;
   }
 }
 @media screen and (max-width: 1300px) {
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1759, ../sass/style.scss */
+=======
+  /* line 1780, ../sass/style.scss */
+>>>>>>> Video in header
   body {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 1200px) {
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1764, ../sass/style.scss */
+=======
+  /* line 1785, ../sass/style.scss */
+>>>>>>> Video in header
   body {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1100px) {
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1769, ../sass/style.scss */
+=======
+  /* line 1790, ../sass/style.scss */
+>>>>>>> Video in header
   body {
     font-size: 13px;
   }
 }
 @media screen and (max-width: 1024px) {
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1774, ../sass/style.scss */
+=======
+  /* line 1795, ../sass/style.scss */
+>>>>>>> Video in header
   body {
     font-size: 12px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1775, ../sass/style.scss */
+=======
+  /* line 1796, ../sass/style.scss */
+>>>>>>> Video in header
   .wrapper {
     padding: 0 20px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1776, ../sass/style.scss */
+=======
+  /* line 1797, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .photos {
     height: 100px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1777, ../sass/style.scss */
+=======
+  /* line 1798, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .photos a.photo {
     width: 150px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1778, ../sass/style.scss */
+=======
+  /* line 1799, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .photos .more-info {
     height: 100px;
     width: 150px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1779, ../sass/style.scss */
+=======
+  /* line 1800, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .photos .more-info span.icon {
     line-height: 100px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1781, ../sass/style.scss */
+=======
+  /* line 1802, ../sass/style.scss */
+>>>>>>> Video in header
   .header .overlay .logo {
     width: 176px;
     background-size: 100%;
@@ -2438,129 +3169,221 @@ form .field textarea:focus:-ms-input-placeholder {
     width: 176px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1782, ../sass/style.scss */
+=======
+  /* line 1803, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart .button span.icon-cart {
     font-size: 2.3em;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1783, ../sass/style.scss */
+=======
+  /* line 1804, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart .button span.cart-amount {
     font-size: .7em;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1785, ../sass/style.scss */
+=======
+  /* line 1806, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart.active .foldout .product {
     font-size: 1.3em;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1786, ../sass/style.scss */
+=======
+  /* line 1807, ../sass/style.scss */
+>>>>>>> Video in header
   .checkout-page .content .checkout .summary {
     font-size: 1.2em;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1787, ../sass/style.scss */
+=======
+  /* line 1808, ../sass/style.scss */
+>>>>>>> Video in header
   .checkout-page .content .checkout form .field {
     font-size: 1.4em;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1789, ../sass/style.scss */
+=======
+  /* line 1810, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product.active .image {
     margin-top: 100px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1790, ../sass/style.scss */
+=======
+  /* line 1811, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product a.nav {
     top: calc(50% + 50px);
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1792, ../sass/style.scss */
+=======
+  /* line 1813, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart .foldout .product a.delete-item {
     opacity: 1;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1795, ../sass/style.scss */
+=======
+  /* line 1816, ../sass/style.scss */
+>>>>>>> Video in header
   .checkout-page .content .checkout form .field.radiocheck label input[type="radio"] {
     top: -1px;
   }
 }
 @media screen and (max-width: 768px) {
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1799, ../sass/style.scss */
+=======
+  /* line 1820, ../sass/style.scss */
+>>>>>>> Video in header
   .header {
     height: 60%;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1800, ../sass/style.scss */
+=======
+  /* line 1821, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .info, .content .product:hover .info {
     top: 30px;
     padding-bottom: 0;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1801, ../sass/style.scss */
+=======
+  /* line 1822, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .image {
     width: 60%;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1802, ../sass/style.scss */
+=======
+  /* line 1823, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .info {
     width: 40%;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1803, ../sass/style.scss */
+=======
+  /* line 1824, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product.yellow .info {
     padding-left: 50px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1805, ../sass/style.scss */
+=======
+  /* line 1826, ../sass/style.scss */
+>>>>>>> Video in header
   .checkout-page .content .checkout .data {
     width: 60%;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1806, ../sass/style.scss */
+=======
+  /* line 1827, ../sass/style.scss */
+>>>>>>> Video in header
   .checkout-page .content .checkout .summary {
     margin-left: 3%;
     width: 37%;
     padding: 15px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1807, ../sass/style.scss */
+=======
+  /* line 1828, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product a.nav {
     width: 75px;
     height: 75px;
     line-height: 75px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1808, ../sass/style.scss */
+=======
+  /* line 1829, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product.active .nav.next {
     width: 75px;
   }
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1812, ../sass/style.scss */
+=======
+  /* line 1833, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product.active .image {
     width: 85%;
   }
 }
 @media screen and (max-width: 767px) {
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1817, ../sass/style.scss */
+=======
+  /* line 1838, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .info .details span.types {
     float: right;
     margin-left: 10px;
     margin-right: 0;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1818, ../sass/style.scss */
+=======
+  /* line 1839, ../sass/style.scss */
+>>>>>>> Video in header
   .header .overlay .logo {
     width: 100px;
     height: 130px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1819, ../sass/style.scss */
+=======
+  /* line 1840, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .image {
     width: 100%;
     margin: 20px 0;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1820, ../sass/style.scss */
+=======
+  /* line 1841, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .info {
     width: 100%;
     padding: 0 20px;
@@ -2568,123 +3391,211 @@ form .field textarea:focus:-ms-input-placeholder {
     text-align: right;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1821, ../sass/style.scss */
+=======
+  /* line 1842, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product.yellow .info {
     padding-left: 20px;
     margin-top: 250px;
     text-align: left;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1822, ../sass/style.scss */
+=======
+  /* line 1843, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product.yellow .image {
     position: absolute;
     margin: 0;
     top: 60px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1824, ../sass/style.scss */
+=======
+  /* line 1845, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .info .amount label {
     float: none;
     display: inline-block;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1825, ../sass/style.scss */
+=======
+  /* line 1846, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .info .amount input {
     display: inline-block;
     float: none;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1826, ../sass/style.scss */
+=======
+  /* line 1847, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .info a.order {
     text-align: left;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1828, ../sass/style.scss */
+=======
+  /* line 1849, ../sass/style.scss */
+>>>>>>> Video in header
   .content .instagram a.title, .footer .title {
     font-size: 2.3em;
     padding: 15px 30px;
     border-width: 2px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1829, ../sass/style.scss */
+=======
+  /* line 1850, ../sass/style.scss */
+>>>>>>> Video in header
   .footer .contactform {
     padding: 0 0 50px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1831, ../sass/style.scss */
+=======
+  /* line 1852, ../sass/style.scss */
+>>>>>>> Video in header
   .bottom-bg {
     height: 500px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1833, ../sass/style.scss */
+=======
+  /* line 1854, ../sass/style.scss */
+>>>>>>> Video in header
   .content .media a.col {
     padding: 50px 40px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1834, ../sass/style.scss */
+=======
+  /* line 1855, ../sass/style.scss */
+>>>>>>> Video in header
   .content .media a.col.size1of3 {
     width: 100%;
     float: none;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1835, ../sass/style.scss */
+=======
+  /* line 1856, ../sass/style.scss */
+>>>>>>> Video in header
   .content .media a.col .logo {
     height: 90px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1836, ../sass/style.scss */
+=======
+  /* line 1857, ../sass/style.scss */
+>>>>>>> Video in header
   .content .media a.col .logo .hover {
     height: 90px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1837, ../sass/style.scss */
+=======
+  /* line 1858, ../sass/style.scss */
+>>>>>>> Video in header
   .content .media a.col p {
     font-size: 1.3em;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1838, ../sass/style.scss */
+=======
+  /* line 1859, ../sass/style.scss */
+>>>>>>> Video in header
   .bottom-bg .overlay .logo-happysmugglers-light {
     margin-top: 100px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1840, ../sass/style.scss */
+=======
+  /* line 1861, ../sass/style.scss */
+>>>>>>> Video in header
   .content .divider.top {
     bottom: 99.5%;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1841, ../sass/style.scss */
+=======
+  /* line 1862, ../sass/style.scss */
+>>>>>>> Video in header
   .content .divider.bottom {
     top: 99.5%;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1842, ../sass/style.scss */
+=======
+  /* line 1863, ../sass/style.scss */
+>>>>>>> Video in header
   .content .divider img {
     margin-top: -2px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1843, ../sass/style.scss */
+=======
+  /* line 1864, ../sass/style.scss */
+>>>>>>> Video in header
   .content .instagram {
     padding-top: 0;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1844, ../sass/style.scss */
+=======
+  /* line 1865, ../sass/style.scss */
+>>>>>>> Video in header
   form .field button {
     height: 80px;
     line-height: 80px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1846, ../sass/style.scss */
+=======
+  /* line 1867, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll a.logo {
     width: 180px;
     height: 25px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1847, ../sass/style.scss */
+=======
+  /* line 1868, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll {
     height: 70px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1849, ../sass/style.scss */
+=======
+  /* line 1870, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart {
     width: 70px;
     height: 70px;
@@ -2696,13 +3607,21 @@ form .field textarea:focus:-ms-input-placeholder {
     top: 0;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1850, ../sass/style.scss */
+=======
+  /* line 1871, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart .button {
     width: 70px;
     height: 70px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1851, ../sass/style.scss */
+=======
+  /* line 1872, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart .button span.icon-cart {
     width: 70px;
     height: 70px;
@@ -2711,23 +3630,39 @@ form .field textarea:focus:-ms-input-placeholder {
     padding-right: 5px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1852, ../sass/style.scss */
+=======
+  /* line 1873, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart .button span.cart-amount {
     right: 10px;
     top: 10px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1853, ../sass/style.scss */
+=======
+  /* line 1874, ../sass/style.scss */
+>>>>>>> Video in header
   .mobile-nav-open .header-scroll .cart {
     opacity: 0;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1856, ../sass/style.scss */
+=======
+  /* line 1877, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart .foldout {
     top: 70px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1857, ../sass/style.scss */
+=======
+  /* line 1878, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart.active .foldout {
     width: 100%;
     max-width: initial;
@@ -2737,44 +3672,76 @@ form .field textarea:focus:-ms-input-placeholder {
     height: calc(100% - 70px);
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1865, ../sass/style.scss */
+=======
+  /* line 1886, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart.active .foldout .foldout-inner {
     padding: 20px 40px 20px 20px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1866, ../sass/style.scss */
+=======
+  /* line 1887, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart.active .foldout .product {
     margin-bottom: 20px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1867, ../sass/style.scss */
+=======
+  /* line 1888, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart.active .foldout .totals {
     margin-bottom: 25px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1869, ../sass/style.scss */
+=======
+  /* line 1890, ../sass/style.scss */
+>>>>>>> Video in header
   .header .mobile-nav-btn, .header-scroll .mobile-nav-btn {
     display: inline-block;
     z-index: 13;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1870, ../sass/style.scss */
+=======
+  /* line 1891, ../sass/style.scss */
+>>>>>>> Video in header
   .mobile-nav-open .header, .mobile-nav-open .header-scroll {
     z-index: 11;
     background: #dce86b;
     position: fixed;
   }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1875, ../sass/style.scss */
   .mobile-nav-open .header a.logo, .mobile-nav-open .header-scroll a.logo {
     z-index: 13;
   }
   /* line 1877, ../sass/style.scss */
+=======
+  /* line 1896, ../sass/style.scss */
+  .mobile-nav-open .header a.logo, .mobile-nav-open .header-scroll a.logo {
+    z-index: 13;
+  }
+  /* line 1898, ../sass/style.scss */
+>>>>>>> Video in header
   .mobile-nav-open .header ul.nav, .mobile-nav-open .header-scroll ul.nav {
     top: 60px;
     z-index: 12;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1883, ../sass/style.scss */
+=======
+  /* line 1904, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll ul.nav {
     position: fixed;
     right: 0;
@@ -2794,13 +3761,21 @@ form .field textarea:focus:-ms-input-placeholder {
     float: none;
     padding: 55px 15px 15px;
   }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1896, ../sass/style.scss */
+=======
+  /* line 1917, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll ul.nav li {
     float: none;
     overflow: hidden;
     margin: 0;
   }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1901, ../sass/style.scss */
+=======
+  /* line 1922, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll ul.nav li a {
     line-height: 50px;
     font-size: 1.5em;
@@ -2810,16 +3785,28 @@ form .field textarea:focus:-ms-input-placeholder {
     -webkit-transform: skewY(-3deg);
     transform: skewY(-3deg);
   }
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1907, ../sass/style.scss */
   .header-scroll ul.nav li a.active {
     background: rgba(0, 0, 0, 0.1);
   }
   /* line 1913, ../sass/style.scss */
+=======
+  /* line 1928, ../sass/style.scss */
+  .header-scroll ul.nav li a.active {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  /* line 1934, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll ul.nav li:last-child a {
     margin-top: 5px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1918, ../sass/style.scss */
+=======
+  /* line 1939, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll ul.nav li a.active {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -2829,7 +3816,11 @@ form .field textarea:focus:-ms-input-placeholder {
     transform: skewY(-3deg);
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1919, ../sass/style.scss */
+=======
+  /* line 1940, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll ul.nav li a:hover {
     color: #36373b;
     -moz-transform: skewY(-3deg);
@@ -2838,28 +3829,48 @@ form .field textarea:focus:-ms-input-placeholder {
     transform: skewY(-3deg);
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1921, ../sass/style.scss */
+=======
+  /* line 1942, ../sass/style.scss */
+>>>>>>> Video in header
   .checkout-page .content .checkout .data {
     width: 100%;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1922, ../sass/style.scss */
+=======
+  /* line 1943, ../sass/style.scss */
+>>>>>>> Video in header
   .checkout-page .content .checkout .summary {
     width: 100%;
     margin-left: 0;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1923, ../sass/style.scss */
+=======
+  /* line 1944, ../sass/style.scss */
+>>>>>>> Video in header
   .checkout-page .content .checkout .summary .item {
     margin-bottom: 20px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1924, ../sass/style.scss */
+=======
+  /* line 1945, ../sass/style.scss */
+>>>>>>> Video in header
   .thanks-page .content .thanks {
     margin-bottom: 70px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1926, ../sass/style.scss */
+=======
+  /* line 1947, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product a.nav {
     width: 50px;
     height: 50px;
@@ -2867,103 +3878,175 @@ form .field textarea:focus:-ms-input-placeholder {
     font-size: 1.8em;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1927, ../sass/style.scss */
+=======
+  /* line 1948, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product.active .nav.next {
     width: 50px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1928, ../sass/style.scss */
+=======
+  /* line 1949, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .photos {
     height: 70px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1929, ../sass/style.scss */
+=======
+  /* line 1950, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .photos a.photo {
     width: 100px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1931, ../sass/style.scss */
+=======
+  /* line 1952, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product.active .image {
     margin-top: 70px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1932, ../sass/style.scss */
+=======
+  /* line 1953, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product a.nav {
     top: calc(50% + 35px);
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1934, ../sass/style.scss */
+=======
+  /* line 1955, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .photos .more-info {
     height: 70px;
     width: 80px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1935, ../sass/style.scss */
+=======
+  /* line 1956, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .photos .more-info span.icon {
     line-height: 70px;
     font-size: 1.8em;
   }
 }
 @media screen and (max-width: 767px) and (orientation: landscape) {
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1943, ../sass/style.scss */
+=======
+  /* line 1964, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .info .details span.types {
     float: left;
     margin-left: 0;
     margin-right: 10px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1945, ../sass/style.scss */
+=======
+  /* line 1966, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart.active .foldout .product .type .title {
     margin-bottom: 3px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1946, ../sass/style.scss */
+=======
+  /* line 1967, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart .foldout .product .type p.subtitle {
     margin-bottom: 0;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1947, ../sass/style.scss */
+=======
+  /* line 1968, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart.active .foldout .product {
     margin-bottom: 15px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1948, ../sass/style.scss */
+=======
+  /* line 1969, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart.active .foldout .totals {
     margin-bottom: 15px;
     margin-top: 20px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1950, ../sass/style.scss */
+=======
+  /* line 1971, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart .foldout .product .type {
     position: relative;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1951, ../sass/style.scss */
+=======
+  /* line 1972, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart .foldout .product .type .title {
     line-height: 29px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1952, ../sass/style.scss */
+=======
+  /* line 1973, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart .foldout .product .type p.subtitle {
     position: absolute;
     top: 5px;
     right: 150px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1953, ../sass/style.scss */
+=======
+  /* line 1974, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll .cart .foldout .product .type input {
     position: absolute;
     top: 0;
     right: 70px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1955, ../sass/style.scss */
+=======
+  /* line 1976, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .image {
     width: 50%;
     margin: 80px 0;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1956, ../sass/style.scss */
+=======
+  /* line 1977, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .info {
     margin: 0;
     padding: 0 20px 20px 0;
@@ -2971,56 +4054,96 @@ form .field textarea:focus:-ms-input-placeholder {
     width: 50%;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1957, ../sass/style.scss */
+=======
+  /* line 1978, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .image a {
     width: 100%;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1958, ../sass/style.scss */
+=======
+  /* line 1979, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product .info p.subtitle, .content .product .info .details, .content .product .info .amount {
     margin-bottom: 25px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1959, ../sass/style.scss */
+=======
+  /* line 1980, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product.yellow .image {
     position: relative;
     top: 0;
     margin: 80px 0;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1960, ../sass/style.scss */
+=======
+  /* line 1981, ../sass/style.scss */
+>>>>>>> Video in header
   .content .product.yellow .info {
     margin-top: 0;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1962, ../sass/style.scss */
+=======
+  /* line 1983, ../sass/style.scss */
+>>>>>>> Video in header
   .content .instagram a.title, .footer .title {
     font-size: 3.6em;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1963, ../sass/style.scss */
+=======
+  /* line 1984, ../sass/style.scss */
+>>>>>>> Video in header
   .footer .contactform {
     padding: 0 50px 50px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1965, ../sass/style.scss */
+=======
+  /* line 1986, ../sass/style.scss */
+>>>>>>> Video in header
   .content .media a.col .logo {
     height: 130px;
     width: 40%;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1966, ../sass/style.scss */
+=======
+  /* line 1987, ../sass/style.scss */
+>>>>>>> Video in header
   .content .media a.col .logo .hover {
     height: 130px;
     width: 40%;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1968, ../sass/style.scss */
+=======
+  /* line 1989, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll ul.nav {
     padding-top: 20px;
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1969, ../sass/style.scss */
+=======
+  /* line 1990, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll ul.nav li a.active {
     -moz-transform: skewY(-2deg);
     -ms-transform: skewY(-2deg);
@@ -3028,7 +4151,11 @@ form .field textarea:focus:-ms-input-placeholder {
     transform: skewY(-2deg);
   }
 
+<<<<<<< 93972020d023fecfe81a75572c02daaedd05a178
   /* line 1970, ../sass/style.scss */
+=======
+  /* line 1991, ../sass/style.scss */
+>>>>>>> Video in header
   .header-scroll ul.nav li a:hover {
     -moz-transform: skewY(-2deg);
     -ms-transform: skewY(-2deg);
