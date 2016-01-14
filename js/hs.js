@@ -27,10 +27,16 @@ $(function () {
   $window.on('scroll', function (event) {
     var scrollTop = $window.scrollTop();
     if (!$cart.hasClass('active')) {
+      // Down
       if (scrollTop > prevScrollTop) {
-        $headerScroll.removeClass('active'); // Down
+        $headerScroll.removeClass('active');
+      // Up
       } else {
-        $headerScroll.addClass('active'); // Up
+        if (scrollTop > 0) {
+          $headerScroll.addClass('active');
+        } else {
+          $headerScroll.removeClass('active');
+        }
       }
     }
     prevScrollTop = scrollTop;
