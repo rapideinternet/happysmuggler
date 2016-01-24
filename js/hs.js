@@ -101,15 +101,25 @@ $(function () {
 
   $products.on('click', '.image a, .more-info', function (event) {
     event.preventDefault();
-    // var $product = $(this).closest('.product');
+    var $product = $(this).closest('.product');
 
-    // if ($product.hasClass('active')) {
-    //   enableScrolling();
-    //   $product.removeClass('active');
-    // } else {
-    //   disableScrolling();
-    //   $product.addClass('active');
-    // }
+    if ($product.hasClass('active')) {
+      enableScrolling();
+      $product.removeClass('active');
+    } else {
+      disableScrolling();
+      $product.addClass('active');
+    }
+  });
+
+  /*
+  * Product Sliders
+  */
+
+  $('#shop .flexslider').flexslider({
+    animation: 'slide',
+    // controlNav: false,
+    // slideshow: false,
   });
 
   /*

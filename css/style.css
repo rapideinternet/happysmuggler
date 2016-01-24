@@ -1,4 +1,5 @@
 @import url(normalize.css);
+@import url(flexslider.css);
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @font-face {
   font-family: 'icomoon';
@@ -187,7 +188,11 @@
 /* 1fa2e6 */
 /* dce86b */
 /*/  BASE  /////////////////////////////////////////////////////////////////*/
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 18, ../sass/style.scss */
+=======
+/* line 20, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -195,13 +200,21 @@
   outline: 0;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 20, ../sass/style.scss */
+=======
+/* line 22, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 html {
   height: 100%;
   width: 100%;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 25, ../sass/style.scss */
+=======
+/* line 27, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 body {
   font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
@@ -217,7 +230,11 @@ body {
   width: 100%;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 40, ../sass/style.scss */
+=======
+/* line 42, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 h1 {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -230,7 +247,11 @@ h1 {
   letter-spacing: .1em;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 52, ../sass/style.scss */
+=======
+/* line 54, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 h2 {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -243,7 +264,11 @@ h2 {
   letter-spacing: .1em;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 64, ../sass/style.scss */
+=======
+/* line 66, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 h3 {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -256,7 +281,11 @@ h3 {
   letter-spacing: .1em;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 76, ../sass/style.scss */
+=======
+/* line 78, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 h4 {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -269,12 +298,20 @@ h4 {
   letter-spacing: .1em;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 89, ../sass/style.scss */
+=======
+/* line 91, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 h1 span, h2 span, h3 span, h4 span {
   font-weight: 400;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 92, ../sass/style.scss */
+=======
+/* line 94, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 p {
   font-size: 1.0em;
   margin: 0 0 10px;
@@ -282,7 +319,11 @@ p {
   line-height: 1.8em;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 99, ../sass/style.scss */
+=======
+/* line 101, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 a {
   font-size: 1.0em;
   margin: 0;
@@ -295,42 +336,70 @@ a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 108, ../sass/style.scss */
+=======
+/* line 110, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 a:hover {
   text-decoration: none;
   color: #36373b;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 114, ../sass/style.scss */
+=======
+/* line 116, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 ul {
   margin: 0 0 10px 0;
   padding: 0;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 115, ../sass/style.scss */
+=======
+/* line 117, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 ul li {
   list-style: none;
   line-height: 1.8em;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 116, ../sass/style.scss */
+=======
+/* line 118, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 img {
   border: none;
   -webkit-backface-visibility: hidden;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 118, ../sass/style.scss */
+=======
+/* line 120, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 span.smaller {
   font-size: .85em;
   opacity: .5;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 123, ../sass/style.scss */
+=======
+/* line 125, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 strong {
   font-weight: 600;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 125, ../sass/style.scss */
+=======
+/* line 127, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .btn {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -349,73 +418,121 @@ strong {
   outline: none;
   background: #dce86b;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 141, ../sass/style.scss */
+=======
+/* line 143, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .btn:hover {
   background: #36373b;
   color: #fff;
 }
 
 /*/  SELECTIONS & PLACEHOLDERS  ////////////////////////////////////////////////////////////////*/
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 151, ../sass/style.scss */
+=======
+/* line 153, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 p::selection, h1::selection, h2::selection, h3::selection, a::selection, li::selection, input::selection, textarea::selection, label::selection, strong::selection, span::selection, .row::selection {
   background: #36373b;
   color: #fff;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 152, ../sass/style.scss */
+=======
+/* line 154, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 p::-webkit-selection, h1::-webkit-selection, h2::-webkit-selection, h3::-webkit-selection, a::-webkit-selection, li::-webkit-selection, input::-webkit-selection, textarea::-webkit-selection, label::-webkit-selection, strong::-webkit-selection, span::-webkit-selection, .row::-webkit-selection {
   background: #36373b;
   color: #fff;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 153, ../sass/style.scss */
+=======
+/* line 155, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, li::-moz-selection, input::-moz-selection, textarea::-moz-selection, label::-moz-selection, strong::-moz-selection, span::-moz-selection, .row::-moz-selection {
   background: #36373b;
   color: #fff;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 156, ../sass/style.scss */
+=======
+/* line 158, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 ::-webkit-input-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 157, ../sass/style.scss */
+=======
+/* line 159, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 :-moz-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 158, ../sass/style.scss */
+=======
+/* line 160, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 ::-moz-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 159, ../sass/style.scss */
+=======
+/* line 161, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 :-ms-input-placeholder {
   color: #676970;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 161, ../sass/style.scss */
+=======
+/* line 163, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 input[type="text"], input[type="file"], input[type="number"], input[type="password"], textarea {
   -webkit-appearance: none;
 }
 
 /*/  HEADER  /////////////////////////////////////////////////////////////////*/
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 166, ../sass/style.scss */
+=======
+/* line 168, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 video {
   display: block;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 168, ../sass/style.scss */
+=======
+/* line 170, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .video-js {
   background-size: cover !important;
   position: fixed !important;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 170, ../sass/style.scss */
+=======
+/* line 172, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header {
   height: 90%;
   position: relative;
@@ -424,7 +541,11 @@ video {
   background-size: cover;
   background-position: center center;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 178, ../sass/style.scss */
+=======
+/* line 180, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header .overlay {
   position: absolute;
   background: rgba(0, 0, 0, 0.3);
@@ -433,7 +554,11 @@ video {
   left: 0;
   top: 0;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 186, ../sass/style.scss */
+=======
+/* line 188, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header .overlay .logo {
   text-indent: -9999px;
   width: 206px;
@@ -554,13 +679,21 @@ video {
   fill: rgba(255, 255, 255, 0.5);
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 296, ../sass/style.scss */
+=======
+/* line 203, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll.active {
   opacity: 1;
   top: 0;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 301, ../sass/style.scss */
+=======
+/* line 208, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll {
   display: block;
   z-index: 100;
@@ -579,7 +712,11 @@ video {
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 314, ../sass/style.scss */
+=======
+/* line 221, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll a.logo {
   text-indent: -9999px;
   width: 308px;
@@ -595,17 +732,29 @@ video {
   background-size: 100%;
   outline: none;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 327, ../sass/style.scss */
+=======
+/* line 234, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll ul.nav {
   margin: 0;
   padding: 0;
   float: right;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 332, ../sass/style.scss */
 .header-scroll ul.nav li {
   float: left;
 }
 /* line 335, ../sass/style.scss */
+=======
+/* line 239, ../sass/style.scss */
+.header-scroll ul.nav li {
+  float: left;
+}
+/* line 242, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll ul.nav li a {
   outline: none;
   color: #36373b;
@@ -621,7 +770,11 @@ video {
   -webkit-transform: skewY(0deg);
   transform: skewY(0deg);
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 347, ../sass/style.scss */
+=======
+/* line 254, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll ul.nav li a:hover {
   color: #dce86b;
   -moz-transform: skewY(-5deg);
@@ -629,7 +782,11 @@ video {
   -webkit-transform: skewY(-5deg);
   transform: skewY(-5deg);
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 352, ../sass/style.scss */
+=======
+/* line 259, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll ul.nav li a.active {
   color: #dce86b;
   -moz-transform: skewY(-5deg);
@@ -637,7 +794,11 @@ video {
   -webkit-transform: skewY(-5deg);
   transform: skewY(-5deg);
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 360, ../sass/style.scss */
+=======
+/* line 267, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart {
   float: right;
   width: 100px;
@@ -645,7 +806,11 @@ video {
   border-left: 1px solid #e8e8e8;
   margin-left: 15px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 368, ../sass/style.scss */
+=======
+/* line 275, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart.active .overlay {
   opacity: 1;
   width: 100%;
@@ -656,11 +821,19 @@ video {
   -webkit-transition-delay: 0s, 0s, 0s;
   transition: opacity 0.3s ease, height 0s ease 0s, width 0s ease 0s;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 375, ../sass/style.scss */
 .header-scroll .cart.active .button {
   background: #dce86b;
 }
 /* line 379, ../sass/style.scss */
+=======
+/* line 282, ../sass/style.scss */
+.header-scroll .cart.active .button {
+  background: #dce86b;
+}
+/* line 286, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart.active .foldout {
   font-size: .9em;
   max-width: 370px;
@@ -669,6 +842,7 @@ video {
   overflow: auto;
   bottom: 30px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 388, ../sass/style.scss */
 .header-scroll .cart.active .foldout .foldout-inner {
   padding: 40px;
@@ -678,49 +852,92 @@ video {
   margin-bottom: 40px;
 }
 /* line 396, ../sass/style.scss */
+=======
+/* line 295, ../sass/style.scss */
+.header-scroll .cart.active .foldout .foldout-inner {
+  padding: 40px;
+}
+/* line 299, ../sass/style.scss */
+.header-scroll .cart.active .foldout .product {
+  margin-bottom: 40px;
+}
+/* line 303, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart.active .foldout .product .type .title {
   margin-bottom: 10px;
   line-height: 1.5em;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 398, ../sass/style.scss */
+=======
+/* line 305, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart.active .foldout .product .type p.subtitle {
   font-size: .75em;
   display: block;
   float: left;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 400, ../sass/style.scss */
+=======
+/* line 307, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart.active .foldout .product .type input {
   display: inline-block;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 5px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 401, ../sass/style.scss */
+=======
+/* line 308, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart.active .foldout .product .type input:focus {
   border: 1px solid #dce86b;
   background: #dce86b;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 404, ../sass/style.scss */
+=======
+/* line 311, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart.active .foldout .product a.delete-item {
   height: 20px;
   border: 1px solid #36373b;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 408, ../sass/style.scss */
+=======
+/* line 315, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart.active .foldout .product a.delete-item span.icon {
   height: 20px;
   line-height: 18px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 412, ../sass/style.scss */
+=======
+/* line 319, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart.active .foldout .totals {
   font-size: 1.15em;
   margin-bottom: 40px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 417, ../sass/style.scss */
+=======
+/* line 324, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart.active .foldout a.checkout {
   padding: 20px;
   font-size: 1em;
   line-height: 1.8em;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 425, ../sass/style.scss */
+=======
+/* line 332, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart .overlay {
   cursor: url("../img/cursor-close.svg") 19 19, auto;
   position: fixed;
@@ -737,7 +954,11 @@ video {
   -webkit-transition-delay: 0s, 0.3s, 0.3s;
   transition: opacity 0.3s ease, height 0.3s ease 0.3s, width 0.3s ease 0.3s;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 438, ../sass/style.scss */
+=======
+/* line 345, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart .button {
   background: #fff;
   position: relative;
@@ -755,7 +976,11 @@ video {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 452, ../sass/style.scss */
+=======
+/* line 359, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart .button span.icon-cart {
   display: block;
   width: 100px;
@@ -764,7 +989,11 @@ video {
   text-align: center;
   font-size: 1.8em;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 461, ../sass/style.scss */
+=======
+/* line 368, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart .button span.cart-amount {
   -moz-border-radius: 555px;
   -webkit-border-radius: 555px;
@@ -781,11 +1010,19 @@ video {
   color: #fff;
   font-size: .5em;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 476, ../sass/style.scss */
 .header-scroll .cart .button:hover {
   background: #dce86b;
 }
 /* line 481, ../sass/style.scss */
+=======
+/* line 383, ../sass/style.scss */
+.header-scroll .cart .button:hover {
+  background: #dce86b;
+}
+/* line 388, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart .foldout {
   cursor: default;
   position: absolute;
@@ -802,14 +1039,22 @@ video {
   transition: all 0.3s ease;
   z-index: 6;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 494, ../sass/style.scss */
+=======
+/* line 401, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart .foldout .foldout-inner {
   -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   background: #fff;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 499, ../sass/style.scss */
+=======
+/* line 406, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart .foldout .product {
   position: relative;
   margin-bottom: 0;
@@ -818,11 +1063,19 @@ video {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 505, ../sass/style.scss */
 .header-scroll .cart .foldout .product:hover a.delete-item {
   opacity: 1;
 }
 /* line 508, ../sass/style.scss */
+=======
+/* line 412, ../sass/style.scss */
+.header-scroll .cart .foldout .product:hover a.delete-item {
+  opacity: 1;
+}
+/* line 415, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart .foldout .product a.delete-item {
   opacity: 0;
   position: absolute;
@@ -839,23 +1092,39 @@ video {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 522, ../sass/style.scss */
+=======
+/* line 429, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart .foldout .product a.delete-item span.icon {
   line-height: 0;
   height: 0;
   display: block;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 524, ../sass/style.scss */
+=======
+/* line 431, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart .foldout .product a.delete-item:hover {
   color: #fff;
   border-color: #e31239;
   background: #e31239;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 531, ../sass/style.scss */
 .header-scroll .cart .foldout .product .type {
   overflow: hidden;
 }
 /* line 534, ../sass/style.scss */
+=======
+/* line 438, ../sass/style.scss */
+.header-scroll .cart .foldout .product .type {
+  overflow: hidden;
+}
+/* line 441, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart .foldout .product .type .title {
   line-height: 0em;
   text-transform: uppercase;
@@ -866,12 +1135,20 @@ video {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 541, ../sass/style.scss */
+=======
+/* line 448, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart .foldout .product .type .title .total {
   float: right;
   font-weight: 700;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 546, ../sass/style.scss */
+=======
+/* line 453, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart .foldout .product .type p.subtitle {
   text-transform: uppercase;
   font-weight: 300;
@@ -884,7 +1161,11 @@ video {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 555, ../sass/style.scss */
+=======
+/* line 462, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart .foldout .product .type input {
   display: none;
   float: right;
@@ -896,11 +1177,19 @@ video {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 563, ../sass/style.scss */
 .header-scroll .cart .foldout .product .type input:focus {
   border-color: 1px solid #dce86b;
 }
 /* line 570, ../sass/style.scss */
+=======
+/* line 470, ../sass/style.scss */
+.header-scroll .cart .foldout .product .type input:focus {
+  border-color: 1px solid #dce86b;
+}
+/* line 477, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart .foldout .totals {
   text-align: left;
   font-size: 0;
@@ -914,12 +1203,20 @@ video {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 580, ../sass/style.scss */
+=======
+/* line 487, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart .foldout .totals span {
   float: right;
   font-size: 1.35em;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 586, ../sass/style.scss */
+=======
+/* line 493, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart .foldout a.checkout {
   line-height: 0em;
   padding: 0;
@@ -932,14 +1229,22 @@ video {
   color: #36373b;
   letter-spacing: .2em;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 598, ../sass/style.scss */
+=======
+/* line 505, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .header-scroll .cart .foldout a.checkout:hover {
   background: #36373b;
   color: #fff;
 }
 
 /*/  MOBILE NAV BUTTON  /////////////////////////////////////////////////////////////////*/
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 610, ../sass/style.scss */
+=======
+/* line 517, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .mobile-nav-btn {
   cursor: pointer;
   padding: 0 1rem 7px;
@@ -957,11 +1262,19 @@ video {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 624, ../sass/style.scss */
 .mobile-nav-btn span {
   display: block;
 }
 /* line 626, ../sass/style.scss */
+=======
+/* line 531, ../sass/style.scss */
+.mobile-nav-btn span {
+  display: block;
+}
+/* line 533, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .mobile-nav-btn .lines {
   background: none repeat scroll 0 0 #36373b;
   display: inline-block;
@@ -977,7 +1290,11 @@ video {
   -webkit-transition-delay: 0s;
   transition: all 0.3s ease 0s;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 635, ../sass/style.scss */
+=======
+/* line 542, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .mobile-nav-btn .lines:before, .mobile-nav-btn .lines:after {
   background: none repeat scroll 0 0 #36373b;
   content: "";
@@ -999,6 +1316,7 @@ video {
   -webkit-border-radius: 0.28571rem;
   border-radius: 0.28571rem;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 648, ../sass/style.scss */
 .mobile-nav-btn .lines:before {
   top: .5rem;
@@ -1008,30 +1326,61 @@ video {
   top: -.5rem;
 }
 /* line 652, ../sass/style.scss */
+=======
+/* line 555, ../sass/style.scss */
+.mobile-nav-btn .lines:before {
+  top: .5rem;
+}
+/* line 556, ../sass/style.scss */
+.mobile-nav-btn .lines:after {
+  top: -.5rem;
+}
+/* line 559, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .mobile-nav-btn:hover {
   background: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 656, ../sass/style.scss */
 .mobile-nav-btn:hover .lines {
   background: #36373b;
 }
 /* line 659, ../sass/style.scss */
+=======
+/* line 563, ../sass/style.scss */
+.mobile-nav-btn:hover .lines {
+  background: #36373b;
+}
+/* line 566, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .mobile-nav-btn:hover .lines:before {
   top: .5rem;
   background: #36373b;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 660, ../sass/style.scss */
+=======
+/* line 567, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .mobile-nav-btn:hover .lines:after {
   top: -.5rem;
   background: #36373b;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 665, ../sass/style.scss */
 body.mobile-nav-open .mobile-nav-btn .lines {
   background: none repeat scroll 0 0 transparent;
 }
 /* line 668, ../sass/style.scss */
+=======
+/* line 572, ../sass/style.scss */
+body.mobile-nav-open .mobile-nav-btn .lines {
+  background: none repeat scroll 0 0 transparent;
+}
+/* line 575, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 body.mobile-nav-open .mobile-nav-btn .lines:before, body.mobile-nav-open .mobile-nav-btn .lines:after {
   top: 0;
   -moz-transform-origin: 50% 50% 0 50%;
@@ -1040,14 +1389,22 @@ body.mobile-nav-open .mobile-nav-btn .lines:before, body.mobile-nav-open .mobile
   transform-origin: 50% 50% 0 50%;
   width: 1.9rem;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 674, ../sass/style.scss */
+=======
+/* line 581, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 body.mobile-nav-open .mobile-nav-btn .lines:before {
   -moz-transform: rotate3d(0, 0, 1, 45deg);
   -ms-transform: rotate3d(0, 0, 1, 45deg);
   -webkit-transform: rotate3d(0, 0, 1, 45deg);
   transform: rotate3d(0, 0, 1, 45deg);
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 675, ../sass/style.scss */
+=======
+/* line 582, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 body.mobile-nav-open .mobile-nav-btn .lines:after {
   -moz-transform: rotate3d(0, 0, 1, -45deg);
   -ms-transform: rotate3d(0, 0, 1, -45deg);
@@ -1056,20 +1413,32 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 
 /*/  CONTENT  /////////////////////////////////////////////////////////////////*/
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 686, ../sass/style.scss */
+=======
+/* line 593, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 100px;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 692, ../sass/style.scss */
+=======
+/* line 599, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content {
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 697, ../sass/style.scss */
+=======
+/* line 604, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .divider {
   position: absolute;
   width: 100%;
@@ -1077,6 +1446,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin: 0;
   overflow: hidden;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 704, ../sass/style.scss */
 .content .divider.top {
   bottom: 100%;
@@ -1094,12 +1464,35 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin-top: -2px;
 }
 /* line 716, ../sass/style.scss */
+=======
+/* line 611, ../sass/style.scss */
+.content .divider.top {
+  bottom: 100%;
+}
+/* line 614, ../sass/style.scss */
+.content .divider.top img {
+  margin-bottom: -2px;
+}
+/* line 617, ../sass/style.scss */
+.content .divider.bottom {
+  top: 100%;
+}
+/* line 620, ../sass/style.scss */
+.content .divider.bottom img {
+  margin-top: -2px;
+}
+/* line 623, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .divider img {
   width: 104%;
   margin-left: -2%;
   display: block;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 723, ../sass/style.scss */
+=======
+/* line 630, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product {
   top: 0;
   left: 0;
@@ -1115,7 +1508,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   height: 100%;
   width: 100%;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 734, ../sass/style.scss */
+=======
+/* line 641, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product a.nav {
   width: 150px;
   height: 150px;
@@ -1136,21 +1533,37 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   text-decoration: none;
   font-size: 2.5em;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 751, ../sass/style.scss */
 .content .product a.nav.prev {
   left: -100%;
 }
 /* line 755, ../sass/style.scss */
+=======
+/* line 658, ../sass/style.scss */
+.content .product a.nav.prev {
+  left: -100%;
+}
+/* line 662, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product a.nav.next {
   right: 0;
   width: 0;
   overflow: hidden;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 761, ../sass/style.scss */
 .content .product a.nav:hover {
   background: #dce86b;
 }
 /* line 766, ../sass/style.scss */
+=======
+/* line 668, ../sass/style.scss */
+.content .product a.nav:hover {
+  background: #dce86b;
+}
+/* line 673, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .photos {
   top: 0;
   left: -100%;
@@ -1166,7 +1579,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   transition: all 0.3s ease;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 778, ../sass/style.scss */
+=======
+/* line 685, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .photos a.photo {
   outline: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -1179,6 +1596,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   opacity: .5;
   float: left;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 790, ../sass/style.scss */
 .content .product .photos a.photo:hover {
   opacity: 1;
@@ -1188,6 +1606,17 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   opacity: 1;
 }
 /* line 797, ../sass/style.scss */
+=======
+/* line 697, ../sass/style.scss */
+.content .product .photos a.photo:hover {
+  opacity: 1;
+}
+/* line 699, ../sass/style.scss */
+.content .product .photos a.photo.active {
+  opacity: 1;
+}
+/* line 704, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .photos .more-info {
   outline: none;
   position: absolute;
@@ -1199,18 +1628,30 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   z-index: 556;
   background: #dce86b;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 809, ../sass/style.scss */
 .content .product .photos .more-info:hover span.icon {
   color: #36373b;
 }
 /* line 814, ../sass/style.scss */
+=======
+/* line 716, ../sass/style.scss */
+.content .product .photos .more-info:hover span.icon {
+  color: #36373b;
+}
+/* line 721, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .photos .more-info span.icon {
   line-height: 150px;
   color: #fff;
   font-size: 3em;
   cursor: pointer;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 825, ../sass/style.scss */
+=======
+/* line 732, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product a.close {
   position: absolute;
   right: 0;
@@ -1224,6 +1665,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   text-align: center;
   font-size: 1.3em;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 838, ../sass/style.scss */
 .content .product a.close:hover {
   background: #dce86b;
@@ -1233,10 +1675,25 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   width: 80%;
 }
 /* line 850, ../sass/style.scss */
+=======
+/* line 745, ../sass/style.scss */
+.content .product a.close:hover {
+  background: #dce86b;
+}
+/* line 752, ../sass/style.scss */
+.content .product:hover .image a {
+  width: 80%;
+}
+/* line 757, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product:hover .info {
   top: -20px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 855, ../sass/style.scss */
+=======
+/* line 762, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .image {
   margin: 100px 0;
   display: inline-block;
@@ -1254,7 +1711,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 866, ../sass/style.scss */
+=======
+/* line 773, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .image a {
   display: inline-block;
   outline: none;
@@ -1264,7 +1725,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 4s ease-out;
   transition: all 4s ease-out;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 872, ../sass/style.scss */
+=======
+/* line 779, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .image a img {
   width: 100%;
   display: block;
@@ -1274,7 +1739,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   transition: all 4s ease;
   cursor: url("../img/cursor-add.svg") 19 19, auto;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 876, ../sass/style.scss */
+=======
+/* line 783, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .info {
   overflow: hidden;
   display: inline-block;
@@ -1290,11 +1759,19 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   padding-right: 100px;
   padding-bottom: 20px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 888, ../sass/style.scss */
 .content .product .info h2 {
   margin: 0;
 }
 /* line 892, ../sass/style.scss */
+=======
+/* line 795, ../sass/style.scss */
+.content .product .info h2 {
+  margin: 0;
+}
+/* line 799, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .info p.subtitle {
   font-size: 1.88em;
   font-weight: 300;
@@ -1302,12 +1779,20 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin-bottom: 40px;
   white-space: nowrap;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 900, ../sass/style.scss */
+=======
+/* line 807, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .info .details {
   margin-bottom: 40px;
   overflow: hidden;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 904, ../sass/style.scss */
+=======
+/* line 811, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .info .details span.types {
   cursor: pointer;
   display: block;
@@ -1324,17 +1809,29 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 915, ../sass/style.scss */
+=======
+/* line 822, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .info .details span.types:hover {
   border: 1px solid rgba(0, 0, 0, 0.2);
   color: rgba(0, 0, 0, 0.4);
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 920, ../sass/style.scss */
+=======
+/* line 827, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .info .details span.types.active {
   border: 1px solid #dce86b;
   color: #36373b;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 926, ../sass/style.scss */
+=======
+/* line 833, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .info .details span.type {
   font-weight: 700;
   letter-spacing: .2em;
@@ -1342,30 +1839,47 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   display: block;
   margin-bottom: 5px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 934, ../sass/style.scss */
+=======
+/* line 841, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .info .details span.price {
   font-weight: 700;
   letter-spacing: .2em;
   font-size: 1.88em;
   display: block;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 942, ../sass/style.scss */
+=======
+/* line 849, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .info .amount {
   margin: 0 0 40px;
   overflow: hidden;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 946, ../sass/style.scss */
 .content .product .info .amount .float {
   float: left;
 }
 /* line 948, ../sass/style.scss */
+=======
+/* line 853, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .info .amount label {
   display: block;
   line-height: 50px;
   margin: 2px 20px 2px 0;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 954, ../sass/style.scss */
 .content .product .info .amount input, .content .product .info .amount select {
+=======
+/* line 860, ../sass/style.scss */
+.content .product .info .amount input {
+>>>>>>> Prodcut slider (wip)
   background: transparent;
   height: 50px;
   line-height: 50px;
@@ -1376,12 +1890,21 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin: 2px 30px 2px 0;
   font-size: 1em;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 965, ../sass/style.scss */
 .content .product .info .amount input:focus, .content .product .info .amount select:focus {
   border: 1px solid #dce86b;
   background: #dce86b;
 }
 /* line 972, ../sass/style.scss */
+=======
+/* line 871, ../sass/style.scss */
+.content .product .info .amount input:focus {
+  border: 1px solid #dce86b;
+  background: #dce86b;
+}
+/* line 878, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .info a.order {
   white-space: nowrap;
   text-decoration: none;
@@ -1400,14 +1923,22 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: skewY(0deg);
   transform: skewY(0deg);
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 987, ../sass/style.scss */
+=======
+/* line 893, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .info a.order span.icon-cart {
   font-size: 1.4em;
   top: 4px;
   position: relative;
   margin-left: 20px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 994, ../sass/style.scss */
+=======
+/* line 900, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product .info a.order:hover {
   color: #fff;
   background: #36373b;
@@ -1417,21 +1948,37 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: skewY(-3deg);
   transform: skewY(-3deg);
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1003, ../sass/style.scss */
+=======
+/* line 909, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product.yellow {
   background: #dce86b;
   z-index: 1;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1007, ../sass/style.scss */
 .content .product.yellow .image {
   margin: 150px 0;
 }
 /* line 1009, ../sass/style.scss */
+=======
+/* line 913, ../sass/style.scss */
+.content .product.yellow .image {
+  margin: 150px 0;
+}
+/* line 915, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product.yellow .info {
   padding-left: 100px;
   padding-right: 0;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1013, ../sass/style.scss */
+=======
+/* line 919, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product.yellow .info a.order {
   background: #fff;
   border-color: #fff;
@@ -1441,12 +1988,17 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   display: inline-block;
   color: #36373b;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1022, ../sass/style.scss */
+=======
+/* line 928, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product.yellow .info a.order:hover {
   background: #36373b;
   border-color: #36373b;
   color: #dce86b;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1029, ../sass/style.scss */
 .content .product.yellow .info .field input, .content .product.yellow .info .field select {
   border: 1px solid #36373b;
@@ -1457,12 +2009,25 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   background: #fff;
 }
 /* line 1039, ../sass/style.scss */
+=======
+/* line 935, ../sass/style.scss */
+.content .product.yellow .info .field input {
+  border: 1px solid #36373b;
+}
+/* line 938, ../sass/style.scss */
+.content .product.yellow .info .field input:focus {
+  border: 1px solid #fff;
+  background: #fff;
+}
+/* line 945, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product.yellow .divider {
   position: relative;
   width: 100%;
   left: 0;
   margin: 0;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1045, ../sass/style.scss */
 .content .product.yellow .divider.top {
   bottom: auto;
@@ -1472,15 +2037,34 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   top: auto;
 }
 /* line 1053, ../sass/style.scss */
+=======
+/* line 951, ../sass/style.scss */
+.content .product.yellow .divider.top {
+  bottom: auto;
+}
+/* line 955, ../sass/style.scss */
+.content .product.yellow .divider.bottom {
+  top: auto;
+}
+/* line 959, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product.yellow .divider img {
   width: 100%;
   display: block;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1063, ../sass/style.scss */
 .content .product.tanktop .info p.subtitle {
   letter-spacing: .3em;
 }
 /* line 1069, ../sass/style.scss */
+=======
+/* line 969, ../sass/style.scss */
+.content .product.tanktop .info p.subtitle {
+  letter-spacing: .3em;
+}
+/* line 975, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product.active {
   margin-top: 0;
   z-index: 100000;
@@ -1489,34 +2073,62 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   position: fixed;
   cursor: url("../img/cursor-close.svg") 19 19, auto;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1078, ../sass/style.scss */
 .content .product.active.yellow .nav {
   background: #dce86b;
 }
 /* line 1081, ../sass/style.scss */
+=======
+/* line 984, ../sass/style.scss */
+.content .product.active.yellow .nav {
+  background: #dce86b;
+}
+/* line 987, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product.active.yellow .nav:hover {
   background: #36373b;
   color: #fff;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1087, ../sass/style.scss */
+=======
+/* line 993, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product.active.yellow .image {
   left: 9%;
   margin-top: 0;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1093, ../sass/style.scss */
 .content .product.active .nav.prev {
   left: 0;
 }
 /* line 1094, ../sass/style.scss */
+=======
+/* line 999, ../sass/style.scss */
+.content .product.active .nav.prev {
+  left: 0;
+}
+/* line 1000, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product.active .nav.next {
   right: 0;
   width: 150px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1096, ../sass/style.scss */
 .content .product.active .photos {
   left: 0;
 }
 /* line 1101, ../sass/style.scss */
+=======
+/* line 1002, ../sass/style.scss */
+.content .product.active .photos {
+  left: 0;
+}
+/* line 1007, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product.active .image {
   height: -moz-calc(100% - 150px);
   height: -webkit-calc(100% - 150px);
@@ -1533,7 +2145,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   transform: translateX(-50%);
   cursor: url("../img/cursor-close.svg") 19 19, auto;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1114, ../sass/style.scss */
+=======
+/* line 1020, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product.active .image a {
   -moz-transition: ease-out 1s 0s;
   -o-transition: ease-out 1s 0s;
@@ -1549,28 +2165,48 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   width: 100%;
   cursor: url("../img/cursor-close.svg") 19 19, auto;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1122, ../sass/style.scss */
+=======
+/* line 1027, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .product.active .image a img {
   width: 100%;
   display: block;
   cursor: url("../img/cursor-close.svg") 19 19, auto;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1130, ../sass/style.scss */
 .content .product.active .info {
   opacity: 0;
 }
 /* line 1136, ../sass/style.scss */
+=======
+/* line 1035, ../sass/style.scss */
+.content .product.active .info {
+  opacity: 0;
+}
+/* line 1041, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .media {
   background: #edeef2;
   padding: 150px 0 0 0;
   position: relative;
   z-index: 1;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1142, ../sass/style.scss */
 .content .media .cols {
   overflow: hidden;
 }
 /* line 1146, ../sass/style.scss */
+=======
+/* line 1047, ../sass/style.scss */
+.content .media .cols {
+  overflow: hidden;
+}
+/* line 1051, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .media a.col {
   outline: none;
   padding: 100px 40px;
@@ -1585,11 +2221,19 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1157, ../sass/style.scss */
 .content .media a.col.size1of3 {
   width: 33.33%;
 }
 /* line 1159, ../sass/style.scss */
+=======
+/* line 1062, ../sass/style.scss */
+.content .media a.col.size1of3 {
+  width: 33.33%;
+}
+/* line 1064, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .media a.col .logo {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -1597,7 +2241,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin: 0 auto;
   height: 120px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1166, ../sass/style.scss */
+=======
+/* line 1071, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .media a.col .logo .hover {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -1609,6 +2257,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1175, ../sass/style.scss */
 .content .media a.col .logo.vice {
   background-image: url(../img/vice.svg);
@@ -1634,10 +2283,38 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   background-image: url(../img/fhm-hover.svg);
 }
 /* line 1191, ../sass/style.scss */
+=======
+/* line 1080, ../sass/style.scss */
+.content .media a.col .logo.vice {
+  background-image: url(../img/vice.svg);
+}
+/* line 1082, ../sass/style.scss */
+.content .media a.col .logo.vice .hover {
+  background-image: url(../img/vice-hover.svg);
+}
+/* line 1085, ../sass/style.scss */
+.content .media a.col .logo.metro {
+  background-image: url(../img/metro.jpg);
+}
+/* line 1087, ../sass/style.scss */
+.content .media a.col .logo.metro .hover {
+  background-image: url(../img/metro-hover.jpg);
+}
+/* line 1090, ../sass/style.scss */
+.content .media a.col .logo.fhm {
+  background-image: url(../img/fhm.svg);
+}
+/* line 1092, ../sass/style.scss */
+.content .media a.col .logo.fhm .hover {
+  background-image: url(../img/fhm-hover.svg);
+}
+/* line 1096, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .media a.col p {
   font-weight: 300;
   letter-spacing: .05em;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1196, ../sass/style.scss */
 .content .media a.col:hover {
   color: #36373b;
@@ -1647,35 +2324,66 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   opacity: 1;
 }
 /* line 1204, ../sass/style.scss */
+=======
+/* line 1101, ../sass/style.scss */
+.content .media a.col:hover {
+  color: #36373b;
+}
+/* line 1104, ../sass/style.scss */
+.content .media a.col:hover .logo .hover {
+  opacity: 1;
+}
+/* line 1109, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .instagram {
   position: relative;
   overflow: hidden;
   padding-top: 1%;
   padding-bottom: 1%;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1210, ../sass/style.scss */
+=======
+/* line 1115, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .instagram .divider {
   position: absolute;
   width: 100%;
   left: 0;
   margin: 0;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1216, ../sass/style.scss */
 .content .instagram .divider.top {
   top: 8%;
 }
 /* line 1220, ../sass/style.scss */
+=======
+/* line 1121, ../sass/style.scss */
+.content .instagram .divider.top {
+  top: 8%;
+}
+/* line 1125, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .instagram .divider.bottom {
   bottom: 0;
   top: auto;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1225, ../sass/style.scss */
+=======
+/* line 1130, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .instagram .divider img {
   width: 104%;
   margin-left: -2%;
   display: block;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1232, ../sass/style.scss */
+=======
+/* line 1137, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .instagram a.title {
   outline: none;
   display: inline-block;
@@ -1702,7 +2410,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: translateX(-50%) translateY(-50%) skewY(0deg);
   transform: translateX(-50%) translateY(-50%) skewY(0deg);
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1252, ../sass/style.scss */
+=======
+/* line 1157, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .instagram a.title:hover {
   background: #dce86b;
   color: #36373b;
@@ -1711,12 +2423,20 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: translateX(-50%) translateY(-50%) skewY(-4deg);
   transform: translateX(-50%) translateY(-50%) skewY(-4deg);
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1258, ../sass/style.scss */
+=======
+/* line 1163, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .instagram a.title span {
   font-weight: 400;
   font-size: .95em;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1264, ../sass/style.scss */
+=======
+/* line 1169, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .instagram .image {
   float: left;
   width: 50%;
@@ -1728,7 +2448,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 
 /* */
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1279, ../sass/style.scss */
+=======
+/* line 1184, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .thanks-page .header-scroll {
   position: relative;
   top: 0;
@@ -1738,25 +2462,41 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   box-shadow: none;
   border-bottom: 1px solid #e8e8e8;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1287, ../sass/style.scss */
+=======
+/* line 1192, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .thanks-page h1 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1293, ../sass/style.scss */
+=======
+/* line 1198, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .thanks-page p {
   font-weight: 300;
   letter-spacing: .03em;
   font-size: 1.2em;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1300, ../sass/style.scss */
+=======
+/* line 1205, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .thanks-page .content .thanks {
   margin-top: 30px;
   margin-bottom: 150px;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1309, ../sass/style.scss */
+=======
+/* line 1214, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .header-scroll {
   position: relative;
   top: 0;
@@ -1766,32 +2506,56 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   box-shadow: none;
   border-bottom: 1px solid #e8e8e8;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1317, ../sass/style.scss */
+=======
+/* line 1222, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page h1 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1323, ../sass/style.scss */
 .checkout-page h2 {
   font-size: 1.833em;
 }
 /* line 1328, ../sass/style.scss */
+=======
+/* line 1228, ../sass/style.scss */
+.checkout-page h2 {
+  font-size: 1.833em;
+}
+/* line 1233, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout {
   margin-top: 30px;
   margin-bottom: 150px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1332, ../sass/style.scss */
 .checkout-page .content .checkout .wrapper {
   overflow: hidden;
 }
 /* line 1336, ../sass/style.scss */
+=======
+/* line 1237, ../sass/style.scss */
+.checkout-page .content .checkout .wrapper {
+  overflow: hidden;
+}
+/* line 1241, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout .data {
   width: 65%;
   float: left;
   display: block;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1342, ../sass/style.scss */
+=======
+/* line 1247, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout .summary {
   padding: 20px;
   background: #dce86b;
@@ -1801,7 +2565,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   display: block;
   font-size: .9em;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1351, ../sass/style.scss */
+=======
+/* line 1256, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout .summary .item {
   background: none;
   margin-bottom: 40px;
@@ -1810,7 +2578,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1357, ../sass/style.scss */
+=======
+/* line 1262, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout .summary .item .type .title {
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -1820,12 +2592,20 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1363, ../sass/style.scss */
+=======
+/* line 1268, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout .summary .item .type .title .total {
   float: right;
   font-weight: 700;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1368, ../sass/style.scss */
+=======
+/* line 1273, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout .summary .item .type p.subtitle {
   text-transform: uppercase;
   font-weight: 300;
@@ -1837,7 +2617,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1376, ../sass/style.scss */
+=======
+/* line 1281, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout .summary .item .type .sizes {
   display: block;
   float: right;
@@ -1852,7 +2636,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1390, ../sass/style.scss */
+=======
+/* line 1295, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout .summary .totals {
   font-size: 1.15em;
   margin-bottom: 10px;
@@ -1866,12 +2654,20 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1400, ../sass/style.scss */
+=======
+/* line 1305, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout .summary .totals span {
   float: right;
   font-size: 1.35em;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1406, ../sass/style.scss */
+=======
+/* line 1311, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout .summary .vat {
   font-weight: 200;
   margin-bottom: 40px;
@@ -1881,7 +2677,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   letter-spacing: .2em;
   text-transform: uppercase;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1416, ../sass/style.scss */
+=======
+/* line 1321, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout .summary a.checkout {
   margin-bottom: 0;
   padding: 20px;
@@ -1894,7 +2694,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   color: #fff;
   letter-spacing: .2em;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1428, ../sass/style.scss */
+=======
+/* line 1333, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout .summary a.checkout:hover {
   color: #dce86b;
   background: #4e5056;
@@ -1902,6 +2706,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1436, ../sass/style.scss */
 .checkout-page .content .checkout form {
   margin-bottom: 50px;
@@ -1911,6 +2716,17 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin-bottom: 20px;
 }
 /* line 1442, ../sass/style.scss */
+=======
+/* line 1341, ../sass/style.scss */
+.checkout-page .content .checkout form {
+  margin-bottom: 50px;
+}
+/* line 1344, ../sass/style.scss */
+.checkout-page .content .checkout form .field {
+  margin-bottom: 20px;
+}
+/* line 1347, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout form .field input[type="text"], .checkout-page .content .checkout form .field input[type="file"], .checkout-page .content .checkout form .field input[type="number"], .checkout-page .content .checkout form .field select {
   background: #fff none repeat scroll 0 0;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -1931,11 +2747,16 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   transition: all 0.3s ease 0s;
   width: 100%;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1458, ../sass/style.scss */
+=======
+/* line 1363, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout form .field input[type="text"].error, .checkout-page .content .checkout form .field input[type="file"].error, .checkout-page .content .checkout form .field input[type="number"].error, .checkout-page .content .checkout form .field select.error {
   background: #ffebf0;
   border: 1px solid #ffbccc;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1462, ../sass/style.scss */
 .checkout-page .content .checkout form .field input[type="text"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field select.error::-webkit-input-placeholder {
   color: #e00b3d;
@@ -1953,10 +2774,30 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   color: #e00b3d;
 }
 /* line 1468, ../sass/style.scss */
+=======
+/* line 1367, ../sass/style.scss */
+.checkout-page .content .checkout form .field input[type="text"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field select.error::-webkit-input-placeholder {
+  color: #e00b3d;
+}
+/* line 1368, ../sass/style.scss */
+.checkout-page .content .checkout form .field input[type="text"].error:-moz-placeholder, .checkout-page .content .checkout form .field input[type="file"].error:-moz-placeholder, .checkout-page .content .checkout form .field input[type="number"].error:-moz-placeholder, .checkout-page .content .checkout form .field select.error:-moz-placeholder {
+  color: #e00b3d;
+}
+/* line 1369, ../sass/style.scss */
+.checkout-page .content .checkout form .field input[type="text"].error::-moz-placeholder, .checkout-page .content .checkout form .field input[type="file"].error::-moz-placeholder, .checkout-page .content .checkout form .field input[type="number"].error::-moz-placeholder, .checkout-page .content .checkout form .field select.error::-moz-placeholder {
+  color: #e00b3d;
+}
+/* line 1370, ../sass/style.scss */
+.checkout-page .content .checkout form .field input[type="text"].error:-ms-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].error:-ms-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].error:-ms-input-placeholder, .checkout-page .content .checkout form .field select.error:-ms-input-placeholder {
+  color: #e00b3d;
+}
+/* line 1373, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout form .field input[type="text"].success, .checkout-page .content .checkout form .field input[type="file"].success, .checkout-page .content .checkout form .field input[type="number"].success, .checkout-page .content .checkout form .field select.success {
   background: #f3ffef;
   border: 1px solid #acf098;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1472, ../sass/style.scss */
 .checkout-page .content .checkout form .field input[type="text"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field select.success::-webkit-input-placeholder {
   color: #2cbd00;
@@ -1974,6 +2815,25 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   color: #2cbd00;
 }
 /* line 1479, ../sass/style.scss */
+=======
+/* line 1377, ../sass/style.scss */
+.checkout-page .content .checkout form .field input[type="text"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field select.success::-webkit-input-placeholder {
+  color: #2cbd00;
+}
+/* line 1378, ../sass/style.scss */
+.checkout-page .content .checkout form .field input[type="text"].success:-moz-placeholder, .checkout-page .content .checkout form .field input[type="file"].success:-moz-placeholder, .checkout-page .content .checkout form .field input[type="number"].success:-moz-placeholder, .checkout-page .content .checkout form .field select.success:-moz-placeholder {
+  color: #2cbd00;
+}
+/* line 1379, ../sass/style.scss */
+.checkout-page .content .checkout form .field input[type="text"].success::-moz-placeholder, .checkout-page .content .checkout form .field input[type="file"].success::-moz-placeholder, .checkout-page .content .checkout form .field input[type="number"].success::-moz-placeholder, .checkout-page .content .checkout form .field select.success::-moz-placeholder {
+  color: #2cbd00;
+}
+/* line 1380, ../sass/style.scss */
+.checkout-page .content .checkout form .field input[type="text"].success:-ms-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].success:-ms-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].success:-ms-input-placeholder, .checkout-page .content .checkout form .field select.success:-ms-input-placeholder {
+  color: #2cbd00;
+}
+/* line 1384, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout form .field textarea {
   border: 1px solid rgba(0, 0, 0, 0.2);
   letter-spacing: 0.03em;
@@ -1988,6 +2848,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition-delay: 0s;
   transition: all 0.3s ease 0s;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1489, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea::-webkit-input-placeholder {
   line-height: 1.6em;
@@ -2005,10 +2866,30 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   line-height: 1.6em;
 }
 /* line 1494, ../sass/style.scss */
+=======
+/* line 1394, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea::-webkit-input-placeholder {
+  line-height: 1.6em;
+}
+/* line 1395, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea:-moz-placeholder {
+  line-height: 1.6em;
+}
+/* line 1396, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea::-moz-placeholder {
+  line-height: 1.6em;
+}
+/* line 1397, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea:-ms-input-placeholder {
+  line-height: 1.6em;
+}
+/* line 1399, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout form .field textarea.error {
   background: #ffebf0;
   border: 1px solid #ffbccc;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1498, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea.error::-webkit-input-placeholder {
   color: #e00b3d;
@@ -2026,10 +2907,30 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   color: #e00b3d;
 }
 /* line 1504, ../sass/style.scss */
+=======
+/* line 1403, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea.error::-webkit-input-placeholder {
+  color: #e00b3d;
+}
+/* line 1404, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea.error:-moz-placeholder {
+  color: #e00b3d;
+}
+/* line 1405, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea.error::-moz-placeholder {
+  color: #e00b3d;
+}
+/* line 1406, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea.error:-ms-input-placeholder {
+  color: #e00b3d;
+}
+/* line 1409, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout form .field textarea.success {
   background: #f3ffef;
   border: 1px solid #acf098;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1508, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea.success::-webkit-input-placeholder {
   color: #2cbd00;
@@ -2051,11 +2952,35 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   overflow: hidden;
 }
 /* line 1518, ../sass/style.scss */
+=======
+/* line 1413, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea.success::-webkit-input-placeholder {
+  color: #2cbd00;
+}
+/* line 1414, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea.success:-moz-placeholder {
+  color: #2cbd00;
+}
+/* line 1415, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea.success::-moz-placeholder {
+  color: #2cbd00;
+}
+/* line 1416, ../sass/style.scss */
+.checkout-page .content .checkout form .field textarea.success:-ms-input-placeholder {
+  color: #2cbd00;
+}
+/* line 1420, ../sass/style.scss */
+.checkout-page .content .checkout form .field.doublefield {
+  overflow: hidden;
+}
+/* line 1423, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout form .field.doublefield input[type="text"], .checkout-page .content .checkout form .field.doublefield input[type="file"], .checkout-page .content .checkout form .field.doublefield input[type="number"], .checkout-page .content .checkout form .field.doublefield select {
   width: calc(50% - 10px);
   float: left;
   margin-left: 20px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1523, ../sass/style.scss */
 .checkout-page .content .checkout form .field.doublefield input[type="text"]:first-child, .checkout-page .content .checkout form .field.doublefield input[type="file"]:first-child, .checkout-page .content .checkout form .field.doublefield input[type="number"]:first-child, .checkout-page .content .checkout form .field.doublefield select:first-child {
   margin-left: 0;
@@ -2069,17 +2994,40 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin-bottom: 20px;
 }
 /* line 1534, ../sass/style.scss */
+=======
+/* line 1428, ../sass/style.scss */
+.checkout-page .content .checkout form .field.doublefield input[type="text"]:first-child, .checkout-page .content .checkout form .field.doublefield input[type="file"]:first-child, .checkout-page .content .checkout form .field.doublefield input[type="number"]:first-child, .checkout-page .content .checkout form .field.doublefield select:first-child {
+  margin-left: 0;
+}
+/* line 1432, ../sass/style.scss */
+.checkout-page .content .checkout form .field.address {
+  margin-bottom: 0;
+}
+/* line 1435, ../sass/style.scss */
+.checkout-page .content .checkout form .field.address input[type="text"], .checkout-page .content .checkout form .field.address input[type="file"], .checkout-page .content .checkout form .field.address input[type="number"], .checkout-page .content .checkout form .field.address select {
+  margin-bottom: 20px;
+}
+/* line 1439, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout form .field.radiocheck label {
   display: block;
   cursor: pointer;
   margin-right: 30px;
   margin-bottom: 5px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1540, ../sass/style.scss */
 .checkout-page .content .checkout form .field.radiocheck label select {
   margin-top: 15px;
 }
 /* line 1542, ../sass/style.scss */
+=======
+/* line 1445, ../sass/style.scss */
+.checkout-page .content .checkout form .field.radiocheck label select {
+  margin-top: 15px;
+}
+/* line 1447, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout form .field.radiocheck label span.image {
   margin-left: 10px;
   width: 40px;
@@ -2087,12 +3035,20 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   position: relative;
   display: inline-block;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1549, ../sass/style.scss */
+=======
+/* line 1454, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout form .field.radiocheck label span.image img {
   width: 100%;
   display: block;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1555, ../sass/style.scss */
+=======
+/* line 1460, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .checkout-page .content .checkout form .field.radiocheck label input[type="radio"] {
   margin: 1px 5px 1px 1px;
   top: -3px;
@@ -2100,13 +3056,21 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 
 /*/  FOOTER  /////////////////////////////////////////////////////////////////*/
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1571, ../sass/style.scss */
+=======
+/* line 1476, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .footer {
   position: relative;
   background: #fff;
   padding-top: 80px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1576, ../sass/style.scss */
+=======
+/* line 1481, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .footer .title {
   position: relative;
   z-index: 15;
@@ -2130,7 +3094,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1594, ../sass/style.scss */
+=======
+/* line 1499, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .footer .title:hover {
   background: #dce86b;
   color: #36373b;
@@ -2139,16 +3107,28 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: translateX(-50%) skewY(-4deg);
   transform: translateX(-50%) skewY(-4deg);
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1600, ../sass/style.scss */
+=======
+/* line 1505, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .footer .title span {
   font-weight: 400;
   font-size: .95em;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1606, ../sass/style.scss */
 .footer .contactform {
   padding: 0 100px 100px 100px;
 }
 /* line 1610, ../sass/style.scss */
+=======
+/* line 1511, ../sass/style.scss */
+.footer .contactform {
+  padding: 0 100px 100px 100px;
+}
+/* line 1515, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .footer .divider {
   position: absolute;
   width: 100%;
@@ -2156,16 +3136,28 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin: 0;
   z-index: 5;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1617, ../sass/style.scss */
 .footer .divider.top {
   top: 8%;
 }
 /* line 1621, ../sass/style.scss */
+=======
+/* line 1522, ../sass/style.scss */
+.footer .divider.top {
+  top: 8%;
+}
+/* line 1526, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .footer .divider.bottom {
   bottom: auto;
   top: 100%;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1626, ../sass/style.scss */
+=======
+/* line 1531, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .footer .divider img {
   width: 104%;
   margin-left: -2%;
@@ -2173,7 +3165,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 
 /*/  BOTTOM BG  /////////////////////////////////////////////////////////////////*/
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1637, ../sass/style.scss */
+=======
+/* line 1542, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .bottom-bg {
   height: 700px;
   position: relative;
@@ -2182,7 +3178,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   background-size: cover;
   background-position: center center;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1645, ../sass/style.scss */
+=======
+/* line 1550, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .bottom-bg .overlay {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -2192,7 +3192,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   left: 0;
   text-align: center;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1654, ../sass/style.scss */
+=======
+/* line 1559, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .bottom-bg .overlay .logo-happysmugglers-light {
   background: url(../img/logo-happy-smugglers-lang-light.svg) no-repeat;
   background-size: 100%;
@@ -2200,7 +3204,11 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin: 170px auto 0;
   height: 50px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1662, ../sass/style.scss */
+=======
+/* line 1567, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .bottom-bg .overlay p {
   font-weight: 400;
   color: #fff;
@@ -2209,11 +3217,19 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   letter-spacing: .1em;
   font-size: 1.2em;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1671, ../sass/style.scss */
 .bottom-bg .overlay ul {
   margin-bottom: 30px;
 }
 /* line 1674, ../sass/style.scss */
+=======
+/* line 1576, ../sass/style.scss */
+.bottom-bg .overlay ul {
+  margin-bottom: 30px;
+}
+/* line 1579, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .bottom-bg .overlay ul li {
   line-height: 2.25em;
   text-align: center;
@@ -2222,11 +3238,19 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   font-size: .9em;
   letter-spacing: .075em;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1684, ../sass/style.scss */
 .bottom-bg .overlay .socials {
   text-align: center;
 }
 /* line 1687, ../sass/style.scss */
+=======
+/* line 1589, ../sass/style.scss */
+.bottom-bg .overlay .socials {
+  text-align: center;
+}
+/* line 1592, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .bottom-bg .overlay .socials a.social {
   display: inline-block;
   width: 40px;
@@ -2239,15 +3263,24 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   border-radius: 50%;
   margin-left: 10px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1697, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social:first-child {
   margin-left: 0;
 }
 /* line 1699, ../sass/style.scss */
+=======
+/* line 1602, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social:first-child {
+  margin-left: 0;
+}
+/* line 1604, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .bottom-bg .overlay .socials a.social span.icon {
   line-height: 40px;
   text-align: center;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1704, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.facebook {
   background: #4970b2;
@@ -2293,32 +3326,96 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   background: #eb5e53;
 }
 /* line 1709, ../sass/style.scss */
+=======
+/* line 1609, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.facebook {
+  background: #4970b2;
+}
+/* line 1609, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.facebook:hover {
+  background: #334e7c;
+}
+/* line 1610, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.twitter {
+  background: #6dceef;
+}
+/* line 1610, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.twitter:hover {
+  background: #28b7e7;
+}
+/* line 1611, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.insta {
+  background: #a77b5e;
+}
+/* line 1611, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.insta:hover {
+  background: #775741;
+}
+/* line 1612, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.youtube {
+  background: #e64a41;
+}
+/* line 1612, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.youtube:hover {
+  background: #c12319;
+}
+/* line 1613, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.vimeo {
+  background: #17aee1;
+}
+/* line 1613, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.vimeo:hover {
+  background: #10789c;
+}
+/* line 1614, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social.googleplus {
+  background: #eb5e53;
+}
+/* line 1614, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .bottom-bg .overlay .socials a.social.googleplus:hover {
   background: #d82719;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1715, ../sass/style.scss */
+=======
+/* line 1620, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .bottom-bg .divider.top {
   bottom: auto;
 }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1716, ../sass/style.scss */
+=======
+/* line 1621, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 .content .bottom-bg .divider.top img {
   margin-top: -2px;
 }
 
 /*/  FORM STYLING  /////////////////////////////////////////////////////////////////*/
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1720, ../sass/style.scss */
+=======
+/* line 1625, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 form {
   padding: 0;
   margin: 0;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1724, ../sass/style.scss */
+=======
+/* line 1629, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 form fieldset {
   border: none;
   padding: 0;
   margin: 0;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1731, ../sass/style.scss */
 form fieldset.radiocheck .field label {
   width: 100%;
@@ -2328,12 +3425,27 @@ form fieldset.radiocheck .field input[type="checkbox"], form fieldset.radiocheck
   margin-right: 5px;
 }
 /* line 1742, ../sass/style.scss */
+=======
+/* line 1636, ../sass/style.scss */
+form fieldset.radiocheck .field label {
+  width: 100%;
+}
+/* line 1640, ../sass/style.scss */
+form fieldset.radiocheck .field input[type="checkbox"], form fieldset.radiocheck .field input[type="radio"] {
+  margin-right: 5px;
+}
+/* line 1647, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 form .field {
   width: 100%;
   margin-bottom: 10px;
   overflow: hidden;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1747, ../sass/style.scss */
+=======
+/* line 1652, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 form .field button {
   position: relative;
   width: 100%;
@@ -2361,11 +3473,19 @@ form .field button {
   background: #dce86b;
   margin-top: 50px;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1769, ../sass/style.scss */
 form .field button:hover {
   background: #36373b;
 }
 /* line 1774, ../sass/style.scss */
+=======
+/* line 1674, ../sass/style.scss */
+form .field button:hover {
+  background: #36373b;
+}
+/* line 1679, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 form .field label, form .field p.label {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -2374,7 +3494,11 @@ form .field label, form .field p.label {
   font-size: 1em;
   color: #36373b;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1783, ../sass/style.scss */
+=======
+/* line 1688, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 form .field input[type="text"], form .field input[type="file"], form .field input[type="number"], form .field select {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -2399,28 +3523,45 @@ form .field input[type="text"], form .field input[type="file"], form .field inpu
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1802, ../sass/style.scss */
 form .field input[type="text"]:focus, form .field input[type="file"]:focus, form .field input[type="number"]:focus, form .field select:focus {
   border-bottom: 1px solid #dce86b;
 }
 /* line 1805, ../sass/style.scss */
+=======
+/* line 1707, ../sass/style.scss */
+form .field input[type="text"]:focus, form .field input[type="file"]:focus, form .field input[type="number"]:focus, form .field select:focus {
+  border-bottom: 1px solid #dce86b;
+}
+/* line 1710, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 form .field input[type="text"]:focus::-webkit-input-placeholder, form .field input[type="file"]:focus::-webkit-input-placeholder, form .field input[type="number"]:focus::-webkit-input-placeholder, form .field select:focus::-webkit-input-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1806, ../sass/style.scss */
+=======
+/* line 1711, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 form .field input[type="text"]:focus:-moz-placeholder, form .field input[type="file"]:focus:-moz-placeholder, form .field input[type="number"]:focus:-moz-placeholder, form .field select:focus:-moz-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1807, ../sass/style.scss */
+=======
+/* line 1712, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 form .field input[type="text"]:focus::-moz-placeholder, form .field input[type="file"]:focus::-moz-placeholder, form .field input[type="number"]:focus::-moz-placeholder, form .field select:focus::-moz-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1808, ../sass/style.scss */
 form .field input[type="text"]:focus:-ms-input-placeholder, form .field input[type="file"]:focus:-ms-input-placeholder, form .field input[type="number"]:focus:-ms-input-placeholder, form .field select:focus:-ms-input-placeholder {
   color: #4e5056;
@@ -2430,6 +3571,17 @@ form .field input[type="file"] {
   padding: 0 5px;
 }
 /* line 1814, ../sass/style.scss */
+=======
+/* line 1713, ../sass/style.scss */
+form .field input[type="text"]:focus:-ms-input-placeholder, form .field input[type="file"]:focus:-ms-input-placeholder, form .field input[type="number"]:focus:-ms-input-placeholder, form .field select:focus:-ms-input-placeholder {
+  color: #4e5056;
+}
+/* line 1717, ../sass/style.scss */
+form .field input[type="file"] {
+  padding: 0 5px;
+}
+/* line 1719, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 form .field textarea {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -2455,91 +3607,155 @@ form .field textarea {
   transition: all 0.3s ease;
   resize: none;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1834, ../sass/style.scss */
 form .field textarea:focus {
   border-bottom: 1px solid #dce86b;
 }
 /* line 1837, ../sass/style.scss */
+=======
+/* line 1739, ../sass/style.scss */
+form .field textarea:focus {
+  border-bottom: 1px solid #dce86b;
+}
+/* line 1742, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 form .field textarea:focus::-webkit-input-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1838, ../sass/style.scss */
+=======
+/* line 1743, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 form .field textarea:focus:-moz-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1839, ../sass/style.scss */
+=======
+/* line 1744, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 form .field textarea:focus::-moz-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1840, ../sass/style.scss */
+=======
+/* line 1745, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
 form .field textarea:focus:-ms-input-placeholder {
   color: #4e5056;
 }
 
 /*/  MEDIA SCREENS  /////////////////////////////////////////////////////////////////*/
 @media screen and (max-width: 1400px) {
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1850, ../sass/style.scss */
+=======
+  /* line 1755, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   body {
     font-size: 17px;
   }
 }
 @media screen and (max-width: 1300px) {
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1854, ../sass/style.scss */
+=======
+  /* line 1759, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   body {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 1200px) {
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1859, ../sass/style.scss */
+=======
+  /* line 1764, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   body {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1100px) {
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1864, ../sass/style.scss */
+=======
+  /* line 1769, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   body {
     font-size: 13px;
   }
 }
 @media screen and (max-width: 1024px) {
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1868, ../sass/style.scss */
+=======
+  /* line 1774, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   body {
     font-size: 12px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1869, ../sass/style.scss */
+=======
+  /* line 1775, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .wrapper {
     padding: 0 20px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1870, ../sass/style.scss */
+=======
+  /* line 1776, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .photos {
     height: 100px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1871, ../sass/style.scss */
+=======
+  /* line 1777, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .photos a.photo {
     width: 150px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1872, ../sass/style.scss */
+=======
+  /* line 1778, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .photos .more-info {
     height: 100px;
     width: 150px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1873, ../sass/style.scss */
+=======
+  /* line 1779, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .photos .more-info span.icon {
     line-height: 100px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1875, ../sass/style.scss */
+=======
+  /* line 1781, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header .overlay .logo {
     width: 176px;
     background-size: 100%;
@@ -2547,134 +3763,226 @@ form .field textarea:focus:-ms-input-placeholder {
     width: 176px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1876, ../sass/style.scss */
+=======
+  /* line 1782, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart .button span.icon-cart {
     font-size: 2.3em;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1877, ../sass/style.scss */
+=======
+  /* line 1783, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart .button span.cart-amount {
     font-size: .7em;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1879, ../sass/style.scss */
+=======
+  /* line 1785, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart.active .foldout .product {
     font-size: 1.3em;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1880, ../sass/style.scss */
+=======
+  /* line 1786, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .checkout-page .content .checkout .summary {
     font-size: 1.2em;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1881, ../sass/style.scss */
+=======
+  /* line 1787, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .checkout-page .content .checkout form .field {
     font-size: 1.4em;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1883, ../sass/style.scss */
+=======
+  /* line 1789, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product.active .image {
     margin-top: 100px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1884, ../sass/style.scss */
+=======
+  /* line 1790, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product a.nav {
     top: calc(50% + 50px);
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1886, ../sass/style.scss */
+=======
+  /* line 1792, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart .foldout .product a.delete-item {
     opacity: 1;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1888, ../sass/style.scss */
+=======
+  /* line 1795, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .checkout-page .content .checkout form .field.radiocheck label input[type="radio"] {
     top: -1px;
   }
 }
 @media screen and (max-width: 768px) {
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1892, ../sass/style.scss */
+=======
+  /* line 1799, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header {
     height: 60%;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1893, ../sass/style.scss */
+=======
+  /* line 1800, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .info, .content .product:hover .info {
     top: 30px;
     padding-bottom: 0;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1894, ../sass/style.scss */
+=======
+  /* line 1801, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .image {
     width: 60%;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1895, ../sass/style.scss */
+=======
+  /* line 1802, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .info {
     width: 40%;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1896, ../sass/style.scss */
+=======
+  /* line 1803, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product.yellow .info {
     padding-left: 50px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1898, ../sass/style.scss */
+=======
+  /* line 1805, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .checkout-page .content .checkout .data {
     width: 60%;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1899, ../sass/style.scss */
+=======
+  /* line 1806, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .checkout-page .content .checkout .summary {
     margin-left: 3%;
     width: 37%;
     padding: 15px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1900, ../sass/style.scss */
+=======
+  /* line 1807, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product a.nav {
     width: 75px;
     height: 75px;
     line-height: 75px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1901, ../sass/style.scss */
+=======
+  /* line 1808, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product.active .nav.next {
     width: 75px;
   }
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1905, ../sass/style.scss */
+=======
+  /* line 1812, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product.active .image {
     width: 85%;
   }
 }
 @media screen and (max-width: 767px) {
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1909, ../sass/style.scss */
+=======
+  /* line 1817, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .info .details span.types {
     float: right;
     margin-left: 10px;
     margin-right: 0;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1910, ../sass/style.scss */
+=======
+  /* line 1818, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header .overlay .logo {
     width: 100px;
     height: 130px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1911, ../sass/style.scss */
   .header .overlay .video-play {
     top: 60%;
   }
 
   /* line 1912, ../sass/style.scss */
+=======
+  /* line 1819, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .image {
     width: 100%;
     margin: 20px 0;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1913, ../sass/style.scss */
+=======
+  /* line 1820, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .info {
     width: 100%;
     padding: 0 20px;
@@ -2682,128 +3990,216 @@ form .field textarea:focus:-ms-input-placeholder {
     text-align: right;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1914, ../sass/style.scss */
+=======
+  /* line 1821, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product.yellow .info {
     padding-left: 20px;
     margin-top: 250px;
     text-align: left;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1915, ../sass/style.scss */
+=======
+  /* line 1822, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product.yellow .image {
     position: absolute;
     margin: 0;
     top: 60px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1916, ../sass/style.scss */
   .content .product.active.yellow .image {
     left: 50%;
   }
 
   /* line 1918, ../sass/style.scss */
+=======
+  /* line 1824, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .info .amount label {
     float: none;
     display: inline-block;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1919, ../sass/style.scss */
+=======
+  /* line 1825, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .info .amount input {
     display: inline-block;
     float: none;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1920, ../sass/style.scss */
+=======
+  /* line 1826, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .info a.order {
     text-align: left;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1922, ../sass/style.scss */
+=======
+  /* line 1828, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .instagram a.title, .footer .title {
     font-size: 2.3em;
     padding: 15px 30px;
     border-width: 2px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1923, ../sass/style.scss */
+=======
+  /* line 1829, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .footer .contactform {
     padding: 0 0 50px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1925, ../sass/style.scss */
+=======
+  /* line 1831, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .bottom-bg {
     height: 500px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1927, ../sass/style.scss */
+=======
+  /* line 1833, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .media a.col {
     padding: 50px 40px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1928, ../sass/style.scss */
+=======
+  /* line 1834, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .media a.col.size1of3 {
     width: 100%;
     float: none;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1929, ../sass/style.scss */
+=======
+  /* line 1835, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .media a.col .logo {
     height: 90px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1930, ../sass/style.scss */
+=======
+  /* line 1836, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .media a.col .logo .hover {
     height: 90px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1931, ../sass/style.scss */
+=======
+  /* line 1837, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .media a.col p {
     font-size: 1.3em;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1932, ../sass/style.scss */
+=======
+  /* line 1838, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .bottom-bg .overlay .logo-happysmugglers-light {
     margin-top: 100px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1934, ../sass/style.scss */
+=======
+  /* line 1840, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .divider.top {
     bottom: 99.5%;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1935, ../sass/style.scss */
+=======
+  /* line 1841, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .divider.bottom {
     top: 99.5%;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1936, ../sass/style.scss */
+=======
+  /* line 1842, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .divider img {
     margin-top: -2px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1937, ../sass/style.scss */
+=======
+  /* line 1843, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .instagram {
     padding-top: 0;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1938, ../sass/style.scss */
+=======
+  /* line 1844, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   form .field button {
     height: 80px;
     line-height: 80px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1940, ../sass/style.scss */
+=======
+  /* line 1846, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll a.logo {
     width: 180px;
     height: 25px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1941, ../sass/style.scss */
+=======
+  /* line 1847, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll {
     height: 70px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1943, ../sass/style.scss */
+=======
+  /* line 1849, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart {
     width: 70px;
     height: 70px;
@@ -2815,13 +4211,21 @@ form .field textarea:focus:-ms-input-placeholder {
     top: 0;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1944, ../sass/style.scss */
+=======
+  /* line 1850, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart .button {
     width: 70px;
     height: 70px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1945, ../sass/style.scss */
+=======
+  /* line 1851, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart .button span.icon-cart {
     width: 70px;
     height: 70px;
@@ -2830,23 +4234,39 @@ form .field textarea:focus:-ms-input-placeholder {
     padding-right: 5px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1946, ../sass/style.scss */
+=======
+  /* line 1852, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart .button span.cart-amount {
     right: 10px;
     top: 10px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1947, ../sass/style.scss */
+=======
+  /* line 1853, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .mobile-nav-open .header-scroll .cart {
     opacity: 0;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1950, ../sass/style.scss */
+=======
+  /* line 1856, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart .foldout {
     top: 70px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1951, ../sass/style.scss */
+=======
+  /* line 1857, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart.active .foldout {
     width: 100%;
     max-width: initial;
@@ -2856,44 +4276,76 @@ form .field textarea:focus:-ms-input-placeholder {
     height: calc(100% - 70px);
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1959, ../sass/style.scss */
+=======
+  /* line 1865, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart.active .foldout .foldout-inner {
     padding: 20px 40px 20px 20px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1960, ../sass/style.scss */
+=======
+  /* line 1866, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart.active .foldout .product {
     margin-bottom: 20px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1961, ../sass/style.scss */
+=======
+  /* line 1867, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart.active .foldout .totals {
     margin-bottom: 25px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1963, ../sass/style.scss */
+=======
+  /* line 1869, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header .mobile-nav-btn, .header-scroll .mobile-nav-btn {
     display: inline-block;
     z-index: 13;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1964, ../sass/style.scss */
+=======
+  /* line 1870, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .mobile-nav-open .header, .mobile-nav-open .header-scroll {
     z-index: 11;
     background: #dce86b;
     position: fixed;
   }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1969, ../sass/style.scss */
   .mobile-nav-open .header a.logo, .mobile-nav-open .header-scroll a.logo {
     z-index: 13;
   }
   /* line 1971, ../sass/style.scss */
+=======
+  /* line 1875, ../sass/style.scss */
+  .mobile-nav-open .header a.logo, .mobile-nav-open .header-scroll a.logo {
+    z-index: 13;
+  }
+  /* line 1877, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .mobile-nav-open .header ul.nav, .mobile-nav-open .header-scroll ul.nav {
     top: 60px;
     z-index: 12;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1977, ../sass/style.scss */
+=======
+  /* line 1883, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll ul.nav {
     position: fixed;
     right: 0;
@@ -2913,13 +4365,21 @@ form .field textarea:focus:-ms-input-placeholder {
     float: none;
     padding: 55px 15px 15px;
   }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1990, ../sass/style.scss */
+=======
+  /* line 1896, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll ul.nav li {
     float: none;
     overflow: hidden;
     margin: 0;
   }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1995, ../sass/style.scss */
+=======
+  /* line 1901, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll ul.nav li a {
     line-height: 50px;
     font-size: 1.5em;
@@ -2929,16 +4389,28 @@ form .field textarea:focus:-ms-input-placeholder {
     -webkit-transform: skewY(-3deg);
     transform: skewY(-3deg);
   }
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2001, ../sass/style.scss */
   .header-scroll ul.nav li a.active {
     background: rgba(0, 0, 0, 0.1);
   }
   /* line 2007, ../sass/style.scss */
+=======
+  /* line 1907, ../sass/style.scss */
+  .header-scroll ul.nav li a.active {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  /* line 1913, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll ul.nav li:last-child a {
     margin-top: 5px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2012, ../sass/style.scss */
+=======
+  /* line 1918, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll ul.nav li a.active {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -2948,7 +4420,11 @@ form .field textarea:focus:-ms-input-placeholder {
     transform: skewY(-3deg);
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2013, ../sass/style.scss */
+=======
+  /* line 1919, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll ul.nav li a:hover {
     color: #36373b;
     -moz-transform: skewY(-3deg);
@@ -2957,28 +4433,48 @@ form .field textarea:focus:-ms-input-placeholder {
     transform: skewY(-3deg);
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2015, ../sass/style.scss */
+=======
+  /* line 1921, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .checkout-page .content .checkout .data {
     width: 100%;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2016, ../sass/style.scss */
+=======
+  /* line 1922, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .checkout-page .content .checkout .summary {
     width: 100%;
     margin-left: 0;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2017, ../sass/style.scss */
+=======
+  /* line 1923, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .checkout-page .content .checkout .summary .item {
     margin-bottom: 20px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2018, ../sass/style.scss */
+=======
+  /* line 1924, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .thanks-page .content .thanks {
     margin-bottom: 70px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2020, ../sass/style.scss */
+=======
+  /* line 1926, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product a.nav {
     width: 50px;
     height: 50px;
@@ -2986,103 +4482,175 @@ form .field textarea:focus:-ms-input-placeholder {
     font-size: 1.8em;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2021, ../sass/style.scss */
+=======
+  /* line 1927, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product.active .nav.next {
     width: 50px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2022, ../sass/style.scss */
+=======
+  /* line 1928, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .photos {
     height: 70px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2023, ../sass/style.scss */
+=======
+  /* line 1929, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .photos a.photo {
     width: 100px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2025, ../sass/style.scss */
+=======
+  /* line 1931, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product.active .image {
     margin-top: 70px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2026, ../sass/style.scss */
+=======
+  /* line 1932, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product a.nav {
     top: calc(50% + 35px);
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2028, ../sass/style.scss */
+=======
+  /* line 1934, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .photos .more-info {
     height: 70px;
     width: 80px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2029, ../sass/style.scss */
+=======
+  /* line 1935, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .photos .more-info span.icon {
     line-height: 70px;
     font-size: 1.8em;
   }
 }
 @media screen and (max-width: 767px) and (orientation: landscape) {
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2033, ../sass/style.scss */
+=======
+  /* line 1939, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .info .details span.types {
     float: left;
     margin-left: 0;
     margin-right: 10px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2035, ../sass/style.scss */
+=======
+  /* line 1941, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart.active .foldout .product .type .title {
     margin-bottom: 3px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2036, ../sass/style.scss */
+=======
+  /* line 1942, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart .foldout .product .type p.subtitle {
     margin-bottom: 0;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2037, ../sass/style.scss */
+=======
+  /* line 1943, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart.active .foldout .product {
     margin-bottom: 15px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2038, ../sass/style.scss */
+=======
+  /* line 1944, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart.active .foldout .totals {
     margin-bottom: 15px;
     margin-top: 20px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2040, ../sass/style.scss */
+=======
+  /* line 1946, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart .foldout .product .type {
     position: relative;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2041, ../sass/style.scss */
+=======
+  /* line 1947, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart .foldout .product .type .title {
     line-height: 29px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2042, ../sass/style.scss */
+=======
+  /* line 1948, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart .foldout .product .type p.subtitle {
     position: absolute;
     top: 5px;
     right: 150px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2043, ../sass/style.scss */
+=======
+  /* line 1949, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll .cart .foldout .product .type input {
     position: absolute;
     top: 0;
     right: 70px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2045, ../sass/style.scss */
+=======
+  /* line 1951, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .image {
     width: 50%;
     margin: 80px 0;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2046, ../sass/style.scss */
+=======
+  /* line 1952, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .info {
     margin: 0;
     padding: 0 20px 20px 0;
@@ -3090,56 +4658,96 @@ form .field textarea:focus:-ms-input-placeholder {
     width: 50%;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2047, ../sass/style.scss */
+=======
+  /* line 1953, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .image a {
     width: 100%;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2048, ../sass/style.scss */
+=======
+  /* line 1954, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product .info p.subtitle, .content .product .info .details, .content .product .info .amount {
     margin-bottom: 25px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2049, ../sass/style.scss */
+=======
+  /* line 1955, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product.yellow .image {
     position: relative;
     top: 0;
     margin: 80px 0;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2050, ../sass/style.scss */
+=======
+  /* line 1956, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .product.yellow .info {
     margin-top: 0;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2052, ../sass/style.scss */
+=======
+  /* line 1958, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .instagram a.title, .footer .title {
     font-size: 3.6em;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2053, ../sass/style.scss */
+=======
+  /* line 1959, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .footer .contactform {
     padding: 0 50px 50px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2055, ../sass/style.scss */
+=======
+  /* line 1961, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .media a.col .logo {
     height: 130px;
     width: 40%;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2056, ../sass/style.scss */
+=======
+  /* line 1962, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .content .media a.col .logo .hover {
     height: 130px;
     width: 40%;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2058, ../sass/style.scss */
+=======
+  /* line 1964, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll ul.nav {
     padding-top: 20px;
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2059, ../sass/style.scss */
+=======
+  /* line 1965, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll ul.nav li a.active {
     -moz-transform: skewY(-2deg);
     -ms-transform: skewY(-2deg);
@@ -3147,7 +4755,11 @@ form .field textarea:focus:-ms-input-placeholder {
     transform: skewY(-2deg);
   }
 
+<<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2060, ../sass/style.scss */
+=======
+  /* line 1966, ../sass/style.scss */
+>>>>>>> Prodcut slider (wip)
   .header-scroll ul.nav li a:hover {
     -moz-transform: skewY(-2deg);
     -ms-transform: skewY(-2deg);
