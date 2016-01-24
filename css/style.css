@@ -1,5 +1,9 @@
 @import url(normalize.css);
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 @import url(flexslider.css);
+=======
+@import url(flexslider.custom.css);
+>>>>>>> Prodcut slider
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @font-face {
   font-family: 'icomoon';
@@ -9,7 +13,9 @@
   font-style: normal;
 }
 /* line 24, ../sass/_fonts.scss */
-[class^="icon-"], [class*=" icon-"] {
+.icon, .content .product.active .flexslider .flex-direction-nav .flex-nav-prev a, .content .product.active .flexslider .flex-direction-nav .flex-nav-next a,
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -23,162 +29,162 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 39, ../sass/_fonts.scss */
+/* line 41, ../sass/_fonts.scss */
 .icon-instagram:before {
   content: "\e91d";
 }
 
-/* line 42, ../sass/_fonts.scss */
+/* line 44, ../sass/_fonts.scss */
 .icon-vimeo:before {
   content: "\e91e";
 }
 
-/* line 45, ../sass/_fonts.scss */
+/* line 47, ../sass/_fonts.scss */
 .icon-youtube:before {
   content: "\e91f";
 }
 
-/* line 48, ../sass/_fonts.scss */
+/* line 50, ../sass/_fonts.scss */
 .icon-cart:before {
   content: "\e91c";
 }
 
-/* line 51, ../sass/_fonts.scss */
+/* line 53, ../sass/_fonts.scss */
 .icon-add:before {
   content: "\e900";
 }
 
-/* line 54, ../sass/_fonts.scss */
+/* line 56, ../sass/_fonts.scss */
 .icon-address:before {
   content: "\e901";
 }
 
-/* line 57, ../sass/_fonts.scss */
+/* line 59, ../sass/_fonts.scss */
 .icon-arrow-down:before {
   content: "\e902";
 }
 
-/* line 60, ../sass/_fonts.scss */
+/* line 62, ../sass/_fonts.scss */
 .icon-arrow-left:before {
   content: "\e903";
 }
 
-/* line 63, ../sass/_fonts.scss */
+/* line 65, ../sass/_fonts.scss */
 .icon-arrow-long-down:before {
   content: "\e904";
 }
 
-/* line 66, ../sass/_fonts.scss */
+/* line 68, ../sass/_fonts.scss */
 .icon-arrow-long-left:before {
   content: "\e905";
 }
 
-/* line 69, ../sass/_fonts.scss */
+/* line 71, ../sass/_fonts.scss */
 .icon-arrow-long-right:before {
   content: "\e906";
 }
 
-/* line 72, ../sass/_fonts.scss */
+/* line 74, ../sass/_fonts.scss */
 .icon-arrow-long-up:before {
   content: "\e907";
 }
 
-/* line 75, ../sass/_fonts.scss */
+/* line 77, ../sass/_fonts.scss */
 .icon-arrow-right:before {
   content: "\e908";
 }
 
-/* line 78, ../sass/_fonts.scss */
+/* line 80, ../sass/_fonts.scss */
 .icon-arrow-up:before {
   content: "\e909";
 }
 
-/* line 81, ../sass/_fonts.scss */
+/* line 83, ../sass/_fonts.scss */
 .icon-calendar:before {
   content: "\e90a";
 }
 
-/* line 84, ../sass/_fonts.scss */
+/* line 86, ../sass/_fonts.scss */
 .icon-camera:before {
   content: "\e90b";
 }
 
-/* line 87, ../sass/_fonts.scss */
+/* line 89, ../sass/_fonts.scss */
 .icon-chat:before {
   content: "\e90c";
 }
 
-/* line 90, ../sass/_fonts.scss */
+/* line 92, ../sass/_fonts.scss */
 .icon-check:before {
   content: "\e90d";
 }
 
-/* line 93, ../sass/_fonts.scss */
+/* line 95, ../sass/_fonts.scss */
 .icon-delete:before {
   content: "\e90e";
 }
 
-/* line 96, ../sass/_fonts.scss */
+/* line 98, ../sass/_fonts.scss */
 .icon-email:before {
   content: "\e90f";
 }
 
-/* line 99, ../sass/_fonts.scss */
+/* line 101, ../sass/_fonts.scss */
 .icon-facebook:before {
   content: "\e910";
 }
 
-/* line 102, ../sass/_fonts.scss */
+/* line 104, ../sass/_fonts.scss */
 .icon-googleplus:before {
   content: "\e911";
 }
 
-/* line 105, ../sass/_fonts.scss */
+/* line 107, ../sass/_fonts.scss */
 .icon-info:before {
   content: "\e912";
 }
 
-/* line 108, ../sass/_fonts.scss */
+/* line 110, ../sass/_fonts.scss */
 .icon-linkedin:before {
   content: "\e913";
 }
 
-/* line 111, ../sass/_fonts.scss */
+/* line 113, ../sass/_fonts.scss */
 .icon-minus:before {
   content: "\e914";
 }
 
-/* line 114, ../sass/_fonts.scss */
+/* line 116, ../sass/_fonts.scss */
 .icon-phone:before {
   content: "\e915";
 }
 
-/* line 117, ../sass/_fonts.scss */
+/* line 119, ../sass/_fonts.scss */
 .icon-question:before {
   content: "\e916";
 }
 
-/* line 120, ../sass/_fonts.scss */
+/* line 122, ../sass/_fonts.scss */
 .icon-search:before {
   content: "\e917";
 }
 
-/* line 123, ../sass/_fonts.scss */
+/* line 125, ../sass/_fonts.scss */
 .icon-settings:before {
   content: "\e918";
 }
 
-/* line 126, ../sass/_fonts.scss */
+/* line 128, ../sass/_fonts.scss */
 .icon-twitter:before {
   content: "\e919";
 }
 
-/* line 129, ../sass/_fonts.scss */
+/* line 131, ../sass/_fonts.scss */
 .icon-user:before {
   content: "\e91a";
 }
 
-/* line 132, ../sass/_fonts.scss */
+/* line 134, ../sass/_fonts.scss */
 .icon-video:before {
   content: "\e91b";
 }
@@ -1494,20 +1500,20 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 /* line 630, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
 .content .product {
-  top: 0;
-  left: 0;
   -moz-transition: all 0.3s ease, position 0.3s ease 0.3s, z-index 0s ease, width 0s ease, height 0s ease;
   -o-transition: all 0.3s ease, position 0.3s ease 0.3s, z-index 0s ease, width 0s ease, height 0s ease;
   -webkit-transition: all 0.3s ease, position 0.3s ease, z-index 0s ease, width 0s ease, height 0s ease;
   -webkit-transition-delay: 0s, 0.3s, 0s, 0s, 0s;
   transition: all 0.3s ease, position 0.3s ease 0.3s, z-index 0s ease, width 0s ease, height 0s ease;
+  top: 0;
+  left: 0;
   position: relative;
   z-index: 2;
-  position: relative;
   background: #fff;
   height: 100%;
   width: 100%;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 734, ../sass/style.scss */
 =======
@@ -1517,19 +1523,69 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   width: 150px;
   height: 150px;
   line-height: 150px;
+=======
+/* line 644, ../sass/style.scss */
+.content .product .slider-nav {
+  display: none;
+}
+/* line 648, ../sass/style.scss */
+.content .product .flexslider {
+  border: none;
+  margin: 0;
+}
+/* line 653, ../sass/style.scss */
+.content .product #slider {
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  display: inline-block;
+  width: 65%;
+  margin: 100px 0;
+  cursor: url("../img/cursor-add.svg") 19 19, auto;
+}
+/* line 660, ../sass/style.scss */
+.content .product #slider .flex-direction-nav {
+  display: none;
+}
+/* line 668, ../sass/style.scss */
+.content .product:not(.active) #slider li {
+  -moz-transition: all 4s ease-out;
+  -o-transition: all 4s ease-out;
+  -webkit-transition: all 4s ease-out;
+  transition: all 4s ease-out;
+  width: 80% !important;
+  display: none !important;
+  opacity: 0 !important;
+}
+/* line 674, ../sass/style.scss */
+.content .product:not(.active) #slider li.flex-active-slide {
+  display: block !important;
+  opacity: 1 !important;
+}
+/* line 681, ../sass/style.scss */
+.content .product:not(.active):hover #slider li {
+  width: 90% !important;
+}
+/* line 688, ../sass/style.scss */
+.content .product.active {
+  left: 0;
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+}
+/* line 699, ../sass/style.scss */
+.content .product.active .flexslider .flex-direction-nav a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px !important;
+>>>>>>> Prodcut slider
   text-align: center;
   background: rgba(255, 255, 255, 0.4);
-  top: -moz-calc(50% + 75px);
-  top: -webkit-calc(50% + 75px);
-  top: -o-calc(50% + 75px);
-  top: calc(50% + 75px);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  position: absolute;
-  z-index: 1000;
+  font-size: 20px;
   color: #36373b;
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
   text-decoration: none;
   font-size: 2.5em;
 }
@@ -1567,18 +1623,41 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 .content .product .photos {
   top: 0;
   left: -100%;
+=======
+  opacity: 1;
+  outline: none;
+  margin-top: -20px;
+}
+/* line 713, ../sass/style.scss */
+.content .product.active .flexslider .flex-direction-nav a::before {
+  font-family: inherit;
+  line-height: inherit;
+  font-size: inherit;
+}
+/* line 719, ../sass/style.scss */
+.content .product.active .flexslider .flex-direction-nav a:hover {
+  background: #dce86b;
+}
+/* line 728, ../sass/style.scss */
+.content .product.active .flexslider .flex-direction-nav .flex-nav-prev a::before {
+  content: "\e905";
+}
+/* line 737, ../sass/style.scss */
+.content .product.active .flexslider .flex-direction-nav .flex-nav-next a::before {
+  content: "\e906";
+}
+/* line 744, ../sass/style.scss */
+.content .product.active .slider-nav {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+>>>>>>> Prodcut slider
   position: fixed;
-  width: 100%;
   height: 150px;
-  background: none;
+  width: 100%;
   z-index: 555;
   overflow: hidden;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 778, ../sass/style.scss */
 =======
@@ -1618,16 +1697,41 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 /* line 704, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
 .content .product .photos .more-info {
+=======
+/* line 753, ../sass/style.scss */
+.content .product.active .slider-nav #carousel {
+  height: 100%;
+  margin-right: 150px;
+}
+/* line 758, ../sass/style.scss */
+.content .product.active .slider-nav #carousel .slides li {
+  -moz-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+  opacity: 0.7;
+}
+/* line 763, ../sass/style.scss */
+.content .product.active .slider-nav #carousel .slides li:hover, .content .product.active .slider-nav #carousel .slides li.flex-active-slide {
+  opacity: 1;
+}
+/* line 771, ../sass/style.scss */
+.content .product.active .slider-nav .more-info {
+  cursor: pointer;
+  cursor: url("../img/cursor-close.svg") 19 19, auto;
+>>>>>>> Prodcut slider
   outline: none;
   position: absolute;
   right: 0;
   top: 0;
-  width: 200px;
+  width: 150px;
   text-align: center;
-  height: 150px;
+  height: 100%;
   z-index: 556;
   background: #dce86b;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 809, ../sass/style.scss */
 .content .product .photos .more-info:hover span.icon {
@@ -1642,16 +1746,79 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 /* line 721, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
 .content .product .photos .more-info span.icon {
+=======
+/* line 785, ../sass/style.scss */
+.content .product.active .slider-nav .more-info:hover .icon, .content .product.active .slider-nav .more-info:hover .flexslider .flex-direction-nav .flex-nav-prev a, .content .product.active .flexslider .flex-direction-nav .flex-nav-prev .slider-nav .more-info:hover a, .content .product.active .slider-nav .more-info:hover .flexslider .flex-direction-nav .flex-nav-next a, .content .product.active .flexslider .flex-direction-nav .flex-nav-next .slider-nav .more-info:hover a {
+  color: #36373b;
+}
+/* line 790, ../sass/style.scss */
+.content .product.active .slider-nav .more-info .icon, .content .product.active .slider-nav .more-info .flexslider .flex-direction-nav .flex-nav-prev a, .content .product.active .flexslider .flex-direction-nav .flex-nav-prev .slider-nav .more-info a, .content .product.active .slider-nav .more-info .flexslider .flex-direction-nav .flex-nav-next a, .content .product.active .flexslider .flex-direction-nav .flex-nav-next .slider-nav .more-info a {
+>>>>>>> Prodcut slider
   line-height: 150px;
   color: #fff;
   font-size: 3em;
-  cursor: pointer;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 825, ../sass/style.scss */
 =======
 /* line 732, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 798, ../sass/style.scss */
+.content .product.active #slider {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: url("../img/cursor-close.svg") 19 19, auto;
+  height: 100%;
+  padding-top: 150px;
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+/* line 807, ../sass/style.scss */
+.content .product.active #slider .flex-viewport {
+  height: 100%;
+}
+/* line 811, ../sass/style.scss */
+.content .product.active #slider .slides {
+  height: 100%;
+  text-align: center;
+}
+/* line 815, ../sass/style.scss */
+.content .product.active #slider .slides li {
+  height: 100%;
+}
+/* line 819, ../sass/style.scss */
+.content .product.active #slider .slides img {
+  display: inline-block;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+}
+/* line 827, ../sass/style.scss */
+.content .product.active #slider .flex-direction-nav {
+  display: block;
+}
+/* line 830, ../sass/style.scss */
+.content .product.active #slider .flex-direction-nav a {
+  width: 100px;
+  height: 100px;
+  line-height: 100px !important;
+  font-size: 50px;
+  margin-top: -50px;
+}
+/* line 840, ../sass/style.scss */
+.content .product.active #slider .flex-direction-nav .flex-nav-prev a {
+  left: 0;
+}
+/* line 844, ../sass/style.scss */
+.content .product.active #slider .flex-direction-nav .flex-nav-next a {
+  right: 0;
+}
+/* line 929, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product a.close {
   position: absolute;
   right: 0;
@@ -1665,6 +1832,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   text-align: center;
   font-size: 1.3em;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 838, ../sass/style.scss */
 .content .product a.close:hover {
@@ -1686,9 +1854,17 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 757, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 942, ../sass/style.scss */
+.content .product a.close:hover {
+  background: #dce86b;
+}
+/* line 954, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product:hover .info {
   top: -20px;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 855, ../sass/style.scss */
 =======
@@ -1744,6 +1920,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 783, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 959, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product .info {
   overflow: hidden;
   display: inline-block;
@@ -1759,6 +1938,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   padding-right: 100px;
   padding-bottom: 20px;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 888, ../sass/style.scss */
 .content .product .info h2 {
@@ -1772,6 +1952,13 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 799, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 971, ../sass/style.scss */
+.content .product .info h2 {
+  margin: 0;
+}
+/* line 975, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product .info p.subtitle {
   font-size: 1.88em;
   font-weight: 300;
@@ -1779,20 +1966,28 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin-bottom: 40px;
   white-space: nowrap;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 900, ../sass/style.scss */
 =======
 /* line 807, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 983, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product .info .details {
   margin-bottom: 40px;
   overflow: hidden;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 904, ../sass/style.scss */
 =======
 /* line 811, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 987, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product .info .details span.types {
   cursor: pointer;
   display: block;
@@ -1809,29 +2004,41 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 915, ../sass/style.scss */
 =======
 /* line 822, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 998, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product .info .details span.types:hover {
   border: 1px solid rgba(0, 0, 0, 0.2);
   color: rgba(0, 0, 0, 0.4);
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 920, ../sass/style.scss */
 =======
 /* line 827, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1003, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product .info .details span.types.active {
   border: 1px solid #dce86b;
   color: #36373b;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 926, ../sass/style.scss */
 =======
 /* line 833, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1009, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product .info .details span.type {
   font-weight: 700;
   letter-spacing: .2em;
@@ -1839,26 +2046,35 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   display: block;
   margin-bottom: 5px;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 934, ../sass/style.scss */
 =======
 /* line 841, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1017, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product .info .details span.price {
   font-weight: 700;
   letter-spacing: .2em;
   font-size: 1.88em;
   display: block;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 942, ../sass/style.scss */
 =======
 /* line 849, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1025, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product .info .amount {
   margin: 0 0 40px;
   overflow: hidden;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 946, ../sass/style.scss */
 .content .product .info .amount .float {
@@ -1868,13 +2084,24 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 853, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1029, ../sass/style.scss */
+.content .product .info .amount .float {
+  float: left;
+}
+/* line 1031, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product .info .amount label {
   display: block;
   line-height: 50px;
   margin: 2px 20px 2px 0;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 954, ../sass/style.scss */
+=======
+/* line 1037, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product .info .amount input, .content .product .info .amount select {
 =======
 /* line 860, ../sass/style.scss */
@@ -1890,12 +2117,17 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin: 2px 30px 2px 0;
   font-size: 1em;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 965, ../sass/style.scss */
+=======
+/* line 1048, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product .info .amount input:focus, .content .product .info .amount select:focus {
   border: 1px solid #dce86b;
   background: #dce86b;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 972, ../sass/style.scss */
 =======
 /* line 871, ../sass/style.scss */
@@ -1905,6 +2137,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 878, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1055, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product .info a.order {
   white-space: nowrap;
   text-decoration: none;
@@ -1923,22 +2158,30 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: skewY(0deg);
   transform: skewY(0deg);
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 987, ../sass/style.scss */
 =======
 /* line 893, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1070, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product .info a.order span.icon-cart {
   font-size: 1.4em;
   top: 4px;
   position: relative;
   margin-left: 20px;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 994, ../sass/style.scss */
 =======
 /* line 900, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1077, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product .info a.order:hover {
   color: #fff;
   background: #36373b;
@@ -1948,15 +2191,20 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: skewY(-3deg);
   transform: skewY(-3deg);
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1003, ../sass/style.scss */
 =======
 /* line 909, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1086, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product.yellow {
   background: #dce86b;
   z-index: 1;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1007, ../sass/style.scss */
 .content .product.yellow .image {
@@ -1970,15 +2218,26 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 915, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1090, ../sass/style.scss */
+.content .product.yellow .image {
+  margin: 150px 0;
+}
+/* line 1092, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product.yellow .info {
   padding-left: 100px;
   padding-right: 0;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1013, ../sass/style.scss */
 =======
 /* line 919, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1096, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product.yellow .info a.order {
   background: #fff;
   border-color: #fff;
@@ -1988,26 +2247,39 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   display: inline-block;
   color: #36373b;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1022, ../sass/style.scss */
 =======
 /* line 928, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1105, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product.yellow .info a.order:hover {
   background: #36373b;
   border-color: #36373b;
   color: #dce86b;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1029, ../sass/style.scss */
 .content .product.yellow .info .field input, .content .product.yellow .info .field select {
   border: 1px solid #36373b;
 }
 /* line 1032, ../sass/style.scss */
+=======
+/* line 1112, ../sass/style.scss */
+.content .product.yellow .info .field input, .content .product.yellow .info .field select {
+  border: 1px solid #36373b;
+}
+/* line 1115, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product.yellow .info .field input:focus, .content .product.yellow .info .field select:focus {
   border: 1px solid #fff;
   background: #fff;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1039, ../sass/style.scss */
 =======
 /* line 935, ../sass/style.scss */
@@ -2021,12 +2293,16 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 945, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1122, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product.yellow .divider {
   position: relative;
   width: 100%;
   left: 0;
   margin: 0;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1045, ../sass/style.scss */
 .content .product.yellow .divider.top {
@@ -2039,19 +2315,27 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 /* line 1053, ../sass/style.scss */
 =======
 /* line 951, ../sass/style.scss */
+=======
+/* line 1128, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product.yellow .divider.top {
   bottom: auto;
 }
-/* line 955, ../sass/style.scss */
+/* line 1132, ../sass/style.scss */
 .content .product.yellow .divider.bottom {
   top: auto;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 959, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1136, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product.yellow .divider img {
   width: 100%;
   display: block;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1063, ../sass/style.scss */
 .content .product.tanktop .info p.subtitle {
@@ -2086,19 +2370,35 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 987, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1146, ../sass/style.scss */
+.content .product.tanktop .info p.subtitle {
+  letter-spacing: .3em;
+}
+/* line 1154, ../sass/style.scss */
+.content .product.active.yellow .nav {
+  background: #dce86b;
+}
+/* line 1157, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product.active.yellow .nav:hover {
   background: #36373b;
   color: #fff;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1087, ../sass/style.scss */
 =======
 /* line 993, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1163, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product.active.yellow .image {
   left: 9%;
   margin-top: 0;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1093, ../sass/style.scss */
 .content .product.active .nav.prev {
@@ -2112,10 +2412,18 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1000, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1169, ../sass/style.scss */
+.content .product.active .nav.prev {
+  left: 0;
+}
+/* line 1170, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product.active .nav.next {
   right: 0;
   width: 150px;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1096, ../sass/style.scss */
 .content .product.active .photos {
@@ -2129,6 +2437,13 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1007, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1172, ../sass/style.scss */
+.content .product.active .photos {
+  left: 0;
+}
+/* line 1176, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product.active .image {
   height: -moz-calc(100% - 150px);
   height: -webkit-calc(100% - 150px);
@@ -2145,11 +2460,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   transform: translateX(-50%);
   cursor: url("../img/cursor-close.svg") 19 19, auto;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1114, ../sass/style.scss */
 =======
 /* line 1020, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1189, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product.active .image a {
   -moz-transition: ease-out 1s 0s;
   -o-transition: ease-out 1s 0s;
@@ -2165,16 +2484,21 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   width: 100%;
   cursor: url("../img/cursor-close.svg") 19 19, auto;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1122, ../sass/style.scss */
 =======
 /* line 1027, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1196, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .product.active .image a img {
   width: 100%;
   display: block;
   cursor: url("../img/cursor-close.svg") 19 19, auto;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1130, ../sass/style.scss */
 .content .product.active .info {
@@ -2188,12 +2512,20 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1041, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1204, ../sass/style.scss */
+.content .product.active .info {
+  opacity: 0;
+}
+/* line 1210, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .media {
   background: #edeef2;
   padding: 150px 0 0 0;
   position: relative;
   z-index: 1;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1142, ../sass/style.scss */
 .content .media .cols {
@@ -2207,6 +2539,13 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1051, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1216, ../sass/style.scss */
+.content .media .cols {
+  overflow: hidden;
+}
+/* line 1220, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .media a.col {
   outline: none;
   padding: 100px 40px;
@@ -2221,6 +2560,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1157, ../sass/style.scss */
 .content .media a.col.size1of3 {
@@ -2234,6 +2574,13 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1064, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1231, ../sass/style.scss */
+.content .media a.col.size1of3 {
+  width: 33.33%;
+}
+/* line 1233, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .media a.col .logo {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -2241,11 +2588,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin: 0 auto;
   height: 120px;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1166, ../sass/style.scss */
 =======
 /* line 1071, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1240, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .media a.col .logo .hover {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -2257,6 +2608,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1175, ../sass/style.scss */
 .content .media a.col .logo.vice {
@@ -2285,35 +2637,43 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 /* line 1191, ../sass/style.scss */
 =======
 /* line 1080, ../sass/style.scss */
+=======
+/* line 1249, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .media a.col .logo.vice {
   background-image: url(../img/vice.svg);
 }
-/* line 1082, ../sass/style.scss */
+/* line 1251, ../sass/style.scss */
 .content .media a.col .logo.vice .hover {
   background-image: url(../img/vice-hover.svg);
 }
-/* line 1085, ../sass/style.scss */
+/* line 1254, ../sass/style.scss */
 .content .media a.col .logo.metro {
   background-image: url(../img/metro.jpg);
 }
-/* line 1087, ../sass/style.scss */
+/* line 1256, ../sass/style.scss */
 .content .media a.col .logo.metro .hover {
   background-image: url(../img/metro-hover.jpg);
 }
-/* line 1090, ../sass/style.scss */
+/* line 1259, ../sass/style.scss */
 .content .media a.col .logo.fhm {
   background-image: url(../img/fhm.svg);
 }
-/* line 1092, ../sass/style.scss */
+/* line 1261, ../sass/style.scss */
 .content .media a.col .logo.fhm .hover {
   background-image: url(../img/fhm-hover.svg);
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1096, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1265, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .media a.col p {
   font-weight: 300;
   letter-spacing: .05em;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1196, ../sass/style.scss */
 .content .media a.col:hover {
@@ -2326,32 +2686,44 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 /* line 1204, ../sass/style.scss */
 =======
 /* line 1101, ../sass/style.scss */
+=======
+/* line 1270, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .media a.col:hover {
   color: #36373b;
 }
-/* line 1104, ../sass/style.scss */
+/* line 1273, ../sass/style.scss */
 .content .media a.col:hover .logo .hover {
   opacity: 1;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1109, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1278, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .instagram {
   position: relative;
   overflow: hidden;
   padding-top: 1%;
   padding-bottom: 1%;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1210, ../sass/style.scss */
 =======
 /* line 1115, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1284, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .instagram .divider {
   position: absolute;
   width: 100%;
   left: 0;
   margin: 0;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1216, ../sass/style.scss */
 .content .instagram .divider.top {
@@ -2365,25 +2737,40 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1125, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1290, ../sass/style.scss */
+.content .instagram .divider.top {
+  top: 8%;
+}
+/* line 1294, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .instagram .divider.bottom {
   bottom: 0;
   top: auto;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1225, ../sass/style.scss */
 =======
 /* line 1130, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1299, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .instagram .divider img {
   width: 104%;
   margin-left: -2%;
   display: block;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1232, ../sass/style.scss */
 =======
 /* line 1137, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1306, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .instagram a.title {
   outline: none;
   display: inline-block;
@@ -2410,11 +2797,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: translateX(-50%) translateY(-50%) skewY(0deg);
   transform: translateX(-50%) translateY(-50%) skewY(0deg);
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1252, ../sass/style.scss */
 =======
 /* line 1157, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1326, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .instagram a.title:hover {
   background: #dce86b;
   color: #36373b;
@@ -2423,20 +2814,28 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: translateX(-50%) translateY(-50%) skewY(-4deg);
   transform: translateX(-50%) translateY(-50%) skewY(-4deg);
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1258, ../sass/style.scss */
 =======
 /* line 1163, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1332, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .instagram a.title span {
   font-weight: 400;
   font-size: .95em;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1264, ../sass/style.scss */
 =======
 /* line 1169, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1338, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .instagram .image {
   float: left;
   width: 50%;
@@ -2448,11 +2847,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 
 /* */
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1279, ../sass/style.scss */
 =======
 /* line 1184, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1353, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .thanks-page .header-scroll {
   position: relative;
   top: 0;
@@ -2462,41 +2865,57 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   box-shadow: none;
   border-bottom: 1px solid #e8e8e8;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1287, ../sass/style.scss */
 =======
 /* line 1192, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1361, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .thanks-page h1 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1293, ../sass/style.scss */
 =======
 /* line 1198, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1367, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .thanks-page p {
   font-weight: 300;
   letter-spacing: .03em;
   font-size: 1.2em;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1300, ../sass/style.scss */
 =======
 /* line 1205, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1374, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .thanks-page .content .thanks {
   margin-top: 30px;
   margin-bottom: 150px;
 }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1309, ../sass/style.scss */
 =======
 /* line 1214, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1383, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .header-scroll {
   position: relative;
   top: 0;
@@ -2506,16 +2925,21 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   box-shadow: none;
   border-bottom: 1px solid #e8e8e8;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1317, ../sass/style.scss */
 =======
 /* line 1222, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1391, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page h1 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1323, ../sass/style.scss */
 .checkout-page h2 {
@@ -2529,10 +2953,18 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1233, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1397, ../sass/style.scss */
+.checkout-page h2 {
+  font-size: 1.833em;
+}
+/* line 1402, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout {
   margin-top: 30px;
   margin-bottom: 150px;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1332, ../sass/style.scss */
 .checkout-page .content .checkout .wrapper {
@@ -2546,16 +2978,27 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1241, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1406, ../sass/style.scss */
+.checkout-page .content .checkout .wrapper {
+  overflow: hidden;
+}
+/* line 1410, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout .data {
   width: 65%;
   float: left;
   display: block;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1342, ../sass/style.scss */
 =======
 /* line 1247, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1416, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout .summary {
   padding: 20px;
   background: #dce86b;
@@ -2565,11 +3008,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   display: block;
   font-size: .9em;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1351, ../sass/style.scss */
 =======
 /* line 1256, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1425, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout .summary .item {
   background: none;
   margin-bottom: 40px;
@@ -2578,11 +3025,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1357, ../sass/style.scss */
 =======
 /* line 1262, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1431, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout .summary .item .type .title {
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -2592,20 +3043,28 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1363, ../sass/style.scss */
 =======
 /* line 1268, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1437, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout .summary .item .type .title .total {
   float: right;
   font-weight: 700;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1368, ../sass/style.scss */
 =======
 /* line 1273, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1442, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout .summary .item .type p.subtitle {
   text-transform: uppercase;
   font-weight: 300;
@@ -2617,11 +3076,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1376, ../sass/style.scss */
 =======
 /* line 1281, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1450, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout .summary .item .type .sizes {
   display: block;
   float: right;
@@ -2636,11 +3099,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1390, ../sass/style.scss */
 =======
 /* line 1295, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1464, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout .summary .totals {
   font-size: 1.15em;
   margin-bottom: 10px;
@@ -2654,20 +3121,28 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1400, ../sass/style.scss */
 =======
 /* line 1305, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1474, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout .summary .totals span {
   float: right;
   font-size: 1.35em;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1406, ../sass/style.scss */
 =======
 /* line 1311, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1480, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout .summary .vat {
   font-weight: 200;
   margin-bottom: 40px;
@@ -2677,11 +3152,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   letter-spacing: .2em;
   text-transform: uppercase;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1416, ../sass/style.scss */
 =======
 /* line 1321, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1490, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout .summary a.checkout {
   margin-bottom: 0;
   padding: 20px;
@@ -2694,11 +3173,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   color: #fff;
   letter-spacing: .2em;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1428, ../sass/style.scss */
 =======
 /* line 1333, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1502, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout .summary a.checkout:hover {
   color: #dce86b;
   background: #4e5056;
@@ -2706,6 +3189,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1436, ../sass/style.scss */
 .checkout-page .content .checkout form {
@@ -2718,15 +3202,22 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 /* line 1442, ../sass/style.scss */
 =======
 /* line 1341, ../sass/style.scss */
+=======
+/* line 1510, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout form {
   margin-bottom: 50px;
 }
-/* line 1344, ../sass/style.scss */
+/* line 1513, ../sass/style.scss */
 .checkout-page .content .checkout form .field {
   margin-bottom: 20px;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1347, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1516, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout form .field input[type="text"], .checkout-page .content .checkout form .field input[type="file"], .checkout-page .content .checkout form .field input[type="number"], .checkout-page .content .checkout form .field select {
   background: #fff none repeat scroll 0 0;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -2747,15 +3238,20 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   transition: all 0.3s ease 0s;
   width: 100%;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1458, ../sass/style.scss */
 =======
 /* line 1363, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1532, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout form .field input[type="text"].error, .checkout-page .content .checkout form .field input[type="file"].error, .checkout-page .content .checkout form .field input[type="number"].error, .checkout-page .content .checkout form .field select.error {
   background: #ffebf0;
   border: 1px solid #ffbccc;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1462, ../sass/style.scss */
 .checkout-page .content .checkout form .field input[type="text"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field select.error::-webkit-input-placeholder {
@@ -2776,27 +3272,35 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 /* line 1468, ../sass/style.scss */
 =======
 /* line 1367, ../sass/style.scss */
+=======
+/* line 1536, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout form .field input[type="text"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field select.error::-webkit-input-placeholder {
   color: #e00b3d;
 }
-/* line 1368, ../sass/style.scss */
+/* line 1537, ../sass/style.scss */
 .checkout-page .content .checkout form .field input[type="text"].error:-moz-placeholder, .checkout-page .content .checkout form .field input[type="file"].error:-moz-placeholder, .checkout-page .content .checkout form .field input[type="number"].error:-moz-placeholder, .checkout-page .content .checkout form .field select.error:-moz-placeholder {
   color: #e00b3d;
 }
-/* line 1369, ../sass/style.scss */
+/* line 1538, ../sass/style.scss */
 .checkout-page .content .checkout form .field input[type="text"].error::-moz-placeholder, .checkout-page .content .checkout form .field input[type="file"].error::-moz-placeholder, .checkout-page .content .checkout form .field input[type="number"].error::-moz-placeholder, .checkout-page .content .checkout form .field select.error::-moz-placeholder {
   color: #e00b3d;
 }
-/* line 1370, ../sass/style.scss */
+/* line 1539, ../sass/style.scss */
 .checkout-page .content .checkout form .field input[type="text"].error:-ms-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].error:-ms-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].error:-ms-input-placeholder, .checkout-page .content .checkout form .field select.error:-ms-input-placeholder {
   color: #e00b3d;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1373, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1542, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout form .field input[type="text"].success, .checkout-page .content .checkout form .field input[type="file"].success, .checkout-page .content .checkout form .field input[type="number"].success, .checkout-page .content .checkout form .field select.success {
   background: #f3ffef;
   border: 1px solid #acf098;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1472, ../sass/style.scss */
 .checkout-page .content .checkout form .field input[type="text"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field select.success::-webkit-input-placeholder {
@@ -2817,23 +3321,30 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 /* line 1479, ../sass/style.scss */
 =======
 /* line 1377, ../sass/style.scss */
+=======
+/* line 1546, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout form .field input[type="text"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field select.success::-webkit-input-placeholder {
   color: #2cbd00;
 }
-/* line 1378, ../sass/style.scss */
+/* line 1547, ../sass/style.scss */
 .checkout-page .content .checkout form .field input[type="text"].success:-moz-placeholder, .checkout-page .content .checkout form .field input[type="file"].success:-moz-placeholder, .checkout-page .content .checkout form .field input[type="number"].success:-moz-placeholder, .checkout-page .content .checkout form .field select.success:-moz-placeholder {
   color: #2cbd00;
 }
-/* line 1379, ../sass/style.scss */
+/* line 1548, ../sass/style.scss */
 .checkout-page .content .checkout form .field input[type="text"].success::-moz-placeholder, .checkout-page .content .checkout form .field input[type="file"].success::-moz-placeholder, .checkout-page .content .checkout form .field input[type="number"].success::-moz-placeholder, .checkout-page .content .checkout form .field select.success::-moz-placeholder {
   color: #2cbd00;
 }
-/* line 1380, ../sass/style.scss */
+/* line 1549, ../sass/style.scss */
 .checkout-page .content .checkout form .field input[type="text"].success:-ms-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].success:-ms-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].success:-ms-input-placeholder, .checkout-page .content .checkout form .field select.success:-ms-input-placeholder {
   color: #2cbd00;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1384, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1553, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout form .field textarea {
   border: 1px solid rgba(0, 0, 0, 0.2);
   letter-spacing: 0.03em;
@@ -2848,6 +3359,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition-delay: 0s;
   transition: all 0.3s ease 0s;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1489, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea::-webkit-input-placeholder {
@@ -2868,27 +3380,35 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 /* line 1494, ../sass/style.scss */
 =======
 /* line 1394, ../sass/style.scss */
+=======
+/* line 1563, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout form .field textarea::-webkit-input-placeholder {
   line-height: 1.6em;
 }
-/* line 1395, ../sass/style.scss */
+/* line 1564, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea:-moz-placeholder {
   line-height: 1.6em;
 }
-/* line 1396, ../sass/style.scss */
+/* line 1565, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea::-moz-placeholder {
   line-height: 1.6em;
 }
-/* line 1397, ../sass/style.scss */
+/* line 1566, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea:-ms-input-placeholder {
   line-height: 1.6em;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1399, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1568, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout form .field textarea.error {
   background: #ffebf0;
   border: 1px solid #ffbccc;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1498, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea.error::-webkit-input-placeholder {
@@ -2909,27 +3429,35 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 /* line 1504, ../sass/style.scss */
 =======
 /* line 1403, ../sass/style.scss */
+=======
+/* line 1572, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout form .field textarea.error::-webkit-input-placeholder {
   color: #e00b3d;
 }
-/* line 1404, ../sass/style.scss */
+/* line 1573, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea.error:-moz-placeholder {
   color: #e00b3d;
 }
-/* line 1405, ../sass/style.scss */
+/* line 1574, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea.error::-moz-placeholder {
   color: #e00b3d;
 }
-/* line 1406, ../sass/style.scss */
+/* line 1575, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea.error:-ms-input-placeholder {
   color: #e00b3d;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1409, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1578, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout form .field textarea.success {
   background: #f3ffef;
   border: 1px solid #acf098;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1508, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea.success::-webkit-input-placeholder {
@@ -2954,32 +3482,40 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 /* line 1518, ../sass/style.scss */
 =======
 /* line 1413, ../sass/style.scss */
+=======
+/* line 1582, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout form .field textarea.success::-webkit-input-placeholder {
   color: #2cbd00;
 }
-/* line 1414, ../sass/style.scss */
+/* line 1583, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea.success:-moz-placeholder {
   color: #2cbd00;
 }
-/* line 1415, ../sass/style.scss */
+/* line 1584, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea.success::-moz-placeholder {
   color: #2cbd00;
 }
-/* line 1416, ../sass/style.scss */
+/* line 1585, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea.success:-ms-input-placeholder {
   color: #2cbd00;
 }
-/* line 1420, ../sass/style.scss */
+/* line 1589, ../sass/style.scss */
 .checkout-page .content .checkout form .field.doublefield {
   overflow: hidden;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1423, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1592, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout form .field.doublefield input[type="text"], .checkout-page .content .checkout form .field.doublefield input[type="file"], .checkout-page .content .checkout form .field.doublefield input[type="number"], .checkout-page .content .checkout form .field.doublefield select {
   width: calc(50% - 10px);
   float: left;
   margin-left: 20px;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1523, ../sass/style.scss */
 .checkout-page .content .checkout form .field.doublefield input[type="text"]:first-child, .checkout-page .content .checkout form .field.doublefield input[type="file"]:first-child, .checkout-page .content .checkout form .field.doublefield input[type="number"]:first-child, .checkout-page .content .checkout form .field.doublefield select:first-child {
@@ -2996,25 +3532,33 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 /* line 1534, ../sass/style.scss */
 =======
 /* line 1428, ../sass/style.scss */
+=======
+/* line 1597, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout form .field.doublefield input[type="text"]:first-child, .checkout-page .content .checkout form .field.doublefield input[type="file"]:first-child, .checkout-page .content .checkout form .field.doublefield input[type="number"]:first-child, .checkout-page .content .checkout form .field.doublefield select:first-child {
   margin-left: 0;
 }
-/* line 1432, ../sass/style.scss */
+/* line 1601, ../sass/style.scss */
 .checkout-page .content .checkout form .field.address {
   margin-bottom: 0;
 }
-/* line 1435, ../sass/style.scss */
+/* line 1604, ../sass/style.scss */
 .checkout-page .content .checkout form .field.address input[type="text"], .checkout-page .content .checkout form .field.address input[type="file"], .checkout-page .content .checkout form .field.address input[type="number"], .checkout-page .content .checkout form .field.address select {
   margin-bottom: 20px;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1439, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1608, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout form .field.radiocheck label {
   display: block;
   cursor: pointer;
   margin-right: 30px;
   margin-bottom: 5px;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1540, ../sass/style.scss */
 .checkout-page .content .checkout form .field.radiocheck label select {
@@ -3028,6 +3572,13 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1447, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1614, ../sass/style.scss */
+.checkout-page .content .checkout form .field.radiocheck label select {
+  margin-top: 15px;
+}
+/* line 1616, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout form .field.radiocheck label span.image {
   margin-left: 10px;
   width: 40px;
@@ -3035,20 +3586,28 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   position: relative;
   display: inline-block;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1549, ../sass/style.scss */
 =======
 /* line 1454, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1623, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout form .field.radiocheck label span.image img {
   width: 100%;
   display: block;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1555, ../sass/style.scss */
 =======
 /* line 1460, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1629, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .checkout-page .content .checkout form .field.radiocheck label input[type="radio"] {
   margin: 1px 5px 1px 1px;
   top: -3px;
@@ -3056,21 +3615,29 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 
 /*/  FOOTER  /////////////////////////////////////////////////////////////////*/
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1571, ../sass/style.scss */
 =======
 /* line 1476, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1645, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .footer {
   position: relative;
   background: #fff;
   padding-top: 80px;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1576, ../sass/style.scss */
 =======
 /* line 1481, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1650, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .footer .title {
   position: relative;
   z-index: 15;
@@ -3094,11 +3661,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1594, ../sass/style.scss */
 =======
 /* line 1499, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1668, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .footer .title:hover {
   background: #dce86b;
   color: #36373b;
@@ -3107,15 +3678,20 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: translateX(-50%) skewY(-4deg);
   transform: translateX(-50%) skewY(-4deg);
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1600, ../sass/style.scss */
 =======
 /* line 1505, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1674, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .footer .title span {
   font-weight: 400;
   font-size: .95em;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1606, ../sass/style.scss */
 .footer .contactform {
@@ -3129,6 +3705,13 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1515, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1680, ../sass/style.scss */
+.footer .contactform {
+  padding: 0 100px 100px 100px;
+}
+/* line 1684, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .footer .divider {
   position: absolute;
   width: 100%;
@@ -3136,6 +3719,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin: 0;
   z-index: 5;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1617, ../sass/style.scss */
 .footer .divider.top {
@@ -3149,15 +3733,26 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1526, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1691, ../sass/style.scss */
+.footer .divider.top {
+  top: 8%;
+}
+/* line 1695, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .footer .divider.bottom {
   bottom: auto;
   top: 100%;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1626, ../sass/style.scss */
 =======
 /* line 1531, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1700, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .footer .divider img {
   width: 104%;
   margin-left: -2%;
@@ -3165,11 +3760,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 
 /*/  BOTTOM BG  /////////////////////////////////////////////////////////////////*/
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1637, ../sass/style.scss */
 =======
 /* line 1542, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1711, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .bottom-bg {
   height: 700px;
   position: relative;
@@ -3178,11 +3777,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   background-size: cover;
   background-position: center center;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1645, ../sass/style.scss */
 =======
 /* line 1550, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1719, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .bottom-bg .overlay {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -3192,11 +3795,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   left: 0;
   text-align: center;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1654, ../sass/style.scss */
 =======
 /* line 1559, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1728, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .bottom-bg .overlay .logo-happysmugglers-light {
   background: url(../img/logo-happy-smugglers-lang-light.svg) no-repeat;
   background-size: 100%;
@@ -3204,11 +3811,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin: 170px auto 0;
   height: 50px;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1662, ../sass/style.scss */
 =======
 /* line 1567, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1736, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .bottom-bg .overlay p {
   font-weight: 400;
   color: #fff;
@@ -3217,6 +3828,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   letter-spacing: .1em;
   font-size: 1.2em;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1671, ../sass/style.scss */
 .bottom-bg .overlay ul {
@@ -3230,6 +3842,13 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1579, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1745, ../sass/style.scss */
+.bottom-bg .overlay ul {
+  margin-bottom: 30px;
+}
+/* line 1748, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .bottom-bg .overlay ul li {
   line-height: 2.25em;
   text-align: center;
@@ -3238,6 +3857,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   font-size: .9em;
   letter-spacing: .075em;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1684, ../sass/style.scss */
 .bottom-bg .overlay .socials {
@@ -3251,6 +3871,13 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1592, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1758, ../sass/style.scss */
+.bottom-bg .overlay .socials {
+  text-align: center;
+}
+/* line 1761, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .bottom-bg .overlay .socials a.social {
   display: inline-block;
   width: 40px;
@@ -3263,6 +3890,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   border-radius: 50%;
   margin-left: 10px;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1697, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social:first-child {
@@ -3276,10 +3904,18 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1604, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1771, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social:first-child {
+  margin-left: 0;
+}
+/* line 1773, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .bottom-bg .overlay .socials a.social span.icon {
   line-height: 40px;
   text-align: center;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1704, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.facebook {
@@ -3328,93 +3964,117 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 /* line 1709, ../sass/style.scss */
 =======
 /* line 1609, ../sass/style.scss */
+=======
+/* line 1778, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .bottom-bg .overlay .socials a.social.facebook {
   background: #4970b2;
 }
-/* line 1609, ../sass/style.scss */
+/* line 1778, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.facebook:hover {
   background: #334e7c;
 }
-/* line 1610, ../sass/style.scss */
+/* line 1779, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.twitter {
   background: #6dceef;
 }
-/* line 1610, ../sass/style.scss */
+/* line 1779, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.twitter:hover {
   background: #28b7e7;
 }
-/* line 1611, ../sass/style.scss */
+/* line 1780, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.insta {
   background: #a77b5e;
 }
-/* line 1611, ../sass/style.scss */
+/* line 1780, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.insta:hover {
   background: #775741;
 }
-/* line 1612, ../sass/style.scss */
+/* line 1781, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.youtube {
   background: #e64a41;
 }
-/* line 1612, ../sass/style.scss */
+/* line 1781, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.youtube:hover {
   background: #c12319;
 }
-/* line 1613, ../sass/style.scss */
+/* line 1782, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.vimeo {
   background: #17aee1;
 }
-/* line 1613, ../sass/style.scss */
+/* line 1782, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.vimeo:hover {
   background: #10789c;
 }
-/* line 1614, ../sass/style.scss */
+/* line 1783, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.googleplus {
   background: #eb5e53;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1614, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1783, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .bottom-bg .overlay .socials a.social.googleplus:hover {
   background: #d82719;
 }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1715, ../sass/style.scss */
 =======
 /* line 1620, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1789, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .bottom-bg .divider.top {
   bottom: auto;
 }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1716, ../sass/style.scss */
 =======
 /* line 1621, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1790, ../sass/style.scss */
+>>>>>>> Prodcut slider
 .content .bottom-bg .divider.top img {
   margin-top: -2px;
 }
 
 /*/  FORM STYLING  /////////////////////////////////////////////////////////////////*/
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1720, ../sass/style.scss */
 =======
 /* line 1625, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1794, ../sass/style.scss */
+>>>>>>> Prodcut slider
 form {
   padding: 0;
   margin: 0;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1724, ../sass/style.scss */
 =======
 /* line 1629, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1798, ../sass/style.scss */
+>>>>>>> Prodcut slider
 form fieldset {
   border: none;
   padding: 0;
   margin: 0;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1731, ../sass/style.scss */
 form fieldset.radiocheck .field label {
@@ -3427,25 +4087,36 @@ form fieldset.radiocheck .field input[type="checkbox"], form fieldset.radiocheck
 /* line 1742, ../sass/style.scss */
 =======
 /* line 1636, ../sass/style.scss */
+=======
+/* line 1805, ../sass/style.scss */
+>>>>>>> Prodcut slider
 form fieldset.radiocheck .field label {
   width: 100%;
 }
-/* line 1640, ../sass/style.scss */
+/* line 1809, ../sass/style.scss */
 form fieldset.radiocheck .field input[type="checkbox"], form fieldset.radiocheck .field input[type="radio"] {
   margin-right: 5px;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1647, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1816, ../sass/style.scss */
+>>>>>>> Prodcut slider
 form .field {
   width: 100%;
   margin-bottom: 10px;
   overflow: hidden;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1747, ../sass/style.scss */
 =======
 /* line 1652, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1821, ../sass/style.scss */
+>>>>>>> Prodcut slider
 form .field button {
   position: relative;
   width: 100%;
@@ -3473,6 +4144,7 @@ form .field button {
   background: #dce86b;
   margin-top: 50px;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1769, ../sass/style.scss */
 form .field button:hover {
@@ -3486,6 +4158,13 @@ form .field button:hover {
 }
 /* line 1679, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1843, ../sass/style.scss */
+form .field button:hover {
+  background: #36373b;
+}
+/* line 1848, ../sass/style.scss */
+>>>>>>> Prodcut slider
 form .field label, form .field p.label {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -3494,11 +4173,15 @@ form .field label, form .field p.label {
   font-size: 1em;
   color: #36373b;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1783, ../sass/style.scss */
 =======
 /* line 1688, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1857, ../sass/style.scss */
+>>>>>>> Prodcut slider
 form .field input[type="text"], form .field input[type="file"], form .field input[type="number"], form .field select {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -3523,6 +4206,7 @@ form .field input[type="text"], form .field input[type="file"], form .field inpu
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1802, ../sass/style.scss */
 form .field input[type="text"]:focus, form .field input[type="file"]:focus, form .field input[type="number"]:focus, form .field select:focus {
@@ -3536,31 +4220,47 @@ form .field input[type="text"]:focus, form .field input[type="file"]:focus, form
 }
 /* line 1710, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1876, ../sass/style.scss */
+form .field input[type="text"]:focus, form .field input[type="file"]:focus, form .field input[type="number"]:focus, form .field select:focus {
+  border-bottom: 1px solid #dce86b;
+}
+/* line 1879, ../sass/style.scss */
+>>>>>>> Prodcut slider
 form .field input[type="text"]:focus::-webkit-input-placeholder, form .field input[type="file"]:focus::-webkit-input-placeholder, form .field input[type="number"]:focus::-webkit-input-placeholder, form .field select:focus::-webkit-input-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1806, ../sass/style.scss */
 =======
 /* line 1711, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1880, ../sass/style.scss */
+>>>>>>> Prodcut slider
 form .field input[type="text"]:focus:-moz-placeholder, form .field input[type="file"]:focus:-moz-placeholder, form .field input[type="number"]:focus:-moz-placeholder, form .field select:focus:-moz-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1807, ../sass/style.scss */
 =======
 /* line 1712, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1881, ../sass/style.scss */
+>>>>>>> Prodcut slider
 form .field input[type="text"]:focus::-moz-placeholder, form .field input[type="file"]:focus::-moz-placeholder, form .field input[type="number"]:focus::-moz-placeholder, form .field select:focus::-moz-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1808, ../sass/style.scss */
 form .field input[type="text"]:focus:-ms-input-placeholder, form .field input[type="file"]:focus:-ms-input-placeholder, form .field input[type="number"]:focus:-ms-input-placeholder, form .field select:focus:-ms-input-placeholder {
@@ -3573,15 +4273,22 @@ form .field input[type="file"] {
 /* line 1814, ../sass/style.scss */
 =======
 /* line 1713, ../sass/style.scss */
+=======
+/* line 1882, ../sass/style.scss */
+>>>>>>> Prodcut slider
 form .field input[type="text"]:focus:-ms-input-placeholder, form .field input[type="file"]:focus:-ms-input-placeholder, form .field input[type="number"]:focus:-ms-input-placeholder, form .field select:focus:-ms-input-placeholder {
   color: #4e5056;
 }
-/* line 1717, ../sass/style.scss */
+/* line 1886, ../sass/style.scss */
 form .field input[type="file"] {
   padding: 0 5px;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1719, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1888, ../sass/style.scss */
+>>>>>>> Prodcut slider
 form .field textarea {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -3607,6 +4314,7 @@ form .field textarea {
   transition: all 0.3s ease;
   resize: none;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1834, ../sass/style.scss */
 form .field textarea:focus {
@@ -3620,142 +4328,205 @@ form .field textarea:focus {
 }
 /* line 1742, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1908, ../sass/style.scss */
+form .field textarea:focus {
+  border-bottom: 1px solid #dce86b;
+}
+/* line 1911, ../sass/style.scss */
+>>>>>>> Prodcut slider
 form .field textarea:focus::-webkit-input-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1838, ../sass/style.scss */
 =======
 /* line 1743, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1912, ../sass/style.scss */
+>>>>>>> Prodcut slider
 form .field textarea:focus:-moz-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1839, ../sass/style.scss */
 =======
 /* line 1744, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1913, ../sass/style.scss */
+>>>>>>> Prodcut slider
 form .field textarea:focus::-moz-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1840, ../sass/style.scss */
 =======
 /* line 1745, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+/* line 1914, ../sass/style.scss */
+>>>>>>> Prodcut slider
 form .field textarea:focus:-ms-input-placeholder {
   color: #4e5056;
 }
 
 /*/  MEDIA SCREENS  /////////////////////////////////////////////////////////////////*/
 @media screen and (max-width: 1400px) {
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1850, ../sass/style.scss */
 =======
   /* line 1755, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1924, ../sass/style.scss */
+>>>>>>> Prodcut slider
   body {
     font-size: 17px;
   }
 }
 @media screen and (max-width: 1300px) {
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1854, ../sass/style.scss */
 =======
   /* line 1759, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1928, ../sass/style.scss */
+>>>>>>> Prodcut slider
   body {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 1200px) {
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1859, ../sass/style.scss */
 =======
   /* line 1764, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1933, ../sass/style.scss */
+>>>>>>> Prodcut slider
   body {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1100px) {
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1864, ../sass/style.scss */
 =======
   /* line 1769, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1938, ../sass/style.scss */
+>>>>>>> Prodcut slider
   body {
     font-size: 13px;
   }
 }
 @media screen and (max-width: 1024px) {
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1868, ../sass/style.scss */
 =======
   /* line 1774, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1943, ../sass/style.scss */
+>>>>>>> Prodcut slider
   body {
     font-size: 12px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1869, ../sass/style.scss */
 =======
   /* line 1775, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1944, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .wrapper {
     padding: 0 20px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1870, ../sass/style.scss */
 =======
   /* line 1776, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1945, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .photos {
     height: 100px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1871, ../sass/style.scss */
 =======
   /* line 1777, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1946, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .photos a.photo {
     width: 150px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1872, ../sass/style.scss */
 =======
   /* line 1778, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1947, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .photos .more-info {
     height: 100px;
     width: 150px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1873, ../sass/style.scss */
 =======
   /* line 1779, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1948, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .photos .more-info span.icon {
     line-height: 100px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1875, ../sass/style.scss */
 =======
   /* line 1781, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1950, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header .overlay .logo {
     width: 176px;
     background-size: 100%;
@@ -3763,206 +4534,291 @@ form .field textarea:focus:-ms-input-placeholder {
     width: 176px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1876, ../sass/style.scss */
 =======
   /* line 1782, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1951, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart .button span.icon-cart {
     font-size: 2.3em;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1877, ../sass/style.scss */
 =======
   /* line 1783, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1952, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart .button span.cart-amount {
     font-size: .7em;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1879, ../sass/style.scss */
 =======
   /* line 1785, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1954, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart.active .foldout .product {
     font-size: 1.3em;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1880, ../sass/style.scss */
 =======
   /* line 1786, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1955, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .checkout-page .content .checkout .summary {
     font-size: 1.2em;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1881, ../sass/style.scss */
 =======
   /* line 1787, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1956, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .checkout-page .content .checkout form .field {
     font-size: 1.4em;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1883, ../sass/style.scss */
 =======
   /* line 1789, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1958, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product.active .image {
     margin-top: 100px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1884, ../sass/style.scss */
 =======
   /* line 1790, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1959, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product a.nav {
     top: calc(50% + 50px);
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1886, ../sass/style.scss */
 =======
   /* line 1792, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1961, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart .foldout .product a.delete-item {
     opacity: 1;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1888, ../sass/style.scss */
 =======
   /* line 1795, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1964, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .checkout-page .content .checkout form .field.radiocheck label input[type="radio"] {
     top: -1px;
   }
 }
 @media screen and (max-width: 768px) {
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1892, ../sass/style.scss */
 =======
   /* line 1799, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1968, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header {
     height: 60%;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1893, ../sass/style.scss */
 =======
   /* line 1800, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1969, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .info, .content .product:hover .info {
     top: 30px;
     padding-bottom: 0;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1894, ../sass/style.scss */
 =======
   /* line 1801, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1970, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .image {
     width: 60%;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1895, ../sass/style.scss */
 =======
   /* line 1802, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1971, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .info {
     width: 40%;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1896, ../sass/style.scss */
 =======
   /* line 1803, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1972, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product.yellow .info {
     padding-left: 50px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1898, ../sass/style.scss */
 =======
   /* line 1805, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1974, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .checkout-page .content .checkout .data {
     width: 60%;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1899, ../sass/style.scss */
 =======
   /* line 1806, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1975, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .checkout-page .content .checkout .summary {
     margin-left: 3%;
     width: 37%;
     padding: 15px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1900, ../sass/style.scss */
 =======
   /* line 1807, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1976, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product a.nav {
     width: 75px;
     height: 75px;
     line-height: 75px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1901, ../sass/style.scss */
 =======
   /* line 1808, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1977, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product.active .nav.next {
     width: 75px;
   }
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1905, ../sass/style.scss */
 =======
   /* line 1812, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1981, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product.active .image {
     width: 85%;
   }
 }
 @media screen and (max-width: 767px) {
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1909, ../sass/style.scss */
 =======
   /* line 1817, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1986, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .info .details span.types {
     float: right;
     margin-left: 10px;
     margin-right: 0;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1910, ../sass/style.scss */
 =======
   /* line 1818, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1987, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header .overlay .logo {
     width: 100px;
     height: 130px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1911, ../sass/style.scss */
   .header .overlay .video-play {
@@ -3973,16 +4829,23 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1819, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1988, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .image {
     width: 100%;
     margin: 20px 0;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1913, ../sass/style.scss */
 =======
   /* line 1820, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1989, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .info {
     width: 100%;
     padding: 0 20px;
@@ -3990,28 +4853,37 @@ form .field textarea:focus:-ms-input-placeholder {
     text-align: right;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1914, ../sass/style.scss */
 =======
   /* line 1821, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1990, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product.yellow .info {
     padding-left: 20px;
     margin-top: 250px;
     text-align: left;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1915, ../sass/style.scss */
 =======
   /* line 1822, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1991, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product.yellow .image {
     position: absolute;
     margin: 0;
     top: 60px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1916, ../sass/style.scss */
   .content .product.active.yellow .image {
@@ -4022,184 +4894,263 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1824, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1993, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .info .amount label {
     float: none;
     display: inline-block;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1919, ../sass/style.scss */
 =======
   /* line 1825, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1994, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .info .amount input {
     display: inline-block;
     float: none;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1920, ../sass/style.scss */
 =======
   /* line 1826, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1995, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .info a.order {
     text-align: left;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1922, ../sass/style.scss */
 =======
   /* line 1828, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1997, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .instagram a.title, .footer .title {
     font-size: 2.3em;
     padding: 15px 30px;
     border-width: 2px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1923, ../sass/style.scss */
 =======
   /* line 1829, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 1998, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .footer .contactform {
     padding: 0 0 50px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1925, ../sass/style.scss */
 =======
   /* line 1831, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2000, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .bottom-bg {
     height: 500px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1927, ../sass/style.scss */
 =======
   /* line 1833, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2002, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .media a.col {
     padding: 50px 40px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1928, ../sass/style.scss */
 =======
   /* line 1834, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2003, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .media a.col.size1of3 {
     width: 100%;
     float: none;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1929, ../sass/style.scss */
 =======
   /* line 1835, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2004, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .media a.col .logo {
     height: 90px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1930, ../sass/style.scss */
 =======
   /* line 1836, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2005, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .media a.col .logo .hover {
     height: 90px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1931, ../sass/style.scss */
 =======
   /* line 1837, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2006, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .media a.col p {
     font-size: 1.3em;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1932, ../sass/style.scss */
 =======
   /* line 1838, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2007, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .bottom-bg .overlay .logo-happysmugglers-light {
     margin-top: 100px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1934, ../sass/style.scss */
 =======
   /* line 1840, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2009, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .divider.top {
     bottom: 99.5%;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1935, ../sass/style.scss */
 =======
   /* line 1841, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2010, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .divider.bottom {
     top: 99.5%;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1936, ../sass/style.scss */
 =======
   /* line 1842, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2011, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .divider img {
     margin-top: -2px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1937, ../sass/style.scss */
 =======
   /* line 1843, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2012, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .instagram {
     padding-top: 0;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1938, ../sass/style.scss */
 =======
   /* line 1844, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2013, ../sass/style.scss */
+>>>>>>> Prodcut slider
   form .field button {
     height: 80px;
     line-height: 80px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1940, ../sass/style.scss */
 =======
   /* line 1846, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2015, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll a.logo {
     width: 180px;
     height: 25px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1941, ../sass/style.scss */
 =======
   /* line 1847, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2016, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll {
     height: 70px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1943, ../sass/style.scss */
 =======
   /* line 1849, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2018, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart {
     width: 70px;
     height: 70px;
@@ -4211,21 +5162,29 @@ form .field textarea:focus:-ms-input-placeholder {
     top: 0;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1944, ../sass/style.scss */
 =======
   /* line 1850, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2019, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart .button {
     width: 70px;
     height: 70px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1945, ../sass/style.scss */
 =======
   /* line 1851, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2020, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart .button span.icon-cart {
     width: 70px;
     height: 70px;
@@ -4234,39 +5193,55 @@ form .field textarea:focus:-ms-input-placeholder {
     padding-right: 5px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1946, ../sass/style.scss */
 =======
   /* line 1852, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2021, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart .button span.cart-amount {
     right: 10px;
     top: 10px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1947, ../sass/style.scss */
 =======
   /* line 1853, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2022, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .mobile-nav-open .header-scroll .cart {
     opacity: 0;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1950, ../sass/style.scss */
 =======
   /* line 1856, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2025, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart .foldout {
     top: 70px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1951, ../sass/style.scss */
 =======
   /* line 1857, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2026, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart.active .foldout {
     width: 100%;
     max-width: initial;
@@ -4276,53 +5251,74 @@ form .field textarea:focus:-ms-input-placeholder {
     height: calc(100% - 70px);
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1959, ../sass/style.scss */
 =======
   /* line 1865, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2034, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart.active .foldout .foldout-inner {
     padding: 20px 40px 20px 20px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1960, ../sass/style.scss */
 =======
   /* line 1866, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2035, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart.active .foldout .product {
     margin-bottom: 20px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1961, ../sass/style.scss */
 =======
   /* line 1867, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2036, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart.active .foldout .totals {
     margin-bottom: 25px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1963, ../sass/style.scss */
 =======
   /* line 1869, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2038, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header .mobile-nav-btn, .header-scroll .mobile-nav-btn {
     display: inline-block;
     z-index: 13;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1964, ../sass/style.scss */
 =======
   /* line 1870, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2039, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .mobile-nav-open .header, .mobile-nav-open .header-scroll {
     z-index: 11;
     background: #dce86b;
     position: fixed;
   }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1969, ../sass/style.scss */
   .mobile-nav-open .header a.logo, .mobile-nav-open .header-scroll a.logo {
@@ -4336,16 +5332,27 @@ form .field textarea:focus:-ms-input-placeholder {
   }
   /* line 1877, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2044, ../sass/style.scss */
+  .mobile-nav-open .header a.logo, .mobile-nav-open .header-scroll a.logo {
+    z-index: 13;
+  }
+  /* line 2046, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .mobile-nav-open .header ul.nav, .mobile-nav-open .header-scroll ul.nav {
     top: 60px;
     z-index: 12;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1977, ../sass/style.scss */
 =======
   /* line 1883, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2052, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll ul.nav {
     position: fixed;
     right: 0;
@@ -4365,21 +5372,29 @@ form .field textarea:focus:-ms-input-placeholder {
     float: none;
     padding: 55px 15px 15px;
   }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1990, ../sass/style.scss */
 =======
   /* line 1896, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2065, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll ul.nav li {
     float: none;
     overflow: hidden;
     margin: 0;
   }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1995, ../sass/style.scss */
 =======
   /* line 1901, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2070, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll ul.nav li a {
     line-height: 50px;
     font-size: 1.5em;
@@ -4389,6 +5404,7 @@ form .field textarea:focus:-ms-input-placeholder {
     -webkit-transform: skewY(-3deg);
     transform: skewY(-3deg);
   }
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2001, ../sass/style.scss */
   .header-scroll ul.nav li a.active {
@@ -4402,15 +5418,26 @@ form .field textarea:focus:-ms-input-placeholder {
   }
   /* line 1913, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2076, ../sass/style.scss */
+  .header-scroll ul.nav li a.active {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  /* line 2082, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll ul.nav li:last-child a {
     margin-top: 5px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2012, ../sass/style.scss */
 =======
   /* line 1918, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2087, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll ul.nav li a.active {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -4420,11 +5447,15 @@ form .field textarea:focus:-ms-input-placeholder {
     transform: skewY(-3deg);
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2013, ../sass/style.scss */
 =======
   /* line 1919, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2088, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll ul.nav li a:hover {
     color: #36373b;
     -moz-transform: skewY(-3deg);
@@ -4433,48 +5464,68 @@ form .field textarea:focus:-ms-input-placeholder {
     transform: skewY(-3deg);
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2015, ../sass/style.scss */
 =======
   /* line 1921, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2090, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .checkout-page .content .checkout .data {
     width: 100%;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2016, ../sass/style.scss */
 =======
   /* line 1922, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2091, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .checkout-page .content .checkout .summary {
     width: 100%;
     margin-left: 0;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2017, ../sass/style.scss */
 =======
   /* line 1923, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2092, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .checkout-page .content .checkout .summary .item {
     margin-bottom: 20px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2018, ../sass/style.scss */
 =======
   /* line 1924, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2093, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .thanks-page .content .thanks {
     margin-bottom: 70px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2020, ../sass/style.scss */
 =======
   /* line 1926, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2095, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product a.nav {
     width: 50px;
     height: 50px;
@@ -4482,175 +5533,247 @@ form .field textarea:focus:-ms-input-placeholder {
     font-size: 1.8em;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2021, ../sass/style.scss */
 =======
   /* line 1927, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2096, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product.active .nav.next {
     width: 50px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2022, ../sass/style.scss */
 =======
   /* line 1928, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2097, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .photos {
     height: 70px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2023, ../sass/style.scss */
 =======
   /* line 1929, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2098, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .photos a.photo {
     width: 100px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2025, ../sass/style.scss */
 =======
   /* line 1931, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2100, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product.active .image {
     margin-top: 70px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2026, ../sass/style.scss */
 =======
   /* line 1932, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2101, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product a.nav {
     top: calc(50% + 35px);
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2028, ../sass/style.scss */
 =======
   /* line 1934, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2103, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .photos .more-info {
     height: 70px;
     width: 80px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2029, ../sass/style.scss */
 =======
   /* line 1935, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2104, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .photos .more-info span.icon {
     line-height: 70px;
     font-size: 1.8em;
   }
 }
 @media screen and (max-width: 767px) and (orientation: landscape) {
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2033, ../sass/style.scss */
 =======
   /* line 1939, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2108, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .info .details span.types {
     float: left;
     margin-left: 0;
     margin-right: 10px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2035, ../sass/style.scss */
 =======
   /* line 1941, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2110, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart.active .foldout .product .type .title {
     margin-bottom: 3px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2036, ../sass/style.scss */
 =======
   /* line 1942, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2111, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart .foldout .product .type p.subtitle {
     margin-bottom: 0;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2037, ../sass/style.scss */
 =======
   /* line 1943, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2112, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart.active .foldout .product {
     margin-bottom: 15px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2038, ../sass/style.scss */
 =======
   /* line 1944, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2113, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart.active .foldout .totals {
     margin-bottom: 15px;
     margin-top: 20px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2040, ../sass/style.scss */
 =======
   /* line 1946, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2115, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart .foldout .product .type {
     position: relative;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2041, ../sass/style.scss */
 =======
   /* line 1947, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2116, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart .foldout .product .type .title {
     line-height: 29px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2042, ../sass/style.scss */
 =======
   /* line 1948, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2117, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart .foldout .product .type p.subtitle {
     position: absolute;
     top: 5px;
     right: 150px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2043, ../sass/style.scss */
 =======
   /* line 1949, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2118, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll .cart .foldout .product .type input {
     position: absolute;
     top: 0;
     right: 70px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2045, ../sass/style.scss */
 =======
   /* line 1951, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2120, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .image {
     width: 50%;
     margin: 80px 0;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2046, ../sass/style.scss */
 =======
   /* line 1952, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2121, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .info {
     margin: 0;
     padding: 0 20px 20px 0;
@@ -4658,96 +5781,136 @@ form .field textarea:focus:-ms-input-placeholder {
     width: 50%;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2047, ../sass/style.scss */
 =======
   /* line 1953, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2122, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .image a {
     width: 100%;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2048, ../sass/style.scss */
 =======
   /* line 1954, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2123, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product .info p.subtitle, .content .product .info .details, .content .product .info .amount {
     margin-bottom: 25px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2049, ../sass/style.scss */
 =======
   /* line 1955, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2124, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product.yellow .image {
     position: relative;
     top: 0;
     margin: 80px 0;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2050, ../sass/style.scss */
 =======
   /* line 1956, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2125, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .product.yellow .info {
     margin-top: 0;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2052, ../sass/style.scss */
 =======
   /* line 1958, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2127, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .instagram a.title, .footer .title {
     font-size: 3.6em;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2053, ../sass/style.scss */
 =======
   /* line 1959, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2128, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .footer .contactform {
     padding: 0 50px 50px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2055, ../sass/style.scss */
 =======
   /* line 1961, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2130, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .media a.col .logo {
     height: 130px;
     width: 40%;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2056, ../sass/style.scss */
 =======
   /* line 1962, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2131, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .content .media a.col .logo .hover {
     height: 130px;
     width: 40%;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2058, ../sass/style.scss */
 =======
   /* line 1964, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2133, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll ul.nav {
     padding-top: 20px;
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2059, ../sass/style.scss */
 =======
   /* line 1965, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2134, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll ul.nav li a.active {
     -moz-transform: skewY(-2deg);
     -ms-transform: skewY(-2deg);
@@ -4755,11 +5918,15 @@ form .field textarea:focus:-ms-input-placeholder {
     transform: skewY(-2deg);
   }
 
+<<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2060, ../sass/style.scss */
 =======
   /* line 1966, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
+=======
+  /* line 2135, ../sass/style.scss */
+>>>>>>> Prodcut slider
   .header-scroll ul.nav li a:hover {
     -moz-transform: skewY(-2deg);
     -ms-transform: skewY(-2deg);

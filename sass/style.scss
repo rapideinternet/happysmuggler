@@ -1,7 +1,7 @@
 @import "compass";
 @import "compass/css3/user-interface";
 @import "normalize.css";
-@import "flexslider.css";
+@import "flexslider.custom.css";
 @import "fonts";
 @import "mixins";
 
@@ -722,106 +722,304 @@ video {display: block;}
     }
 
     .product {
-        top:0;
-        left:0;
-        @include transition(all .3s ease, position .3s ease .3s, z-index 0s ease, width 0s ease, height 0s ease);
+        @include transition(
+            all .3s ease,
+            position .3s ease .3s,
+            z-index 0s ease,
+            width 0s ease,
+            height 0s ease);
+        top: 0;
+        left: 0;
         position: relative;
         z-index: 2;
-        position: relative;
-        background:#fff;
+        background: #fff;
         height: 100%;
         width: 100%;
 
-        a.nav {
-            width: 150px;
-            height: 150px;
-            line-height: 150px;
-            text-align: center;
-            background:rgba(255,255,255,.4);
-            top:-moz-calc(50% + 75px);
-            top:-webkit-calc(50% + 75px);
-            top:-o-calc(50% + 75px);
-            top:calc(50% + 75px);
-            @include transform(translateY(-50%));
-            position: absolute;
-            z-index:1000;
-            color:$base;
-            text-decoration: none;
-            font-size: 2.5em;
+        .slider-nav {
+            display: none;
+        }
 
-            &.prev {
-                left:-100%;
+        .flexslider {
+            border: none;
+            margin: 0;
+        }
+
+        #slider {
+            @include transition(all 0.3s ease-out);
+            display: inline-block;
+            width: 65%;
+            margin: 100px 0;
+            cursor: url("../img/cursor-add.svg") 19 19, auto;
+
+            .flex-direction-nav {
+                display: none;
             }
+        }
 
-            &.next {
-                right:0;
-                width:0;
-                overflow: hidden;
+
+        // Product overlay NOT ACTIVE
+        &:not(.active) {
+            #slider li {
+                @include transition(all 4s ease-out);
+                width: 80% !important;
+                display: none !important;
+                opacity: 0 !important;
+
+                &.flex-active-slide {
+                    display: block !important;
+                    opacity: 1 !important;
+                }
             }
 
             &:hover {
-                background:$yellow;
+                #slider li {
+                    width: 90% !important;
+                }
             }
         }
 
-        .photos {
-            top:0;
-            left:-100%;
+        // Product overlay IS ACTIVE
+        &.active {
+            $slider-nav-height: 150px;
+
+            left: 0;
+            margin-top: 0;
             position: fixed;
-            width: 100%;
-            height:150px;
-            background:none;
-            z-index:555;
-            overflow: hidden;
-            @include transition(all .3s ease);
-            border-bottom:1px solid rgba(0,0,0,.2);
+            top: 0;
+            z-index: 100000;
 
-            a.photo {
-                outline:none;
-                border-bottom:1px solid rgba(0,0,0,.2);
-                height: 100%;
-                width: 200px;
-                display: block;
-                background-repeat:no-repeat;
-                background-size:cover;
-                background-position: center center;
-                opacity: .5;
-                float: left;
+            .flexslider {
+                .flex-direction-nav {
+                    a {
+                        $nav-size: 40px;
 
-                &:hover {opacity:1;}
+                        width: $nav-size;
+                        height: $nav-size;
+                        line-height: $nav-size !important;
+                        text-align: center;
+                        background:rgba(#fff, 0.4);
+                        font-size: $nav-size/2;
+                        color: $base;
+                        opacity: 1;
+                        outline: none;
+                        margin-top: -($nav-size/2);
 
-                &.active {
-                    opacity: 1;
+                        &::before {
+                            font-family: inherit;
+                            line-height: inherit;
+                            font-size: inherit;
+                        }
+
+                        &:hover {
+                            background: $yellow;
+                        }
+                    }
+
+                    .flex-nav-prev a {
+                        @extend .icon;
+                        // left: 0;
+
+                        &::before {
+                            content: "\e905";
+                        }
+                    }
+
+                    .flex-nav-next a {
+                        @extend .icon;
+                        // right: 0;
+
+                        &::before {
+                            content: "\e906";
+                        }
+                    }
                 }
             }
 
-            .more-info {
-                outline:none;
-                position: absolute;
-                right:0;
-                top:0;
-                width:200px;
-                text-align: center;
-                height: 150px;
-                z-index: 556;
-                background: $yellow;
+            .slider-nav {
+                border-bottom: 1px solid rgba(#000, 0.2);
+                display: block;
+                position: fixed;
+                height: $slider-nav-height;
+                width: 100%;
+                z-index: 555;
+                overflow: hidden;
 
-                &:hover {
-                    span.icon {
-                        color:$base;
+                #carousel {
+                    height: 100%;
+                    margin-right: $slider-nav-height;
+
+                    .slides {
+                        li {
+                            @include transition(opacity 0.2s ease);
+                            cursor: pointer;
+                            opacity: 0.7;
+
+                            &:hover,
+                            &.flex-active-slide {
+                                opacity: 1;
+                            }
+                        }
                     }
                 }
 
-                span.icon {
-                    line-height: 150px;
-                    color:#fff;
-                    font-size:3em;
+                .more-info {
                     cursor: pointer;
+                    cursor: url("../img/cursor-close.svg") 19 19, auto;
+                    outline: none;
+                    position: absolute;
+                    right:0;
+                    top:0;
+                    width: $slider-nav-height;
+                    text-align: center;
+                    height: 100%;
+                    z-index: 556;
+                    background: $yellow;
 
+                    &:hover {
+                        .icon {
+                            color: $base;
+                        }
+                    }
 
+                    .icon {
+                        line-height: $slider-nav-height;
+                        color: #fff;
+                        font-size: 3em;
+                    }
+                }
+            }
+
+            #slider {
+                @include box-sizing(border-box);
+                cursor: url("../img/cursor-close.svg") 19 19, auto;
+                height: 100%;
+                padding-top: $slider-nav-height;
+                display: block;
+                width: 100%;
+                margin: 0;
+
+                .flex-viewport {
+                    height: 100%;
+                }
+
+                .slides {
+                    height: 100%;
+                    text-align: center;
+
+                    li {
+                        height: 100%;
+                    }
+
+                    img {
+                        display: inline-block;
+                        max-height: 100%;
+                        max-width: 100%;
+                        width: auto;
+                    }
+                }
+
+                .flex-direction-nav {
+                    display: block;
+
+                    a {
+                        $nav-size: 100px;
+
+                        width: $nav-size;
+                        height: $nav-size;
+                        line-height: $nav-size !important;
+                        font-size: $nav-size/2;
+                        margin-top: -($nav-size/2);
+                    }
+
+                    .flex-nav-prev a {
+                        left: 0;
+                    }
+
+                    .flex-nav-next a {
+                        right: 0;
+                    }
                 }
             }
         }
+
+        // .image {
+        //     margin:100px 0;
+        //     display: inline-block;
+        //     width: 65%;
+        //     position: relative;
+        //     z-index:2;
+        //     text-align: center;
+        //     left:0;
+        //     @include transform(translateX(0));
+        //     @include transition(all .3s ease-out);
+
+        //     a {
+        //         display: inline-block;
+        //         outline: none;
+        //         width: 70%;
+        //         @include transition(all 4s ease-out);
+
+        //         img {width: 100%;display: block;@include transition(all 4s ease);cursor:url("../img/cursor-add.svg") 19 19, auto;}
+        //     }
+        // }
+
+        // .photos {
+        //     top:0;
+        //     left:-100%;
+        //     position: fixed;
+        //     width: 100%;
+        //     height:150px;
+        //     background:none;
+        //     z-index:555;
+        //     overflow: hidden;
+        //     @include transition(all .3s ease);
+        //     border-bottom:1px solid rgba(0,0,0,.2);
+
+        //     a.photo {
+        //         outline:none;
+        //         border-bottom:1px solid rgba(0,0,0,.2);
+        //         height: 100%;
+        //         width: 200px;
+        //         display: block;
+        //         background-repeat:no-repeat;
+        //         background-size:cover;
+        //         background-position: center center;
+        //         opacity: .5;
+        //         float: left;
+
+        //         &:hover {opacity:1;}
+
+        //         &.active {
+        //             opacity: 1;
+        //         }
+        //     }
+
+        //     .more-info {
+        //         outline:none;
+        //         position: absolute;
+        //         right:0;
+        //         top:0;
+        //         width:200px;
+        //         text-align: center;
+        //         height: 150px;
+        //         z-index: 556;
+        //         background: $yellow;
+
+        //         &:hover {
+        //             span.icon {
+        //                 color:$base;
+        //             }
+        //         }
+
+        //         span.icon {
+        //             line-height: 150px;
+        //             color:#fff;
+        //             font-size:3em;
+        //             cursor: pointer;
+        //         }
+        //     }
+        // }
 
         a.close {
             position: absolute;
@@ -842,35 +1040,14 @@ video {display: block;}
         }
 
         &:hover {
-            .image {
-                a {
-                    width: 80%;
-                }
-            }
+            // .image {
+            //     a {
+            //         width: 80%;
+            //     }
+            // }
 
             .info {
                 top:-20px;
-            }
-        }
-
-        .image {
-            margin:100px 0;
-            display: inline-block;
-            width: 60%;
-            position: relative;
-            z-index:2;
-            text-align: center;
-            left:0;
-            @include transform(translateX(0));
-            @include transition(all .3s ease-out);
-
-            a {
-                display: inline-block;
-                outline: none;
-                width: 70%;
-                @include transition(all 4s ease-out);
-
-                img {width: 100%;display: block;@include transition(all 4s ease);cursor:url("../img/cursor-add.svg") 19 19, auto;}
             }
         }
 
@@ -1068,13 +1245,6 @@ video {display: block;}
         }
 
         &.active {
-            margin-top: 0;
-            z-index:100000;
-            left:0;
-            top:0;
-            position: fixed;
-            cursor: url("../img/cursor-close.svg") 19 19, auto;
-
             &.yellow {
                 .nav {
                     background:$yellow;
@@ -1096,7 +1266,6 @@ video {display: block;}
 
             .photos {
                 left:0;
-
             }
 
             .image {
@@ -1129,7 +1298,7 @@ video {display: block;}
             }
 
             .info {
-                opacity:0;
+                opacity: 0;
             }
         }
     }
