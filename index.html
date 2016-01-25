@@ -241,18 +241,18 @@
 			<div class="title"><span>Keep</span> in touch</div>
 			<div class="contactform">
 				<div class="wrapper">
-					<form>
+					<form method="post" action="/php/handlecontact.php">
 						<div class="field">
-							<input type="text" placeholder="Your name:">
+							<input type="text" name="name" placeholder="Your name:">
 						</div>
 						<div class="field">
-							<input type="text" placeholder="Your email:">
+							<input type="text" name="email" placeholder="Your email:">
 						</div>
 						<div class="field">
-							<textarea placeholder="What's up?"></textarea>
+							<textarea name="message" placeholder="What's up?"></textarea>
 						</div>
 						<div class="field">
-							<button>Send</button>
+							<button type="submit">Send</button>
 						</div>
 					</form>
 				</div>
@@ -288,6 +288,7 @@
 	<script src="js/jquery.scrollTo.min.js"></script>
 	<script src="js/jquery.placeholder.min.js"></script>
 	<script src="js/hs.js"></script>
+	<script src="js/form.js"></script>
 
 </body>
 </html>
