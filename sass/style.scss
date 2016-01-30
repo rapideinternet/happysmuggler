@@ -849,23 +849,24 @@ video {display: block;}
                 margin:0 0 40px;
                 overflow: hidden;
 
+                .float {float: left;}
+
                 label {
                     display: block;
-                    float: left;
                     line-height: 50px;
                     margin:2px 20px 2px 0;
                 }
 
-                input {
+                input, select {
                     background:transparent;
                     height:50px;
                     line-height: 50px;
                     padding:0 10px;
                     border:1px solid $base;
                     display: block;
-                    float: left;
                     width: 100px;
-                    margin:2px 0;
+                    margin:2px 30px 2px 0;
+                    font-size:1em;
 
                     &:focus {
                         border:1px solid $yellow;
@@ -931,7 +932,7 @@ video {display: block;}
                     }
                 }
 
-                .field input {
+                .field input, .field select {
                     border:1px solid $base;
 
                     &:focus {
