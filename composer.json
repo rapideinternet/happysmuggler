@@ -1,0 +1,15 @@
+{
+    "name": "happysmuggler/website",
+    "description": "HappySmuggler Website",
+    "minimum-stability": "dev",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Happy Smuggler",
+            "email": "info@happysmugglers.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "v5.2.9"
+    }
+}
