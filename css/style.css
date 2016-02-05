@@ -1711,12 +1711,22 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   transition: opacity 0.2s ease;
   cursor: pointer;
   opacity: 0.7;
+  height: 150px;
 }
-/* line 763, ../sass/style.scss */
+/* line 765, ../sass/style.scss */
+.content .product.active .slider-nav #carousel .slides li img {
+  position: relative;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 771, ../sass/style.scss */
 .content .product.active .slider-nav #carousel .slides li:hover, .content .product.active .slider-nav #carousel .slides li.flex-active-slide {
   opacity: 1;
 }
-/* line 771, ../sass/style.scss */
+/* line 779, ../sass/style.scss */
 .content .product.active .slider-nav .more-info {
   cursor: pointer;
   cursor: url("../img/cursor-close.svg") 19 19, auto;
@@ -1731,6 +1741,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   z-index: 556;
   background: #dce86b;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 809, ../sass/style.scss */
@@ -1748,16 +1759,20 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 .content .product .photos .more-info span.icon {
 =======
 /* line 785, ../sass/style.scss */
+=======
+/* line 793, ../sass/style.scss */
+>>>>>>> add
 .content .product.active .slider-nav .more-info:hover .icon, .content .product.active .slider-nav .more-info:hover .flexslider .flex-direction-nav .flex-nav-prev a, .content .product.active .flexslider .flex-direction-nav .flex-nav-prev .slider-nav .more-info:hover a, .content .product.active .slider-nav .more-info:hover .flexslider .flex-direction-nav .flex-nav-next a, .content .product.active .flexslider .flex-direction-nav .flex-nav-next .slider-nav .more-info:hover a {
   color: #36373b;
 }
-/* line 790, ../sass/style.scss */
+/* line 798, ../sass/style.scss */
 .content .product.active .slider-nav .more-info .icon, .content .product.active .slider-nav .more-info .flexslider .flex-direction-nav .flex-nav-prev a, .content .product.active .flexslider .flex-direction-nav .flex-nav-prev .slider-nav .more-info a, .content .product.active .slider-nav .more-info .flexslider .flex-direction-nav .flex-nav-next a, .content .product.active .flexslider .flex-direction-nav .flex-nav-next .slider-nav .more-info a {
 >>>>>>> Prodcut slider
   line-height: 150px;
   color: #fff;
   font-size: 3em;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 825, ../sass/style.scss */
@@ -1766,6 +1781,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 >>>>>>> Prodcut slider (wip)
 =======
 /* line 798, ../sass/style.scss */
+=======
+/* line 806, ../sass/style.scss */
+>>>>>>> add
 .content .product.active #slider {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1777,31 +1795,47 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   width: 100%;
   margin: 0;
 }
-/* line 807, ../sass/style.scss */
+/* line 815, ../sass/style.scss */
 .content .product.active #slider .flex-viewport {
   height: 100%;
 }
-/* line 811, ../sass/style.scss */
+/* line 819, ../sass/style.scss */
 .content .product.active #slider .slides {
   height: 100%;
   text-align: center;
 }
-/* line 815, ../sass/style.scss */
+/* line 823, ../sass/style.scss */
 .content .product.active #slider .slides li {
   height: 100%;
 }
-/* line 819, ../sass/style.scss */
+/* line 827, ../sass/style.scss */
 .content .product.active #slider .slides img {
   display: inline-block;
   max-height: 100%;
   max-width: 100%;
   width: auto;
 }
-/* line 827, ../sass/style.scss */
+/* line 835, ../sass/style.scss */
 .content .product.active #slider .flex-direction-nav {
   display: block;
 }
-/* line 830, ../sass/style.scss */
+/* line 838, ../sass/style.scss */
+.content .product.active #slider .flex-direction-nav .flex-nav-prev, .content .product.active #slider .flex-direction-nav .flex-nav-next {
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  z-index: 99999;
+}
+/* line 846, ../sass/style.scss */
+.content .product.active #slider .flex-direction-nav .flex-nav-prev {
+  left: 0;
+}
+/* line 850, ../sass/style.scss */
+.content .product.active #slider .flex-direction-nav .flex-nav-next {
+  right: 0;
+}
+/* line 854, ../sass/style.scss */
 .content .product.active #slider .flex-direction-nav a {
   width: 100px;
   height: 100px;
@@ -1809,16 +1843,20 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   font-size: 50px;
   margin-top: -50px;
 }
-/* line 840, ../sass/style.scss */
+/* line 864, ../sass/style.scss */
 .content .product.active #slider .flex-direction-nav .flex-nav-prev a {
   left: 0;
 }
-/* line 844, ../sass/style.scss */
+/* line 868, ../sass/style.scss */
 .content .product.active #slider .flex-direction-nav .flex-nav-next a {
   right: 0;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 /* line 929, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 953, ../sass/style.scss */
+>>>>>>> add
 .content .product a.close {
   position: absolute;
   right: 0;
@@ -1832,6 +1870,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   text-align: center;
   font-size: 1.3em;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 838, ../sass/style.scss */
@@ -1861,6 +1900,13 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 954, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 966, ../sass/style.scss */
+.content .product a.close:hover {
+  background: #dce86b;
+}
+/* line 978, ../sass/style.scss */
+>>>>>>> add
 .content .product:hover .info {
   top: -20px;
 }
@@ -1901,6 +1947,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 4s ease-out;
   transition: all 4s ease-out;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 872, ../sass/style.scss */
 =======
@@ -1923,6 +1970,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 959, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 983, ../sass/style.scss */
+>>>>>>> add
 .content .product .info {
   overflow: hidden;
   display: inline-block;
@@ -1938,6 +1988,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   padding-right: 100px;
   padding-bottom: 20px;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 888, ../sass/style.scss */
@@ -1959,6 +2010,13 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 975, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 995, ../sass/style.scss */
+.content .product .info h2 {
+  margin: 0;
+}
+/* line 999, ../sass/style.scss */
+>>>>>>> add
 .content .product .info p.subtitle {
   font-size: 1.88em;
   font-weight: 300;
@@ -1966,6 +2024,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin-bottom: 40px;
   white-space: nowrap;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 900, ../sass/style.scss */
@@ -1975,10 +2034,14 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 983, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1007, ../sass/style.scss */
+>>>>>>> add
 .content .product .info .details {
   margin-bottom: 40px;
   overflow: hidden;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 904, ../sass/style.scss */
@@ -1988,6 +2051,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 987, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1011, ../sass/style.scss */
+>>>>>>> add
 .content .product .info .details span.types {
   cursor: pointer;
   display: block;
@@ -2004,6 +2070,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 915, ../sass/style.scss */
@@ -2013,10 +2080,14 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 998, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1022, ../sass/style.scss */
+>>>>>>> add
 .content .product .info .details span.types:hover {
   border: 1px solid rgba(0, 0, 0, 0.2);
   color: rgba(0, 0, 0, 0.4);
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 920, ../sass/style.scss */
@@ -2026,10 +2097,14 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1003, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1027, ../sass/style.scss */
+>>>>>>> add
 .content .product .info .details span.types.active {
   border: 1px solid #dce86b;
   color: #36373b;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 926, ../sass/style.scss */
@@ -2039,6 +2114,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1009, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1033, ../sass/style.scss */
+>>>>>>> add
 .content .product .info .details span.type {
   font-weight: 700;
   letter-spacing: .2em;
@@ -2046,6 +2124,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   display: block;
   margin-bottom: 5px;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 934, ../sass/style.scss */
@@ -2055,12 +2134,16 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1017, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1041, ../sass/style.scss */
+>>>>>>> add
 .content .product .info .details span.price {
   font-weight: 700;
   letter-spacing: .2em;
   font-size: 1.88em;
   display: block;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 942, ../sass/style.scss */
@@ -2070,10 +2153,14 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1025, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1049, ../sass/style.scss */
+>>>>>>> add
 .content .product .info .amount {
   margin: 0 0 40px;
   overflow: hidden;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 946, ../sass/style.scss */
@@ -2091,17 +2178,28 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1031, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1053, ../sass/style.scss */
+.content .product .info .amount .float {
+  float: left;
+}
+/* line 1055, ../sass/style.scss */
+>>>>>>> add
 .content .product .info .amount label {
   display: block;
   line-height: 50px;
   margin: 2px 20px 2px 0;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 954, ../sass/style.scss */
 =======
 /* line 1037, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1061, ../sass/style.scss */
+>>>>>>> add
 .content .product .info .amount input, .content .product .info .amount select {
 =======
 /* line 860, ../sass/style.scss */
@@ -2117,16 +2215,21 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin: 2px 30px 2px 0;
   font-size: 1em;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 965, ../sass/style.scss */
 =======
 /* line 1048, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1072, ../sass/style.scss */
+>>>>>>> add
 .content .product .info .amount input:focus, .content .product .info .amount select:focus {
   border: 1px solid #dce86b;
   background: #dce86b;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 972, ../sass/style.scss */
 =======
@@ -2140,6 +2243,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1055, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1079, ../sass/style.scss */
+>>>>>>> add
 .content .product .info a.order {
   white-space: nowrap;
   text-decoration: none;
@@ -2158,6 +2264,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: skewY(0deg);
   transform: skewY(0deg);
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 987, ../sass/style.scss */
@@ -2167,12 +2274,16 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1070, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1094, ../sass/style.scss */
+>>>>>>> add
 .content .product .info a.order span.icon-cart {
   font-size: 1.4em;
   top: 4px;
   position: relative;
   margin-left: 20px;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 994, ../sass/style.scss */
@@ -2182,6 +2293,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1077, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1101, ../sass/style.scss */
+>>>>>>> add
 .content .product .info a.order:hover {
   color: #fff;
   background: #36373b;
@@ -2191,6 +2305,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: skewY(-3deg);
   transform: skewY(-3deg);
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1003, ../sass/style.scss */
@@ -2200,10 +2315,14 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1086, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1110, ../sass/style.scss */
+>>>>>>> add
 .content .product.yellow {
   background: #dce86b;
   z-index: 1;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1007, ../sass/style.scss */
@@ -2225,10 +2344,18 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1092, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1114, ../sass/style.scss */
+.content .product.yellow .image {
+  margin: 150px 0;
+}
+/* line 1116, ../sass/style.scss */
+>>>>>>> add
 .content .product.yellow .info {
   padding-left: 100px;
   padding-right: 0;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1013, ../sass/style.scss */
@@ -2238,6 +2365,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1096, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1120, ../sass/style.scss */
+>>>>>>> add
 .content .product.yellow .info a.order {
   background: #fff;
   border-color: #fff;
@@ -2247,6 +2377,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   display: inline-block;
   color: #36373b;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1022, ../sass/style.scss */
@@ -2256,11 +2387,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1105, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1129, ../sass/style.scss */
+>>>>>>> add
 .content .product.yellow .info a.order:hover {
   background: #36373b;
   border-color: #36373b;
   color: #dce86b;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1029, ../sass/style.scss */
@@ -2275,10 +2410,18 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1115, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1136, ../sass/style.scss */
+.content .product.yellow .info .field input, .content .product.yellow .info .field select {
+  border: 1px solid #36373b;
+}
+/* line 1139, ../sass/style.scss */
+>>>>>>> add
 .content .product.yellow .info .field input:focus, .content .product.yellow .info .field select:focus {
   border: 1px solid #fff;
   background: #fff;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1039, ../sass/style.scss */
 =======
@@ -2296,12 +2439,16 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1122, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1146, ../sass/style.scss */
+>>>>>>> add
 .content .product.yellow .divider {
   position: relative;
   width: 100%;
   left: 0;
   margin: 0;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1045, ../sass/style.scss */
@@ -2318,23 +2465,31 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1128, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1152, ../sass/style.scss */
+>>>>>>> add
 .content .product.yellow .divider.top {
   bottom: auto;
 }
-/* line 1132, ../sass/style.scss */
+/* line 1156, ../sass/style.scss */
 .content .product.yellow .divider.bottom {
   top: auto;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 959, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
 =======
 /* line 1136, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1160, ../sass/style.scss */
+>>>>>>> add
 .content .product.yellow .divider img {
   width: 100%;
   display: block;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1063, ../sass/style.scss */
@@ -2372,19 +2527,27 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 >>>>>>> Prodcut slider (wip)
 =======
 /* line 1146, ../sass/style.scss */
+=======
+/* line 1170, ../sass/style.scss */
+>>>>>>> add
 .content .product.tanktop .info p.subtitle {
   letter-spacing: .3em;
 }
-/* line 1154, ../sass/style.scss */
+/* line 1178, ../sass/style.scss */
 .content .product.active.yellow .nav {
   background: #dce86b;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 /* line 1157, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1181, ../sass/style.scss */
+>>>>>>> add
 .content .product.active.yellow .nav:hover {
   background: #36373b;
   color: #fff;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1087, ../sass/style.scss */
@@ -2394,10 +2557,14 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1163, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1187, ../sass/style.scss */
+>>>>>>> add
 .content .product.active.yellow .image {
   left: 9%;
   margin-top: 0;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1093, ../sass/style.scss */
@@ -2419,10 +2586,18 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1170, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1193, ../sass/style.scss */
+.content .product.active .nav.prev {
+  left: 0;
+}
+/* line 1194, ../sass/style.scss */
+>>>>>>> add
 .content .product.active .nav.next {
   right: 0;
   width: 150px;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1096, ../sass/style.scss */
@@ -2444,6 +2619,13 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1176, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1196, ../sass/style.scss */
+.content .product.active .photos {
+  left: 0;
+}
+/* line 1200, ../sass/style.scss */
+>>>>>>> add
 .content .product.active .image {
   height: -moz-calc(100% - 150px);
   height: -webkit-calc(100% - 150px);
@@ -2460,6 +2642,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   transform: translateX(-50%);
   cursor: url("../img/cursor-close.svg") 19 19, auto;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1114, ../sass/style.scss */
@@ -2469,6 +2652,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1189, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1213, ../sass/style.scss */
+>>>>>>> add
 .content .product.active .image a {
   -moz-transition: ease-out 1s 0s;
   -o-transition: ease-out 1s 0s;
@@ -2484,6 +2670,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   width: 100%;
   cursor: url("../img/cursor-close.svg") 19 19, auto;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1122, ../sass/style.scss */
@@ -2493,11 +2680,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1196, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1220, ../sass/style.scss */
+>>>>>>> add
 .content .product.active .image a img {
   width: 100%;
   display: block;
   cursor: url("../img/cursor-close.svg") 19 19, auto;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1130, ../sass/style.scss */
@@ -2519,12 +2710,20 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1210, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1228, ../sass/style.scss */
+.content .product.active .info {
+  opacity: 0;
+}
+/* line 1234, ../sass/style.scss */
+>>>>>>> add
 .content .media {
   background: #edeef2;
   padding: 150px 0 0 0;
   position: relative;
   z-index: 1;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1142, ../sass/style.scss */
@@ -2546,6 +2745,13 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1220, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1240, ../sass/style.scss */
+.content .media .cols {
+  overflow: hidden;
+}
+/* line 1244, ../sass/style.scss */
+>>>>>>> add
 .content .media a.col {
   outline: none;
   padding: 100px 40px;
@@ -2560,6 +2766,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1157, ../sass/style.scss */
@@ -2581,6 +2788,13 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1233, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1255, ../sass/style.scss */
+.content .media a.col.size1of3 {
+  width: 33.33%;
+}
+/* line 1257, ../sass/style.scss */
+>>>>>>> add
 .content .media a.col .logo {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -2588,6 +2802,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin: 0 auto;
   height: 120px;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1166, ../sass/style.scss */
@@ -2597,6 +2812,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1240, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1264, ../sass/style.scss */
+>>>>>>> add
 .content .media a.col .logo .hover {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -2608,6 +2826,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1175, ../sass/style.scss */
@@ -2640,39 +2859,47 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1249, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1273, ../sass/style.scss */
+>>>>>>> add
 .content .media a.col .logo.vice {
   background-image: url(../img/vice.svg);
 }
-/* line 1251, ../sass/style.scss */
+/* line 1275, ../sass/style.scss */
 .content .media a.col .logo.vice .hover {
   background-image: url(../img/vice-hover.svg);
 }
-/* line 1254, ../sass/style.scss */
+/* line 1278, ../sass/style.scss */
 .content .media a.col .logo.metro {
   background-image: url(../img/metro.jpg);
 }
-/* line 1256, ../sass/style.scss */
+/* line 1280, ../sass/style.scss */
 .content .media a.col .logo.metro .hover {
   background-image: url(../img/metro-hover.jpg);
 }
-/* line 1259, ../sass/style.scss */
+/* line 1283, ../sass/style.scss */
 .content .media a.col .logo.fhm {
   background-image: url(../img/fhm.svg);
 }
-/* line 1261, ../sass/style.scss */
+/* line 1285, ../sass/style.scss */
 .content .media a.col .logo.fhm .hover {
   background-image: url(../img/fhm-hover.svg);
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1096, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
 =======
 /* line 1265, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1289, ../sass/style.scss */
+>>>>>>> add
 .content .media a.col p {
   font-weight: 300;
   letter-spacing: .05em;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1196, ../sass/style.scss */
@@ -2689,25 +2916,33 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1270, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1294, ../sass/style.scss */
+>>>>>>> add
 .content .media a.col:hover {
   color: #36373b;
 }
-/* line 1273, ../sass/style.scss */
+/* line 1297, ../sass/style.scss */
 .content .media a.col:hover .logo .hover {
   opacity: 1;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1109, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
 =======
 /* line 1278, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1302, ../sass/style.scss */
+>>>>>>> add
 .content .instagram {
   position: relative;
   overflow: hidden;
   padding-top: 1%;
   padding-bottom: 1%;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1210, ../sass/style.scss */
@@ -2717,12 +2952,16 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1284, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1308, ../sass/style.scss */
+>>>>>>> add
 .content .instagram .divider {
   position: absolute;
   width: 100%;
   left: 0;
   margin: 0;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1216, ../sass/style.scss */
@@ -2744,10 +2983,18 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1294, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1314, ../sass/style.scss */
+.content .instagram .divider.top {
+  top: 8%;
+}
+/* line 1318, ../sass/style.scss */
+>>>>>>> add
 .content .instagram .divider.bottom {
   bottom: 0;
   top: auto;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1225, ../sass/style.scss */
@@ -2757,11 +3004,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1299, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1323, ../sass/style.scss */
+>>>>>>> add
 .content .instagram .divider img {
   width: 104%;
   margin-left: -2%;
   display: block;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1232, ../sass/style.scss */
@@ -2771,6 +3022,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1306, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1330, ../sass/style.scss */
+>>>>>>> add
 .content .instagram a.title {
   outline: none;
   display: inline-block;
@@ -2797,6 +3051,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: translateX(-50%) translateY(-50%) skewY(0deg);
   transform: translateX(-50%) translateY(-50%) skewY(0deg);
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1252, ../sass/style.scss */
@@ -2806,6 +3061,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1326, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1350, ../sass/style.scss */
+>>>>>>> add
 .content .instagram a.title:hover {
   background: #dce86b;
   color: #36373b;
@@ -2814,6 +3072,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: translateX(-50%) translateY(-50%) skewY(-4deg);
   transform: translateX(-50%) translateY(-50%) skewY(-4deg);
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1258, ../sass/style.scss */
@@ -2823,10 +3082,14 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1332, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1356, ../sass/style.scss */
+>>>>>>> add
 .content .instagram a.title span {
   font-weight: 400;
   font-size: .95em;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1264, ../sass/style.scss */
@@ -2836,6 +3099,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1338, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1362, ../sass/style.scss */
+>>>>>>> add
 .content .instagram .image {
   float: left;
   width: 50%;
@@ -2847,6 +3113,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 
 /* */
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1279, ../sass/style.scss */
@@ -2856,6 +3123,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1353, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1377, ../sass/style.scss */
+>>>>>>> add
 .thanks-page .header-scroll {
   position: relative;
   top: 0;
@@ -2865,6 +3135,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   box-shadow: none;
   border-bottom: 1px solid #e8e8e8;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1287, ../sass/style.scss */
@@ -2874,11 +3145,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1361, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1385, ../sass/style.scss */
+>>>>>>> add
 .thanks-page h1 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1293, ../sass/style.scss */
@@ -2888,11 +3163,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1367, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1391, ../sass/style.scss */
+>>>>>>> add
 .thanks-page p {
   font-weight: 300;
   letter-spacing: .03em;
   font-size: 1.2em;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1300, ../sass/style.scss */
@@ -2902,11 +3181,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1374, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1398, ../sass/style.scss */
+>>>>>>> add
 .thanks-page .content .thanks {
   margin-top: 30px;
   margin-bottom: 150px;
 }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1309, ../sass/style.scss */
@@ -2916,6 +3199,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1383, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1407, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .header-scroll {
   position: relative;
   top: 0;
@@ -2925,6 +3211,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   box-shadow: none;
   border-bottom: 1px solid #e8e8e8;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1317, ../sass/style.scss */
@@ -2934,11 +3221,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1391, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1415, ../sass/style.scss */
+>>>>>>> add
 .checkout-page h1 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1323, ../sass/style.scss */
@@ -2960,10 +3251,18 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1402, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1421, ../sass/style.scss */
+.checkout-page h2 {
+  font-size: 1.833em;
+}
+/* line 1426, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout {
   margin-top: 30px;
   margin-bottom: 150px;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1332, ../sass/style.scss */
@@ -2985,11 +3284,19 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1410, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1430, ../sass/style.scss */
+.checkout-page .content .checkout .wrapper {
+  overflow: hidden;
+}
+/* line 1434, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout .data {
   width: 65%;
   float: left;
   display: block;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1342, ../sass/style.scss */
@@ -2999,6 +3306,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1416, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1440, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout .summary {
   padding: 20px;
   background: #dce86b;
@@ -3008,6 +3318,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   display: block;
   font-size: .9em;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1351, ../sass/style.scss */
@@ -3017,6 +3328,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1425, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1449, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout .summary .item {
   background: none;
   margin-bottom: 40px;
@@ -3025,6 +3339,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1357, ../sass/style.scss */
@@ -3034,6 +3349,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1431, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1455, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout .summary .item .type .title {
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -3043,6 +3361,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1363, ../sass/style.scss */
@@ -3052,10 +3371,14 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1437, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1461, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout .summary .item .type .title .total {
   float: right;
   font-weight: 700;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1368, ../sass/style.scss */
@@ -3065,6 +3388,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1442, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1466, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout .summary .item .type p.subtitle {
   text-transform: uppercase;
   font-weight: 300;
@@ -3076,6 +3402,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1376, ../sass/style.scss */
@@ -3085,6 +3412,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1450, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1474, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout .summary .item .type .sizes {
   display: block;
   float: right;
@@ -3099,6 +3429,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1390, ../sass/style.scss */
@@ -3108,6 +3439,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1464, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1488, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout .summary .totals {
   font-size: 1.15em;
   margin-bottom: 10px;
@@ -3121,6 +3455,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1400, ../sass/style.scss */
@@ -3130,10 +3465,14 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1474, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1498, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout .summary .totals span {
   float: right;
   font-size: 1.35em;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1406, ../sass/style.scss */
@@ -3143,6 +3482,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1480, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1504, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout .summary .vat {
   font-weight: 200;
   margin-bottom: 40px;
@@ -3152,6 +3494,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   letter-spacing: .2em;
   text-transform: uppercase;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1416, ../sass/style.scss */
@@ -3161,6 +3504,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1490, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1514, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout .summary a.checkout {
   margin-bottom: 0;
   padding: 20px;
@@ -3173,6 +3519,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   color: #fff;
   letter-spacing: .2em;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1428, ../sass/style.scss */
@@ -3182,6 +3529,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1502, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1526, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout .summary a.checkout:hover {
   color: #dce86b;
   background: #4e5056;
@@ -3189,6 +3539,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1436, ../sass/style.scss */
@@ -3205,19 +3556,26 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1510, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1534, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout form {
   margin-bottom: 50px;
 }
-/* line 1513, ../sass/style.scss */
+/* line 1537, ../sass/style.scss */
 .checkout-page .content .checkout form .field {
   margin-bottom: 20px;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1347, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
 =======
 /* line 1516, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1540, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout form .field input[type="text"], .checkout-page .content .checkout form .field input[type="file"], .checkout-page .content .checkout form .field input[type="number"], .checkout-page .content .checkout form .field select {
   background: #fff none repeat scroll 0 0;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -3238,6 +3596,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   transition: all 0.3s ease 0s;
   width: 100%;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1458, ../sass/style.scss */
@@ -3275,31 +3634,44 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1536, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1556, ../sass/style.scss */
+.checkout-page .content .checkout form .field input[type="text"].error, .checkout-page .content .checkout form .field input[type="file"].error, .checkout-page .content .checkout form .field input[type="number"].error, .checkout-page .content .checkout form .field select.error {
+  background: #ffebf0;
+  border: 1px solid #ffbccc;
+}
+/* line 1560, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout form .field input[type="text"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].error::-webkit-input-placeholder, .checkout-page .content .checkout form .field select.error::-webkit-input-placeholder {
   color: #e00b3d;
 }
-/* line 1537, ../sass/style.scss */
+/* line 1561, ../sass/style.scss */
 .checkout-page .content .checkout form .field input[type="text"].error:-moz-placeholder, .checkout-page .content .checkout form .field input[type="file"].error:-moz-placeholder, .checkout-page .content .checkout form .field input[type="number"].error:-moz-placeholder, .checkout-page .content .checkout form .field select.error:-moz-placeholder {
   color: #e00b3d;
 }
-/* line 1538, ../sass/style.scss */
+/* line 1562, ../sass/style.scss */
 .checkout-page .content .checkout form .field input[type="text"].error::-moz-placeholder, .checkout-page .content .checkout form .field input[type="file"].error::-moz-placeholder, .checkout-page .content .checkout form .field input[type="number"].error::-moz-placeholder, .checkout-page .content .checkout form .field select.error::-moz-placeholder {
   color: #e00b3d;
 }
-/* line 1539, ../sass/style.scss */
+/* line 1563, ../sass/style.scss */
 .checkout-page .content .checkout form .field input[type="text"].error:-ms-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].error:-ms-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].error:-ms-input-placeholder, .checkout-page .content .checkout form .field select.error:-ms-input-placeholder {
   color: #e00b3d;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1373, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
 =======
 /* line 1542, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1566, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout form .field input[type="text"].success, .checkout-page .content .checkout form .field input[type="file"].success, .checkout-page .content .checkout form .field input[type="number"].success, .checkout-page .content .checkout form .field select.success {
   background: #f3ffef;
   border: 1px solid #acf098;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1472, ../sass/style.scss */
@@ -3324,27 +3696,34 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1546, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1570, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout form .field input[type="text"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].success::-webkit-input-placeholder, .checkout-page .content .checkout form .field select.success::-webkit-input-placeholder {
   color: #2cbd00;
 }
-/* line 1547, ../sass/style.scss */
+/* line 1571, ../sass/style.scss */
 .checkout-page .content .checkout form .field input[type="text"].success:-moz-placeholder, .checkout-page .content .checkout form .field input[type="file"].success:-moz-placeholder, .checkout-page .content .checkout form .field input[type="number"].success:-moz-placeholder, .checkout-page .content .checkout form .field select.success:-moz-placeholder {
   color: #2cbd00;
 }
-/* line 1548, ../sass/style.scss */
+/* line 1572, ../sass/style.scss */
 .checkout-page .content .checkout form .field input[type="text"].success::-moz-placeholder, .checkout-page .content .checkout form .field input[type="file"].success::-moz-placeholder, .checkout-page .content .checkout form .field input[type="number"].success::-moz-placeholder, .checkout-page .content .checkout form .field select.success::-moz-placeholder {
   color: #2cbd00;
 }
-/* line 1549, ../sass/style.scss */
+/* line 1573, ../sass/style.scss */
 .checkout-page .content .checkout form .field input[type="text"].success:-ms-input-placeholder, .checkout-page .content .checkout form .field input[type="file"].success:-ms-input-placeholder, .checkout-page .content .checkout form .field input[type="number"].success:-ms-input-placeholder, .checkout-page .content .checkout form .field select.success:-ms-input-placeholder {
   color: #2cbd00;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1384, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
 =======
 /* line 1553, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1577, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout form .field textarea {
   border: 1px solid rgba(0, 0, 0, 0.2);
   letter-spacing: 0.03em;
@@ -3359,6 +3738,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition-delay: 0s;
   transition: all 0.3s ease 0s;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1489, ../sass/style.scss */
@@ -3383,31 +3763,39 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1563, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1587, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout form .field textarea::-webkit-input-placeholder {
   line-height: 1.6em;
 }
-/* line 1564, ../sass/style.scss */
+/* line 1588, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea:-moz-placeholder {
   line-height: 1.6em;
 }
-/* line 1565, ../sass/style.scss */
+/* line 1589, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea::-moz-placeholder {
   line-height: 1.6em;
 }
-/* line 1566, ../sass/style.scss */
+/* line 1590, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea:-ms-input-placeholder {
   line-height: 1.6em;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1399, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
 =======
 /* line 1568, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1592, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout form .field textarea.error {
   background: #ffebf0;
   border: 1px solid #ffbccc;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1498, ../sass/style.scss */
@@ -3432,31 +3820,39 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1572, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1596, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout form .field textarea.error::-webkit-input-placeholder {
   color: #e00b3d;
 }
-/* line 1573, ../sass/style.scss */
+/* line 1597, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea.error:-moz-placeholder {
   color: #e00b3d;
 }
-/* line 1574, ../sass/style.scss */
+/* line 1598, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea.error::-moz-placeholder {
   color: #e00b3d;
 }
-/* line 1575, ../sass/style.scss */
+/* line 1599, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea.error:-ms-input-placeholder {
   color: #e00b3d;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1409, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
 =======
 /* line 1578, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1602, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout form .field textarea.success {
   background: #f3ffef;
   border: 1px solid #acf098;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1508, ../sass/style.scss */
@@ -3485,36 +3881,44 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1582, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1606, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout form .field textarea.success::-webkit-input-placeholder {
   color: #2cbd00;
 }
-/* line 1583, ../sass/style.scss */
+/* line 1607, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea.success:-moz-placeholder {
   color: #2cbd00;
 }
-/* line 1584, ../sass/style.scss */
+/* line 1608, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea.success::-moz-placeholder {
   color: #2cbd00;
 }
-/* line 1585, ../sass/style.scss */
+/* line 1609, ../sass/style.scss */
 .checkout-page .content .checkout form .field textarea.success:-ms-input-placeholder {
   color: #2cbd00;
 }
-/* line 1589, ../sass/style.scss */
+/* line 1613, ../sass/style.scss */
 .checkout-page .content .checkout form .field.doublefield {
   overflow: hidden;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1423, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
 =======
 /* line 1592, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1616, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout form .field.doublefield input[type="text"], .checkout-page .content .checkout form .field.doublefield input[type="file"], .checkout-page .content .checkout form .field.doublefield input[type="number"], .checkout-page .content .checkout form .field.doublefield select {
   width: calc(50% - 10px);
   float: left;
   margin-left: 20px;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1523, ../sass/style.scss */
@@ -3535,29 +3939,37 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1597, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1621, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout form .field.doublefield input[type="text"]:first-child, .checkout-page .content .checkout form .field.doublefield input[type="file"]:first-child, .checkout-page .content .checkout form .field.doublefield input[type="number"]:first-child, .checkout-page .content .checkout form .field.doublefield select:first-child {
   margin-left: 0;
 }
-/* line 1601, ../sass/style.scss */
+/* line 1625, ../sass/style.scss */
 .checkout-page .content .checkout form .field.address {
   margin-bottom: 0;
 }
-/* line 1604, ../sass/style.scss */
+/* line 1628, ../sass/style.scss */
 .checkout-page .content .checkout form .field.address input[type="text"], .checkout-page .content .checkout form .field.address input[type="file"], .checkout-page .content .checkout form .field.address input[type="number"], .checkout-page .content .checkout form .field.address select {
   margin-bottom: 20px;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1439, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
 =======
 /* line 1608, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1632, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout form .field.radiocheck label {
   display: block;
   cursor: pointer;
   margin-right: 30px;
   margin-bottom: 5px;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1540, ../sass/style.scss */
@@ -3579,6 +3991,13 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1616, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1638, ../sass/style.scss */
+.checkout-page .content .checkout form .field.radiocheck label select {
+  margin-top: 15px;
+}
+/* line 1640, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout form .field.radiocheck label span.image {
   margin-left: 10px;
   width: 40px;
@@ -3586,6 +4005,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   position: relative;
   display: inline-block;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1549, ../sass/style.scss */
@@ -3595,10 +4015,14 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1623, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1647, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout form .field.radiocheck label span.image img {
   width: 100%;
   display: block;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1555, ../sass/style.scss */
@@ -3608,6 +4032,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1629, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1653, ../sass/style.scss */
+>>>>>>> add
 .checkout-page .content .checkout form .field.radiocheck label input[type="radio"] {
   margin: 1px 5px 1px 1px;
   top: -3px;
@@ -3615,6 +4042,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 
 /*/  FOOTER  /////////////////////////////////////////////////////////////////*/
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1571, ../sass/style.scss */
@@ -3624,11 +4052,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1645, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1669, ../sass/style.scss */
+>>>>>>> add
 .footer {
   position: relative;
   background: #fff;
   padding-top: 80px;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1576, ../sass/style.scss */
@@ -3638,6 +4070,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1650, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1674, ../sass/style.scss */
+>>>>>>> add
 .footer .title {
   position: relative;
   z-index: 15;
@@ -3661,6 +4096,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1594, ../sass/style.scss */
@@ -3670,6 +4106,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1668, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1692, ../sass/style.scss */
+>>>>>>> add
 .footer .title:hover {
   background: #dce86b;
   color: #36373b;
@@ -3678,6 +4117,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -webkit-transform: translateX(-50%) skewY(-4deg);
   transform: translateX(-50%) skewY(-4deg);
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1600, ../sass/style.scss */
@@ -3687,10 +4127,14 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1674, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1698, ../sass/style.scss */
+>>>>>>> add
 .footer .title span {
   font-weight: 400;
   font-size: .95em;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1606, ../sass/style.scss */
@@ -3712,6 +4156,13 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1684, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1704, ../sass/style.scss */
+.footer .contactform {
+  padding: 0 100px 100px 100px;
+}
+/* line 1708, ../sass/style.scss */
+>>>>>>> add
 .footer .divider {
   position: absolute;
   width: 100%;
@@ -3719,6 +4170,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin: 0;
   z-index: 5;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1617, ../sass/style.scss */
@@ -3740,10 +4192,18 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1695, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1715, ../sass/style.scss */
+.footer .divider.top {
+  top: 8%;
+}
+/* line 1719, ../sass/style.scss */
+>>>>>>> add
 .footer .divider.bottom {
   bottom: auto;
   top: 100%;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1626, ../sass/style.scss */
@@ -3753,6 +4213,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1700, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1724, ../sass/style.scss */
+>>>>>>> add
 .footer .divider img {
   width: 104%;
   margin-left: -2%;
@@ -3760,6 +4223,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 
 /*/  BOTTOM BG  /////////////////////////////////////////////////////////////////*/
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1637, ../sass/style.scss */
@@ -3769,6 +4233,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1711, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1735, ../sass/style.scss */
+>>>>>>> add
 .bottom-bg {
   height: 700px;
   position: relative;
@@ -3777,6 +4244,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   background-size: cover;
   background-position: center center;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1645, ../sass/style.scss */
@@ -3786,6 +4254,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1719, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1743, ../sass/style.scss */
+>>>>>>> add
 .bottom-bg .overlay {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -3795,6 +4266,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   left: 0;
   text-align: center;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1654, ../sass/style.scss */
@@ -3804,6 +4276,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1728, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1752, ../sass/style.scss */
+>>>>>>> add
 .bottom-bg .overlay .logo-happysmugglers-light {
   background: url(../img/logo-happy-smugglers-lang-light.svg) no-repeat;
   background-size: 100%;
@@ -3811,6 +4286,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   margin: 170px auto 0;
   height: 50px;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1662, ../sass/style.scss */
@@ -3820,6 +4296,9 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1736, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1760, ../sass/style.scss */
+>>>>>>> add
 .bottom-bg .overlay p {
   font-weight: 400;
   color: #fff;
@@ -3828,6 +4307,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   letter-spacing: .1em;
   font-size: 1.2em;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1671, ../sass/style.scss */
@@ -3849,6 +4329,13 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1748, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1769, ../sass/style.scss */
+.bottom-bg .overlay ul {
+  margin-bottom: 30px;
+}
+/* line 1772, ../sass/style.scss */
+>>>>>>> add
 .bottom-bg .overlay ul li {
   line-height: 2.25em;
   text-align: center;
@@ -3857,6 +4344,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   font-size: .9em;
   letter-spacing: .075em;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1684, ../sass/style.scss */
@@ -3878,6 +4366,13 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1761, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1782, ../sass/style.scss */
+.bottom-bg .overlay .socials {
+  text-align: center;
+}
+/* line 1785, ../sass/style.scss */
+>>>>>>> add
 .bottom-bg .overlay .socials a.social {
   display: inline-block;
   width: 40px;
@@ -3890,6 +4385,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   border-radius: 50%;
   margin-left: 10px;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1697, ../sass/style.scss */
@@ -3911,10 +4407,18 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1773, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1795, ../sass/style.scss */
+.bottom-bg .overlay .socials a.social:first-child {
+  margin-left: 0;
+}
+/* line 1797, ../sass/style.scss */
+>>>>>>> add
 .bottom-bg .overlay .socials a.social span.icon {
   line-height: 40px;
   text-align: center;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1704, ../sass/style.scss */
@@ -3967,59 +4471,67 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1778, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1802, ../sass/style.scss */
+>>>>>>> add
 .bottom-bg .overlay .socials a.social.facebook {
   background: #4970b2;
 }
-/* line 1778, ../sass/style.scss */
+/* line 1802, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.facebook:hover {
   background: #334e7c;
 }
-/* line 1779, ../sass/style.scss */
+/* line 1803, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.twitter {
   background: #6dceef;
 }
-/* line 1779, ../sass/style.scss */
+/* line 1803, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.twitter:hover {
   background: #28b7e7;
 }
-/* line 1780, ../sass/style.scss */
+/* line 1804, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.insta {
   background: #a77b5e;
 }
-/* line 1780, ../sass/style.scss */
+/* line 1804, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.insta:hover {
   background: #775741;
 }
-/* line 1781, ../sass/style.scss */
+/* line 1805, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.youtube {
   background: #e64a41;
 }
-/* line 1781, ../sass/style.scss */
+/* line 1805, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.youtube:hover {
   background: #c12319;
 }
-/* line 1782, ../sass/style.scss */
+/* line 1806, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.vimeo {
   background: #17aee1;
 }
-/* line 1782, ../sass/style.scss */
+/* line 1806, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.vimeo:hover {
   background: #10789c;
 }
-/* line 1783, ../sass/style.scss */
+/* line 1807, ../sass/style.scss */
 .bottom-bg .overlay .socials a.social.googleplus {
   background: #eb5e53;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1614, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
 =======
 /* line 1783, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1807, ../sass/style.scss */
+>>>>>>> add
 .bottom-bg .overlay .socials a.social.googleplus:hover {
   background: #d82719;
 }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1715, ../sass/style.scss */
@@ -4029,10 +4541,14 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1789, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1813, ../sass/style.scss */
+>>>>>>> add
 .content .bottom-bg .divider.top {
   bottom: auto;
 }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1716, ../sass/style.scss */
@@ -4042,11 +4558,15 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1790, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1814, ../sass/style.scss */
+>>>>>>> add
 .content .bottom-bg .divider.top img {
   margin-top: -2px;
 }
 
 /*/  FORM STYLING  /////////////////////////////////////////////////////////////////*/
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1720, ../sass/style.scss */
@@ -4056,10 +4576,14 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 =======
 /* line 1794, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1818, ../sass/style.scss */
+>>>>>>> add
 form {
   padding: 0;
   margin: 0;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1724, ../sass/style.scss */
@@ -4069,11 +4593,15 @@ form {
 =======
 /* line 1798, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1822, ../sass/style.scss */
+>>>>>>> add
 form fieldset {
   border: none;
   padding: 0;
   margin: 0;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1731, ../sass/style.scss */
@@ -4090,24 +4618,32 @@ form fieldset.radiocheck .field input[type="checkbox"], form fieldset.radiocheck
 =======
 /* line 1805, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1829, ../sass/style.scss */
+>>>>>>> add
 form fieldset.radiocheck .field label {
   width: 100%;
 }
-/* line 1809, ../sass/style.scss */
+/* line 1833, ../sass/style.scss */
 form fieldset.radiocheck .field input[type="checkbox"], form fieldset.radiocheck .field input[type="radio"] {
   margin-right: 5px;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1647, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
 =======
 /* line 1816, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1840, ../sass/style.scss */
+>>>>>>> add
 form .field {
   width: 100%;
   margin-bottom: 10px;
   overflow: hidden;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1747, ../sass/style.scss */
@@ -4117,6 +4653,9 @@ form .field {
 =======
 /* line 1821, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1845, ../sass/style.scss */
+>>>>>>> add
 form .field button {
   position: relative;
   width: 100%;
@@ -4144,6 +4683,7 @@ form .field button {
   background: #dce86b;
   margin-top: 50px;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1769, ../sass/style.scss */
@@ -4165,6 +4705,13 @@ form .field button:hover {
 }
 /* line 1848, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1867, ../sass/style.scss */
+form .field button:hover {
+  background: #36373b;
+}
+/* line 1872, ../sass/style.scss */
+>>>>>>> add
 form .field label, form .field p.label {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -4173,6 +4720,7 @@ form .field label, form .field p.label {
   font-size: 1em;
   color: #36373b;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1783, ../sass/style.scss */
@@ -4182,6 +4730,9 @@ form .field label, form .field p.label {
 =======
 /* line 1857, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1881, ../sass/style.scss */
+>>>>>>> add
 form .field input[type="text"], form .field input[type="file"], form .field input[type="number"], form .field select {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -4206,6 +4757,7 @@ form .field input[type="text"], form .field input[type="file"], form .field inpu
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1802, ../sass/style.scss */
@@ -4227,11 +4779,19 @@ form .field input[type="text"]:focus, form .field input[type="file"]:focus, form
 }
 /* line 1879, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1900, ../sass/style.scss */
+form .field input[type="text"]:focus, form .field input[type="file"]:focus, form .field input[type="number"]:focus, form .field select:focus {
+  border-bottom: 1px solid #dce86b;
+}
+/* line 1903, ../sass/style.scss */
+>>>>>>> add
 form .field input[type="text"]:focus::-webkit-input-placeholder, form .field input[type="file"]:focus::-webkit-input-placeholder, form .field input[type="number"]:focus::-webkit-input-placeholder, form .field select:focus::-webkit-input-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1806, ../sass/style.scss */
@@ -4241,11 +4801,15 @@ form .field input[type="text"]:focus::-webkit-input-placeholder, form .field inp
 =======
 /* line 1880, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1904, ../sass/style.scss */
+>>>>>>> add
 form .field input[type="text"]:focus:-moz-placeholder, form .field input[type="file"]:focus:-moz-placeholder, form .field input[type="number"]:focus:-moz-placeholder, form .field select:focus:-moz-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1807, ../sass/style.scss */
@@ -4255,11 +4819,15 @@ form .field input[type="text"]:focus:-moz-placeholder, form .field input[type="f
 =======
 /* line 1881, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1905, ../sass/style.scss */
+>>>>>>> add
 form .field input[type="text"]:focus::-moz-placeholder, form .field input[type="file"]:focus::-moz-placeholder, form .field input[type="number"]:focus::-moz-placeholder, form .field select:focus::-moz-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1808, ../sass/style.scss */
@@ -4276,19 +4844,26 @@ form .field input[type="file"] {
 =======
 /* line 1882, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1906, ../sass/style.scss */
+>>>>>>> add
 form .field input[type="text"]:focus:-ms-input-placeholder, form .field input[type="file"]:focus:-ms-input-placeholder, form .field input[type="number"]:focus:-ms-input-placeholder, form .field select:focus:-ms-input-placeholder {
   color: #4e5056;
 }
-/* line 1886, ../sass/style.scss */
+/* line 1910, ../sass/style.scss */
 form .field input[type="file"] {
   padding: 0 5px;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 /* line 1719, ../sass/style.scss */
 >>>>>>> Prodcut slider (wip)
 =======
 /* line 1888, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1912, ../sass/style.scss */
+>>>>>>> add
 form .field textarea {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -4314,6 +4889,7 @@ form .field textarea {
   transition: all 0.3s ease;
   resize: none;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1834, ../sass/style.scss */
@@ -4335,11 +4911,19 @@ form .field textarea:focus {
 }
 /* line 1911, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1932, ../sass/style.scss */
+form .field textarea:focus {
+  border-bottom: 1px solid #dce86b;
+}
+/* line 1935, ../sass/style.scss */
+>>>>>>> add
 form .field textarea:focus::-webkit-input-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1838, ../sass/style.scss */
@@ -4349,11 +4933,15 @@ form .field textarea:focus::-webkit-input-placeholder {
 =======
 /* line 1912, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1936, ../sass/style.scss */
+>>>>>>> add
 form .field textarea:focus:-moz-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1839, ../sass/style.scss */
@@ -4363,11 +4951,15 @@ form .field textarea:focus:-moz-placeholder {
 =======
 /* line 1913, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1937, ../sass/style.scss */
+>>>>>>> add
 form .field textarea:focus::-moz-placeholder {
   color: #36373b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
 }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
 /* line 1840, ../sass/style.scss */
@@ -4377,12 +4969,16 @@ form .field textarea:focus::-moz-placeholder {
 =======
 /* line 1914, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+/* line 1938, ../sass/style.scss */
+>>>>>>> add
 form .field textarea:focus:-ms-input-placeholder {
   color: #4e5056;
 }
 
 /*/  MEDIA SCREENS  /////////////////////////////////////////////////////////////////*/
 @media screen and (max-width: 1400px) {
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1850, ../sass/style.scss */
@@ -4392,11 +4988,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1924, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1948, ../sass/style.scss */
+>>>>>>> add
   body {
     font-size: 17px;
   }
 }
 @media screen and (max-width: 1300px) {
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1854, ../sass/style.scss */
@@ -4406,11 +5006,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1928, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1952, ../sass/style.scss */
+>>>>>>> add
   body {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 1200px) {
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1859, ../sass/style.scss */
@@ -4420,11 +5024,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1933, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1957, ../sass/style.scss */
+>>>>>>> add
   body {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1100px) {
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1864, ../sass/style.scss */
@@ -4434,11 +5042,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1938, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1962, ../sass/style.scss */
+>>>>>>> add
   body {
     font-size: 13px;
   }
 }
 @media screen and (max-width: 1024px) {
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1868, ../sass/style.scss */
@@ -4448,10 +5060,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1943, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1967, ../sass/style.scss */
+>>>>>>> add
   body {
     font-size: 12px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1869, ../sass/style.scss */
@@ -4461,10 +5077,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1944, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1968, ../sass/style.scss */
+>>>>>>> add
   .wrapper {
     padding: 0 20px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1870, ../sass/style.scss */
@@ -4474,10 +5094,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1945, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1969, ../sass/style.scss */
+>>>>>>> add
   .content .product .photos {
     height: 100px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1871, ../sass/style.scss */
@@ -4487,10 +5111,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1946, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1970, ../sass/style.scss */
+>>>>>>> add
   .content .product .photos a.photo {
     width: 150px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1872, ../sass/style.scss */
@@ -4500,11 +5128,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1947, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1971, ../sass/style.scss */
+>>>>>>> add
   .content .product .photos .more-info {
     height: 100px;
     width: 150px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1873, ../sass/style.scss */
@@ -4514,10 +5146,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1948, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1972, ../sass/style.scss */
+>>>>>>> add
   .content .product .photos .more-info span.icon {
     line-height: 100px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1875, ../sass/style.scss */
@@ -4527,6 +5163,9 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1950, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1974, ../sass/style.scss */
+>>>>>>> add
   .header .overlay .logo {
     width: 176px;
     background-size: 100%;
@@ -4534,6 +5173,7 @@ form .field textarea:focus:-ms-input-placeholder {
     width: 176px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1876, ../sass/style.scss */
@@ -4543,10 +5183,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1951, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1975, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart .button span.icon-cart {
     font-size: 2.3em;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1877, ../sass/style.scss */
@@ -4556,10 +5200,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1952, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1976, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart .button span.cart-amount {
     font-size: .7em;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1879, ../sass/style.scss */
@@ -4569,10 +5217,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1954, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1978, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart.active .foldout .product {
     font-size: 1.3em;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1880, ../sass/style.scss */
@@ -4582,10 +5234,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1955, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1979, ../sass/style.scss */
+>>>>>>> add
   .checkout-page .content .checkout .summary {
     font-size: 1.2em;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1881, ../sass/style.scss */
@@ -4595,10 +5251,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1956, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1980, ../sass/style.scss */
+>>>>>>> add
   .checkout-page .content .checkout form .field {
     font-size: 1.4em;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1883, ../sass/style.scss */
@@ -4608,10 +5268,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1958, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1982, ../sass/style.scss */
+>>>>>>> add
   .content .product.active .image {
     margin-top: 100px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1884, ../sass/style.scss */
@@ -4621,10 +5285,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1959, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1983, ../sass/style.scss */
+>>>>>>> add
   .content .product a.nav {
     top: calc(50% + 50px);
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1886, ../sass/style.scss */
@@ -4634,10 +5302,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1961, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1985, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart .foldout .product a.delete-item {
     opacity: 1;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1888, ../sass/style.scss */
@@ -4647,11 +5319,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1964, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1988, ../sass/style.scss */
+>>>>>>> add
   .checkout-page .content .checkout form .field.radiocheck label input[type="radio"] {
     top: -1px;
   }
 }
 @media screen and (max-width: 768px) {
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1892, ../sass/style.scss */
@@ -4661,10 +5337,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1968, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1992, ../sass/style.scss */
+>>>>>>> add
   .header {
     height: 60%;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1893, ../sass/style.scss */
@@ -4674,11 +5354,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1969, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1993, ../sass/style.scss */
+>>>>>>> add
   .content .product .info, .content .product:hover .info {
     top: 30px;
     padding-bottom: 0;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1894, ../sass/style.scss */
@@ -4688,10 +5372,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1970, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1994, ../sass/style.scss */
+>>>>>>> add
   .content .product .image {
     width: 60%;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1895, ../sass/style.scss */
@@ -4701,10 +5389,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1971, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1995, ../sass/style.scss */
+>>>>>>> add
   .content .product .info {
     width: 40%;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1896, ../sass/style.scss */
@@ -4714,10 +5406,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1972, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1996, ../sass/style.scss */
+>>>>>>> add
   .content .product.yellow .info {
     padding-left: 50px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1898, ../sass/style.scss */
@@ -4727,10 +5423,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1974, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1998, ../sass/style.scss */
+>>>>>>> add
   .checkout-page .content .checkout .data {
     width: 60%;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1899, ../sass/style.scss */
@@ -4740,12 +5440,16 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1975, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 1999, ../sass/style.scss */
+>>>>>>> add
   .checkout-page .content .checkout .summary {
     margin-left: 3%;
     width: 37%;
     padding: 15px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1900, ../sass/style.scss */
@@ -4755,12 +5459,16 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1976, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2000, ../sass/style.scss */
+>>>>>>> add
   .content .product a.nav {
     width: 75px;
     height: 75px;
     line-height: 75px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1901, ../sass/style.scss */
@@ -4770,11 +5478,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1977, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2001, ../sass/style.scss */
+>>>>>>> add
   .content .product.active .nav.next {
     width: 75px;
   }
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1905, ../sass/style.scss */
@@ -4784,11 +5496,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1981, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2005, ../sass/style.scss */
+>>>>>>> add
   .content .product.active .image {
     width: 85%;
   }
 }
 @media screen and (max-width: 767px) {
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1909, ../sass/style.scss */
@@ -4798,12 +5514,16 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1986, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2010, ../sass/style.scss */
+>>>>>>> add
   .content .product .info .details span.types {
     float: right;
     margin-left: 10px;
     margin-right: 0;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1910, ../sass/style.scss */
@@ -4813,11 +5533,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1987, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2011, ../sass/style.scss */
+>>>>>>> add
   .header .overlay .logo {
     width: 100px;
     height: 130px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1911, ../sass/style.scss */
@@ -4832,11 +5556,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1988, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2012, ../sass/style.scss */
+>>>>>>> add
   .content .product .image {
     width: 100%;
     margin: 20px 0;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1913, ../sass/style.scss */
@@ -4846,6 +5574,9 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1989, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2013, ../sass/style.scss */
+>>>>>>> add
   .content .product .info {
     width: 100%;
     padding: 0 20px;
@@ -4853,6 +5584,7 @@ form .field textarea:focus:-ms-input-placeholder {
     text-align: right;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1914, ../sass/style.scss */
@@ -4862,12 +5594,16 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1990, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2014, ../sass/style.scss */
+>>>>>>> add
   .content .product.yellow .info {
     padding-left: 20px;
     margin-top: 250px;
     text-align: left;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1915, ../sass/style.scss */
@@ -4877,12 +5613,16 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1991, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2015, ../sass/style.scss */
+>>>>>>> add
   .content .product.yellow .image {
     position: absolute;
     margin: 0;
     top: 60px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1916, ../sass/style.scss */
@@ -4897,11 +5637,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1993, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2017, ../sass/style.scss */
+>>>>>>> add
   .content .product .info .amount label {
     float: none;
     display: inline-block;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1919, ../sass/style.scss */
@@ -4911,11 +5655,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1994, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2018, ../sass/style.scss */
+>>>>>>> add
   .content .product .info .amount input {
     display: inline-block;
     float: none;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1920, ../sass/style.scss */
@@ -4925,10 +5673,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1995, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2019, ../sass/style.scss */
+>>>>>>> add
   .content .product .info a.order {
     text-align: left;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1922, ../sass/style.scss */
@@ -4938,12 +5690,16 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1997, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2021, ../sass/style.scss */
+>>>>>>> add
   .content .instagram a.title, .footer .title {
     font-size: 2.3em;
     padding: 15px 30px;
     border-width: 2px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1923, ../sass/style.scss */
@@ -4953,10 +5709,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 1998, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2022, ../sass/style.scss */
+>>>>>>> add
   .footer .contactform {
     padding: 0 0 50px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1925, ../sass/style.scss */
@@ -4966,10 +5726,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2000, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2024, ../sass/style.scss */
+>>>>>>> add
   .bottom-bg {
     height: 500px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1927, ../sass/style.scss */
@@ -4979,10 +5743,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2002, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2026, ../sass/style.scss */
+>>>>>>> add
   .content .media a.col {
     padding: 50px 40px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1928, ../sass/style.scss */
@@ -4992,11 +5760,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2003, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2027, ../sass/style.scss */
+>>>>>>> add
   .content .media a.col.size1of3 {
     width: 100%;
     float: none;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1929, ../sass/style.scss */
@@ -5006,10 +5778,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2004, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2028, ../sass/style.scss */
+>>>>>>> add
   .content .media a.col .logo {
     height: 90px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1930, ../sass/style.scss */
@@ -5019,10 +5795,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2005, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2029, ../sass/style.scss */
+>>>>>>> add
   .content .media a.col .logo .hover {
     height: 90px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1931, ../sass/style.scss */
@@ -5032,10 +5812,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2006, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2030, ../sass/style.scss */
+>>>>>>> add
   .content .media a.col p {
     font-size: 1.3em;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1932, ../sass/style.scss */
@@ -5045,10 +5829,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2007, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2031, ../sass/style.scss */
+>>>>>>> add
   .bottom-bg .overlay .logo-happysmugglers-light {
     margin-top: 100px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1934, ../sass/style.scss */
@@ -5058,10 +5846,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2009, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2033, ../sass/style.scss */
+>>>>>>> add
   .content .divider.top {
     bottom: 99.5%;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1935, ../sass/style.scss */
@@ -5071,10 +5863,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2010, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2034, ../sass/style.scss */
+>>>>>>> add
   .content .divider.bottom {
     top: 99.5%;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1936, ../sass/style.scss */
@@ -5084,10 +5880,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2011, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2035, ../sass/style.scss */
+>>>>>>> add
   .content .divider img {
     margin-top: -2px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1937, ../sass/style.scss */
@@ -5097,10 +5897,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2012, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2036, ../sass/style.scss */
+>>>>>>> add
   .content .instagram {
     padding-top: 0;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1938, ../sass/style.scss */
@@ -5110,11 +5914,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2013, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2037, ../sass/style.scss */
+>>>>>>> add
   form .field button {
     height: 80px;
     line-height: 80px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1940, ../sass/style.scss */
@@ -5124,11 +5932,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2015, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2039, ../sass/style.scss */
+>>>>>>> add
   .header-scroll a.logo {
     width: 180px;
     height: 25px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1941, ../sass/style.scss */
@@ -5138,10 +5950,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2016, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2040, ../sass/style.scss */
+>>>>>>> add
   .header-scroll {
     height: 70px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1943, ../sass/style.scss */
@@ -5151,6 +5967,9 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2018, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2042, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart {
     width: 70px;
     height: 70px;
@@ -5162,6 +5981,7 @@ form .field textarea:focus:-ms-input-placeholder {
     top: 0;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1944, ../sass/style.scss */
@@ -5171,11 +5991,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2019, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2043, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart .button {
     width: 70px;
     height: 70px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1945, ../sass/style.scss */
@@ -5185,6 +6009,9 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2020, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2044, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart .button span.icon-cart {
     width: 70px;
     height: 70px;
@@ -5193,6 +6020,7 @@ form .field textarea:focus:-ms-input-placeholder {
     padding-right: 5px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1946, ../sass/style.scss */
@@ -5202,11 +6030,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2021, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2045, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart .button span.cart-amount {
     right: 10px;
     top: 10px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1947, ../sass/style.scss */
@@ -5216,10 +6048,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2022, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2046, ../sass/style.scss */
+>>>>>>> add
   .mobile-nav-open .header-scroll .cart {
     opacity: 0;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1950, ../sass/style.scss */
@@ -5229,10 +6065,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2025, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2049, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart .foldout {
     top: 70px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1951, ../sass/style.scss */
@@ -5242,6 +6082,9 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2026, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2050, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart.active .foldout {
     width: 100%;
     max-width: initial;
@@ -5251,6 +6094,7 @@ form .field textarea:focus:-ms-input-placeholder {
     height: calc(100% - 70px);
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1959, ../sass/style.scss */
@@ -5260,10 +6104,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2034, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2058, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart.active .foldout .foldout-inner {
     padding: 20px 40px 20px 20px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1960, ../sass/style.scss */
@@ -5273,10 +6121,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2035, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2059, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart.active .foldout .product {
     margin-bottom: 20px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1961, ../sass/style.scss */
@@ -5286,10 +6138,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2036, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2060, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart.active .foldout .totals {
     margin-bottom: 25px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1963, ../sass/style.scss */
@@ -5299,11 +6155,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2038, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2062, ../sass/style.scss */
+>>>>>>> add
   .header .mobile-nav-btn, .header-scroll .mobile-nav-btn {
     display: inline-block;
     z-index: 13;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1964, ../sass/style.scss */
@@ -5313,11 +6173,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2039, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2063, ../sass/style.scss */
+>>>>>>> add
   .mobile-nav-open .header, .mobile-nav-open .header-scroll {
     z-index: 11;
     background: #dce86b;
     position: fixed;
   }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1969, ../sass/style.scss */
@@ -5339,11 +6203,19 @@ form .field textarea:focus:-ms-input-placeholder {
   }
   /* line 2046, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2068, ../sass/style.scss */
+  .mobile-nav-open .header a.logo, .mobile-nav-open .header-scroll a.logo {
+    z-index: 13;
+  }
+  /* line 2070, ../sass/style.scss */
+>>>>>>> add
   .mobile-nav-open .header ul.nav, .mobile-nav-open .header-scroll ul.nav {
     top: 60px;
     z-index: 12;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1977, ../sass/style.scss */
@@ -5353,6 +6225,9 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2052, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2076, ../sass/style.scss */
+>>>>>>> add
   .header-scroll ul.nav {
     position: fixed;
     right: 0;
@@ -5372,6 +6247,7 @@ form .field textarea:focus:-ms-input-placeholder {
     float: none;
     padding: 55px 15px 15px;
   }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1990, ../sass/style.scss */
@@ -5381,11 +6257,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2065, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2089, ../sass/style.scss */
+>>>>>>> add
   .header-scroll ul.nav li {
     float: none;
     overflow: hidden;
     margin: 0;
   }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 1995, ../sass/style.scss */
@@ -5395,6 +6275,9 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2070, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2094, ../sass/style.scss */
+>>>>>>> add
   .header-scroll ul.nav li a {
     line-height: 50px;
     font-size: 1.5em;
@@ -5404,6 +6287,7 @@ form .field textarea:focus:-ms-input-placeholder {
     -webkit-transform: skewY(-3deg);
     transform: skewY(-3deg);
   }
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2001, ../sass/style.scss */
@@ -5425,10 +6309,18 @@ form .field textarea:focus:-ms-input-placeholder {
   }
   /* line 2082, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2100, ../sass/style.scss */
+  .header-scroll ul.nav li a.active {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  /* line 2106, ../sass/style.scss */
+>>>>>>> add
   .header-scroll ul.nav li:last-child a {
     margin-top: 5px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2012, ../sass/style.scss */
@@ -5438,6 +6330,9 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2087, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2111, ../sass/style.scss */
+>>>>>>> add
   .header-scroll ul.nav li a.active {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -5447,6 +6342,7 @@ form .field textarea:focus:-ms-input-placeholder {
     transform: skewY(-3deg);
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2013, ../sass/style.scss */
@@ -5456,6 +6352,9 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2088, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2112, ../sass/style.scss */
+>>>>>>> add
   .header-scroll ul.nav li a:hover {
     color: #36373b;
     -moz-transform: skewY(-3deg);
@@ -5464,6 +6363,7 @@ form .field textarea:focus:-ms-input-placeholder {
     transform: skewY(-3deg);
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2015, ../sass/style.scss */
@@ -5473,10 +6373,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2090, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2114, ../sass/style.scss */
+>>>>>>> add
   .checkout-page .content .checkout .data {
     width: 100%;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2016, ../sass/style.scss */
@@ -5486,11 +6390,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2091, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2115, ../sass/style.scss */
+>>>>>>> add
   .checkout-page .content .checkout .summary {
     width: 100%;
     margin-left: 0;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2017, ../sass/style.scss */
@@ -5500,10 +6408,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2092, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2116, ../sass/style.scss */
+>>>>>>> add
   .checkout-page .content .checkout .summary .item {
     margin-bottom: 20px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2018, ../sass/style.scss */
@@ -5513,10 +6425,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2093, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2117, ../sass/style.scss */
+>>>>>>> add
   .thanks-page .content .thanks {
     margin-bottom: 70px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2020, ../sass/style.scss */
@@ -5526,6 +6442,9 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2095, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2119, ../sass/style.scss */
+>>>>>>> add
   .content .product a.nav {
     width: 50px;
     height: 50px;
@@ -5533,6 +6452,7 @@ form .field textarea:focus:-ms-input-placeholder {
     font-size: 1.8em;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2021, ../sass/style.scss */
@@ -5542,10 +6462,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2096, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2120, ../sass/style.scss */
+>>>>>>> add
   .content .product.active .nav.next {
     width: 50px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2022, ../sass/style.scss */
@@ -5555,10 +6479,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2097, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2121, ../sass/style.scss */
+>>>>>>> add
   .content .product .photos {
     height: 70px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2023, ../sass/style.scss */
@@ -5568,10 +6496,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2098, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2122, ../sass/style.scss */
+>>>>>>> add
   .content .product .photos a.photo {
     width: 100px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2025, ../sass/style.scss */
@@ -5581,10 +6513,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2100, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2124, ../sass/style.scss */
+>>>>>>> add
   .content .product.active .image {
     margin-top: 70px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2026, ../sass/style.scss */
@@ -5594,10 +6530,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2101, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2125, ../sass/style.scss */
+>>>>>>> add
   .content .product a.nav {
     top: calc(50% + 35px);
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2028, ../sass/style.scss */
@@ -5607,11 +6547,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2103, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2127, ../sass/style.scss */
+>>>>>>> add
   .content .product .photos .more-info {
     height: 70px;
     width: 80px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2029, ../sass/style.scss */
@@ -5621,12 +6565,16 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2104, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2128, ../sass/style.scss */
+>>>>>>> add
   .content .product .photos .more-info span.icon {
     line-height: 70px;
     font-size: 1.8em;
   }
 }
 @media screen and (max-width: 767px) and (orientation: landscape) {
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2033, ../sass/style.scss */
@@ -5636,12 +6584,16 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2108, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2132, ../sass/style.scss */
+>>>>>>> add
   .content .product .info .details span.types {
     float: left;
     margin-left: 0;
     margin-right: 10px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2035, ../sass/style.scss */
@@ -5651,10 +6603,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2110, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2134, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart.active .foldout .product .type .title {
     margin-bottom: 3px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2036, ../sass/style.scss */
@@ -5664,10 +6620,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2111, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2135, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart .foldout .product .type p.subtitle {
     margin-bottom: 0;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2037, ../sass/style.scss */
@@ -5677,10 +6637,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2112, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2136, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart.active .foldout .product {
     margin-bottom: 15px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2038, ../sass/style.scss */
@@ -5690,11 +6654,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2113, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2137, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart.active .foldout .totals {
     margin-bottom: 15px;
     margin-top: 20px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2040, ../sass/style.scss */
@@ -5704,10 +6672,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2115, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2139, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart .foldout .product .type {
     position: relative;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2041, ../sass/style.scss */
@@ -5717,10 +6689,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2116, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2140, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart .foldout .product .type .title {
     line-height: 29px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2042, ../sass/style.scss */
@@ -5730,12 +6706,16 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2117, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2141, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart .foldout .product .type p.subtitle {
     position: absolute;
     top: 5px;
     right: 150px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2043, ../sass/style.scss */
@@ -5745,12 +6725,16 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2118, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2142, ../sass/style.scss */
+>>>>>>> add
   .header-scroll .cart .foldout .product .type input {
     position: absolute;
     top: 0;
     right: 70px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2045, ../sass/style.scss */
@@ -5760,11 +6744,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2120, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2144, ../sass/style.scss */
+>>>>>>> add
   .content .product .image {
     width: 50%;
     margin: 80px 0;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2046, ../sass/style.scss */
@@ -5774,6 +6762,9 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2121, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2145, ../sass/style.scss */
+>>>>>>> add
   .content .product .info {
     margin: 0;
     padding: 0 20px 20px 0;
@@ -5781,6 +6772,7 @@ form .field textarea:focus:-ms-input-placeholder {
     width: 50%;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2047, ../sass/style.scss */
@@ -5790,10 +6782,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2122, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2146, ../sass/style.scss */
+>>>>>>> add
   .content .product .image a {
     width: 100%;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2048, ../sass/style.scss */
@@ -5803,10 +6799,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2123, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2147, ../sass/style.scss */
+>>>>>>> add
   .content .product .info p.subtitle, .content .product .info .details, .content .product .info .amount {
     margin-bottom: 25px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2049, ../sass/style.scss */
@@ -5816,12 +6816,16 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2124, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2148, ../sass/style.scss */
+>>>>>>> add
   .content .product.yellow .image {
     position: relative;
     top: 0;
     margin: 80px 0;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2050, ../sass/style.scss */
@@ -5831,10 +6835,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2125, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2149, ../sass/style.scss */
+>>>>>>> add
   .content .product.yellow .info {
     margin-top: 0;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2052, ../sass/style.scss */
@@ -5844,10 +6852,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2127, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2151, ../sass/style.scss */
+>>>>>>> add
   .content .instagram a.title, .footer .title {
     font-size: 3.6em;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2053, ../sass/style.scss */
@@ -5857,10 +6869,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2128, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2152, ../sass/style.scss */
+>>>>>>> add
   .footer .contactform {
     padding: 0 50px 50px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2055, ../sass/style.scss */
@@ -5870,11 +6886,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2130, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2154, ../sass/style.scss */
+>>>>>>> add
   .content .media a.col .logo {
     height: 130px;
     width: 40%;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2056, ../sass/style.scss */
@@ -5884,11 +6904,15 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2131, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2155, ../sass/style.scss */
+>>>>>>> add
   .content .media a.col .logo .hover {
     height: 130px;
     width: 40%;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2058, ../sass/style.scss */
@@ -5898,10 +6922,14 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2133, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2157, ../sass/style.scss */
+>>>>>>> add
   .header-scroll ul.nav {
     padding-top: 20px;
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2059, ../sass/style.scss */
@@ -5911,6 +6939,9 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2134, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2158, ../sass/style.scss */
+>>>>>>> add
   .header-scroll ul.nav li a.active {
     -moz-transform: skewY(-2deg);
     -ms-transform: skewY(-2deg);
@@ -5918,6 +6949,7 @@ form .field textarea:focus:-ms-input-placeholder {
     transform: skewY(-2deg);
   }
 
+<<<<<<< c88504b6bd882a9ddc0c6fb9c232eb48af0f7b75
 <<<<<<< bdf2a25ae3aa8fbd775d952381b994bdf6587146
 <<<<<<< e025f46ad39b48aeace9ac524471f1b32529207f
   /* line 2060, ../sass/style.scss */
@@ -5927,6 +6959,9 @@ form .field textarea:focus:-ms-input-placeholder {
 =======
   /* line 2135, ../sass/style.scss */
 >>>>>>> Prodcut slider
+=======
+  /* line 2159, ../sass/style.scss */
+>>>>>>> add
   .header-scroll ul.nav li a:hover {
     -moz-transform: skewY(-2deg);
     -ms-transform: skewY(-2deg);

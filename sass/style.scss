@@ -854,6 +854,14 @@ video {display: block;}
                             @include transition(opacity 0.2s ease);
                             cursor: pointer;
                             opacity: 0.7;
+                            height: 150px;
+
+
+                            img {
+                                position: relative;
+                                top:50%;
+                                @include transform(translateY(-50%));
+                            }
 
                             &:hover,
                             &.flex-active-slide {
@@ -921,6 +929,22 @@ video {display: block;}
 
                 .flex-direction-nav {
                     display: block;
+
+                    .flex-nav-prev, .flex-nav-next {
+                        height: 100px;
+                        position: absolute;
+                        top: 50%;
+                        width: 100px;
+                        z-index: 99999;
+                    }
+
+                    .flex-nav-prev {
+                        left:0;
+                    }
+
+                    .flex-nav-next {
+                        right:0;
+                    }
 
                     a {
                         $nav-size: 100px;
