@@ -195,6 +195,101 @@ video {display: block;}
             background-size:100%;
             z-index: 2;
         }
+
+        .video-play {
+            $button-size: 100px;
+
+            @include box-shadow(0 0 5px 5px rgba(#000, 0.3));
+            @include transition(border 0.2s ease);
+            background: rgba(#000, 0.3);
+            border: 2px solid #fff;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            @include transform(translateY(-50%));
+            margin-left: -$button-size/2;
+            height: $button-size;
+            width: $button-size;
+
+            &::after {
+                @include transition(border 0.2s ease);
+                border: transparent solid;
+                border-left-color: #fff;
+                border-width: 20px 0 20px 36px;
+                content: "";
+                height: 0;
+                margin: -20px 0 0 -12px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 0;
+            }
+
+            &:hover {
+                border-color: $yellow;
+
+                &::after {
+                    border-left-color: $yellow;
+                }
+            }
+        }
+
+        .video-overlay {
+            background: rgba(#000, 0.75);
+            height: 100%;
+            left: -100%;
+            opacity: 0;
+            position: fixed;
+            transition: opacity 0.4s;
+            width: 100%;
+            z-index: 9999;
+            top: 0;
+
+            &.active {
+                left: 0;
+                opacity: 1;
+            }
+
+            .video-container {
+                box-shadow: 0px 10px 50px 0px rgba(#000, 0.75);
+                left: 50%;
+                max-width: 1280px;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 90%;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    padding-bottom: 56.25%;
+                }
+
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .close {
+                cursor: pointer;
+                fill: #fff;
+                opacity: 1;
+                position: absolute;
+                right: 0;
+                top: -30px;
+                transition: fill 0.25s;
+                width: 20px;
+
+                &:hover {
+                    fill: rgba(#fff, 0.5);
+                }
+            }
+        }
     }
 }
 
@@ -1769,7 +1864,6 @@ form {
     body {font-size:13px;}
 }
 
-
 @media screen and (max-width:1024px) {
     body {font-size:12px;}
     .wrapper {padding:0 20px;}
@@ -1791,7 +1885,6 @@ form {
 
     .header-scroll .cart .foldout .product a.delete-item {opacity: 1;}
 
-
     .checkout-page .content .checkout form .field.radiocheck label input[type="radio"] {top:-1px;}
 }
 
@@ -1812,10 +1905,10 @@ form {
     .content .product.active .image {width:85%;}
 }
 
-
 @media screen and (max-width:767px) {
     .content .product .info .details span.types {float: right;margin-left:10px;margin-right:0;}
     .header .overlay .logo {width:100px;height:130px;}
+    .header .overlay .video-play {top: 60%;}
     .content .product .image {width: 100%;margin:20px 0;}
     .content .product .info {width: 100%;padding:0 20px;margin-bottom:80px;text-align: right;}
     .content .product.yellow .info {padding-left:20px;margin-top:250px;text-align: left;}
@@ -1934,11 +2027,7 @@ form {
 
     .content .product .photos .more-info {height: 70px;width: 80px;}
     .content .product .photos .more-info span.icon {line-height: 70px;font-size:1.8em;}
-
-
-
 }
-
 
 @media screen and (max-width:767px) and (orientation:landscape) {
     .content .product .info .details span.types {float: left;margin-left:0;margin-right:10px;}
@@ -1969,10 +2058,4 @@ form {
     .header-scroll ul.nav {padding-top:20px;}
     .header-scroll ul.nav li a.active {@include transform(skewY(-2deg));}
     .header-scroll ul.nav li a:hover {@include transform(skewY(-2deg));}
-
-
 }
-
-
-
-

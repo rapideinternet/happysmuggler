@@ -111,4 +111,32 @@ $(function () {
     //   $product.addClass('active');
     // }
   });
+
+  /*
+  * Video play/overlay
+  */
+
+  var player = $f(document.getElementById('video-iframe'));
+
+  $('[data-overlay]').on('click', function (event) {
+    event.preventDefault();
+    var overlayId = $(this).data('overlay');
+    if (!overlayId) return false;
+    var $overlay = $('#' + overlayId);
+    $overlay.css('left', 0).addClass('active');
+    player.api('play');
+    disableScrolling();
+  });
+
+  // Close overlay on click outside
+  $('.video-overlay').on('click', function (event) {
+    event.preventDefault();
+    player.api('pause');
+    var $overlay = $(this);
+    $overlay.removeClass('active');
+    setTimeout(function () {
+      $overlay.css('left', '-100%');
+    }, 250);
+    enableScrolling();
+  });
 });
