@@ -97,12 +97,13 @@ $(function () {
   * Product Sliders
   */
 
-  var $products = $('.product');
+  var $products = $('#shop .product');
 
   $products.find('#slider').flexslider({
     animation: 'fade',
     controlNav: false,
     slideshow: false,
+    touch: false,
     prevText: '',
     nextText: '',
     sync: '#carousel'
