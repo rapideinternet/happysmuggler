@@ -13,7 +13,6 @@ $lightblue: rgba(31,162,230,1); /* 1fa2e6 */
 $yellow: rgba(220,232,107,1); /* dce86b */
 
 
-
 /*/  BASE  /////////////////////////////////////////////////////////////////*/
 
 * { @include box-sizing(border-box); outline:0;}
@@ -754,14 +753,14 @@ video {display: block;}
             }
 
             .info {
-                top:-50px;
+                top:-20px;
             }
         }
 
         .image {
             margin:100px 0;
             display: inline-block;
-            width: 65%;
+            width: 60%;
             position: relative;
             z-index:2;
             text-align: center;
@@ -782,12 +781,12 @@ video {display: block;}
         .info {
             overflow: hidden;
             display: inline-block;
-            width: 35%;
+            width: 40%;
             position: relative;
             z-index:2;
             @include transition(top 2s ease, opacity .3s ease);
             text-transform: uppercase;
-            top:0px;
+            top:40px;
             padding-right: 100px;
             padding-bottom:20px;
 
@@ -991,7 +990,7 @@ video {display: block;}
                 }
 
                 .image {
-                    left:15%;
+                    left:9%;
                     margin-top:0;
                 }
             }
@@ -1018,6 +1017,7 @@ video {display: block;}
                 cursor: url("../img/cursor-close.svg") 19 19, auto;
 
                 a {
+                    @include transition(1s ease-out 0s);
                     top:50%;
                     position: relative;
                     @include transform(translateY(-50%));
@@ -1039,10 +1039,10 @@ video {display: block;}
     }
 
     .media {
-        background: #fff;
-        padding:100px 0 0 0;
+        background: #edeef2;
+        padding:150px 0 0 0;
         position: relative;
-        z-index:3;
+        z-index:1;
 
         .cols {
             overflow: hidden;
@@ -1820,6 +1820,7 @@ form {
     .content .product .info {width: 100%;padding:0 20px;margin-bottom:80px;text-align: right;}
     .content .product.yellow .info {padding-left:20px;margin-top:250px;text-align: left;}
     .content .product.yellow .image {position: absolute;margin:0;top:60px;}
+    .content .product.active.yellow .image {left:50%;}
 
     .content .product .info .amount label {float: none;display: inline-block;}
     .content .product .info .amount input {display: inline-block;float: none;}
