@@ -194,7 +194,8 @@ video {display: block;}
             @include transform(translateX(-50%));
             background:url(../img/logo-happysmugglers.svg) no-repeat;
             background-size:100%;
-            z-index: 2;
+//            z-index: 2;
+            z-index: 101;
         }
 
         .video-play {
@@ -1110,7 +1111,8 @@ video {display: block;}
                     border:1px solid rgba(0,0,0,.1);
                     @include border-radius(.5em);
                     padding:15px;
-                    margin-left:10px;
+                    margin-right:10px;
+                    margin-bottom:6px;
                     color:rgba(0,0,0,.2);
                     @include transition(all .3s ease);
 
@@ -1126,6 +1128,9 @@ video {display: block;}
                     &.active {
                         border:1px solid $yellow;
                         color:$base;
+                    }
+                    &.clickable {
+                        cursor: pointer;
                     }
                 }
 
@@ -2122,12 +2127,15 @@ form {
     .content .product.yellow .image {position: absolute;margin:0;top:60px;}
     .content .product.active.yellow .image {left:50%;}
 
-    .content .product .info .amount {text-align: right;float: right;}
-    .content .product.yellow .info .amount {text-align: left;float: none;}
-    .content .product .info .amount .float {float: left;}
-    .content .product .info .amount label {float: none;display: block;margin:0;}
-    .content .product .info .amount input, .content .product .info .amount select {float: none;}
-    .content .product .info a.order {text-align: left;clear: both;}
+    .content .product .info .amount label {float: none;display: inline-block;}
+    .content .product .info .amount input {display: inline-block;float: none;}
+    .content .product .info .amount .float {float: none;}
+    .content .product .info .amount select {display: inline-block;float: none;margin-right: 0;}
+    form .field label, form .field p.label {width: inherit;}
+    .content .product.yellow .info .details span.types {float:left;margin-left: 0;}
+    .content .product.yellow .info .amount select {margin-left: 17px;}
+
+    .content .product .info a.order {text-align: left;}
 
     .content .instagram a.title, .footer .title {font-size: 2.3em;padding:15px 30px;border-width: 2px;}
     .footer .contactform {padding:0 0 50px;}

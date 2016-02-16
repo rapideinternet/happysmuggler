@@ -27,6 +27,7 @@ $(function () {
   $window.on('scroll', function (event) {
     var scrollTop = $window.scrollTop();
     if (!$cart.hasClass('active')) {
+/*
       // Down
       if (scrollTop > prevScrollTop) {
         $headerScroll.removeClass('active');
@@ -37,6 +38,10 @@ $(function () {
         } else {
           $headerScroll.removeClass('active');
         }
+      }
+*/
+      if (!$headerScroll.hasClass('active')) {
+        $headerScroll.addClass('active');
       }
     }
     prevScrollTop = scrollTop;
@@ -174,4 +179,19 @@ $(function () {
     }, 250);
     enableScrolling();
   });
+
+  // Check quantities are within limits
+  $('input[type=number]').on("change", function (event) {
+    check_quantity($(this),1,50);
+  });
+
 });
+
+function check_quantity(field,minimum,maximum) {
+  var new_qty = field.val();
+  if (new_qty<minimum||new_qty>maximum) {
+//    alert('Only quantities between '+minimum+' and '+maximum+' are accepted');
+    field.val(field.attr('data-qty'));
+    return false;
+  };
+}
