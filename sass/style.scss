@@ -748,7 +748,7 @@ video {display: block;}
         #slider {
             @include transition(all 0.3s ease-out);
             display: inline-block;
-            width: 65%;
+            width: 60%;
             margin: 100px 0;
             cursor: url("../img/cursor-add.svg") 19 19, auto;
 
@@ -1402,7 +1402,7 @@ video {display: block;}
     .instagram {
         position: relative;
         overflow: hidden;
-        padding-top:1%;
+        padding-top:0;
         padding-bottom:1%;
 
         .divider {
