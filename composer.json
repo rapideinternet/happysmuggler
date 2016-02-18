@@ -1,12 +1,12 @@
 {
-    "name": "happysmuggler/website",
-    "description": "HappySmuggler Website",
+    "name": "studiovs/website",
+    "description": "StudioVS Website",
     "minimum-stability": "dev",
     "license": "proprietary",
     "authors": [
         {
-            "name": "Happy Smuggler",
-            "email": "info@happysmugglers.com"
+            "name": "StudioVS",
+            "email": "info@studiovs.nl"
         }
     ],
     "require": {
