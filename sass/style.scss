@@ -1217,7 +1217,7 @@ video {display: block;}
             background:$yellow;
             z-index:1;
 
-            .image {margin:150px 0;}
+            .slider {margin:150px 0;width:59%;}
 
             .info {
                 padding-left:100px;
@@ -1292,9 +1292,9 @@ video {display: block;}
                     }
                 }
 
-                .image {
-                    left:9%;
+                .slider {
                     margin-top:0;
+                    width: 100%;
                 }
             }
 
@@ -1336,7 +1336,11 @@ video {display: block;}
 
             .info {
                 opacity: 0;
+                height:0;
+                padding-bottom:0;
             }
+
+            .divider.top {height: 0;}
         }
     }
 
@@ -1479,6 +1483,8 @@ video {display: block;}
         }
     }
 }
+
+.flexslider {background:none;}
 
 /* */
 
