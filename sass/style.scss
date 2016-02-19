@@ -1074,7 +1074,7 @@ video {display: block;}
             // }
 
             .info {
-                top:-20px;
+                top:-40px;
             }
         }
 
@@ -1086,7 +1086,7 @@ video {display: block;}
             z-index:2;
             @include transition(top 2s ease, opacity .3s ease);
             text-transform: uppercase;
-            top:40px;
+            top:0;
             padding-right: 100px;
             padding-bottom:20px;
 
@@ -1217,7 +1217,7 @@ video {display: block;}
             background:$yellow;
             z-index:1;
 
-            .slider {margin:150px 0;width:59%;}
+            .slider {margin:150px 0;width:57%;}
 
             .info {
                 padding-left:100px;
