@@ -746,7 +746,7 @@ video {display: block;}
             margin: 0;
         }
 
-        #slider {
+        .slider {
             @include transition(all 0.3s ease-out);
             display: inline-block;
             width: 60%;
@@ -761,7 +761,7 @@ video {display: block;}
 
         // Product overlay NOT ACTIVE
         &:not(.active) {
-            #slider li {
+            .slider li {
                 @include transition(all 4s ease-out);
                 width: 80% !important;
                 display: none !important;
@@ -774,7 +774,7 @@ video {display: block;}
             }
 
             &:hover {
-                #slider li {
+                .slider li {
                     width: 90% !important;
                 }
             }
@@ -845,8 +845,10 @@ video {display: block;}
                 width: 100%;
                 z-index: 555;
                 overflow: hidden;
+                left: 0;
+                top: 0;
 
-                #carousel {
+                .carousel {
                     height: 100%;
                     margin-right: $slider-nav-height;
 
@@ -899,7 +901,7 @@ video {display: block;}
                 }
             }
 
-            #slider {
+            .slider {
                 @include box-sizing(border-box);
                 cursor: url("../img/cursor-close.svg") 19 19, auto;
                 height: 100%;
@@ -1072,7 +1074,7 @@ video {display: block;}
             // }
 
             .info {
-                top:-20px;
+                top:-40px;
             }
         }
 
@@ -1084,7 +1086,7 @@ video {display: block;}
             z-index:2;
             @include transition(top 2s ease, opacity .3s ease);
             text-transform: uppercase;
-            top:40px;
+            top:0;
             padding-right: 100px;
             padding-bottom:20px;
 
@@ -1215,7 +1217,7 @@ video {display: block;}
             background:$yellow;
             z-index:1;
 
-            .image {margin:150px 0;}
+            .slider {margin:150px 0;width:57%;}
 
             .info {
                 padding-left:100px;
@@ -1279,6 +1281,8 @@ video {display: block;}
 
         &.active {
             &.yellow {
+                z-index: 100000;
+
                 .nav {
                     background:$yellow;
 
@@ -1288,9 +1292,9 @@ video {display: block;}
                     }
                 }
 
-                .image {
-                    left:9%;
+                .slider {
                     margin-top:0;
+                    width: 100%;
                 }
             }
 
@@ -1332,7 +1336,11 @@ video {display: block;}
 
             .info {
                 opacity: 0;
+                height:0;
+                padding-bottom:0;
             }
+
+            .divider.top {height: 0;}
         }
     }
 
@@ -1475,6 +1483,8 @@ video {display: block;}
         }
     }
 }
+
+.flexslider {background:none;}
 
 /* */
 
@@ -2102,7 +2112,7 @@ form {
 @media screen and (max-width:768px) {
     .header {height: 60%;}
     .content .product .info, .content .product:hover .info {top:30px;padding-bottom:0;}
-    .content .product .image, .content .product #slider {width: 60%;}
+    .content .product .image, .content .product .slider {width: 60%;}
     .content .product .info {width: 40%;}
     .content .product.yellow .info {padding-left:50px;}
 
@@ -2121,7 +2131,7 @@ form {
     .content .product.yellow .info .details {text-align: left;}
     .content .product .info .details span.types {float: none;display: inline-block;}
     .header .overlay .logo {width:100px;height:130px;}
-    .content .product .image, .content .product #slider {width: 100%;margin:20px 0;}
+    .content .product .image, .content .product .slider {width: 100%;margin:20px 0;}
     .content .product .info {width: 100%;padding:0 20px;margin-bottom:80px;text-align: right;}
     .content .product.yellow .info {padding-left:20px;margin-top:250px;text-align: left;}
     .content .product.yellow .image {position: absolute;margin:0;top:60px;}
@@ -2235,15 +2245,15 @@ form {
     .checkout-page .content .checkout .summary .item {margin-bottom:20px;}
     .thanks-page .content .thanks {margin-bottom:70px;}
 
-    .content .product.active #slider {padding-top:70px;}
+    .content .product.active .slider {padding-top:70px;}
     .content .product a.nav {width:50px;height:50px;line-height:50px;font-size:1.8em;}
-    .content .product.active #slider .flex-direction-nav a {width:50px;height:50px;line-height:50px !important;font-size:1.8em;}
+    .content .product.active .slider .flex-direction-nav a {width:50px;height:50px;line-height:50px !important;font-size:1.8em;}
     .content .product.active .nav.next {width:50px;}
     .content .product .photos,
     .content .product.active .slider-nav,
-    .content .product.active .slider-nav #carousel,
-    .content .product.active .slider-nav #carousel .slides li {height: 70px;}
-    .content .product.active .slider-nav #carousel {margin-right:80px;}
+    .content .product.active .slider-nav .carousel,
+    .content .product.active .slider-nav .carousel .slides li {height: 70px;}
+    .content .product.active .slider-nav .carousel {margin-right:80px;}
 
     .content .product .photos a.photo {width: 100px;}
 
@@ -2272,7 +2282,7 @@ form {
     .header-scroll .cart .foldout .product .type p.subtitle {position: absolute;top:5px;right:150px;}
     .header-scroll .cart .foldout .product .type input {position: absolute;top:0;right:70px;}
 
-    .content .product .image, .content .product #slider {width:50%;margin:80px 0;}
+    .content .product .image, .content .product .slider {width:50%;margin:80px 0;}
     .content .product .info {margin:0;padding: 0 20px 20px 0;text-align: left;width: 50%;}
     .content .product .image a {width:100%;}
     .content .product .info p.subtitle, .content .product .info .details, .content .product .info .amount {margin-bottom:25px;}
