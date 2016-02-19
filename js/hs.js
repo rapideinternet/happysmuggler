@@ -27,19 +27,19 @@ $(function () {
   $window.on('scroll', function (event) {
     var scrollTop = $window.scrollTop();
     if (!$cart.hasClass('active')) {
-/*
-      // Down
-      if (scrollTop > prevScrollTop) {
-        $headerScroll.removeClass('active');
-      // Up
-      } else {
-        if (scrollTop > 0) {
-          $headerScroll.addClass('active');
-        } else {
-          $headerScroll.removeClass('active');
-        }
-      }
-*/
+
+      // // Down
+      // if (scrollTop > prevScrollTop) {
+      //   $headerScroll.removeClass('active');
+      // // Up
+      // } else {
+      //   if (scrollTop > 0) {
+      //     $headerScroll.addClass('active');
+      //   } else {
+      //     $headerScroll.removeClass('active');
+      //   }
+      // }
+
       if (!$headerScroll.hasClass('active')) {
         $headerScroll.addClass('active');
       }
@@ -99,34 +99,33 @@ $(function () {
   });
 
   /*
-  * Product Sliders
+  * Product Details & Sliders
   */
 
   var $products = $('#shop .product');
 
-  $products.find('#slider').flexslider({
-    animation: 'fade',
-    controlNav: false,
-    slideshow: false,
-    touch: false,
-    prevText: '',
-    nextText: '',
-    sync: '#carousel'
+  $products.each(function () {
+    var $product = $(this);
+    $product.find('.slider').flexslider({
+      animation: 'fade',
+      controlNav: false,
+      slideshow: false,
+      touch: false,
+      prevText: '',
+      nextText: '',
+      sync: $product.find('.carousel')
+    });
   });
 
-  /*
-  * Product Details
-  */
-
-  $products.on('click', '#slider .slides, .more-info', function (event) {
+  $products.on('click', '.slider > .slides, .more-info', function (event) {
     event.preventDefault();
     var $product = $(this).closest('.product');
 
     // Activate overlay
     if ($product.hasClass('active')) {
       enableScrolling();
-      $product.find('#slider').flexslider(0);
-      $product.find('#carousel').flexslider(0);
+      $product.find('.slider').flexslider(0);
+      $product.find('.carousel').flexslider(0);
       $product.removeClass('active');
 
     // Deactivate overlay
@@ -136,7 +135,7 @@ $(function () {
 
       // Active sliders
       if (!$product.hasClass('slider-active')) {
-        $product.find('#carousel').flexslider({
+        $product.find('.carousel').flexslider({
           animation: 'slide',
           controlNav: false,
           slideshow: false,
@@ -144,7 +143,7 @@ $(function () {
           itemMargin: 5,
           prevText: '',
           nextText: '',
-          asNavFor: '#slider'
+          asNavFor: $product.find('.slider')
         });
 
         $product.addClass('slider-active');
@@ -190,7 +189,7 @@ $(function () {
 function check_quantity(field,minimum,maximum) {
   var new_qty = field.val();
   if (new_qty<minimum||new_qty>maximum) {
-//    alert('Only quantities between '+minimum+' and '+maximum+' are accepted');
+    // alert('Only quantities between '+minimum+' and '+maximum+' are accepted');
     field.val(field.attr('data-qty'));
     return false;
   };
