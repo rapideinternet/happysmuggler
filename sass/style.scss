@@ -1079,7 +1079,6 @@ video {display: block;}
         }
 
         .info {
-            overflow: hidden;
             display: inline-block;
             width: 40%;
             position: relative;
@@ -1193,7 +1192,7 @@ video {display: block;}
                 padding:15px 20px;
                 color:#fff;
                 letter-spacing: .47em;
-                margin-right:-103px;
+                margin-right:-30px;
                 background:$yellow;
                 @include transform(skewY(0deg));
 
@@ -1335,6 +1334,7 @@ video {display: block;}
             }
 
             .info {
+                overflow: hidden;
                 opacity: 0;
                 height:0;
                 padding-bottom:0;
@@ -2107,11 +2107,13 @@ form {
     .checkout-page .content .checkout form .field.radiocheck label input[type="radio"] {top:-1px;}
 
     .content .product .info .amount input, .content .product .info .amount select {width: 65px;}
+    .content .media a.col {padding-top:70px;}
 }
 
 @media screen and (max-width:768px) {
     .header {height: 60%;}
-    .content .product .info, .content .product:hover .info {top:30px;padding-bottom:0;}
+    .content .product .info, .content .product:hover .info {top:-30px;padding-bottom:0;}
+    .content .product.yellow .info, .content .product.yellow:hover .info {top:-70px;}
     .content .product .image, .content .product .slider {width: 60%;}
     .content .product .info {width: 40%;}
     .content .product.yellow .info {padding-left:50px;}
@@ -2120,6 +2122,7 @@ form {
     .checkout-page .content .checkout .summary {margin-left:3%;width: 37%;padding:15px;}
     .content .product a.nav {width:75px;height:75px;line-height:75px;}
     .content .product.active .nav.next {width:75px;}
+    .content .product .info .details {margin-bottom:20px;}
 }
 
 @media screen and (max-width:768px) and (orientation:portrait) {
@@ -2130,22 +2133,25 @@ form {
     .content .product .info .details {text-align: right;margin-bottom:25px;}
     .content .product.yellow .info .details {text-align: left;}
     .content .product .info .details span.types {float: none;display: inline-block;}
-    .header .overlay .logo {width:100px;height:130px;}
+    .header .overlay .logo {width:80px;height:103px;}
+    .header .overlay .video-play {height:84px;width: 84px;margin-left:-42px;}
     .content .product .image, .content .product .slider {width: 100%;margin:20px 0;}
     .content .product .info {width: 100%;padding:0 20px;margin-bottom:80px;text-align: right;}
-    .content .product.yellow .info {padding-left:20px;margin-top:250px;text-align: left;}
-    .content .product.yellow .image {position: absolute;margin:0;top:60px;}
+    .content .product.yellow .info {padding-left:20px;margin-top:350px;text-align: left;margin-bottom:20px;}
+    .content .product.yellow .slider {position: absolute;margin:0;top:60px;width: 100%;}
     .content .product.active.yellow .image {left:50%;}
 
-    .content .product .info .amount label {float: none;display: inline-block;}
+    .content .product .info .amount label {margin-right:0;line-height: 40px;}
     .content .product .info .amount input {display: inline-block;float: none;}
-    .content .product .info .amount .float {float: none;}
+    .content .product .info .amount {text-align: right;}
+    .content .product.yellow .info .amount {text-align: left;}
+    .content .product .info .amount .float {float: none;display: inline-block;}
     .content .product .info .amount select {display: inline-block;float: none;margin-right: 0;}
     form .field label, form .field p.label {width: inherit;}
     .content .product.yellow .info .details span.types {float:left;margin-left: 0;}
-    .content .product.yellow .info .amount select {margin-left: 17px;}
+    .content .product.yellow .info .amount select {margin-left: 0;}
 
-    .content .product .info a.order {text-align: left;}
+    .content .product .info a.order {text-align: left;font-size:1.75em;padding:10px 15px;margin-right:-20px;}
 
     .content .instagram a.title, .footer .title {font-size: 2.3em;padding:15px 30px;border-width: 2px;}
     .footer .contactform {padding:0 0 50px;}
@@ -2262,9 +2268,11 @@ form {
 
     .content .product .photos .more-info, .content .product.active .slider-nav .more-info {height: 70px;width: 80px;}
     .content .product .photos .more-info span.icon, .content .product.active .slider-nav .more-info span.icon {line-height: 70px;font-size:1.8em;}
+    .content .product:not(.active) .slider li {width:100% !important;}
 }
 
 @media screen and (max-width:767px) and (orientation:landscape) {
+    .content .product:not(.active) .slider li {width:80% !important;}
     .content .product .info .details {text-align: left;}
 
 
@@ -2286,7 +2294,7 @@ form {
     .content .product .info {margin:0;padding: 0 20px 20px 0;text-align: left;width: 50%;}
     .content .product .image a {width:100%;}
     .content .product .info p.subtitle, .content .product .info .details, .content .product .info .amount {margin-bottom:25px;}
-    .content .product.yellow .image {position: relative;top:0;margin:80px 0;}
+    .content .product.yellow .slider {position: relative;top:0;margin:80px 0;}
     .content .product.yellow .info {margin-top:0;}
 
     .content .instagram a.title, .footer .title {font-size:3.6em;}
