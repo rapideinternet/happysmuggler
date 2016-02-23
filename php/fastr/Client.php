@@ -8,7 +8,7 @@ require_once __DIR__ . '/ClientException.php';
  */
 final class Client
 {
-    const API_URL = 'dev-api.getfastr.co';
+    const API_URL = 'api.getfastr.co';
     const API_VERSION = 1;
 
     /**
