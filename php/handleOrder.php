@@ -68,7 +68,7 @@ if(count($items) < 1) {
 }
 
 try {
-    $client = new Client('6831d88023b92ff4cd4d5a3f899f979f');
+    $client = new Client('d73ee38be6aa9e7991ead5b00eb0d5fa');
     echo json_encode(array('redirectUrl' => $client->newOrder($items, $shippingOptions)));
 } catch(ClientException $e) {
     die(json_encode(array('error' => $e->getMessage())));
