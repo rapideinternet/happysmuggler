@@ -1,12 +1,12 @@
 <?php
 
-require_once __DIR__ . '/../fastr/Item.php';
+require_once __DIR__ . '/../fastr/OrderItem.php';
 
 /**
  * Class SingleBoxer
  * @author  Hidde Beydals <hidde@getfastr.co>
  */
-final class SingleBoxer extends Item
+final class SingleBoxer extends OrderItem
 {
     /**
      * SingleBoxer constructor.
@@ -16,11 +16,13 @@ final class SingleBoxer extends Item
      */
     public function __construct($qty, $comment = null)
     {
-        $this->sku      = 'single';
-        $this->name     = 'Single Festival Boxer';
-        $this->price    = '19.00';
-        $this->taxRate  = 21;
-        $this->qty      = $qty;
-        $this->comment  = $comment;
+        parent::__construct();
+
+        $this->item->sku      = 'single';
+        $this->item->name     = 'Single Festival Boxer';
+        $this->price          = '19.00';
+        $this->taxRate        = 21;
+        $this->qty            = $qty;
+        $this->comment        = $comment;
     }
 }

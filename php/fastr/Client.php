@@ -39,8 +39,8 @@ final class Client
          * Prepare the JSON POST data.
          */
         $data = json_encode([
-            'items'             => $items,
-            'shippingOptions'   => $shippingOptions
+            'orderItems'             => $items,
+            'orderShippingOptions'   => $shippingOptions
         ]);
 
         /*
@@ -84,7 +84,7 @@ final class Client
                 throw new ClientException('There is something unusual going on on our servers. Please try again later.');
         }
 
-        return json_decode($response)->redirectUrl;
+        return json_decode($response)->data->redirectUrl;
     }
 
     /**

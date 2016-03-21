@@ -1,12 +1,12 @@
 <?php
 
-require_once __DIR__ . '/../fastr/Item.php';
+require_once __DIR__ . '/../fastr/OrderItem.php';
 
 /**
  * Class Couple
  * @author  Hidde Beydals <hidde@getfastr.co>
  */
-final class Couple extends Item
+final class Couple extends OrderItem
 {
     /**
      * Couple constructor.
@@ -16,11 +16,13 @@ final class Couple extends Item
      */
     public function __construct($qty, $comment = null)
     {
-        $this->sku      = 'couple';
-        $this->name     = 'Festival Couple';
-        $this->price    = '32.50';
-        $this->taxRate  = 21;
-        $this->qty      = $qty;
-        $this->comment  = $comment;
+        parent::__construct();
+
+        $this->item->sku      = 'couple';
+        $this->item->name     = 'Festival Couple';
+        $this->price          = '32.50';
+        $this->taxRate        = 21;
+        $this->qty            = $qty;
+        $this->comment        = $comment;
     }
 }
