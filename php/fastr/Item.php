@@ -33,32 +33,4 @@ class Item
      * @var string|null
      */
     public $description = null;
-
-    /**
-     * The quantity.
-     *
-     * @var int
-     */
-    public $qty;
-
-    /**
-     * The price (including taxes) per item.
-     *
-     * @var string
-     */
-    public $price;
-
-    /**
-     * The tax rate of the item.
-     *
-     * @var string
-     */
-    public $taxRate;
-
-    /**
-     * The optional comment of the item.
-     *
-     * @var string
-     */
-    public $comment = null;
 }

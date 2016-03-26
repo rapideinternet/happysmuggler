@@ -26,18 +26,4 @@ class ShippingOption
      * @var string
      */
     public $description;
-
-    /**
-     * The price (including taxes) of the shipping option.
-     *
-     * @var string
-     */
-    public $price;
-
-    /**
-     * The tax rate of the shipping option.
-     *
-     * @var string
-     */
-    public $taxRate;
 }
