@@ -21,13 +21,9 @@ $form.submit(function(e) {
 	}).done(function (data) {
 		// set success class to html element
 		if(data.success === true) {
-			$('form .field').removeClass("error");
-			$('html').addClass('form-submit-success');
-
-			// scroll to bottom of page and
-			$('html, body').stop(true).animate({
-				scrollTop: $(document).height() - $(window).height()
-            }, 500, 'easeOutQuint');
+			$form.replaceWith("<div style=\"text-align: center\"><h3 style=\"font-size: 1.2em; letter-spacing: .1em;\">You Rock! Thanks for your message!</h3></div>");
+                        $('form .field').removeClass("error");
+                        $('html').addClass('form-submit-success');
 		} else {
 			$('form .field').removeClass("error");
 			$.each(data.errors, function(index, error) {
@@ -38,14 +34,13 @@ $form.submit(function(e) {
 
 			$('html, body').stop(true).animate({
 				scrollTop: $form.find('.error:first').offset().top - $('#header').height() - 25
-			}, 500, 'easeOutQuint');
+			}, 500);
 		}
 	}).fail(function (data) {
-console.log(data);
 		// Scroll to first error
 		$('html, body').stop(true).animate({
 			scrollTop: $form.find('.error:first').offset().top - $('#header').height() - 25
-		}, 500, 'easeOutQuint');
+		}, 500);
 	}).always(function () {
 		// Enable submit
 		$submit.prop('disabled', false);
