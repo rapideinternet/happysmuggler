@@ -11,19 +11,31 @@ html.feedback {
     }
   }
 
-  #feedback {
+  .feedback-content {
     font-size: 1.2em;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 820px;
     padding: 7em 15px 3em;
     text-align: center;
 
-    .feedback-info{
-      color: #333;
+    h2 {
+      margin-bottom: 0.8em;
 
       span {
-        display: block;
+        font-weight: 500;
       }
+    }
+  }
+
+  .feedback-info{
+    color: #333;
+
+    p {
+      margin-bottom: 0.8em;
+    }
+
+    span {
+      display: block;
     }
   }
 
