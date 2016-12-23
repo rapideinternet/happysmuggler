@@ -24,7 +24,6 @@ $form.submit(function(e) {
 			$form.replaceWith("<div style=\"text-align: center\"><h3 style=\"font-size: 1.2em; letter-spacing: .1em;\">You Rock! Thanks for your message!</h3></div>");
 			$('form .field').removeClass("error");
 			$('html').addClass('form-submit-success');
-
 		} else {
 			$('form .field').removeClass("error");
 			$.each(data.errors, function(index, error) {
