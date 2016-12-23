@@ -218,6 +218,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  overflow-x:hidden;
 }
 
 /* line 41, ../sass/style.scss */
@@ -423,7 +424,7 @@ video {
   height: 90%;
   position: relative;
   width: 100%;
-  background: url(../img/happy-smugglers-bg.jpg) no-repeat;
+  background: url(../img/happy-smugglers-bg4.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -1474,7 +1475,8 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   background: #dce86b;
 }
 /* line 1184, ../sass/style.scss */
-.content .product .info a.order {
+.content .product .info a.order,
+button.order {
   white-space: nowrap;
   text-decoration: none;
   border: 2px solid #dce86b;
@@ -1491,6 +1493,10 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   -ms-transform: skewY(0deg);
   -webkit-transform: skewY(0deg);
   transform: skewY(0deg);
+}
+button.order {
+  width:100%;
+  margin-bottom:30px;
 }
 /* line 1199, ../sass/style.scss */
 .content .product .info a.order span.icon-cart {
@@ -1666,7 +1672,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   overflow: hidden;
 }
 /* line 1357, ../sass/style.scss */
-.content .media a.col {
+.content .media .col {
   outline: none;
   padding: 100px 40px;
   display: block;
@@ -1682,7 +1688,19 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
 }
 /* line 1368, ../sass/style.scss */
 .content .media a.col.size1of3 {
-  width: 33.33%;
+  width: 33.33%;  
+}
+
+@media (max-width:767px) {
+    	.content .media .col.size1of2 {
+		width: 100% !important;
+	}
+}
+
+/* line 1368, ../sass/style.scss */
+.content .media .col.size1of2 {
+  width: 50%;
+  
 }
 /* line 1370, ../sass/style.scss */
 .content .media a.col .logo {
@@ -1982,7 +2000,7 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   text-transform: uppercase;
 }
 /* line 1629, ../sass/style.scss */
-.checkout-page .content .checkout .summary a.checkout {
+.checkout-page .content .checkout .summary button.checkout {
   margin-bottom: 0;
   padding: 20px;
   font-size: 1em;
@@ -1992,10 +2010,12 @@ body.mobile-nav-open .mobile-nav-btn .lines:after {
   text-decoration: none;
   background: #36373b;
   color: #fff;
+  border:0;
+  width:100%;
   letter-spacing: .2em;
 }
 /* line 1641, ../sass/style.scss */
-.checkout-page .content .checkout .summary a.checkout:hover {
+.checkout-page .content .checkout .summary button.checkout:hover {
   color: #dce86b;
   background: #4e5056;
   -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);

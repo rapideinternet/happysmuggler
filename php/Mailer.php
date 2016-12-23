@@ -1,5 +1,5 @@
 <?php
-require("../vendor/phpmailer/phpmailer/PHPMailerAutoload.php");
+require "../vendor/phpmailer/phpmailer/PHPMailerAutoload.php";
 /**
  * Created by PhpStorm.
  * User: heppi_000
@@ -7,16 +7,18 @@ require("../vendor/phpmailer/phpmailer/PHPMailerAutoload.php");
  * Time: 12:32
  */
 
-class Mailer {
+class Mailer
+{
     private $mailer;
 
-    public function __construct() {
+    public function __construct()
+    {
         $mailer = new PHPMailer();
         $mailer->isSMTP();
         $mailer->Host = "localhost";
         $mailer->Port = 587;
 
-        $mailer->From = "noreply@happysmugglers.com";
+        $mailer->From     = "noreply@happysmugglers.com";
         $mailer->FromName = "Website HappySmugglers";
         $mailer->isHTML(true);
 
@@ -25,23 +27,27 @@ class Mailer {
         $this->mailer = $mailer;
     }
 
-    public function addAddress($email, $name = null) {
+    public function addAddress($email, $name = null)
+    {
         $this->mailer->addAddress($email, $name);
     }
 
-    public function send() {
-        if(!$this->mailer->send()) {
+    public function send()
+    {
+        if (!$this->mailer->send()) {
             return false;
         }
         return true;
     }
 
-    public function setHTMLBody($html) {
-        $this->mailer->Body = $html;
+    public function setHTMLBody($html)
+    {
+        $this->mailer->Body    = $html;
         $this->mailer->altBody = strip_tags($html);
     }
 
-    public function setSubject($subject) {
-        $this->mailer->subject = $subject;
+    public function setSubject($subject)
+    {
+        $this->mailer->Subject = $subject;
     }
 }
