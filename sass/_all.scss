@@ -1338,7 +1338,7 @@ video {display: block;}
             overflow: hidden;
         }
 
-        a.col {
+        .col {
             outline:none;
             padding:100px 40px;
             display: block;
@@ -1349,7 +1349,14 @@ video {display: block;}
             text-align: center;
             @include transition(all 2s ease);
 
-            &.size1of3 {width:33.33%;}
+            &.size1of3 { width: 33.33%; }
+            &.size1of2 {
+                float: none;
+
+                @media (min-width: 768px) {
+                    width: 50%;
+                }
+            }
 
             .logo {
                 background-repeat:no-repeat;
