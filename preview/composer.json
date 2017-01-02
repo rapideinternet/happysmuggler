@@ -1,0 +1,15 @@
+{
+    "name": "studiovs/website",
+    "description": "StudioVS Website",
+    "minimum-stability": "dev",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "StudioVS",
+            "email": "info@studiovs.nl"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "v5.2.9"
+    }
+}
