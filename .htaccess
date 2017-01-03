@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^feedback\.happysmugglers\.com
+RewriteRule ^(.*)$ http://happysmugglers.com/feedback.html$1 [L]
+
+RewriteCond %{HTTP_HOST} ^stories\.happysmugglers\.com
+RewriteRule ^(.*)$ http://happysmugglers.com/stories.html$1 [L]
+
