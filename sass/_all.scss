@@ -1351,7 +1351,7 @@ video {display: block;}
 
             &.size1of3 { width: 33.33%; }
             &.size1of2 {
-                float: none;
+                width: 100%;
 
                 @media (min-width: 768px) {
                     width: 50%;
