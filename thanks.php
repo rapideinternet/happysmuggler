@@ -131,6 +131,39 @@ And while you are waiting for the postman to deliver you happiness, tune in on o
 	<script>
 	(function ($) {
 		var shop = new $.Shop(".home");
+		var cart_items = shop._toJSONObject(shop.storage.getItem('smugglers-cart'));
+		var products = [];
+		var revenue = 0;
+
+		cart_items.items.forEach(function(item) {
+			var product = {
+				'name': item.product,
+				'id': item.id,
+				'price': item.price,
+				'brand': item.pack,
+				'category': item.sku,
+				'variant': item.size[0],
+				'quantity': item.qty,
+				'coupon': ''
+			};
+			revenue += parseFloat(item.price);
+			products.push(product);
+		});
+
+		dataLayer.push({
+			'event': 'purchase',
+			'ecommerce': {
+				'purchase': {
+					'actionField': {
+						'id': '<?php echo time(); ?>',
+						'revenue': revenue,
+						'tax': 0,
+						'shipping': 0
+					},
+					'products': products
+				}
+			}
+		});
 		shop._emptyCart();
 	})(jQuery);
 
